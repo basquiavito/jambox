@@ -1,13 +1,13 @@
 import Head from 'next/head'
-
+ 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Hoopscript</title>
+    
       </Head>
-
+ 
       <h2>Home sweet Home</h2>
       <p>La NBA esta de regreso. Bienvenido a Jambox</p>
 
@@ -22,7 +22,7 @@ export default function Home() {
 
       <p>Los pies y el balon son los elementos principales del dribling. Vamos a familiarizarnos con su contenido.</p>
 
-      <footer>Footer</footer>
+      <footer>Footer klo</footer>
     </div>
   )
 }
