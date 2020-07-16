@@ -7,6 +7,9 @@ import Link from 'next/link'
     <div className="linkContent"><Link href="/profiles/actives"><a className="linkTitle">actives</a></Link></div>
     <div className="linkContent"><Link href="/profiles/primes"><a className="linkTitle">primes</a></Link> </div>
     <div className="linkContent"><Link href="/profiles/streetball"><a className="linkTitle">Streetball</a></Link></div>
+
+
+    <Link href="/"><a>Back Home</a></Link>
  </div>
     <style jsx>
      {`
