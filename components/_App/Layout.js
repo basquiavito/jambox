@@ -21,7 +21,7 @@ return (
         <Aux>
             {children}
         </Aux>
-        <Footer/>
+    
 </>)
 }
 

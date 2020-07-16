@@ -14,29 +14,24 @@ export default function Header(){
     </li>
 
     <li>
-    <Link href="/profiles/actives">
+    <Link href="/profiles/profiles">
     <a className="navLink" rel="noopener">
-    <span className="LinkTitle">Actives</span>
+    <span className="LinkTitle">Profiles</span>
     </a>
     </Link>
     </li>
 
 
     <li>
-    <Link href="/profiles/primes">
+    <Link href="/blogs/blogs">
     <a className="navLink" rel="noopener">
-    <span className="LinkTitle">primes</span> 
+    <span className="LinkTitle">Blogs</span> 
     </a>
     </Link>
     </li>
 
 
-    <li><Link href="/profiles/streetball">
-    <a className="navLink" rel="noopener">
-    <span className="LinkTitle">streetball</span>
-    </a>
-    </Link>
-    </li>
+    
 
 
 </ul>
@@ -82,7 +77,7 @@ export default function Header(){
         font-weight: 400;
         letter-spacing: -.01em;
         line-height: 3.14286;
-         text-transform: capitalize;
+         text-transform: uppercase;
         color: #f5f5f7;
         position: relative;
         z-index: 1;
