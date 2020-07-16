@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Header from "./Header";
 import Aux from './Aux'
- import Topheader from './Topheader'
-
+import Topheader from './Topheader'
+import Footer from './footer'
 function Layout({ children }) {
 return (
 <>
@@ -21,6 +21,7 @@ return (
         <Aux>
             {children}
         </Aux>
+        <Footer/>
 </>)
 }
 
