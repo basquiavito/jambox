@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Header from "./Header";
 import Aux from './Aux'
-import HeadContent from './headContent'
+ import Topheader from './Topheader'
 
 function Layout({ children }) {
 return (
 <>
   <Head>
-    <HeadContent />
+ 
     {/**Stylesheet */}
 <link rel="stylesheet" type="text/css" href="/static/styles.css" />
 <link
@@ -16,6 +16,7 @@ return (
         />
 <title>Hoopscript</title>
         </Head>
+        <Topheader />
         <Header/>
         <Aux>
             {children}

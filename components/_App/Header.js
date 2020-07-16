@@ -52,15 +52,18 @@ export default function Header(){
     align-items: center;
     background: rgb(18, 18, 18);
 
+
 }
 #nav > ul {
     display: flex;
     flex-direction: row;
+    
 }
 #nav > ul >li {
     list-style-type : none;
     margin-right: 2em;
-    transition: opacity .3345s cubic-bezier(0.52, 0.16, 0.52, 0.84) .15s,transform .4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) .108s,-webkit-transform .4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) .108s;
+ 
+   
 }
 
 .navLink{
@@ -74,11 +77,12 @@ export default function Header(){
     }
 
     .LinkTitle{
-  font-size: 14px;
+    
+  font-size: 12px;
         font-weight: 400;
         letter-spacing: -.01em;
         line-height: 3.14286;
-        text-transform: capitalize;
+         text-transform: capitalize;
         color: #f5f5f7;
         position: relative;
         z-index: 1;
