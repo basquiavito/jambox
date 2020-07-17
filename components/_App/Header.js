@@ -16,7 +16,7 @@ export default function Header(){
     <li>
     <Link href="/profiles/profiles">
     <a className="navLink" rel="noopener">
-    <span className="LinkTitle">Profile</span>
+    <span className="LinkTitle">Profiles</span>
     </a>
     </Link>
     </li>
