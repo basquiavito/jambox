@@ -6,7 +6,7 @@ import Label from '../../components/units/label'
 import Title from '../../components/units/title'
 import Dekk from '../../components/units/dekk'
 import Ptraits from '../../components/units/ptraits'
-
+import FromDaGram from '../../components/units/fromDaGram'
 import Bio from '../../components/units/bio'
 import Twitter from '../../components/units/twitter'
 import Video from '../../components/units/video'
@@ -306,7 +306,12 @@ if (this.state.showDoc){
 </div></div>
 </section>
 
-
+<div id="gram">
+<div className="pageGrid">
+<div className="gridCenter">
+<Sectionsubtitle subtitle="Gram"/>
+<FromDaGram gram={this.props.gram}/>
+</div></div></div>
 
 <div>
   
@@ -447,7 +452,14 @@ if (this.state.showDoc){
 </div><br/>
 
 
+<div>
+<div className="pageGrid">
+<div className="gridCenter">
+ <Sectionsubtitle subtitle="tweets"/>
+<Twitter token={this.props.twitterToken}/>
 
+
+</div></div></div>
 
 
  </div></div>

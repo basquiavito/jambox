@@ -1,6 +1,7 @@
 import Profile from '../../models/Profile'
+import connectDb from '../../utils/connectDb'
 
-
+connectDb()
 
 export default async (req, res) => {
 const { _id } = req.query

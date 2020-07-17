@@ -17,7 +17,7 @@ childkey: profile._id,
  
  }
  
- return <>
+ return <><br/>
  <div className="cardCollection">
 <Card.Group textAlign="center"   itemsPerRow="3" centered items={ mapProfilesToItems(profiles)} /></div>
 

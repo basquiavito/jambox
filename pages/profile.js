@@ -9,6 +9,7 @@ function Profile({ profiles }) {
   return (
   
   <>
+ 
   <ProfileSummary {...profiles}/>
  
   </>
