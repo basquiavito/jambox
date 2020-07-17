@@ -17,7 +17,7 @@ export default function Topheader(){
     -webkit-box-align: center;
     align-items: center;
     height: 41px;
-    background: rgb(255, 255, 100);
+    background: #00788C;
     text-transform: uppercase;
 }
 .headerMobileContainer{
