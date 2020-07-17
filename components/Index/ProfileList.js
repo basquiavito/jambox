@@ -19,7 +19,7 @@ childkey: profile._id,
  
  return <><br/>
  <div className="cardCollection">
-<Card.Group textAlign="center"   itemsPerRow="3" centered items={ mapProfilesToItems(profiles)} /></div>
+<Card.Group textAlign="center" stackable  itemsPerRow="1" centered items={ mapProfilesToItems(profiles)} /></div>
 
 
 
