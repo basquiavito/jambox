@@ -3,17 +3,17 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Richard Clemons'
-export const siteTitle = 'Hoopscript'
+const name = 'Austin Rivers'
+export const siteTitle = 'Hooper Os'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+<>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to code basketball offensive plays with hoopscript"
+          content="The Hottest basketball Spot in the"
         />
         <meta
           property="og:image"
@@ -23,23 +23,25 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link
+          rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
+        />
       </Head>
+     
+      <div className={styles.container}>
       <header className={styles.header}>
         {home ? (
           <>
-            <img
-              src="https://s3.amazonaws.com/pedales.net/aimovemj.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt="A.I Crossed MJ"
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+           
+           
           </>
         ) : (
           <>
             <Link href="/">
               <a>
                 <img
-                  src="/images/profile.jpg"
+                  src="/images/rivers.png"
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />
@@ -62,5 +64,6 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
+    </>
   )
 }
