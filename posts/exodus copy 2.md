@@ -1,5 +1,5 @@
 ---
-title: 'Two Forms of Pre-rendering'
+title: "Jamal CrawFord: King of Handles. (a mysterious swag) "
 date: '2020-01-01'
 ---
 
