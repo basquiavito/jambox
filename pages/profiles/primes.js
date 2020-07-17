@@ -1,10 +1,18 @@
-import Link from 'next/link'
+import React from 'react'
+import axios from 'axios'
+import PrimeList from '../../components/Index/PrimeList'
+import baseUrl from '../../utils/baseUrl'
 
-export default function primes(){
-    return <>
-
-<h1>Retired Players</h1>
-
-<Link href="/profiles/profiles"><a>Back</a></Link>
-    </>
+function Primes({ primes }) {
+ return <PrimeList primes={primes} />
+ 
 }
+Primes.getInitialProps = async () => {
+const url = `${baseUrl}/api/primes`;
+const response = await axios.get(url);
+return { primes: response.data }
+}
+ 
+
+ 
+export default Primes;

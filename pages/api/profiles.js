@@ -1,6 +1,6 @@
-import Profile from '../../models/Profile'
+
 import connectDb from '../../utils/connectDb'
- 
+import Profile from '../../models/Profile'
  
  
 connectDb()

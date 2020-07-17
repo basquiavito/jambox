@@ -2,17 +2,17 @@ import { Card } from 'semantic-ui-react'
  import Link from 'next/link'
  
  
-function ProfileList({ profiles }) {
-function mapProfilesToItems(profiles){
-return profiles.map(profile => ({
-header: profile.lastname,
-description: profile.name,
-extra:profile.team,
+function PrimeList({ primes }) {
+function mapPrimesToItems(primes){
+return primes.map(p => ({
+ header: p.lastname,
+ description: p.name,
+extra:p.team,
 color: 'black',
 fluid: true,
 className:'card',
-childkey: profile._id,
- href:`/profile?_id=${profile._id}`,
+childkey: p._id,
+ href:`/prime?_id=${p._id}`,
   
 }));
  
@@ -21,7 +21,7 @@ childkey: profile._id,
  return <><br/><br/><br/>  
  <div className="cardCollection">
 
-<Card.Group textAlign="center" stackable  itemsPerRow="1" centered items={ mapProfilesToItems(profiles)} />
+<Card.Group textAlign="center" stackable  itemsPerRow="1" centered items={ mapPrimesToItems(primes)} />
 
 </div>
 
@@ -49,6 +49,6 @@ childkey: profile._id,
   </>
 }
  
-export default ProfileList;
+export default PrimeList;
  
 
