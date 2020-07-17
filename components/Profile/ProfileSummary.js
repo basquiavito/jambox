@@ -447,14 +447,7 @@ if (this.state.showDoc){
 </div><br/>
 
 
-<div>
-<div className="pageGrid">
-<div className="gridCenter">
- <Sectionsubtitle subtitle="tweets"/>
-<Twitter token={this.props.twitterToken}/>
 
-
-</div></div></div>
 
 
  </div></div>
