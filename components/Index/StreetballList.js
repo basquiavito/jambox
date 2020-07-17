@@ -16,7 +16,8 @@ return streetballs.map(p => ({
  
  }
  
- return <Card.Group stackable itemsPerRow="1" stackable centered items={ mapStreetballsToItems(streetballs)} />
+ return<>
+  <br/><Card.Group stackable itemsPerRow="1" stackable centered items={ mapStreetballsToItems(streetballs)} /></>
 }
  
 export default StreetballList;
