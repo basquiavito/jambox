@@ -1,11 +1,21 @@
-import Link from 'next/link'
+import React from 'react'
+import axios from 'axios'
+import ProfileList from '../../components/Index/ProfileList'
+import baseUrl from '../../utils/baseUrl'
 
-export default function actives(){
-    return <>
-
-<h1>Active Players</h1>
-
-
-<Link href="/profiles/profiles"><a>Back</a></Link>
-    </>
+function Profiles({ profiles }) {
+ return <ProfileList profiles={profiles} />
+ 
 }
+Profiles.getInitialProps = async () => {
+  const url = `${baseUrl}/api/profiles`
+  const response = await axios.get(url);
+  return { profiles: response.data }
+}
+ 
+
+ 
+export default Profiles;
+
+
+ 
