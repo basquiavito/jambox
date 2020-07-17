@@ -3,11 +3,11 @@ import axios from 'axios'
 import ProfileList from '../../components/Index/ProfileList'
 import baseUrl from '../../utils/baseUrl'
 
-function Profiles({ profiles }) {
+function Actives({ profiles }) {
  return <ProfileList profiles={profiles} />
  
 }
-Profiles.getInitialProps = async () => {
+Actives.getInitialProps = async () => {
   const url = `${baseUrl}/api/profiles`
   const response = await axios.get(url);
   return { profiles: response.data }
@@ -15,7 +15,7 @@ Profiles.getInitialProps = async () => {
  
 
  
-export default Profiles;
+export default Actives;
 
 
  
