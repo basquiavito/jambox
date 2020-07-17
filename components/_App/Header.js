@@ -23,7 +23,7 @@ export default function Header(){
 
 
     <li>
-    <Link href="/blogs/blogs">
+    <Link href="/blogs">
     <a className="navLink" rel="noopener">
     <span className="LinkTitle">Blogs</span> 
     </a>
