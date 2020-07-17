@@ -12,7 +12,7 @@ function Streetballs ({ streetballs }) {
  </>
 }
 Streetballs.getInitialProps = async () => {
-  const url = `${baseUrl}/api/streetballs`
+  const url = `https://hoopscript.vercel.app/api/streetballs`
   const response = await axios.get(url);
   return { streetballs: response.data }
 }
