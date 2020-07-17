@@ -41,7 +41,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <a>
                 <img
-                  src="/images/rivers.png"
+                  src="https://s3.amazonaws.com/pedales.net/attomj.png"
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />

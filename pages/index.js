@@ -7,7 +7,7 @@ export default function Home() {
         <title>Hoopscript</title>
     
       </Head>
- 
+ <div className="pretend">
       <h2>Home sweet Home</h2>
       <p>La NBA esta de regreso. Bienvenido a Jambox</p>
 
@@ -22,7 +22,20 @@ export default function Home() {
 
       <p>Los pies y el balon son los elementos principales del dribling. Vamos a familiarizarnos con su contenido.</p>
 
-      <footer>Footer klo</footer>
+      <footer>Footer klo</footer></div>
+      <style jsx>
+        {`
+        .pretend {
+          display: block;
+          margin: 5%;
+          font-family: arial;
+          font-size: 14px;
+        }
+        
+        
+        
+        `}
+      </style>
     </div>
   )
 }
