@@ -14,6 +14,7 @@ return (
           rel="stylesheet"
           href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
         />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"></link>
 <title>Hoopscript</title>
         </Head>
         <Topheader />
