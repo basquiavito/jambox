@@ -15,6 +15,7 @@ import Mixtape  from '../units/mixtape'
 import Play from '../units/play'
 import { useRouter } from 'next/router'
 import Authordate from '../units/authordate'
+import Head from 'next/head'
 
 class PrimeSummary extends Component{
 state={
