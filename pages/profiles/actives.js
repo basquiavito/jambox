@@ -6,9 +6,9 @@ import Buttonup from '../../components/featured/buttonup'
 function Actives({ profiles }) {
  return <>
  
- <h2>Hola</h2>
+ 
  <ProfileList profiles={profiles} />
-  <div>p <Buttonup/></div>
+<Buttonup/>
  </>
 }
 Actives.getInitialProps = async () => {

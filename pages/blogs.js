@@ -5,7 +5,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import Label from '../components/label'
-
+import Buttonup from '../components/featured/buttonup'
 
 
 
@@ -43,6 +43,8 @@ export default function blog({ allPostsData }) {
          </li>
           ))}
         </ul>
+
+        <Buttonup/>
       </section>
 
 
