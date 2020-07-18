@@ -1,5 +1,5 @@
 import { Card } from 'semantic-ui-react'
- import Link from 'next/link'
+ 
  import Head from 'next/head'
  
 function ProfileList({ profiles }) {

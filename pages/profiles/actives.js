@@ -2,22 +2,23 @@ import React from 'react'
 import axios from 'axios'
 import ProfileList from '../../components/Index/ProfileList'
 import baseUrl from '../../utils/baseUrl'
-import Buttonup from '../../components/featured/buttonup'
+import ProfilePagination from '../../components/Index/ProfilePagination'
 
-function Actives({ profiles }) {
+function Actives({ profiles, totalPages }) {
  return <>
 
  
  <ProfileList profiles={profiles} />
-<Buttonup/>
+ <ProfilePagination totalPages={totalPages}/>
  </>
 }
 Actives.getInitialProps = async ctx => {
   const page = ctx.query.page ? ctx.query.page : "1";
   const size = 9;
-  const url = `https://hoopscript.vercel.app/api/profiles`;
-  const response = await axios.get(url);
-  return { profiles: response.data }
+  const url = `${baseUrl}/api/profiles`;
+  const payload = { params: { page, size }}
+  const response = await axios.get(url, payload);
+  return  response.data 
 }
  
 
