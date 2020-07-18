@@ -1,6 +1,6 @@
 import {Container, Pagination} from 'semantic-ui-react'
 import { useRouter } from 'next/router'
-import Head from 'next/head'
+
 
 
 export default function ProfilePagination({totalPages}){

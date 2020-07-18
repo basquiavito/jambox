@@ -377,7 +377,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 <div  id="highschool">
  
  <Play 
- image={this.props.image} 
+ image=""
  title="Highschool" 
  name="The Genesis" >
  <button 
@@ -393,7 +393,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 
 <div>
- <Play image={this.props.imageCollege} title="College" name="Growth" >
+ <Play image="" title="College" name="Growth" >
    <button
   
     className="squareButton" 
@@ -414,7 +414,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
       </div><br/>
 
 <div>
- <Play image={this.props.imageRookie} title="Rookie Season" name="First Years" >
+ <Play image="" title="Rookie Season" name="First Years" >
  <button 
  className="squareButton" 
  onClick={this.toggleRookieHandler}>See</button></Play>
@@ -424,7 +424,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 
 <div>
- <Play image={this.props.imageCareerHigh} title="Career High" name="High Performances" >
+ <Play image="" title="Career High" name="High Performances" >
  <button 
  className="squareButton" 
  onClick={this.toggleCareerHighHandler}>See</button></Play>
@@ -435,7 +435,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 
 <div>
- <Play image={this.props.imageOffHigh} title="Offense Mixtape" name="Signature Moves" >
+ <Play image="" title="Offense Mixtape" name="Signature Moves" >
  <button 
  className="squareButton" 
  onClick={this.toggleOffHighHandler}>See</button></Play>
@@ -443,7 +443,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 </div>
 
 <div>
- <Play image={this.props.imageDefense} title="Defense Mixtape" name="LockDown" >
+ <Play image="" title="Defense Mixtape" name="LockDown" >
  <button 
  className="squareButton" 
  onClick={this.toggleDefHighHandler}>See</button></Play>
@@ -452,7 +452,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 
 <div>
- <Play image={this.props.imageDoc} title="Documentary" name="Stories" >
+ <Play image="" title="Documentary" name="Stories" >
  <button 
  className="squareButton" 
  onClick={this.toggleDocHandler}>See</button></Play>

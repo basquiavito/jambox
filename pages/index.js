@@ -28,7 +28,7 @@ export default function Home() {
         .pretend {
           display: block;
           margin: 5%;
-          font-family: 'Poppins', sans-serif;
+          font-family: sans-serif;
           font-size: 14px;
           font-display: swap;
         }
