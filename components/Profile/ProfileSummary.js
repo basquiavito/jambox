@@ -314,12 +314,6 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 </div></div>
 </section>
 
-<div id="gram">
-<div className="pageGrid">
-<div className="gridCenter">
-<Sectionsubtitle subtitle="Gram"/>
-<FromDaGram gram={this.props.gram}/>
-</div></div></div>
 
 <div>
   
@@ -460,14 +454,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 </div><br/>
 
 
-<div>
-<div className="pageGrid">
-<div className="gridCenter">
- <Sectionsubtitle subtitle="tweets"/>
-<Twitter token={this.props.twitterToken}/>
 
-
-</div></div></div>
 
 
  </div></div>
