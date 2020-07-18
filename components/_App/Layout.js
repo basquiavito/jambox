@@ -15,7 +15,6 @@ return (
 
 
  
-<noscript><link rel="stylesheet" href="style.css"></link></noscript>
 <title>Basketball's News, Plays, Profiles & Articles | Hoopscript</title>
         </Head>
         <Topheader />

@@ -22,7 +22,7 @@ childkey: profile._id,
 <Head>
  
  <link
-rel="stylesheet" media="print" onLoad="this.media='all'"
+rel="stylesheet" 
 href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 />
  
