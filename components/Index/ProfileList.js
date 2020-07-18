@@ -10,6 +10,7 @@ description: profile.name,
 extra:profile.team,
 color: 'black',
 fluid: true,
+display:'inline-block',
 className:'card',
 childkey: profile._id,
  href:`/profile?_id=${profile._id}`,
@@ -32,7 +33,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
  <br/><br/><br/>  
  <div className="cardCollection">
 
-<Card.Group textAlign="center" stackable  itemsPerRow="1" centered items={ mapProfilesToItems(profiles)} />
+<Card.Group doubling textAlign="center" stackable  itemsPerRow="1" centered items={ mapProfilesToItems(profiles)} />
 
 </div>
 

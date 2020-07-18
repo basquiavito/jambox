@@ -3,9 +3,10 @@ import axios from 'axios'
 import ProfileList from '../../components/Index/ProfileList'
 import baseUrl from '../../utils/baseUrl'
 import Buttonup from '../../components/featured/buttonup'
+
 function Actives({ profiles }) {
  return <>
- 
+
  
  <ProfileList profiles={profiles} />
 <Buttonup/>
