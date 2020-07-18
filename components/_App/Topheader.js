@@ -18,6 +18,7 @@ export default function Topheader(){
     align-items: center;
     height: 41px;
     background: #00788C;
+
     text-transform: uppercase;
 }
 .headerMobileContainer{
@@ -40,7 +41,7 @@ a {
 .logoLink h1{
     height: 29px;
     top: 4px;
-    color: #181818;
+    color: #fff;
 }
  
 
