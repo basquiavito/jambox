@@ -15,7 +15,7 @@ function Actives({ profiles, totalPages }) {
 Actives.getInitialProps = async ctx => {
   const page = ctx.query.page ? ctx.query.page : "1";
   const size = 9;
-  const url = `${baseUrl}/api/profiles`;
+  const url = `https://hoopscript.vercel.app/api/profiles`;
   const payload = { params: { page, size }}
   const response = await axios.get(url, payload);
   return  response.data 
