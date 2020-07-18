@@ -7,7 +7,13 @@ function Layout({ children }) {
 return (
 <>
   <Head>
-
+ 
+  
+ 
+<link
+          rel="stylesheet" media="print" onLoad="this.media='all'"
+          href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
+        />
 
 <title>Hoopscript</title>
         </Head>
