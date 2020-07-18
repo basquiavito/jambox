@@ -15,7 +15,7 @@ import Mixtape  from '../units/mixtape'
 import Play from '../units/play'
 import { useRouter } from 'next/router'
 import Authordate from '../units/authordate'
-
+import Head from 'next/head'
 class ProfileSummary extends Component{
 state={
 showHighschool:false,
@@ -269,6 +269,14 @@ if (this.state.showDoc){
 }
    return(
      <>
+     <Head>
+     <link
+rel="stylesheet" media="print" onLoad="this.media='all'"
+href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
+/>
+
+
+     </Head>
 <div id="profile">
 <div className="pageGrid">
 <div className="gridCenter">

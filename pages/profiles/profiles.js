@@ -1,8 +1,17 @@
 import Link from 'next/link'
-
+import Head from 'next/head'
 
  function profiles() {
     return<> 
+    <Head>
+        <title></title>
+      
+ <link
+rel="stylesheet" media="print" onLoad="this.media='all'"
+href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
+/>
+ </Head>
+ 
     <div id="profilePagesHub">
     <div className="linkContent"><Link href="/profiles/actives"><a className="linkTitle">actives</a></Link></div>
     <div className="linkContent"><Link href="/profiles/primes"><a className="linkTitle">primes</a></Link> </div>

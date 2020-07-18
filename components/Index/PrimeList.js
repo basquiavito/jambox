@@ -1,5 +1,5 @@
 import { Card } from 'semantic-ui-react'
- import Link from 'next/link'
+ import Head from 'next/Head'
  
  
 function PrimeList({ primes }) {
@@ -18,7 +18,16 @@ childkey: p._id,
  
  }
  
- return <><br/><br/><br/>  
+ return <>
+ 
+ <Head>
+ 
+ <link
+rel="stylesheet" media="print" onLoad="this.media='all'"
+href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
+/>
+ 
+   </Head><br/><br/><br/>  
  <div className="cardCollection">
 
 <Card.Group textAlign="center" stackable  itemsPerRow="1" centered items={ mapPrimesToItems(primes)} />

@@ -9,17 +9,14 @@ function Layout({ children }) {
 return (
 <>
   <Head>
-  
+  <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
-<link
-rel="stylesheet" media="print" onLoad="this.media='all'"
-href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
-/>
 
  
 <noscript><link rel="stylesheet" href="style.css"></link></noscript>
-<title>Hoopscript</title>
+<title>Basketball's News, Plays, Profiles & Articles | Hoopscript</title>
         </Head>
         <Topheader />
         <Header/>

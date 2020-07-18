@@ -1,5 +1,5 @@
 import { Card } from 'semantic-ui-react'
- 
+ import Head from 'next/head'
  
  
 function StreetballList({ streetballs }) {
@@ -17,6 +17,14 @@ return streetballs.map(p => ({
  }
  
  return<>
+ <Head>
+ 
+ <link
+rel="stylesheet" media="print" onLoad="this.media='all'"
+href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
+/>
+ 
+ </Head>
   <br/><Card.Group stackable itemsPerRow="1" stackable centered items={ mapStreetballsToItems(streetballs)} /></>
 }
  
