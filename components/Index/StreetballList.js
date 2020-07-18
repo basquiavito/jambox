@@ -5,11 +5,8 @@ import { Card } from 'semantic-ui-react'
 function StreetballList({ streetballs }) {
 function mapStreetballsToItems(streetballs){
 return streetballs.map(p => ({
-    header: p.lastname,
-    description: p.name,
-   extra:p.team,
- color: 'teal',
- fluid: true,
+    header: p.lastname + " " + p.name,
+   meta:p.team,
  childkey: p._id,
  href:`/streetball?_id=${p._id}`
 }));

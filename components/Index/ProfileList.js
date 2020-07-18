@@ -5,53 +5,50 @@ import { Card } from 'semantic-ui-react'
 function ProfileList({ profiles }) {
 function mapProfilesToItems(profiles){
 return profiles.map(profile => ({
-header: profile.lastname,
-description: profile.name,
-extra:profile.team,
-color: 'black',
-fluid: true,
-display:'inline-block',
-className:'card',
+header: profile.lastname + " " + profile.name,
 childkey: profile._id,
- href:`/profile?_id=${profile._id}`,
+href:`/profile?_id=${profile._id}`,
+meta: profile.team 
   
 }));
  
  }
  
  return <>
-<Head>
+ 
+ <Head>
  
  <link
 rel="stylesheet" 
 href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 />
  
-</Head>
+   </Head>
  
  
  <br/><br/><br/>  
  <div className="cardCollection">
 
-<Card.Group doubling textAlign="center" stackable  itemsPerRow="1" centered items={ mapProfilesToItems(profiles)} />
+<Card.Group textAlign="center" stackable  itemsPerRow="1"   items={ mapProfilesToItems(profiles)} />
 
 </div>
 
 
 <style jsx>
  {`
+.card{
+  margin: 1rem;
+}
 
- .back {
-   position: absolute;
-   top: 90px;
-   margin-left: 15px;
- }
  .cardCollection {
    background-color:trasparent;
    display: flex;
    justify-content: center;
+  
  }
- 
+ .card {
+   border: 1px solid black;
+ }
  
  
  `} 

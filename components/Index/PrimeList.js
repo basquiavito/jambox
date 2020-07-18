@@ -1,16 +1,12 @@
 import { Card } from 'semantic-ui-react'
- import Head from 'next/Head'
+ import Head from 'next/head'
  
  
 function PrimeList({ primes }) {
 function mapPrimesToItems(primes){
 return primes.map(p => ({
- header: p.lastname,
- description: p.name,
-extra:p.team,
-color: 'black',
-fluid: true,
-className:'card',
+ header: p.lastname + " " + p.name,
+ meta:p.team,
 childkey: p._id,
  href:`/prime?_id=${p._id}`,
  
