@@ -13,7 +13,7 @@ return (
   <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 
 <link
-rel="stylesheet" media="print" onLoad="this.media"
+rel="stylesheet" media="print" onLoad="this.media='all'"
 href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 />
 
