@@ -12,7 +12,9 @@ function Actives({ profiles }) {
 <Buttonup/>
  </>
 }
-Actives.getInitialProps = async () => {
+Actives.getInitialProps = async ctx => {
+  const page = ctx.query.page ? ctx.query.page : "1";
+  const size = 9;
   const url = `https://hoopscript.vercel.app/api/profiles`;
   const response = await axios.get(url);
   return { profiles: response.data }
