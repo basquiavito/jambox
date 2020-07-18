@@ -1,5 +1,5 @@
 import React, {Component } from 'react'
- import Link from 'next/link'
+ 
  import Sectiontitle from '../../components/units/sectiontitle'
  import Sectionsubtitle from '../../components/units/sectionsubtitle'
  import Label from '../../components/units/label'
@@ -7,13 +7,13 @@ import React, {Component } from 'react'
  import Dekk from '../../components/units/dekk'
 import Ptraits from '../../components/units/ptraits'
 import FromDaGram from '../../components/units/fromDaGram'
-import Bio from '../../components/units/bio'
+ 
 import Twitter from '../../components/units/twitter'
 import Video from '../../components/units/video'
- import Article from '../../components/units/article'
+ 
 import Mixtape  from '../units/mixtape'
 import Play from '../units/play'
-import { useRouter } from 'next/router'
+ 
 import Authordate from '../units/authordate'
 
 class StreetballSummary extends Component{

@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "./Header";
 import Aux from './Aux'
 import Topheader from './Topheader'
-import Link from 'next/link'
+ 
  
 function Layout({ children }) {
   
