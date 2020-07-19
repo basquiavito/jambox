@@ -24,11 +24,12 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
  
 </Head>
 <div id="profile">
-<div className="pageGrid">
-<div className="gridCenter">
-<Sectiontitle title={`${name} ${lastname}`}/>  
- <Label label = "Latest News" />
  
+<Sectiontitle title={`${name} ${lastname}`}/>  
+ 
+ <div className="pageGrid">
+<div className="gridCenter">
+<Label label = "Latest News" />
   <Mixtape 
    latest1={latest1}
    latest1Title={latest1Title}
@@ -49,7 +50,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
    latest6Title={latest6Title}
 
    />
-    
+    </div></div>
    <section>
    <div className="pageGrid">
 <div className="gridCenter">
@@ -66,7 +67,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 
 
- </div></div></div>
+ </div> 
 
  <style jsx>
 {`

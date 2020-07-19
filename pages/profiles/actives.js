@@ -4,6 +4,7 @@ import ProfileList from '../../components/Index/ProfileList'
 import baseUrl from '../../utils/baseUrl'
 import ProfilePagination from '../../components/Index/ProfilePagination'
 
+
 function Actives({ profiles, totalPages }) {
  return <>
 
