@@ -11,8 +11,9 @@ import Play from '../units/play'
 import Youtubehooks from '../../components/units/youtubehooks'
 import Authordate from '../units/authordate'
 import Head from 'next/head'
+import Video from '../../components/units/video'
 
-export default function ProfileSummary({docTitle, defHighTitle, careerHighTitle, highSchool,highSchoolTitle, doc1, defHigh1, assistOffTitle, signatureMove, signatureMove1, offHigh1,assistOff, name, lastname, accolades, accoladeAuthor, accoladeLink, accoladeSource, team, number, position, feet, inches, meters, kg, lbs, years, born, from, debut, latest1, latest1Title, latest2, latest2Title, latest3, latest3Title, latest4, latest4Title, latest5, latest5Title, latest6, latest6Title, statsId, highschool, college, college1,collegeTitle, rookie, offHigh, doc, defHigh, videoId, videoIdTitle, rookieOff, rookieOffTitle,careerHigh,offHighTitle}){
+export default function ProfileSummary({docTitle, defHighTitle, careerHighTitle, highSchool,highSchoolTitle, highSchoolAuthor, highSchoolDekk,highSchoolDate, doc1, defHigh1, assistOffTitle, signatureMove, signatureMove1, offHigh1,assistOff, name, lastname, accolades, accoladeAuthor, accoladeLink, accoladeSource, team, number, position, feet, inches, meters, kg, lbs, years, born, from, debut, latest1, latest1Title, latest2, latest2Title, latest3, latest3Title, latest4, latest4Title, latest5, latest5Title, latest6, latest6Title, statsId, highschool, college, college1,collegeTitle, rookie, offHigh, doc, defHigh, videoId, videoIdTitle, rookieOff, rookieOffTitle,careerHigh,offHighTitle}){
  return<>
 <Head>
  
@@ -49,7 +50,16 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
    />
     
-   
+   <section>
+   <div className="pageGrid">
+<div className="gridCenter">
+<Label label="Highschool"/> 
+     <Video videoId={highSchool}/>
+     <Title title={highSchoolTitle}/>
+     <Dekk dekk={highSchoolDekk}/>
+     <Authordate author={highSchoolAuthor} date={highSchoolDate}/>
+     </div></div>
+   </section>
 
 
    
@@ -57,6 +67,24 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 
  </div></div></div>
+
+ <style jsx>
+{`
+.pageGrid{
+  display: grid;
+  -webkit-box-pack: center;
+  justify-content: center;
+  grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
+  grid-row-gap: 30px;
+
+}
+ .gridCenter{
+    grid-column: center-start / center-end;
+ }
+`}
+
+
+ </style>
  </>
 
 
