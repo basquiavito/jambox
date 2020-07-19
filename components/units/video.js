@@ -1,6 +1,5 @@
 import React from 'react'
 import { Embed } from 'semantic-ui-react'
- import Head from 'next/head'
  import LazyLoad from 'react-lazy-load';
 
 const video = (props) => (
@@ -18,7 +17,6 @@ aspectRatio='4:3'
 
  autoplay={false}
  color="black"
- className='lazyload'
  iframe={{
  allowFullScreen: true,
  style: {

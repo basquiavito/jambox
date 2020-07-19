@@ -59,9 +59,21 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
      <Title title={videoIdTitle}/>
  
      </div></div>
+   </section><br/><br/>
+
+   <section>
+   <div className="pageGrid">
+<div className="gridCenter">
+<Link href=""><a>HighSchool</a></Link><br/>
+<Link href=""><a>College </a></Link><br/>
+<Link href=""><a>Rookie Season </a></Link><br/>
+<Link href=""><a>Offensive Highlights </a></Link><br/>
+<Link href=""><a>Career High</a></Link><br/>
+<Link href=""><a>Passing Highlights </a></Link><br/>
+<Link href=""><a>Defensive Highlights </a></Link><br/>
+<Link href=""><a>Documentary </a></Link><br/>
+</div></div>
    </section>
-
-
  
    
 
@@ -72,11 +84,17 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
  <style jsx>
 {`
 .pageGrid{
+
   display: grid;
   -webkit-box-pack: center;
   justify-content: center;
   grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
-  grid-row-gap: 30px;
+  grid-row-gap: 30px;}
+
+.pageGrid a{
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #eee;
 
 }
  .gridCenter{
