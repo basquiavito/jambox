@@ -9,9 +9,7 @@ export default function mixtapeunit(props){
 <Video videoId={props.videoId}/>
 <div className="mixtapeCardInfo">
 <h3>{props.title}</h3>
-<div className="seasonYear">
-  {props.year}
-</div>
+ 
 </div>
     
  
@@ -31,14 +29,14 @@ export default function mixtapeunit(props){
     padding: 0 1px;
    
     box-sizing: border-box;
-    padding-left: 0;
+  
    
     
 }
     .mixtapeGrid{
        
         display: flex;
-        flex-wrap: wrap;
+  
 
     }
 
@@ -53,42 +51,15 @@ export default function mixtapeunit(props){
     .elementThird{
         min-width: 230px;
     }
-
-    .coverArt{
-        background-color: #000;
-        width: 100%;
-        padding-bottom: 100%;
-        position: relative;
-        overflow: hidden;
-        display: block;
-
-    }
-
-    .coverArtImage{
-
-        width: 100%; 
-        object-fit: contain;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;  
-    }
-
-    a img {
-        border: none;
-    }
-
-    .mixtapeCardInfo{
-
-        margin-top: .5rem; 
-    }
-
-    .seasonYear{
-        color: #9a9a9a;
-        font-weight: 600; 
-    }
-   
+ 
+ .mixtapeCardInfo h3 {
+ 
+    font-size: 1.313rem;
+    display: inline;
+ }
+ 
+ 
+ 
    
    `}
        

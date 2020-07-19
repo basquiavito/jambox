@@ -1,13 +1,13 @@
 
-import React from 'react'
+ 
 
 
 
-function title(props){
- return(
+export default function title(props){
+ return<>
 <div className="editorialTitle">
 <h2 >{props.title}</h2>
-
+</div>
 
 <style jsx>{`
 .editorialTitle{
@@ -21,8 +21,8 @@ function title(props){
     display: inline;
                   }
             `}</style>
-        </div>
-    )
+       
+    </>
 }
  
-export default title
+ 
