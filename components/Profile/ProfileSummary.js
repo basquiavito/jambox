@@ -12,6 +12,9 @@ import Youtubehooks from '../../components/units/youtubehooks'
 import Authordate from '../units/authordate'
 import Head from 'next/head'
 import Video from '../../components/units/video'
+import Blacklabel from '../../components/units/blackLabel'
+
+
 
 export default function ProfileSummary({offHigh1Title, careerHigh1, careerHigh1Title, college1Title, highSchool1, highSchool1Title, docTitle, defHighTitle, careerHighTitle, highSchool,highSchoolTitle, highSchoolAuthor, highSchoolDekk,highSchoolDate, doc1, defHigh1, assistOffTitle, signatureMove, signatureMove1, offHigh1,assistOff, name, lastname, accolades, accoladeAuthor, accoladeLink, accoladeSource, team, number, position, feet, inches, meters, kg, lbs, years, born, from, debut, latest1, latest1Title, latest2, latest2Title, latest3, latest3Title, latest4, latest4Title, latest5, latest5Title, latest6, latest6Title, statsId, highschool, college, college1,collegeTitle, rookie, offHigh, doc, defHigh, videoId, videoIdTitle, rookieOff, rookieOffTitle,careerHigh,offHighTitle}){
  return<>
@@ -51,6 +54,8 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
    latest6Title={latest6Title}
 
    /> </section>
+
+
    <section>
    <Label label = "HighSchool + College + Rookie" />
    <Mixtape 
@@ -80,7 +85,15 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
      </div></div></div>
 
 
+     <div id="stats">
+ 
+<a href={`https://stats.nba.com/player/${statsId}/`}>
+<div className="statContainer">	 
+<Blacklabel  label="numbers" /> <br/>	 
 
+<div className="statLabel"> 
+<span className="statsPointer"> points | assists | reb | steals... </span></div>
+</div></a></div> 
  
    
 
@@ -104,6 +117,49 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
  .gridCenter{
     grid-column: center-start / center-end;
  }
+
+ .statContainer{
+  text-align: center;
+  grid-column: center-start / center-end;
+margin-top: 1rem;
+background-color:rgb(18 18 18); 
+padding: 1em;
+margin-top: 3rem;
+margin-bottom: 3rem;
+
+
+
+}
+
+
+
+
+.statLabel {
+color:#fff;
+overflow-wrap: break-word;
+word-break: break-word;
+background-color: transparent;
+cursor: pointer;
+display: inline-block;
+font-family: Programme, sans-serif;
+font-size: 0.875rem;
+line-height: 1;
+text-align: center;
+vertical-align: top;
+user-select: none;
+-webkit-appearance: none;
+text-transform: uppercase;
+letter-spacing: 1px;
+border-color: #fff;
+transition: background-color 0.1s ease 0s, color 0.1s ease 0s;
+border-width: 2px;
+border-style: solid;
+border-radius: 0px;
+margin: 0px;
+padding: 0.75rem 1.313rem;
+background: transparent;
+}
+
 `}
 
 
