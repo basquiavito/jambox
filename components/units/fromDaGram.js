@@ -7,7 +7,7 @@ const FromDaGram = (props) => {
 <InstagramEmbed
 url={props.gram}
 maxWidth={320}
-hideCaption={false}
+hideCaption={true}
 containerTagName='div'
 protocol=''
 injectScript
