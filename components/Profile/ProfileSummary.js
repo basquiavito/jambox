@@ -26,9 +26,24 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 />
  
 </Head>
+<Sectiontitle title={`${name} ${lastname}`}/> 
+<Sectionsubtitle subtitle={`Get to know ${lastname}`}/>
+<div className="pageGrid">
+<div className="gridCenter">
+<figure className="quote">
 
+<blockquote>
+<p className="accoladeCaption"> { accolades}</p>
+<figcaption>
+<Authordate author={ accoladeAuthor}/> 
+<a href={ accoladeLink}>
+<cite>{ accoladeSource}</cite>
+</a>
+</figcaption>
+</blockquote>
+</figure></div></div>
  
-<Sectiontitle title={`${name} ${lastname}`}/>  
+
  <div id="">
  <div className="pageGrid">
 <div className="gridCenter">
@@ -110,7 +125,23 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
   justify-content: center;
   grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
   grid-row-gap: 30px;}
+  blockquote p{
+    color: #333;
+    line-height: 1.69em;
+    letter-spacing: normal
+    font-size: 2em;
+    font-weight: 500;
+    font-style: normal;
+  
+   }
+.accoladeCaption{
+font-size: 17px;
+}
 
+.quote{
+width: 100%;
+margin:0;
+}
 
 
 
