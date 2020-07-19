@@ -13,7 +13,7 @@ import Authordate from '../units/authordate'
 import Head from 'next/head'
 import Video from '../../components/units/video'
 
-export default function ProfileSummary({docTitle, defHighTitle, careerHighTitle, highSchool,highSchoolTitle, highSchoolAuthor, highSchoolDekk,highSchoolDate, doc1, defHigh1, assistOffTitle, signatureMove, signatureMove1, offHigh1,assistOff, name, lastname, accolades, accoladeAuthor, accoladeLink, accoladeSource, team, number, position, feet, inches, meters, kg, lbs, years, born, from, debut, latest1, latest1Title, latest2, latest2Title, latest3, latest3Title, latest4, latest4Title, latest5, latest5Title, latest6, latest6Title, statsId, highschool, college, college1,collegeTitle, rookie, offHigh, doc, defHigh, videoId, videoIdTitle, rookieOff, rookieOffTitle,careerHigh,offHighTitle}){
+export default function ProfileSummary({college1Title, highSchool1, highSchool1Title, docTitle, defHighTitle, careerHighTitle, highSchool,highSchoolTitle, highSchoolAuthor, highSchoolDekk,highSchoolDate, doc1, defHigh1, assistOffTitle, signatureMove, signatureMove1, offHigh1,assistOff, name, lastname, accolades, accoladeAuthor, accoladeLink, accoladeSource, team, number, position, feet, inches, meters, kg, lbs, years, born, from, debut, latest1, latest1Title, latest2, latest2Title, latest3, latest3Title, latest4, latest4Title, latest5, latest5Title, latest6, latest6Title, statsId, highschool, college, college1,collegeTitle, rookie, offHigh, doc, defHigh, videoId, videoIdTitle, rookieOff, rookieOffTitle,careerHigh,offHighTitle}){
  return<>
 <Head>
  
@@ -51,6 +51,18 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
    latest6Title={latest6Title}
 
    /> </section>
+   <section>
+   <Label label = "HighSchool + College + Rookie" />
+   <Mixtape 
+   latest1={highSchool} latest1Title={highSchoolTitle}
+   latest2={highSchool1} latest2Title={highSchool1Title}
+   latest3={college} latest3Title={collegeTitle}
+   latest4={college1} latest4Title={college1Title}
+    latest5={videoId} latest5Title={videoIdTitle}
+    latest6={rookieOff} latest6Title={rookieOffTitle}
+   
+   />
+   </section>
   
 
      </div></div></div>
