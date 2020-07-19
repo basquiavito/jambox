@@ -18,7 +18,7 @@ export default function ProfileSummary({docTitle, defHighTitle, careerHighTitle,
 <Head>
  
  <link
-rel="stylesheet" media="print" onload="this.media='all'"
+rel="preload" as="style"
 href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 />
  
