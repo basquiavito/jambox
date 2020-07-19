@@ -54,57 +54,15 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
    <section>
    <div className="pageGrid">
 <div className="gridCenter">
-<Label label="Highschool"/> 
-     <Video videoId={highSchool}/>
-     <Title title={highSchoolTitle}/>
-     <Dekk dekk={highSchoolDekk}/>
-     <Authordate author={highSchoolAuthor} date={highSchoolDate}/>
+<Label label="Draft Day"/> 
+     <Video videoId={videoId}/>
+     <Title title={videoIdTitle}/>
+ 
      </div></div>
    </section>
 
-   <section>
-   <div className="pageGrid">
-<div className="gridCenter">
-<Label label="Highschool"/> 
-     <Video videoId={highSchool}/>
-     <Title title={highSchoolTitle}/>
-     <Dekk dekk={highSchoolDekk}/>
-     <Authordate author={highSchoolAuthor} date={highSchoolDate}/>
-     </div></div>
-   </section>
 
-   <section>
-   <div className="pageGrid">
-<div className="gridCenter">
-<Label label="Highschool"/> 
-     <Video videoId={highSchool}/>
-     <Title title={highSchoolTitle}/>
-     <Dekk dekk={highSchoolDekk}/>
-     <Authordate author={highSchoolAuthor} date={highSchoolDate}/>
-     </div></div>
-   </section>
-
-   <section>
-   <div className="pageGrid">
-<div className="gridCenter">
-<Label label="Highschool"/> 
-     <Video videoId={highSchool}/>
-     <Title title={highSchoolTitle}/>
-     <Dekk dekk={highSchoolDekk}/>
-     <Authordate author={highSchoolAuthor} date={highSchoolDate}/>
-     </div></div>
-   </section>
-
-   <section>
-   <div className="pageGrid">
-<div className="gridCenter">
-<Label label="Highschool"/> 
-     <Video videoId={highSchool}/>
-     <Title title={highSchoolTitle}/>
-     <Dekk dekk={highSchoolDekk}/>
-     <Authordate author={highSchoolAuthor} date={highSchoolDate}/>
-     </div></div>
-   </section>
+ 
    
 
 
