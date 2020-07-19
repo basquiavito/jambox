@@ -1,12 +1,14 @@
 import React from 'react'
 import { Embed } from 'semantic-ui-react'
- 
- 
-
+ import Head from 'next/head'
 
 
 const video = (props) => (
-  <div className="videoComponent" loading='lazy'>
+  <>
+ <Head>
+   <script src="lazysizes.min.js" async=""></script>
+ </Head>
+  <div className="videoComponent">
 
   <Embed
  
@@ -19,6 +21,7 @@ const video = (props) => (
  
     autoplay={false}
     color="black"
+    className='lazyload'
     iframe={{
     allowFullScreen: true,
     style: {
@@ -50,6 +53,7 @@ const video = (props) => (
   
   
   </div>
+  </>
 )
 
 export default video
