@@ -30,38 +30,20 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 <section>
 <div className="pageGrid">
 <div className="gridCenter">
- <div><h1><Sectiontitle title={`${name} ${lastname}`}/></h1></div>
- <div><h2><Sectionsubtitle subtitle={`Get to know ${lastname}`}/></h2></div><br/>
+ <div><Sectiontitle title={`${name} ${lastname}`}/></div>
+ <div><Sectionsubtitle subtitle={`Get to know ${lastname}`}/></div><br/>
 
-<div>
-  
-<figure className="quote">
-<blockquote>
-<p className="accoladeCaption"> {accolades}</p>
-<figcaption>
-<Authordate author={accoladeAuthor}/> 
-<a href={accoladeLink}>
-<cite>{accoladeSource}</cite>
-</a>
-</figcaption>
-</blockquote>
-</figure>
-</div><br/>
+<br/>
 
-<Label label = "Profile" />
-<Dekk dekk={` ${team} | #${number}  | ${position}`}/>
+
+
 </div></div>
 </section><br/>
 
-<section className="ptraitsContainer">
- 
-<Ptraits feet={feet} inches={inches} meters={meters} kg={kg} lbs={lbs} born={born} from={from} debut={debut} years={years}  />
- 
-</section>
 
 
 <div>
-  
+<Label label = "Latest News" />
  
   <Mixtape 
    latest1={latest1}
@@ -92,24 +74,11 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 
 
-<div id="stats">
- 
-<a href={`https://stats.nba.com/player/${statsId}/`}>
-<div className="statContainer">	 
-<Label  label="numbers" />	 
-<div className="statLabel"> 
-<span className="statsPointer"> points | assists | reb | steals... </span></div>
-</div></a></div> 
 
 
 
 
-<div id=" ">
-<div className="pageGrid">
-<div className="gridCenter">
 
-
-<h3>Popular {lastname} Plays</h3>
 
 
 
@@ -120,20 +89,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 
 
-</div>
 
- 
-
- 
-
-
-
-
-
- </div> 
-
-
-</div>
 
 <style jsx>
     {`
