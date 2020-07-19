@@ -113,71 +113,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 
 <h3>Popular {lastname} Plays</h3>
-<section className="sectionContainer">
-<Label label="Highschool"/><br/>
-<Youtubehooks videoIdA={highSchool} videoIdB={college1}/>
-<Title title={highSchoolTitle}/>
 
-</section>
-
-
-
-<section className="sectionContainer">
-<Label label="College"/><br/>
-<Youtubehooks videoIdA={college} videoIdB={college1}/>
-<Title title={collegeTitle}/>
-</section>
-
-
-<section className="sectionContainer">
-<Label label="Draft Day"/><br/>
-<Youtubehooks videoIdA={videoId} />
-<Title title={videoIdTitle}/>
-</section>
-
-
-<section className="sectionContainer">
-<Label label="Rookie"/><br/>
-<Youtubehooks videoIdA={rookieOff} />
-<Title title={rookieOffTitle}/>
-</section>
-
-<section className="sectionContainer">
-<Label label="Offense Highlights"/><br/>
-<Youtubehooks videoIdA={offHigh} videoIdB={offHigh1} />
-<Title title={offHighTitle}/>
-</section>
-
-<section>
-<Label label="Passing Skills"/><br/>
-<Youtubehooks videoIdA={assistOff} />
-<Title title={assistOffTitle}/>
-</section>
-
-<section className="sectionContainer">
-<Label label="Blueprint"/><br/>
-<Youtubehooks videoIdA={signatureMove} videoIdB={signatureMove1} />
-<Title title={offHighTitle}/>
-</section>
-
-<section className="sectionContainer">
-<Label label="careerHigh"/><br/>
-<Youtubehooks videoIdA={careerHigh} videoIdB={signatureMove1} />
-<Title title={careerHighTitle}/>
-</section>
-
-<section className="sectionContainer">
-<Label label="Defense"/><br/>
-<Youtubehooks videoIdA={defHigh} videoIdB={defHigh1} />
-<Title title={defHighTitle}/>
-</section>
-
-<section className="sectionContainer">
-<Label label="Documentary"/><br/>
-<Youtubehooks videoIdA={doc} videoIdB={doc1} />
-<Title title={docTitle}/>
-</section><br/>
- 
 
 
  
