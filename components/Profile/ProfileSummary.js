@@ -52,12 +52,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
    /> </section>
   
-   <section>
- 
-<Label label="Draft Day"/> 
-     <Video videoId={videoId}/>
-     <Title title={videoIdTitle}/>
-     </section> 
+
      </div></div></div>
 
 
