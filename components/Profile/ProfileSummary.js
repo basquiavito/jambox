@@ -14,9 +14,9 @@ import Head from 'next/head'
 import Video from '../../components/units/video'
 import Blacklabel from '../../components/units/blackLabel'
 import FromDaGram from '../../components/units/fromDaGram'
+import Twitter from '../units/twitter'
 
-
-export default function ProfileSummary({offHigh1Title, gram, careerHigh1, careerHigh1Title, college1Title, highSchool1, highSchool1Title, docTitle, defHighTitle, careerHighTitle, highSchool,highSchoolTitle, highSchoolAuthor, highSchoolDekk,highSchoolDate, doc1, defHigh1, assistOffTitle, signatureMove, signatureMove1, offHigh1,assistOff, name, lastname, accolades, accoladeAuthor, accoladeLink, accoladeSource, team, number, position, feet, inches, meters, kg, lbs, years, born, from, debut, latest1, latest1Title, latest2, latest2Title, latest3, latest3Title, latest4, latest4Title, latest5, latest5Title, latest6, latest6Title, statsId, highschool, college, college1,collegeTitle, rookie, offHigh, doc, defHigh, videoId, videoIdTitle, rookieOff, rookieOffTitle,careerHigh,offHighTitle}){
+export default function ProfileSummary({twitterToken, offHigh1Title, gram, careerHigh1, careerHigh1Title, college1Title, highSchool1, highSchool1Title, docTitle, defHighTitle, careerHighTitle, highSchool,highSchoolTitle, highSchoolAuthor, highSchoolDekk,highSchoolDate, doc1, defHigh1, assistOffTitle, signatureMove, signatureMove1, offHigh1,assistOff, name, lastname, accolades, accoladeAuthor, accoladeLink, accoladeSource, team, number, position, feet, inches, meters, kg, lbs, years, born, from, debut, latest1, latest1Title, latest2, latest2Title, latest3, latest3Title, latest4, latest4Title, latest5, latest5Title, latest6, latest6Title, statsId, highschool, college, college1,collegeTitle, rookie, offHigh, doc, defHigh, videoId, videoIdTitle, rookieOff, rookieOffTitle,careerHigh,offHighTitle}){
  return<>
 <Head>
  
@@ -45,12 +45,12 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 </figure></div></div>
  
 
-<div id="gram">
+<section className="ptraitsContainer">
 <div className="pageGrid">
 <div className="gridCenter">
-<Sectionsubtitle subtitle="Gram"/>
-<FromDaGram gram={gram}/>
- </div></div></div>
+<Ptraits feet={ feet} inches={ inches} meters={ meters} kg={ kg} lbs={ lbs} born={ born} from={ from} debut={ debut} years={ years}  />
+ </div></div>
+</section>
 
 
  <div id="">
@@ -78,6 +78,12 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
    latest6Title={latest6Title}
 
    /> </section>
+<div id="gram">
+<div className="pageGrid">
+<div className="gridCenter">
+<Sectionsubtitle subtitle="Gram"/>
+<FromDaGram gram={gram}/>
+ </div></div></div>
 
 
    <section>
@@ -92,7 +98,14 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
    
    />
    </section>
-  
+   <div>
+<div className="pageGrid">
+<div className="gridCenter">
+  <Sectionsubtitle subtitle="tweets"/>
+<Twitter token={twitterToken}/>
+
+
+</div></div></div>
    <section>
    <Label label = "Offense + Passing + Defense" />
    <Mixtape 
@@ -110,14 +123,15 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 
      <div id="stats">
- 
+     <div className="pageGrid">
+<div className="gridCenter">
 <a href={`https://stats.nba.com/player/${statsId}/`}>
 <div className="statContainer">	 
 <Blacklabel  label="numbers" /> <br/>	 
 
 <div className="statLabel"> 
 <span className="statsPointer"> points | assists | reb | steals... </span></div>
-</div></a></div> 
+</div></a></div></div></div> 
  
    
 

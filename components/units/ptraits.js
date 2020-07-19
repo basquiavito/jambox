@@ -88,7 +88,7 @@ const abbr = {
 
 .playerTabContent{
   display: block;
-  background-color:#4183c4; 
+  background-color:rgb(18 18 18); 
   color:#fff;
   font-weight:300;
 }
