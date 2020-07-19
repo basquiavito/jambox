@@ -6,7 +6,7 @@ import { Embed } from 'semantic-ui-react'
 
 
 const video = (props) => (
-  <div className="videoComponent">
+  <div className="videoComponent" loading='lazy'>
 
   <Embed
  
@@ -14,12 +14,16 @@ const video = (props) => (
     placeholder={`http://i.ytimg.com/vi/${props.videoId}/hqdefault.jpg`}
     source='youtube'
  icon='disabled'
-   
+  aspectRatio='4:3'
+  
  
     autoplay={false}
     color="black"
     iframe={{
     allowFullScreen: true,
+    style: {
+      padding: 10,
+    }
      
 
       }
