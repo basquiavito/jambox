@@ -266,7 +266,7 @@ class YouTube extends React.Component {
             justify-content: center;
               width: 300px;
               height:168.75px;
-          grid-column: center-start / center-end;
+    
         }
           .wholeContainer {
 

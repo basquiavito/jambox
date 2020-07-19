@@ -1,4 +1,4 @@
-import React, {Component } from 'react'
+import React from 'react'
  
 import Sectiontitle from '../../components/units/sectiontitle'
 import Sectionsubtitle from '../../components/units/sectionsubtitle'
@@ -6,15 +6,13 @@ import Label from '../../components/units/label'
 import Title from '../../components/units/title'
 import Dekk from '../../components/units/dekk'
 import Ptraits from '../../components/units/ptraits'
-import Video from '../../components/units/video'
- 
 import Mixtape  from '../units/mixtape'
 import Play from '../units/play'
- 
+import Youtubehooks from '../../components/units/youtubehooks'
 import Authordate from '../units/authordate'
 import Head from 'next/head'
 
-export default function ProfileSummary({name, lastname, accolades, accoladeAuthor, accoladeLink, accoladeSource, team, number, position, feet, inches, meters, kg, lbs, years, born, from, debut, latest1, latest1Title, latest2, latest2Title, latest3, latest3Title, latest4, latest4Title, latest5, latest5Title, latest6, latest6Title, statsId, highschool, college, rookie, offHigh, doc, defHigh, videoId, videoIdTitle, careerHigh}){
+export default function ProfileSummary({docTitle, defHighTitle, careerHighTitle, highSchool,highSchoolTitle, doc1, defHigh1, assistOffTitle, signatureMove, signatureMove1, offHigh1,assistOff, name, lastname, accolades, accoladeAuthor, accoladeLink, accoladeSource, team, number, position, feet, inches, meters, kg, lbs, years, born, from, debut, latest1, latest1Title, latest2, latest2Title, latest3, latest3Title, latest4, latest4Title, latest5, latest5Title, latest6, latest6Title, statsId, highschool, college, college1,collegeTitle, rookie, offHigh, doc, defHigh, videoId, videoIdTitle, rookieOff, rookieOffTitle,careerHigh,offHighTitle}){
  return<>
 <Head>
  
@@ -115,72 +113,85 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 
 <h3>Popular {lastname} Plays</h3>
-<div  id="highschool">
- 
- <Play 
- image=""
- title="Highschool" 
- name="The Genesis" >
-</Play>
-<section className="hsContainer">
+<section className="sectionContainer">
+<Label label="Highschool"/><br/>
+<Youtubehooks videoIdA={highSchool} videoIdB={college1}/>
+<Title title={highSchoolTitle}/>
 
 </section>
+
+
+
+<section className="sectionContainer">
+<Label label="College"/><br/>
+<Youtubehooks videoIdA={college} videoIdB={college1}/>
+<Title title={collegeTitle}/>
+</section>
+
+
+<section className="sectionContainer">
+<Label label="Draft Day"/><br/>
+<Youtubehooks videoIdA={videoId} />
+<Title title={videoIdTitle}/>
+</section>
+
+
+<section className="sectionContainer">
+<Label label="Rookie"/><br/>
+<Youtubehooks videoIdA={rookieOff} />
+<Title title={rookieOffTitle}/>
+</section>
+
+<section className="sectionContainer">
+<Label label="Offense Highlights"/><br/>
+<Youtubehooks videoIdA={offHigh} videoIdB={offHigh1} />
+<Title title={offHighTitle}/>
+</section>
+
+<section>
+<Label label="Passing Skills"/><br/>
+<Youtubehooks videoIdA={assistOff} />
+<Title title={assistOffTitle}/>
+</section>
+
+<section className="sectionContainer">
+<Label label="Blueprint"/><br/>
+<Youtubehooks videoIdA={signatureMove} videoIdB={signatureMove1} />
+<Title title={offHighTitle}/>
+</section>
+
+<section className="sectionContainer">
+<Label label="careerHigh"/><br/>
+<Youtubehooks videoIdA={careerHigh} videoIdB={signatureMove1} />
+<Title title={careerHighTitle}/>
+</section>
+
+<section className="sectionContainer">
+<Label label="Defense"/><br/>
+<Youtubehooks videoIdA={defHigh} videoIdB={defHigh1} />
+<Title title={defHighTitle}/>
+</section>
+
+<section className="sectionContainer">
+<Label label="Documentary"/><br/>
+<Youtubehooks videoIdA={doc} videoIdB={doc1} />
+<Title title={docTitle}/>
+</section><br/>
+ 
+
+
+ 
+
+
+
+
+
+
 </div>
 
+ 
 
-
-
-<div>
- <Play image="" title="College" name="Growth" >
-</Play>
-</div>
-
-
-
-    <div>
-      <Sectiontitle title="Draft Day"/><br/>
-    
-      
-      <Video videoId={videoId}/>
-      <Title title={ videoIdTitle}/>
-      
-      
-      
-      </div><br/>
-
-<div>
- <Play image="" title="Rookie Season" name="First Years" >
- </Play>
-
-</div>
-
-
-
-<div>
- <Play image="" title="Career High" name="High Performances" >
- </Play>
-
-</div>
-
-
-
-
-
-
-</div>
-
-<div>
- <Play image="" title="Defense Mixtape" name="LockDown" >
- </Play>
-
-</div>
-
-
-<div>
- <Play image="" title="Documentary" name="Stories" >
- </Play>
-
-</div><br/>
+ 
 
 
 
@@ -356,7 +367,7 @@ margin-bottom: 3rem;
  padding: 0.75rem 1.313rem;
  background: transparent;
 }
-
+ 
 
     `}
 </style>
