@@ -97,7 +97,6 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 <a href={`https://stats.nba.com/player/${statsId}/`}>
 <div className="statContainer">	 
 <Label  label="numbers" />	 
-<Sectiontitle  title="NBA Advanced Stats" /><br/> 
 <div className="statLabel"> 
 <span className="statsPointer"> points | assists | reb | steals... </span></div>
 </div></a></div> 
