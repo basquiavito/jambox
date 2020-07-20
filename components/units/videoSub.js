@@ -1,4 +1,4 @@
-import Blacklabel from './blacklabel'
+import Blacklabel from './blackLabel'
 import Title from './title'
  
 import Authordate from './authordate'
