@@ -1,21 +1,28 @@
 import Head from 'next/head'
- import Headlines from '../components/units/headlines'
+import Headlines from '../components/units/headlines'
+import Coderow from '../components/units/coderow'
 export default function Home() {
   return <>
-    <div className="container">
+    <div id="container">
       <Head>
         <title>Home</title>
     
       </Head>
 <div id="">
-  <div className="pageGrid">
-    <div className="gridCenter">
-    <Headlines/>
-    </div>
-  </div>
+<div className="pageGrid">
+<div className="gridCenter">
+<Headlines/>
+</div>  </div></div><br/>
 
-</div>
-
+<div id="charts">
+<div className="pageGrid">
+<div className="gridCenter">
+<Coderow rank="1" codeTitle="Lamelo Ball beastin" hoopcodes="013 013 180" />
+<Coderow rank="2" codeTitle="Lamelo Ball beastin" hoopcodes="013 013 180" />
+<Coderow rank="3" codeTitle="Lamelo Ball beastin" hoopcodes="013 013 180" />
+<Coderow rank="4" codeTitle="Lamelo Ball beastin" hoopcodes="013 013 180" />
+<Coderow rank="5" codeTitle="Lamelo Ball beastin" hoopcodes="013 013 180" />
+</div></div></div>
 
 
 
