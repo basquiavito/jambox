@@ -64,14 +64,14 @@
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    grid-column: 2 / span 5;
+    grid-column: 2 / span 8;
 }
 
 .coverAndTitleAndRole{
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    grid-column: 2 / span 5;
+    grid-column: 2 / span 8;
 
 }
 .cover{

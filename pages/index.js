@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Headlines from '../components/units/headlines'
-import Coderow from '../components/units/coderow'
+import Charts from '../components/units/charts'
 export default function Home() {
   return <>
     <div id="container">
@@ -17,11 +17,7 @@ export default function Home() {
 <div id="charts">
 <div className="pageGrid">
 <div className="gridCenter">
-<Coderow rank="1" codeTitle="Lamelo Ball beastin" hoopcodes="013 013 180" />
-<Coderow rank="2" codeTitle="Lamelo Ball beastin" hoopcodes="013 013 180" />
-<Coderow rank="3" codeTitle="Lamelo Ball beastin" hoopcodes="013 013 180" />
-<Coderow rank="4" codeTitle="Lamelo Ball beastin" hoopcodes="013 013 180" />
-<Coderow rank="5" codeTitle="Lamelo Ball beastin" hoopcodes="013 013 180" />
+<Charts />
 </div></div></div>
 
 
