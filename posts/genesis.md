@@ -9,7 +9,7 @@ Dribbling has changed drastically in last 20 years. Today players are more flash
 The basic of dribbling, at it lowest level of mastery, involves only a **bounce** dribble. A bounce up and down of the ball. This is the first element of the array of foot movements.
 
  ##  List of Movements
- -  Bounce
+ -  0 [Bounce] [ballwork]
  - Crossover
  - Behind
  - Between
@@ -17,10 +17,12 @@ The basic of dribbling, at it lowest level of mastery, involves only a **bounce*
  - In and Out
  - Shammgod
 
- This is a link [details] [ballwork]
-
+ 
+ok
  [ballwork]:  https://hoopscript.vercel.app
 
  ![Dion Waiters](/dwaitersDef.png)
 
 Footnote inside parragraph. ^[This is a footnote]
+
+[bounce] : https://hoopscript.vercel.app

@@ -1,42 +1,48 @@
 import Head from 'next/head'
- 
+ import Headlines from '../components/units/headlines'
 export default function Home() {
-  return (
+  return <>
     <div className="container">
       <Head>
-        <title>Hoopscript</title>
+        <title>Home</title>
     
       </Head>
- <div className="pretend">
-      <h2>Home sweet Home</h2>
-      <p>La NBA esta de regreso. Bienvenido a Jambox</p>
-
-      <h2>Jambox es vida</h2>
-      <p>Jambox provee todo lo que necesitas para crecer como baloncetista.
-        Ya sea como jugador o como aficionado.
-      </p>
-
-      <h2>
-        Movimientos
-      </h2>
-
-      <p>Los pies y el balon son los elementos principales del dribling. Vamos a familiarizarnos con su contenido.</p>
-
-      <footer>Footer klo</footer></div>
-      <style jsx>
-        {`
-        .pretend {
-          display: block;
-          margin: 5%;
-          font-family: sans-serif;
-          font-size: 14px;
-          font-display: swap;
-        }
-        
-        
-        
-        `}
-      </style>
+<div id="">
+  <div className="pageGrid">
+    <div className="gridCenter">
+    <Headlines/>
     </div>
-  )
+  </div>
+
+</div>
+
+
+
+
+     
+      </div>
+        
+     <style jsx>
+
+
+
+       {`
+       
+       .pageGrid{
+        display: grid;
+        -webkit-box-pack: center;
+        justify-content: center;
+        grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
+        grid-row-gap: 30px;
+    
+    }
+       .gridCenter{
+          grid-column: center-start / center-end;
+       }
+       
+       
+       
+       `}
+     </style>
+  </>
 }

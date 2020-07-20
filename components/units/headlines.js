@@ -31,6 +31,21 @@ export default function headlines(){
 
     </a></Link>
 
+
+<style jsx>
+{`
+   a {
+       text-decoration: none;
+       color: #000;
+   } 
+    
+    
+    
+    
+    
+    `}
+</style>
+
     </>
 
 }

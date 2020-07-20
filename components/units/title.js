@@ -11,7 +11,7 @@ export default function title(props){
 
 <style jsx>{`
 .editorialTitle{
-    font-size: 2.25rem;
+    font-size: 1.25rem;
  
  
                }
