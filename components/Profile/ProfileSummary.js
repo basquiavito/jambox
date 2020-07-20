@@ -98,14 +98,15 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
    
    />
    </section>
-   <div>
-<div className="pageGrid">
+   <div className="statContainer">
+     <div className="pageGrid">
 <div className="gridCenter">
-  <Sectionsubtitle subtitle="tweets"/>
-<Twitter token={twitterToken}/>
+<a href={`https://stats.nba.com/player/${statsId}/`}>
+ <Blacklabel  label="numbers" /> <br/>	 
+<div className="statLabel"> 
+<span className="statsPointer"> points | assists | reb | steals... </span></div>
+ </a></div></div></div> 
 
-
-</div></div></div>
    <section>
    <Label label = "Offense + Passing + Defense" />
    <Mixtape 
@@ -122,16 +123,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
      </div></div></div>
 
 
-     <div id="stats">
-     <div className="pageGrid">
-<div className="gridCenter">
-<a href={`https://stats.nba.com/player/${statsId}/`}>
-<div className="statContainer">	 
-<Blacklabel  label="numbers" /> <br/>	 
-
-<div className="statLabel"> 
-<span className="statsPointer"> points | assists | reb | steals... </span></div>
-</div></a></div></div></div> 
+   
  
    
 
@@ -148,6 +140,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
   justify-content: center;
   grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
   grid-row-gap: 30px;}
+
   blockquote p{
     color: #333;
     line-height: 1.69em;
@@ -173,13 +166,14 @@ margin:0;
  }
 
  .statContainer{
-  text-align: center;
+
   grid-column: center-start / center-end;
-margin-top: 1rem;
+margin-top: 2.5rem;
+margin-bottom: 2.5rem;
 background-color:rgb(18 18 18); 
 padding: 1em;
-margin-top: 3rem;
-margin-bottom: 3rem;
+ 
+ 
 
 
 

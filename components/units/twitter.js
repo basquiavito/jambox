@@ -24,7 +24,7 @@ tweetId={props.token}
        
         padding-bottom: 1rem;
         margin-bottom: 3rem;
-        position: static;
+   
     visibility: visible;
     display: block;
     transform: rotate(0deg);

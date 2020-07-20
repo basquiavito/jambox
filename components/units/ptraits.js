@@ -169,6 +169,7 @@ const abbr = {
   margin-top: 20px;
   color:#fff;
  
+ 
 }
 
 .menu {
