@@ -7,6 +7,7 @@ return(
         <>
 
  <div  className="pageGridFull">
+         <picture></picture>
 <div className="imageContainer" data-visible="true">
 <noscript>{props.mediaUrl}</noscript>
 </div>
