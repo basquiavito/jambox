@@ -3,14 +3,18 @@ import Title from './title'
 import Authordate from './authordate'
 import ImageHolder from './imageHolder'
 import Link from 'next/link'
+import Dekk from './dekk'
+import Maintitle from './maintitle'
+
 
 export default function headlines(){
     return <>
 <Link href=""><a>
 <Label label="Headlines"/>
-
+<Maintitle title="He called Headie One “the best drill artist in the world” in a press release."/>
+<Dekk dekk="Luka doncic es uno de los mas versatiles jugadores que la NBA ha tenido en los ultimos 20 anos."/>
 <ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/luka.jpeg"/>
-<Title title="Genius Presents: The Month In Lyrics (May 2020)"/>
+ 
 <Authordate author="Monte Williams" date="06/20/20"/>
 
     </a></Link>

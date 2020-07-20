@@ -7,11 +7,16 @@ import Sectiontitle from '../components/units/sectiontitle'
 import Sectionsubtitle from '../components/units/sectionsubtitle'
 export default function Home() {
   return <>
-    <div id="container">
+
+ 
       <Head>
         <title>Home</title>
-    
+      
+  <link rel="stylesheet" href="/static/index.css" media="print" onload="this.media='all'"/>
+
+ 
       </Head>
+      <div id="container">
 <div id="">
 <div className="pageGrid">
 <div className="gridCenter">
