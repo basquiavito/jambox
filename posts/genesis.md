@@ -1,11 +1,26 @@
 ---
-title: 'Dribbling: The Mystery Behind A Bucket'
-date: '2020-07-17'
+title: 'Introduction to Dribbling'
+date: '2020-07-20'
+
 ---
+# Dribbling Concepts
+Dribbling has changed drastically in last 20 years. Today players are more flashy and athletics. Nonetheless, **Fundamentals** are the same as the 80s, because they are timeless. The *Fadeaway* that [MJ pattented] is timeless. The [Allen Iverson] **Crossover** is timeless. The **U-tep two steps** from [Tim hardway] is timeless. Many more movements are going to be test again in the years to come but certain movements never change.
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+The basic of dribbling, at it lowest level of mastery, involves only a **bounce** dribble. A bounce up and down of the ball. This is the first element of the array of foot movements.
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+ ##  List of Movements
+ -  Bounce
+ - Crossover
+ - Behind
+ - Between
+ - Reverse
+ - In and Out
+ - Shammgod
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+ This is a link [details] [ballwork]
+
+ [ballwork]:  https://hoopscript.vercel.app
+
+ ![Dion Waiters](/dwaitersDef.png)
+
+Footnote inside parragraph. ^[This is a footnote]
