@@ -12,8 +12,8 @@ return (
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <link rel="stylesheet" href="/static/index.css" media="print" onload="this.media='all'"/>
-
+  
+  <link rel="stylesheet" href="/static/index.css"/>
  
 <title>Basketball's News, Plays, Profiles & Articles | Hoopscript</title>
         </Head>
