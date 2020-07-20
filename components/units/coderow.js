@@ -34,6 +34,8 @@
 .pageGridFull {
     grid-column: grid-start / grid-end;
 }
+
+ 
 .chartMobileRow
 {
 
@@ -86,7 +88,7 @@
 
 }
 .sizeImageConainer{
-    background-image: url('https://s3.amazonaws.com/pedales.net/mikescott.png')
+    background-image: url(${props.image})
 }
 .titleAndPlayer{
     margin-left: 1.5rem;

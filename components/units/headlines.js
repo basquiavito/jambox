@@ -9,7 +9,7 @@ export default function headlines(){
 <Link href=""><a>
 <Label label="Hoopcodes"/>
 
-<ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/BenSimHighschool.png"/>
+<ImageHolder mediaUrl="/adCareerHigh.webp"/>
 <Title title="Genius Presents: The Month In Lyrics (May 2020)"/>
 <Authordate author="Monte Williams" date="06/20/20"/>
 
@@ -17,7 +17,7 @@ export default function headlines(){
 
 <Link href=""><a>
 <Label label="Prime"/>
-<ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/>
+<ImageHolder mediaUrl="ljrookie.webp"/>
 <Title title="What’s Up Next: Here’s Every Album Dropping In June"/>
 <Authordate author="Jay Flemmings" date="06/14/20"/>
 
@@ -25,7 +25,7 @@ export default function headlines(){
 
     <Link href=""><a>
 <Label label="Prime"/>
-<ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/>
+<ImageHolder mediaUrl="harrisRookie.webp"/>
 <Title title="What’s Up Next: Here’s Every Album Dropping In June"/>
 <Authordate author="Jay Flemmings" date="06/14/20"/>
 
