@@ -7,7 +7,7 @@ import Link from 'next/link'
 export default function headlines(){
     return <>
 <Link href=""><a>
-<Label label="Hoopcodes"/>
+<Label label="Headlines"/>
 
 <ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/luka.jpeg"/>
 <Title title="Genius Presents: The Month In Lyrics (May 2020)"/>

@@ -8,8 +8,8 @@ function Sectionsubitle(props){
 </h2>
 <style jsx>{`
 .sectionsubTitleContainer{
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+  
+ 
     text-align: center;
     grid-column: center-start / center-end;
 }
@@ -21,14 +21,12 @@ function Sectionsubitle(props){
     text-transform: uppercase;
    color: #d00;
 
-   padding-top: 15px
+ 
    
 }
 
 
-.sectionsubTitleContainer{
-    line-height: 1.45;
-}
+ 
 
 
 

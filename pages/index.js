@@ -3,7 +3,8 @@ import Headlines from '../components/units/headlines'
 import Charts from '../components/units/charts'
 import Homevideo from '../components/units/homevideo'
 import Videosub from '../components/units/videoSub'
-
+import Sectiontitle from '../components/units/sectiontitle'
+import Sectionsubtitle from '../components/units/sectionsubtitle'
 export default function Home() {
   return <>
     <div id="container">
@@ -23,6 +24,8 @@ export default function Home() {
 <div id="charts">
 <div className="pageGrid">
 <div className="gridCenter">
+<Sectiontitle title="Hoopcodes" />
+  <Sectionsubtitle subtitle = "Codes of the week" />
 <Charts />
 </div></div></div>
      
@@ -32,6 +35,15 @@ export default function Home() {
 <div className="gridCenter">
 <Homevideo/>
 <Videosub/>
+</div></div></div>
+
+<div id="Top Ten">
+<div className="pageGrid">
+<div className="gridCenter">
+<Sectiontitle title="Now" />
+  <Sectionsubtitle subtitle = "Latest Plays" />
+<Charts />
+ 
 </div></div></div>
 
 
