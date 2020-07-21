@@ -39,8 +39,7 @@ a {
     text-decoration: none;
 }
 .logoLink h1{
-    height: 29px;
-    top: 4px;
+  
     color: #fff;
 }
  

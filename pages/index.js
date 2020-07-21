@@ -5,6 +5,7 @@ import Homevideo from '../components/units/homevideo'
 import Videosub from '../components/units/videoSub'
 import Sectiontitle from '../components/units/sectiontitle'
 import Sectionsubtitle from '../components/units/sectionsubtitle'
+
 export default function Home() {
   return <>
 <Head>
@@ -12,10 +13,15 @@ export default function Home() {
 
 </Head>
 <div id="container">
-<div id="">
+
+
+<div id="featured">
 <div className="pageGrid">
 <div className="gridCenter">
-<Headlines/>
+  <div className="editorialPlacementContainer">
+  <Headlines/>
+  </div>
+
 </div>  </div></div><br/>
 
 
@@ -54,7 +60,11 @@ export default function Home() {
 
 
        {`
+#featured {
+  background-color: rgb(255, 255, 255);
+  padding: 2.25rem 0px 0px;
 
+}
        #video {
 
         background-color: rgb(18, 18, 18);
@@ -75,7 +85,13 @@ export default function Home() {
           grid-column: center-start / center-end;
        }
        
-       
+       .editorialPlacementContainer{
+        color: rgb(0, 0, 0);
+        font-weight: 100;
+        line-height: 1.125;
+        height: 100%;
+        min-height: inherit;
+       }
        
        `}
      </style>

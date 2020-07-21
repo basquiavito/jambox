@@ -9,15 +9,19 @@ import Maintitle from './maintitle'
 
 export default function headlines(){
     return <>
-<Link href=""><a>
+<Link href=""><a className="editorialPlacementLink">
+<div className="editorialPlacementHeader">
 <Label label="Headlines"/>
-<Maintitle title="He called Headie One “the best drill artist in the world” in a press release."/>
+<Maintitle title="Drake Links Up With Headie One For His Latest UK Drill Song “Only You Freestyle”"/>
 <Dekk dekk="Luka doncic es uno de los mas versatiles jugadores que la NBA ha tenido en los ultimos 20 anos."/>
+<Authordate author="Monte Williams" date="06/20/20"/>
 <ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/luka.jpeg"/>
  
-<Authordate author="Monte Williams" date="06/20/20"/>
 
-    </a></Link>
+
+</div></a></Link>
+
+    
 
 <Link href=""><a>
 <Label label="Prime"/>
@@ -43,9 +47,21 @@ export default function headlines(){
        color: #000;
    } 
     
+   .pageGridFull{
+    grid-column: grid-start / grid-end;
+   }
     
-    
-    
+    .editorialPlacementLink{
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        min-height: inherit; 
+    }
+
+    .editorialPlacementHeader{
+        margin-bottom: 1rem; 
+    }
     
     `}
 </style>

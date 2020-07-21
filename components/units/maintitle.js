@@ -10,8 +10,8 @@ export default function mainTitle(props){
    <style jsx>{`
    .editorialTitle{
     margin-top: 1rem;
-     font-family: san-serif;
-       font-size: 2.25rem;
+    font-size: 1.5rem;
+
  
     
                   }
@@ -19,6 +19,7 @@ export default function mainTitle(props){
     
    .editorialTitle h2{
        display: inline;
+       font-weight: 400;
                      }
                `}</style>
           

@@ -1,6 +1,4 @@
-import React from 'react'
-
-function Sectionsubitle(props){
+export default function Sectionsubitle(props){
     return(
 <div className="sectionsubTitleContainer">
 <h2 className="sectionsubTitle">
@@ -19,7 +17,9 @@ function Sectionsubitle(props){
     line-height: 1;
     letter-spacing: 1px;
     text-transform: uppercase;
-   color: #d00;
+   color: #00788C;
+   margin-bottom: 2rem;
+ 
 
  
    
@@ -36,4 +36,4 @@ function Sectionsubitle(props){
         </div>
     )
 }
-export default Sectionsubitle
+ 

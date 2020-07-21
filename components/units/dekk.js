@@ -7,6 +7,7 @@ return(
 <style jsx>
 {`.editorialDekk{
     margin-top: 0.5rem;
+   margin-bottom: 0.5rem;
     }
 
 
