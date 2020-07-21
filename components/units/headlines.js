@@ -9,7 +9,7 @@ import Maintitle from './maintitle'
 
 export default function headlines(){
     return <>
-<Link href=""><a className="editorialPlacementLink">
+<Link href="/posts/exodus"><a className="editorialPlacementLink">
 <div className="editorialPlacementHeader">
 <Label label="Headlines"/>
 <Maintitle title="Drake Links Up With Headie One For His Latest UK Drill Song “Only You Freestyle”"/>
@@ -23,7 +23,7 @@ export default function headlines(){
 
     
 
-<Link href=""><a>
+<Link href="/posts/genesis"><a>
 <Label label="Prime"/>
 <ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/kobewallace.jpg"/>
 <Title title="What’s Up Next: Here’s Every Album Dropping In June"/>
@@ -31,7 +31,7 @@ export default function headlines(){
 
     </a></Link>
 
-    <Link href=""><a>
+    <Link href="/posts/matrix"><a>
 <Label label="Prime"/>
 <ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/>
 <Title title="What’s Up Next: Here’s Every Album Dropping In June"/>
