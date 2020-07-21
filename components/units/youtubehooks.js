@@ -55,7 +55,7 @@ next
 button {
  
     width:100px; 
-     color:#000; ;
+     color:#fff; ;
      overflow-wrap: break-word;
      word-break: break-word;
      background-color: transparent;
