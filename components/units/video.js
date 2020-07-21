@@ -6,15 +6,32 @@ const video = (props) => (
   <>
  <LazyLoad>
 
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/lOgxQ8xK-QU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     
  
 
+ <Embed
+ 
+ id={props.videoId}
+ placeholder={`http://i.ytimg.com/vi/${props.videoId}/hqdefault.jpg`}
+ source='youtube'
+icon='disabled'
+aspectRatio='4:3'
+ 
 
+ autoplay={false}
+ color="black"
+ iframe={{
+ allowFullScreen: true,
+ style: {
+   padding: 10,
+   width: '300px',
+   height: '200px'
+ }
   
 
- 
- 
- 
+   }
+ }
+/>   
 
 
  </LazyLoad>
