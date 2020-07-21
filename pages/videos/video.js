@@ -15,7 +15,7 @@ const style= {
 
  
  
-export default function Video1(){
+export default function MainVideo(){
     return<>
 <Head>
 <title>Codes</title>
