@@ -3,7 +3,9 @@ import LazyLoad from 'react-lazy-load';
 import Head from 'next/head'
 import Link from 'next/link'
 
-
+const style= {
+    backgroundColor:'#000'
+}
 
 
  
@@ -14,9 +16,9 @@ export default function CodeVideos(){
    
 
 
-<div id="codeHouse">
+<div style={style} id="codeHouse">
    
-<div>
+<div id="videoOnTop">
     <div className="pageGrid">
         <div className="gridCenter">
         <LazyLoad>
@@ -148,7 +150,10 @@ Ma man, he knows that if i get there...haaa</div>
 
 <style jsx>
 {`
+#videoOnTop{
+    margin-top: 2px;
 
+}
 
 .pageGrid{
     display: grid;
@@ -211,7 +216,7 @@ h1 {
     font-size: 24px;
     line-height: 1.1;
     margin: 15px 0;
-    color: #000;
+    color: #fff;
     font-family: 'Arial', sans-serif;
 }
   p {
@@ -297,7 +302,7 @@ div.videoMeta {
     padding-top: 10px;
     padding-bottom: 20px;
     padding-left: 20px;
-    color: #000;
+    color: #fff;
     font-style: normal;
     font-family: 'Arial';
 }

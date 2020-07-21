@@ -264,10 +264,15 @@ class YouTube extends React.Component {
           #youcontainer {
             display: grid;
             justify-content: center;
-              width: 300px;
-              height:168.75px;
-    
+            width: 465px;
         }
+
+        @media screen and (max-width: 519px) and (max-width: 767px) and (min-width: 320px){
+          #youcontainer {
+            width: 300px;
+            height:168.75px;
+  
+          }}
           .wholeContainer {
 
               display: grid;
