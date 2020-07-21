@@ -12,7 +12,7 @@ import MediaUrlFull from './mediaUrlFull'
 export default function videoSub(){
     return<>
 <section>
-    <Link href="/videos/video1"><a>
+    <Link href="/videos/video1"><a className="linkContainer">
     <Blacklabel label="Hoopcodes"/>
 <MediaUrlFull mediaUrl=" https://s3.amazonaws.com/pedales.net/luka.jpeg" />
 <Title title="MJ vs Kobe: Who got the best fadeaway ever? "/>
@@ -42,5 +42,23 @@ export default function videoSub(){
 </Link>
 
 </section>
+
+<style jsx>
+{`
+ 
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+`}
+</style>
+
+
+
     </>
 }

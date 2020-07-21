@@ -16,13 +16,13 @@ export default function Homevideo(){
  
 <Title title="MJ vs Kobe: Who got the best fadeaway ever?"/>
 <Dekk dekk="Genius News took a look at the evolution of Kid Cudi's sound"/>
-<Authordate author="Franqui Clemons" date="Jul 20, 2020" /></a></Link>
+<Authordate author="Franqui Clemons" date="Jul 20, 2020" />
 <MediaUrlFull mediaUrl=" https://s3.amazonaws.com/pedales.net/luka.jpeg"/>
 
-
+</a></Link>
  <style jsx>
 {`
-a {
+a{
     color: #fff;
     text-decoration: none;
 }
