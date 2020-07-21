@@ -1,8 +1,7 @@
-import Youtubehooks from '../components/units/youtubehooks'
-import LazyLoad from 'react-lazy-load';
+ 
 import Head from 'next/head'
 import Link from 'next/link'
-
+import Video from '../components/units/video'
 const style= {
     backgroundColor:'#000'
 }
@@ -21,9 +20,9 @@ export default function CodeVideos(){
 <div id="videoOnTop">
     <div className="pageGrid">
         <div className="gridCenter">
-        <LazyLoad>
-    <Youtubehooks videoIdA='C977RCbuqFk' videoIdB='gaMMnn1o5gA'/>
-    </LazyLoad>
+    
+   <Video videoId='C977RCbuqFk' />
+ 
         </div>
     </div>
     
