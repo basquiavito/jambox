@@ -5,7 +5,7 @@ import Homevideo from '../components/units/homevideo'
 import Videosub from '../components/units/videoSub'
 import Sectiontitle from '../components/units/sectiontitle'
 import Sectionsubtitle from '../components/units/sectionsubtitle'
-
+import CodeCharts from '../components/units/codesChart'
 export default function Home() {
   return <>
 <Head>
@@ -32,7 +32,7 @@ export default function Home() {
 <div className="gridCenter">
 <Sectiontitle title="Hoopcodes" />
   <Sectionsubtitle subtitle = "Codes of the week" />
-<Charts />
+<CodeCharts />
 </div></div></div>
      
 
