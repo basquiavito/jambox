@@ -5,7 +5,10 @@ import { Embed } from 'semantic-ui-react'
 const video = (props) => (
   <>
  <LazyLoad>
+
+     
  
+
  <Embed
  
  id={props.videoId}
@@ -13,7 +16,7 @@ const video = (props) => (
  source='youtube'
 icon='disabled'
 aspectRatio='4:3'
-width='300px'
+ 
 
  autoplay={false}
  color="black"
@@ -21,6 +24,8 @@ width='300px'
  allowFullScreen: true,
  style: {
    padding: 10,
+   width: '300px',
+   height: '200px'
  }
   
 
@@ -28,7 +33,7 @@ width='300px'
  }
 />   
 
- 
+
  </LazyLoad>
   
   </>

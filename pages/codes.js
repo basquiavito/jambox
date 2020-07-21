@@ -11,7 +11,7 @@ const style= {
     backgroundColor:'#000'
 }
 
-
+ 
  
 export default function CodeVideos(){
     return<>
@@ -20,12 +20,7 @@ export default function CodeVideos(){
 </Head>
    
 <div style={style}>
-<section className="videoContainer">
-<div className="pageGrid">
-<div className="gridCenter">
-<Video videoId="lOgxQ8xK-QU"/>
-</div></div>
-</section>
+
   
  
  
@@ -33,6 +28,7 @@ export default function CodeVideos(){
 <section className='videoInfoLandmark' role='region' arial-label='video info' tabIndex='-1'>
 <div className="pageGrid">
 <div className="gridCenter">
+<Video videoId="lOgxQ8xK-QU" />
 <div className="videoInfoPanel">
 
 <VideoCategories />

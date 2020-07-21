@@ -67,7 +67,7 @@ export default function VideoCategory(){
         transition: none;
         display: inline-block;
         color: #0096ff;
-        font-weight: bold;
+        font-weight: bold;}
          
   
     

@@ -26,6 +26,7 @@ export default function VideoMetaTitlePlusRelease(){
         {`
         videoMeta{
             font-family: georgia, serif;
+            msrgin-bottom: 2rem;
         }
         @media screen and (max-width: 767px) and (min-width: 320px){
         .videoMeta{
