@@ -6,6 +6,9 @@ import Videosub from '../components/units/videoSub'
 import Sectiontitle from '../components/units/sectiontitle'
 import Sectionsubtitle from '../components/units/sectionsubtitle'
 import CodeCharts from '../components/units/codesChart'
+import BlackSectiontitle from '../components/units/blackSectionTitle'
+
+
 export default function Home() {
   return <>
 <Head>
@@ -31,7 +34,7 @@ export default function Home() {
 <div className="pageGrid">
 <div className="gridCenter">
 <Sectiontitle title="Hoopcodes" />
-  <Sectionsubtitle subtitle = "Codes of the week" />
+<Sectionsubtitle subtitle = "Codes of the week" />
 <CodeCharts />
 </div></div></div>
      
@@ -39,6 +42,8 @@ export default function Home() {
 <div id="video">
 <div className="pageGrid">
 <div className="gridCenter">
+<BlackSectiontitle title= "Versus" />
+<Sectionsubtitle subtitle= "Comparison" />
 <Homevideo/>
 <Videosub/>
 </div></div></div>
