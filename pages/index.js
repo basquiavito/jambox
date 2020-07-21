@@ -42,7 +42,7 @@ export default function Home() {
 <div id="video">
 <div className="pageGrid">
 <div className="gridCenter">
-<BlackSectiontitle title= "Versus" />
+<BlackSectiontitle title= "Versuz" />
 <Sectionsubtitle subtitle= "Comparison" />
 <Homevideo/>
 <Videosub/>
