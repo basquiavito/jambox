@@ -29,7 +29,7 @@ export default function Topheader(){
 
 <style jsx>
   {`
-  @media only screen and (max-width: 750px) and (min-width: 300px){
+  @media only screen and (max-width:3300px) and (min-width: 300px){
   #hsmain {
       width: 100%;
   }}
@@ -64,7 +64,7 @@ a:link {
 @media only screen and (max-width: 750px) and (min-width: 300px){
 span.pagetop {
     display: block;
-    margin: 10px 5px;
+    margin: 3px 5px;
     font-size: 12px;
 }}
 .pagetop {
@@ -79,7 +79,8 @@ span.pagetop b {
     font-size: 15px;
 }}
 .hsname {
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-bottom: 0.3rem;
 }
  
 b {
@@ -87,6 +88,10 @@ b {
 }
 .pagetop a:visited {
     color: #000000;
+}
+
+.pagetop > a {
+    margin-right: 2.3px;
 }
   `}  
 </style>
