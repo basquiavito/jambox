@@ -38,6 +38,7 @@ export default function Topheader(){
   @media only screen and (max-width:3300px) and (min-width: 300px){
   #hsmain {
       width: 100%;
+      margin-bottom: 1.2rem;
     
   }}
   tbody {

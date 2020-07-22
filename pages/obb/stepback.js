@@ -1,14 +1,11 @@
 import React, {Component} from 'react'
 import Sectiontitle from '../../components/units/sectiontitle'
 import Sectionsubtitle from '../../components/units/sectionsubtitle'
-import Title from '../../components/units/title'
-import Dekk from '../../components/units/dekk'
-import Authordate from '../../components/units/authordate'
-import Video from '../../components/units/video'
+ 
 import Mixtape from '../../components/units/mixtape'
-import Headlines from '../../components/units/headlines'
+ 
 import Link from 'next/link'
-import Obb from '../../components/units/obb'
+ 
 import Head from 'next/head'
 
 export default function Stepback() {
@@ -105,7 +102,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 <div className="pageGrid">
   <div className="gridCenter">
-    <Link href="/profile?_id=5ec9c4a2869eebd58664a641"><a><b>Damian Lillard</b></a></Link><br/>
+    <Link href=""><a><b>Damian Lillard</b></a></Link><br/>
 <Mixtape title="4. Damian Lillard Step Back Originals"
 
       latest1="d4x2fG4Cmdw"
