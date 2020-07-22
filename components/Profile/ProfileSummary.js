@@ -119,12 +119,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
    
    />
 
-<div id="twitter">
-<div className="pageGrid">
-<div className="gridCenter">
-<Sectionsubtitle subtitle="Tweet"/>
-<Twitter token={twitterToken}/>
- </div></div></div>
+
    </section>
   
      </div></div></div>
