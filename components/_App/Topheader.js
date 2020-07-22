@@ -3,7 +3,7 @@ const tableStyle = {padding: '2px'}
 const tdStyle = {width:'18px', paddingRight: '4px'}
 const tdAImg = { width:'18px', height: '18px', border: '1px solid black'}
 const td2ndStyle = { lineHeight: '12pt', height: '10px'}
-const td3rdStyle = {textALign: 'right', paddingRight: '4px'}
+const td3rdStyle = {textAlign: 'right', paddingRight: '4px'}
 
 
 export default function Topheader(){
@@ -20,7 +20,7 @@ export default function Topheader(){
 <b className="hsname"><Link href="/"><a >Hoopscript</a></Link></b> <Link href="/obb/obb"><a>hoopcodes</a></Link> | <Link href="/profiles/profiles"><a>profiles</a></Link> | <Link href="/blogs"><a>articles</a></Link> 
 </span></td>
 <td style={td3rdStyle}><span className="pagetop">
-<a href="login?goto=news">login</a>
+<Link href="/login"><a href="login?goto=news">login</a></Link>
 </span></td>
 </tr></tbody></table></td></tr></tbody></table>
 
@@ -31,6 +31,7 @@ export default function Topheader(){
   @media only screen and (max-width:3300px) and (min-width: 300px){
   #hsmain {
       width: 100%;
+    
   }}
   tbody {
     display: table-row-group;
