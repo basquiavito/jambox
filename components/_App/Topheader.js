@@ -14,11 +14,10 @@ export default function Topheader(){
 <tbody><tr>
 <td style={tdStyle}>
 <a href="https://hoopscript.vercel.app">
-<img style = {tdAImg} src="/basketball.svg" width="18" height="18" alt="H"/></a></td>
+<span  style = {tdAImg} className="" width="18" height="18" alt="H">H</span> </a></td>
 <td style={td2ndStyle}>
 <span className="pagetop">
-<b className="hsname"><Link href="/"><a >Hoopscript</a></Link></b>
-<Link href="/profiles/profiles"><a>profiles</a></Link> | <Link href="/blogs"><a href="front">articles</a></Link> | <a href="newcomments">comments</a> | <a href="ask">ask</a> | <a href="show">show</a> |  <a href="jobs">jobs</a> | <a href="submit">submit</a> 
+<b className="hsname"><Link href="/"><a >Hoopscript</a></Link></b> <Link href="/obb/obb"><a>hoopcodes</a></Link> | <Link href="/profiles/profiles"><a>profiles</a></Link> | <Link href="/blogs"><a>articles</a></Link> 
 </span></td>
 <td style={td3rdStyle}><span className="pagetop">
 <a href="login?goto=news">login</a>
@@ -80,7 +79,7 @@ span.pagetop b {
 }}
 .hsname {
     margin-right: 10px;
-    margin-bottom: 0.3rem;
+   margin-bottom: 0.2reml
 }
  
 b {

@@ -9,7 +9,7 @@ export default  function obb(f1){
  
 return(
 <>
-<Sectiontitle title="Hoopscript" />
+<Sectiontitle title="Hoopcodes" />
  <Sectionsubtitle subtitle="Student of the game"/><hr/>
 
  <div className="obbContainer">
