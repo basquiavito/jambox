@@ -22,17 +22,17 @@ tweetId={props.token}
     .twitter{
   
        
-        padding-bottom: 1rem;
+    
         margin-bottom: 3rem;
    
-    visibility: visible;
-    display: block;
-    transform: rotate(0deg);
-    max-width: 100%;
+ 
+ 
+ 
+ 
 
    
   
-    margin-bottom: 10px;
+    
     }
    
     `}
