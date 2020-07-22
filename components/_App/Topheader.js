@@ -1,4 +1,8 @@
 import Link from 'next/link'
+ 
+ 
+
+ 
 const tableStyle = {padding: '2px'}
 const tdStyle = {width:'18px', paddingRight: '4px'}
 const tdAImg = { width:'18px', height: '18px', border: '1px solid black'}
@@ -7,6 +11,9 @@ const td3rdStyle = {textAlign: 'right', paddingRight: '4px'}
 
 
 export default function Topheader(){
+ 
+ 
+ 
     return<>
 <table id="hsmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
 <tbody><tr><td bgcolor="#ffff64">
@@ -17,7 +24,7 @@ export default function Topheader(){
 <span  style = {tdAImg} className="" width="18" height="18" alt="H">H</span> </a></td>
 <td style={td2ndStyle}>
 <span className="pagetop">
-<b className="hsname"><Link href="/"><a >Hoopscript</a></Link></b> <Link href="/obb/obb"><a>hoopcodes</a></Link> | <Link href="/profiles/profiles"><a>profiles</a></Link> | <Link href="/blogs"><a>articles</a></Link> 
+<b className="hsname"><Link href="/" ><a >Hoopscript</a></Link></b> <Link href="/obb/obb"><a>hoopcodes</a></Link> | <Link href="/profiles/profiles"><a>profiles</a></Link> | <Link href="/blogs"><a>articles</a></Link> 
 </span></td>
 <td style={td3rdStyle}><span className="pagetop">
 <Link href="/login"><a href="login?goto=news">login</a></Link>
@@ -80,7 +87,7 @@ span.pagetop b {
 }}
 .hsname {
     margin-right: 10px;
-   margin-bottom: 0.2reml
+   margin-bottom: 0.3rem;
 }
  
 b {

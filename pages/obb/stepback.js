@@ -28,7 +28,8 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 <div className="pageGrid">
   <div className="gridCenter">
-<Title title="Popular Videos"/>
+ 
+<Link href="/profile?_id=5eca6fce4d4710fe7b1355f5"><a><b>James Harden</b></a></Link><br/>
 <Mixtape title="1. James Harden Step Back Maestro"
 
       latest1="IRHdf1uQZFw"
@@ -54,6 +55,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 <div className="pageGrid">
   <div className="gridCenter">
+    <Link href="/profile?_id=5eca75a376da3aa345506b58"><a><b>Luka Doncic</b></a></Link><br/>
    <Mixtape title="2. Luka Doncic Step Back Master"
       latest1="bC9o6hXDNuM"
       latest1Title="Luka Doncic best Step Back"
@@ -77,7 +79,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
   
 <div className="pageGrid">
   <div className="gridCenter">
-
+<Link href="/profile?_id=5eca72a3eb4f6704c20481be"><a><b>Stephen Curry</b></a></Link><br/>
      <Mixtape title="3. Steph Curry Smooth Step Back"
       latest1="0YCPDJoB25I"
       latest1Title="Every Stephen Curry Step-Back 3! (2016-2017)"
@@ -103,6 +105,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 <div className="pageGrid">
   <div className="gridCenter">
+    <Link href="/profile?_id=5ec9c4a2869eebd58664a641"><a><b>Damian Lillard</b></a></Link><br/>
 <Mixtape title="4. Damian Lillard Step Back Originals"
 
       latest1="d4x2fG4Cmdw"
@@ -132,6 +135,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 <div className="pageGrid">
   <div className="gridCenter">
+    <b>Derrick Rose</b><br/>
 <Mixtape title="5. D-Rose Deadliest Stepback Ever"
 
       latest1="Ri25xvLgp7w"
@@ -158,6 +162,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 <div className="pageGrid">
   <div className="gridCenter">
+    <b>Kemba Walker</b>
 <Mixtape title="6. Kemba Walker Stealth Step Back"
 
       latest1="e-grtu0r_lo"
@@ -185,6 +190,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 <div className="pageGrid">
   <div className="gridCenter">
+    <b>Kyrie Irving</b><br/>
 <Mixtape title="7. Kyrie Irving Finesse"
 
       latest1="xX3sdk0OC-c"
@@ -210,6 +216,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 <div className="pageGrid">
   <div className="gridCenter">
+    <b>Jimmy Butler</b>
 <Mixtape title="8. Jimmy Butler Raw (Crudo)"
 
       latest1="cijuPYONdBU"
@@ -238,6 +245,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 <div className="pageGrid">
   <div className="gridCenter">
+    <b>Manu Ginobli</b>
 <Mixtape title="Manu Ginobli Top-Notch"
 
       latest1="5JNr1O8QCZI"
@@ -267,6 +275,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 <div className="pageGrid">
   <div className="gridCenter">
+    <b>Michael Jordan</b>
 <Mixtape title="Step Back Mix --Legends"
 
       latest1="EKwKquEgn78"
