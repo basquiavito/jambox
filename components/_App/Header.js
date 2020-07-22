@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Link from 'next/link'
-import { slide as Menu } from 'react-burger-menu'
+ 
 
 
 export default class  Header extends Component{
