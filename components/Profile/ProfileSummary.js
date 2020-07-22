@@ -8,7 +8,7 @@ import Dekk from '../../components/units/dekk'
 import Ptraits from '../../components/units/ptraits'
 import Mixtape  from '../units/mixtape'
 import Play from '../units/play'
- 
+import Bio from '../../components/units/bio'
 import Authordate from '../units/authordate'
 import Head from 'next/head'
 import Video from '../../components/units/video'
@@ -16,7 +16,7 @@ import Blacklabel from '../../components/units/blackLabel'
 import FromDaGram from '../../components/units/fromDaGram'
 import Twitter from '../units/twitter'
 
-export default function ProfileSummary({twitterToken, offHigh1Title, gram, careerHigh1, careerHigh1Title, college1Title, highSchool1, highSchool1Title, docTitle, defHighTitle, careerHighTitle, highSchool,highSchoolTitle, highSchoolAuthor, highSchoolDekk,highSchoolDate, doc1, defHigh1, assistOffTitle, signatureMove, signatureMove1, offHigh1,assistOff, name, lastname, accolades, accoladeAuthor, accoladeLink, accoladeSource, team, number, position, feet, inches, meters, kg, lbs, years, born, from, debut, latest1, latest1Title, latest2, latest2Title, latest3, latest3Title, latest4, latest4Title, latest5, latest5Title, latest6, latest6Title, statsId, highschool, college, college1,collegeTitle, rookie, offHigh, doc, defHigh, videoId, videoIdTitle, rookieOff, rookieOffTitle,careerHigh,offHighTitle}){
+export default function ProfileSummary({wikiLink, query,twitterToken, offHigh1Title, gram, careerHigh1, careerHigh1Title, college1Title, highSchool1, highSchool1Title, docTitle, defHighTitle, careerHighTitle, highSchool,highSchoolTitle, highSchoolAuthor, highSchoolDekk,highSchoolDate, doc1, defHigh1, assistOffTitle, signatureMove, signatureMove1, offHigh1,assistOff, name, lastname, accolades, accoladeAuthor, accoladeLink, accoladeSource, team, number, position, feet, inches, meters, kg, lbs, years, born, from, debut, latest1, latest1Title, latest2, latest2Title, latest3, latest3Title, latest4, latest4Title, latest5, latest5Title, latest6, latest6Title, statsId, highschool, college, college1,collegeTitle, rookie, offHigh, doc, defHigh, videoId, videoIdTitle, rookieOff, rookieOffTitle,careerHigh,offHighTitle}){
  return<>
 <Head>
  
@@ -77,13 +77,16 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
    latest6={latest6}
    latest6Title={latest6Title}
 
-   /> </section>
-<div id="gram">
-<div className="pageGrid">
-<div className="gridCenter">
-<Sectionsubtitle subtitle="Gram"/>
-<FromDaGram gram={gram}/>
- </div></div></div>
+   /> </section><br/><br/>
+
+<div>    <Link href={`${wikiLink}`}><a><Bio query={query}/></a></Link>
+
+
+</div>
+
+
+
+
 
 
    <section>
@@ -119,6 +122,14 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
    
    />
 
+<div>
+<div id="gram">
+<div className="pageGrid">
+<div className="gridCenter">
+<Sectionsubtitle subtitle="Gram"/>
+<FromDaGram gram={gram}/>
+ </div></div></div>
+</div>
 
    </section>
   
@@ -162,7 +173,9 @@ margin:0;
 }
 
 
-
+a:visited {
+  color: black;
+}
  .gridCenter{
     grid-column: center-start / center-end;
  }

@@ -1,10 +1,6 @@
- 
+import ReactDOM from "react-dom";
 import React, { useState, useEffect } from "react";
-import Sectiontitle from './sectiontitle'
-import Link from 'next/link'
-
-
-
+import SectionTitle from './sectionTitle'
 const Bio = (props) => {
   const [contents, setContents] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -42,28 +38,23 @@ const Bio = (props) => {
   if (loading) return 'Loading ...';
   if (error) return 'An error occurred';
   return (
-    <a className="" href={props.wikiLink}><div className="wikiepdia">
- 
+    <div className="wikiepdia">
+     <SectionTitle title="Wikipedia" />
       {contents.map(content => <div dangerouslySetInnerHTML={{ __html: content }} />)}
 <style jsx>
   {`
   .wikiepdia{
-
-    font-size: 19px;
- line-height: 1.4738442105;
- margin-top: 1rem;
-  margin-bottom: 2rem;
+    border: 1px solid #d00;
+ 
+   
+    margin-bottom: 3rem;
     padding: 1rem;
-    color: #fff;
-    background-color: #4183c4;
-    letter-spacing: .018em;
-    font-weight: 300;
   }
   
   `}
 </style>
     
-        </div></a>
+    </div>
   )
 };
 
