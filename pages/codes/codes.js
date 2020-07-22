@@ -6,6 +6,8 @@ import VideoCategories from '../../components/units/videoCategory'
 import VideoArticlePlusDekk from '../../components/units/videoArticlePlusDekk'
 import VideoMetaTitlePlusRelease from '../../components/units/VideoMetaTitlePlusRelease'
 import Trancript from '../../components/units/transcript'
+import Dvideo from '../../components/units/dvideo'
+
 
 const style= {
     backgroundColor:'#000'
@@ -23,9 +25,11 @@ export default function CodeVideos(){
 <section className='videoInfoLandmark' role='region' arial-label='video info' tabIndex='-1'>
 <div className="pageGrid">
 <div className="gridCenter">
-<Video videoId="lOgxQ8xK-QU" />
+
+
 <div className="videoInfoPanel">
 
+<Video videoId="lOgxQ8xK-QU"/>
 <VideoCategories />
 <VideoArticlePlusDekk/>
 <VideoMetaTitlePlusRelease />
@@ -63,7 +67,13 @@ export default function CodeVideos(){
   
  
 }
- 
+.mixtapeCard{
+    padding: 0 1px;
+   
+    box-sizing: border-box;
+  
+   
+    
  
 
  

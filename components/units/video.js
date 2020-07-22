@@ -16,18 +16,13 @@ const video = (props) => (
  source='youtube'
 icon='disabled'
 aspectRatio='4:3'
- 
+ className="youtube"
 
  autoplay={false}
  color="black"
  iframe={{
  allowFullScreen: true,
- style: {
-   padding: 10,
-   width: '300px',
-   height: '200px'
- }
-  
+ 
 
    }
  }
@@ -35,7 +30,12 @@ aspectRatio='4:3'
 
 
  </LazyLoad>
-  
+  <style jsx>
+
+{`
+ 
+`}  
+  </style>
   </>
 )
 
