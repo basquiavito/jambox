@@ -1,7 +1,7 @@
 import Link from 'next/link'
 const tableStyle = {padding: '2px'}
 const tdStyle = {width:'18px', paddingRight: '4px'}
-const tdAImg = { width:'18px', height: '18px', border: '1px solid white'}
+const tdAImg = { width:'18px', height: '18px', border: '1px solid black'}
 const td2ndStyle = { lineHeight: '12pt', height: '10px'}
 const td3rdStyle = {textALign: 'right', paddingRight: '4px'}
 
@@ -9,7 +9,7 @@ const td3rdStyle = {textALign: 'right', paddingRight: '4px'}
 export default function Topheader(){
     return<>
 <table id="hsmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
-<tbody><tr><td bgcolor="#ff6600">
+<tbody><tr><td bgcolor="#ffff64">
 <table border="0" cellpadding="0" cellspacing="0" width="100%" style={tableStyle} >
 <tbody><tr>
 <td style={tdStyle}>
