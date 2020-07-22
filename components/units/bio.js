@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 import React, { useState, useEffect } from "react";
-import SectionTitle from './sectionTitle'
+import SectionTitle from './sectiontitle'
 const Bio = (props) => {
   const [contents, setContents] = useState([]);
   const [loading, setLoading] = useState(false);
