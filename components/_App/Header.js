@@ -1,41 +1,48 @@
+import React, {Component} from 'react'
 import Link from 'next/link'
-
-export default function Header(){
-    return<>
-    <nav id="nav">
-    <ul className="navi">
-
-    <li>
-    <Link href="/hoopscript/hoopscript">
-    <a className="navLink" rel="noopener">
-    <span className="LinkTitle">hoopcodes</span>  
-    </a>
-    </Link>
-    </li>
-
-    <li>
-    <Link href="/profiles/profiles">
-    <a className="navLink" rel="noopener">
-    <span className="LinkTitle">Profiles</span>
-    </a>
-    </Link>
-    </li>
+import { slide as Menu } from 'react-burger-menu'
 
 
-    <li>
-    <Link href="/blogs">
-    <a className="navLink" rel="noopener">
-    <span className="LinkTitle">Articles</span> 
-    </a>
-    </Link>
-    </li>
-
-
+export default class  Header extends Component{
+     
+    render(){
+        return<>
+        <nav id="nav">
+        <ul className="navi">
     
-
-
-</ul>
-</nav>
+        <li>
+        <Link href="/hoopscript/hoopscript">
+        <a className="navLink" rel="noopener">
+        <span className="LinkTitle">hoopcodes</span>  
+        </a>
+        </Link>
+        </li>
+    
+        <li>
+        <Link href="/profiles/profiles">
+        <a className="navLink" rel="noopener">
+        <span className="LinkTitle">Profiles</span>
+        </a>
+        </Link>
+        </li>
+    
+    
+        <li>
+        <Link href="/blogs">
+        <a className="navLink" rel="noopener">
+        <span className="LinkTitle">Articles</span> 
+        </a>
+        </Link>
+        </li>
+    
+    
+        
+    
+    
+    </ul>
+    </nav>
+    
+    
 <style jsx>
 {`
 #nav {
@@ -45,7 +52,7 @@ export default function Header(){
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
-    background: rgb(18, 18, 18);
+    background: #fff;
 
 
 }
@@ -78,11 +85,11 @@ export default function Header(){
         letter-spacing: -.01em;
         line-height: 3.14286;
          text-transform: uppercase;
-        color: #f5f5f7;
+        color: #000;
         position: relative;
         z-index: 1;
     }
 `}
 </style>
     </>
-}
+}}

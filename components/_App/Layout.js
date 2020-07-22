@@ -3,7 +3,6 @@ import Header from "./Header";
 import Aux from './Aux'
 import Topheader from './Topheader'
  
- 
 function Layout({ children }) {
   
 return (
@@ -17,8 +16,8 @@ return (
  
 <title>Basketball's News, Plays, Profiles & Articles | Hoopscript</title>
         </Head>
-        <Topheader />
-        <Header/>
+     <Topheader/>
+     <Header/>
         <Aux>
             {children}
         </Aux>
