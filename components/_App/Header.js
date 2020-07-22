@@ -11,9 +11,9 @@ export default class  Header extends Component{
         <ul className="navi">
     
         <li>
-        <Link href="/hoopscript/hoopscript">
+        <Link href="/obb/obb">
         <a className="navLink" rel="noopener">
-        <span className="LinkTitle">hoopcodes</span>  
+        <span className="LinkTitle">OBB</span>  
         </a>
         </Link>
         </li>
