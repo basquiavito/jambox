@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "./Header";
 import Aux from './Aux'
 import Topheader from './Topheader'
- 
+import Footer from '../../components/_App/Footer'
 function Layout({ children }) {
   
 return (
@@ -23,7 +23,7 @@ maximum-scale=1.0, user-scalable=no"/>
         <Aux>
             {children}
         </Aux>
-
+<Footer/>
  
 </>)
 }

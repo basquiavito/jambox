@@ -15,8 +15,8 @@ export default function Topheader(){
  
  
     return<>
-<table id="hsmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
-<tbody><tr><td bgcolor="#ffff64">
+<table id="hsmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#0ff">
+<tbody><tr><td bgcolor="#0ff">
 <table border="0" cellpadding="0" cellspacing="0" width="100%" style={tableStyle} >
 <tbody><tr>
 <td style={tdStyle}>
