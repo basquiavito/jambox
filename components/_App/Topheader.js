@@ -26,9 +26,7 @@ export default function Topheader(){
 <span className="pagetop">
 <b className="hsname"><Link href="/" ><a >Hoopscript</a></Link></b> <Link href="/obb/obb"><a>hoopcodes</a></Link> | <Link href="/profiles/profiles"><a>profiles</a></Link> | <Link href="/blogs"><a>articles</a></Link> 
 </span></td>
-<td style={td3rdStyle}><span className="pagetop">
-<Link href=""><a href="">ENGLISH</a></Link> | <Link href=""><a href="">ESPAÑOL</a></Link>
-</span></td>
+ 
 <td style={td3rdStyle}><span className="pagetop">
 <Link href="/"><a href="login?goto=news">login</a></Link>
 </span></td>
