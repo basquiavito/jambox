@@ -44,7 +44,7 @@ export default function blog({ allPostsData }) {
           ))}
         </ul>
 
-        <Buttonup/>
+      
       </section>
 
 

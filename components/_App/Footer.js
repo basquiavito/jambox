@@ -1,6 +1,6 @@
 export default function footer(){
     return <>
-
+<section>
 <table className="footerTable" width="100%" cellspacing="0" cellpadding="1">
     <tbody><tr><td bgcolor="#ff6600"></td></tr></tbody>
 </table><br/>
@@ -14,20 +14,25 @@ export default function footer(){
         | <a href="http://www.ycombinator.com/legal/">Legal</a>
         | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
         | <a href="mailto:hn@ycombinator.com">Contact</a></span><br/><br/>
-        <form method="get" action="//hn.algolia.com/">Search:
+        <form method="get" action="">Search:
           <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"/></form>
-            </center>
+            </center><br/>
  
-
+</section>
 
 <style jsx>
 
     {
         `
-
+section {
+    position: relattive;
+    margin-top: 20rem;
+  
+}
         .footerTable{
             margin-top: 1rem;
             border-top: 3px solid #0ff;
+         
         }
         .hslinks{
             font-family: Verdana, Geneva, sans-serif;

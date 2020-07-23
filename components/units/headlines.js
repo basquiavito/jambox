@@ -12,10 +12,10 @@ export default function headlines(){
 <Link href="/posts/exodus"><a className="editorialPlacementLink">
 <div className="editorialPlacementHeader">
 <Label label="Headlines"/>
-<Maintitle title="Drake Links Up With Headie One For His Latest UK Drill Song “Only You Freestyle”"/>
-<Dekk dekk="Luka doncic es uno de los mas versatiles jugadores que la NBA ha tenido en los ultimos 20 anos."/>
-<Authordate author="Monte Williams" date="06/20/20"/>
-<ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/luka.jpeg"/>
+<Maintitle title="PELICANS at NETS | SCRIMMAGE HIGHLIGHTS | July 22, 2020”"/>
+<Dekk dekk="In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. Brandon Ingram led the Pelicans with 12 PTS in the victory, while Caris LeVert and Jarrett Allen each tallied 10 PTS for the Nets."/>
+<Authordate author="NBA" date="07/22/20"/>
+<ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/srimmage.png"/>
  
 
 
