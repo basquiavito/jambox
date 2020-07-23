@@ -1,9 +1,9 @@
 export default function VideoArticlePlusDekk(){
     return<>
  
- <h1 className="videoTitle" data-title="Lil Yachty Says He Once Had a Jewelry Addiction">Lil Yachty Says He Once Had a Jewelry Addiction</h1>
+ <h1 className="videoTitle" data-title="PELICANS at NETS | SCRIMMAGE HIGHLIGHTS | July 22, 2020">PELICANS at NETS | SCRIMMAGE HIGHLIGHTS | July 22, 2020”</h1>
 
-<p class="videoDescription">You truly won't believe some of the pieces the rapper has in his collection.</p>
+<p class="videoDescription">In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. Brandon Ingram led the Pelicans with 12 PTS in the victory, while Caris LeVert and Jarrett Allen each tallied 10 PTS for the Nets. #WholeNewGame</p>
 <style jsx>
 {`
 h1 {

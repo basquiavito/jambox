@@ -14,10 +14,10 @@ export default function Homevideo(){
 
 <Blacklabel label="Fadeaway"/>
  
-<Title title="MJ vs Kobe: Who got the best fadeaway ever?"/>
-<Dekk dekk="Genius News took a look at the evolution of Kid Cudi's sound"/>
+<Title title="PELICANS at NETS | SCRIMMAGE HIGHLIGHTS | July 22, 2020”"/>
+<Dekk dekk="In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. Brandon Ingram led the Pelicans with 12 PTS in the victory, while Caris LeVert and Jarrett Allen each tallied 10 PTS for the Nets."/>
 <Authordate author="Franqui Clemons" date="Jul 20, 2020" />
-<MediaUrlFull mediaUrl=" https://s3.amazonaws.com/pedales.net/luka.jpeg"/>
+<MediaUrlFull mediaUrl=" https://s3.amazonaws.com/pedales.net/srimmage.png"/>
 
 </a></Link>
  <style jsx>

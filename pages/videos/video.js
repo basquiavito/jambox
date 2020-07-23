@@ -22,11 +22,11 @@ export default function MainVideo(){
 </Head>
    
 <div style={style}><br/>
-    <Blackabel label="Versus"/>
+    <Blackabel label="Videos"/>
 <section className='videoInfoLandmark' role='region' arial-label='video info' tabIndex='-1'>
 <div className="pageGrid">
 <div className="gridCenter">
-<Youtubehooks videoIdA="lOgxQ8xK-QU" />
+<Youtubehooks videoIdA="BdBEflR_9n0" />
 <div className="videoInfoPanel">
 
 <VideoCategories />
