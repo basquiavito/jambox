@@ -84,7 +84,10 @@ author:'Richard Clemon'
 <style jsx>
 {`
 
-.buttonStyle{
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 margin-right: 0.5rem;
 }
 button {
@@ -109,7 +112,7 @@ button {
      border-width: 1px;
    
      border-radius: 5px;
-     margin: 0px;
+     margin-right: 5px;
      padding: 3px; 
 }
    a {
