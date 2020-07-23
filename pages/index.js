@@ -15,6 +15,11 @@ import ImageHolder from '../components/units/imageHolder'
 import Link from 'next/link'
 import Dekk from '../components/units/dekk'
 import Maintitle from '../components/units/maintitle'
+import Coderow from '../components/units/coderow'
+import charts from '../components/units/charts';
+
+
+
 export default function Home() {
   const [ headline, setHeadline] = useState({
     headline:[
@@ -36,14 +41,29 @@ export default function Home() {
     maintitle:'Remembering the days of Steve Francis.”',
     dekk:'Francis put the streetball in the NBA.',
     author:'Richard Clemons'
-  }]})
+  }],
+charts: [
+  {codeTitle:'Iverson Crossed Jordan', hoopcodes:'180 108 103 FG$'},
+  {codeTitle:'Trae Young Nutmeg', hoopcodes:'809 N FG$'},
+  {codeTitle:'Luka Doncic Steb Back', hoopcodes:'806 FG$'},
+  {codeTitle:'Damian Lillard explosive Spin Move', hoopcodes:'870 180 FG$'},
+  {codeTitle:'Lonzo Ball Crossover', hoopcodes:'018 FG$'}
+]
+})
     const switchSpanishHandler = () => {
       setHeadline({
 headline:[
 {label: 'Lo ultimo',maintitle:'Pelicans frente a los Nets | Highlight del Fogeo | Julio 22, 2020 ',dekk:'En el primer juego de fogeo en Orlando, los Pelican de Nueva Orleans derrotaron a los Nets de Brooklyn, 99-68. Brandon Ingram lidero a los Pelicans con 12 puntos en la victoria de anoche, mientras que Caris Levert y Jarreet Allen anotaron 10 puntos cada uno por los Nets',author:'Richard Clemon'},
 {label: 'Bachillerato',maintitle:'Carmelo Anthony en el bachillerato era una bestia.”',author:'Richard Clemons'},
-{label: 'TBT',maintitle:'Recordando aquellos dias de Steve Francis.”',author:'Richard Clemons',}],
-
+{label: 'TBT',maintitle:'Recordando aquellos dias de Steve Francis.”',author:'Richard Clemons',}
+],
+charts: [
+  {codeTitle:'Iverson cruzo a Jordan', hoopcodes:'180 108 103 FG$'},
+  {codeTitle:'Trae Young y su nuez moscada', hoopcodes:'809 N FG$'},
+  {codeTitle:'Luka Doncic y su psicopata Paso Atras', hoopcodes:'806 FG$'},
+  {codeTitle:'Damian Lillard giro explosivo', hoopcodes:'870 180 FG$'},
+  {codeTitle:'Lonzo Ball y su cruze', hoopcodes:'018 FG$'}
+]
       })
     }
     const switchEnglishHandler = () => {
@@ -72,10 +92,17 @@ headline:[
 
 
 ],
+charts: [
+  {codeTitle:'Iverson Crossed Jordan', hoopcodes:'180 108 103 FG$'},
+  {codeTitle:'Trae Young Nutmeg', hoopcodes:'809 N FG$'},
+  {codeTitle:'Luka Doncic Steb Back', hoopcodes:'806 FG$'},
+  {codeTitle:'Damian Lillard explosive Spin Move', hoopcodes:'870 180 FG$'},
+  {codeTitle:'Lonzo Ball Crossover', hoopcodes:'018 FG$'}
+]
 
       })
     } 
-          
+    
   return <>
 <Head>
 <title>Basketball Notation, news, profiles and more | Hoopscript</title>
@@ -136,7 +163,11 @@ headline:[
 <div className="gridCenter">
 <Sectiontitle title="Hoopcodes" />
 <Sectionsubtitle subtitle = "Codes of the week" />
-<CodeCharts />
+<Link href="/codes/codes"><a><Coderow rank="1" codeTitle={headline.charts[0].codeTitle} hoopcodes={headline.charts[0].hoopcodes} image="https://s3.amazonaws.com/pedales.net/aimovemj.jpg"/></a></Link>
+<Link href="/codes/codes1"><a><Coderow rank="2" codeTitle={headline.charts[1].codeTitle} hoopcodes={headline.charts[1].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
+<Link href="/codes/codes2"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes}image="https://s3.amazonaws.com/pedales.net/kobeShaq.jpg"/></a></Link>
+<Link href="/codes/codes3"><a><Coderow rank="4" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="https://s3.amazonaws.com/pedales.net/luka.jpeg"/></a></Link>
+<Link href="/codes/codes4"><a><Coderow rank="5" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="https://s3.amazonaws.com/pedales.net/aimovemj.jpg"/></a></Link>
 </div></div></div>
      
 
