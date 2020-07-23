@@ -89,8 +89,8 @@ headline:[
 <div className="gridCenter">
   <div className="editorialPlacementContainer">
   <div id="buttons">
-    <button  className="buttonStyle" onClick={switchSpanishHandler}>Es </button>
-    <button  className="buttonStyle" onClick={switchEnglishHandler}>Es </button>
+    <button  className="buttonStyle" onClick={switchSpanishHandler}>ESPAÑOL </button>
+    <button  className="buttonStyle" onClick={switchEnglishHandler}>ENGLISH </button>
     </div><br/><br/>
 
 
@@ -205,7 +205,7 @@ headline:[
     margin-right: 0.5rem;
     }
     button {
-        width:30px; 
+        width:60px; 
          color: rgb(0, 0, 0);
          overflow-wrap: break-word;
          word-break: break-word;
