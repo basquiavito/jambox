@@ -1,8 +1,12 @@
+import Link from 'next/link'
+
 export default function button(){
     return<>
 
 
-<div><button className="squareButton" >See</button></div>
+<div>
+    <Link href="/obb/intro"><a role="button" tabIndex="0" className={`${'invertido'} ${'nexpPage'} ${'fw5'}`}>Next →</a></Link>
+</div>
    
 
 <style jsx>
@@ -10,30 +14,16 @@ export default function button(){
 {`
 
 
-.squareButton { 
-    width:100px; 
-     color: rgb(0, 0, 0);
-     overflow-wrap: break-word;
-     word-break: break-word;
-     background-color: transparent;
-     cursor: pointer;
-     display: inline-block;
-     font-family: Programme, sans-serif;
-     font-size: 0.875rem;
-     line-height: 1;
-     text-align: center;
-     vertical-align: top;
-     user-select: none;
-     -webkit-appearance: none;
-     text-transform: uppercase;
-     letter-spacing: 1px;
-     border-color: rgb(0, 0, 0);
-     transition: background-color 0.1s ease 0s, color 0.1s ease 0s;
-     border-width: 2px;
-     border-style: solid;
-     border-radius: 0px;
-     margin: 0px;
-     padding: 0.75rem 1.313rem;
+.invertido { 
+    margin: 0;
+    border-radius: 7px;
+    color: white;
+    background: #0070f3;
+    box-shadow: 0 4px 14px 0 rgba(0,118,255,0.39);
+    padding:  1rem;
+    height: 3.5rem;
+    line-height: 2.5rem;
+    text-decoration: none;
  }
 
 `}

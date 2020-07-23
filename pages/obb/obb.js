@@ -3,7 +3,7 @@ import Sectionsubtitle from '../../components/units/sectionsubtitle'
 import Obb from '../../components/units/obb'
 import Link from 'next/link'
 import Title from '../../components/units/title'
-
+import Button from '../../components/units/button'
 
 export default  function obb(f1){
  
@@ -65,7 +65,7 @@ return(
 <div className="pageGrid">
 <div className="gridCenter">
 
-
+<Button />
  
 
 

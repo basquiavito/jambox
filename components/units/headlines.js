@@ -5,16 +5,57 @@ import ImageHolder from './imageHolder'
 import Link from 'next/link'
 import Dekk from './dekk'
 import Maintitle from './maintitle'
-
+import React, {useState} from 'react'
 
 export default function headlines(){
+    const [ headline, setHeadline ] = useState({
+        headline: [
+{
+label: 'Latest',
+maintitle:'PELICANS at NETS | SCRIMMAGE HIGHLIGHTS | July 22, 2020”',
+dekk:'In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. Brandon Ingram led the Pelicans with 12 PTS in the victory, while Caris LeVert and Jarrett Allen each tallied 10 PTS for the Nets.',
+author:'Richard Clemons',
+}],
+
+otherState:'some other state'
+    })
+
+    const switchSpanishHandler = () => {
+setHeadline({
+    headline:[
+        {
+label: 'Lo ultimo',
+maintitle:'Pelicans frente a los Nets | Highlight del Fogeo | Julio 22, 2020 ',
+dekk:'En el primer juego de fogeo en Orlando, los Pelican de Nueva Orleans derrotaron a los Nets de Brooklyn, 99-68. Brandon Ingram lidero a los Pelicans con 12 puntos en la victoria de anoche, mientras que Caris Levert y Jarreet Allen anotaron 10 puntos cada uno por los Nets',
+author:'Richard Clemon'
+
+        }
+    ]
+})
+    }
+    const switchEnglishHandler = () => {
+        setHeadline({
+            headline:[
+                {
+                    label: 'Latest',
+                    maintitle:'PELICANS at NETS | SCRIMMAGE HIGHLIGHTS | July 22, 2020”',
+                    dekk:'In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. Brandon Ingram led the Pelicans with 12 PTS in the victory, while Caris LeVert and Jarrett Allen each tallied 10 PTS for the Nets.',
+                    author:'Richard Clemons',
+        
+                }
+            ]
+        })
+            }
     return <>
+    <div id="buttons">
+    <button  className="buttonStyle" onClick={switchSpanishHandler}>Es </button>
+    <button className="buttonStyle" onClick={switchEnglishHandler}>En </button></div><br/><br/>
 <Link href="/posts/exodus"><a className="editorialPlacementLink">
 <div className="editorialPlacementHeader">
-<Label label="Headlines"/>
-<Maintitle title="PELICANS at NETS | SCRIMMAGE HIGHLIGHTS | July 22, 2020”"/>
-<Dekk dekk="In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. Brandon Ingram led the Pelicans with 12 PTS in the victory, while Caris LeVert and Jarrett Allen each tallied 10 PTS for the Nets."/>
-<Authordate author="NBA" date="07/22/20"/>
+<Label label={headline.headline[0].label}/>
+<Maintitle title={headline.headline[0].maintitle}/>
+<Dekk dekk={headline.headline[0].dekk}/>
+<Authordate author={headline.headline[0].author} date="07/22/20"/>
 <ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/srimmage.png"/>
  
 
@@ -42,6 +83,35 @@ export default function headlines(){
 
 <style jsx>
 {`
+
+.buttonStyle{
+margin-right: 0.5rem;
+}
+button {
+    width:30px; 
+     color: rgb(0, 0, 0);
+     overflow-wrap: break-word;
+     word-break: break-word;
+     background-color: transparent;
+     cursor: pointer;
+     display: inline-block;
+     font-family: Programme, sans-serif;
+     font-size: 0.575rem;
+     line-height: 1;
+     text-align: center;
+     vertical-align: top;
+     user-select: none;
+     -webkit-appearance: none;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     border-color: rgb(0, 0, 0);
+     transition: background-color 0.1s ease 0s, color 0.1s ease 0s;
+     border-width: 1px;
+   
+     border-radius: 5px;
+     margin: 0px;
+     padding: 3px; 
+}
    a {
        text-decoration: none;
        color: #000;
