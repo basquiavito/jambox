@@ -7,7 +7,7 @@ import VideoArticlePlusDekk from '../../components/units/videoArticlePlusDekk'
 import VideoMetaTitlePlusRelease from '../../components/units/VideoMetaTitlePlusRelease'
 import Trancript from '../../components/units/transcript'
 import Dvideo from '../../components/units/dvideo'
-
+import YoutubeHooks from '../../components/units/youtubehooks'
 
 const style= {
     backgroundColor:'#000'
@@ -29,16 +29,27 @@ export default function CodeVideos(){
 
 <div className="videoInfoPanel">
 
-<Video videoId="C977RCbuqFk"/>
+<YoutubeHooks videoIdA="C977RCbuqFk"/>
 <VideoCategories />
 <VideoArticlePlusDekk/>
 <VideoMetaTitlePlusRelease />
 <Trancript />
 
 
-</div></div></div>
+</div>
+
+
+
+
+</div></div>
 </section></div>
 
+<div>
+<div className="pageGrid">
+<div className="gridCenter">
+    
+    <h1>Hoopscript</h1></div>
+</div></div>
 <style jsx>
 {`
  

@@ -7,7 +7,7 @@ export default function VideoMetaTitlePlusRelease(){
 <ul><li>
     
     <span className="keyboardFocus" tabIndex="-1">
-<Link href=""><a>On the rocks</a></Link>
+<Link href=""><a>Extract from Hoopscript</a></Link>
     </span>
     
     </li></ul>
@@ -19,6 +19,7 @@ export default function VideoMetaTitlePlusRelease(){
     
     <div id="videoMetaStatus" className="liveRegion" role="status"></div>
 </div> 
+ 
     
     <style jsx>
 

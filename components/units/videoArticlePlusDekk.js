@@ -47,15 +47,15 @@ h1 {
     font-style: normal;
     text-transform: none;
     padding: 0;
-    color: #ccc;
+    color: #;
     margin: 0 0 20px;
 }
 p > a {
-    color :  #0096ff;;
+    color : #489ec8;
 }
 
 p > a:visited {
-    color :  #0096ff;
+    color : #489ec8;
 }
 
 `}
