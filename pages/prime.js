@@ -16,7 +16,7 @@ function Prime({ primes }) {
 }
 
 Prime.getInitialProps = async ({ query: { _id } }) => {
-const url = `https://hoopscript.vercel.app/api/prime`;
+const url = `https://hoopscript.com/api/prime`;
 const payload = { params: { _id }}
 const response = await axios.get(url, payload)
 return {primes: response.data}

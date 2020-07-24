@@ -1,19 +1,28 @@
 import Link from 'next/link'
 
 
-export default function VideoArticlePlusDekk(){
+export default function VideoArticlePlusDekk(props){
     return<>
  
- <h1 className="videoTitle" 
- data-title="PELICANS at NETS | SCRIMMAGE HIGHLIGHTS | July 22, 2020">
-     <small>Title :</small>  Iverson Crossed Jordan. <br/> <small>Hoopcode </small> : 013 013 180 <br/> <small> Name : Double Picasso + base</small> <br/><small>Rank :</small> Masterpiece<br/> </h1>
+ <h2 className="videoTitle" 
+ data-title={props.title}>
+     <small>Title :</small>  {props.title} <br/> 
+     <small>Hoopcode </small> : {props.code}<br/>
+      <small> Name : </small> {props.name}<br/>
+      <small>Rank :</small> {props.rank}<br/> </h2>
 
 <p class="videoDescription">
-    The triad <Link href=""><a>Picasso</a></Link>  is a masterpiece crafted by <Link href=""><a>Allen Iverson</a></Link><br/> in a 1997 game against <Link href=""><a>Michael Jordan.</a></Link><br/>
-  Picasso has a double <Link href=""><a>0 1 3  </a></Link>.
+      <Link href=""><a>{props.triadName}</a></Link>
+    
+     <Link href=""><a>{props.player}</a></Link><br/> 
+  
+  
+       <Link href=""><a>{props.vs}</a></Link><br/>
+  {props.triadName} has a   <Link href=""><a>{props.triadNum} </a></Link>.
  
-    Usually shorts steps precede the forward steps <Link href=""><a>( F )</a></Link> .  <br/>
-The raw code should be <Link href=""><a>0F13 0F13 F180 FG$</a></Link>.<br/>
+    
+    
+The raw code should be <Link href=""><a>{props.rawCode}</a></Link>.<br/>
 
     </p>
  
@@ -30,7 +39,7 @@ The raw code should be <Link href=""><a>0F13 0F13 F180 FG$</a></Link>.<br/>
     
 <style jsx>
 {`
-h1 {
+h2 {
     font-size: 24px;
     line-height: 1.1;
     margin: 15px 0;

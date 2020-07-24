@@ -1,26 +1,26 @@
 import Link from 'next/link'
 
-export default function VideoCategory(){
+export default function VideoCategory(props){
     return<>
 <div className="videoCategories">
 
 <Link href="">
 <a className="category0">
-<span className="keyboardFocus" tabIndex="-1">Rookie</span>
+<span className="keyboardFocus" tabIndex="-1">{props.cat0}</span>
 </a>
 </Link>
 <hr width="1" size="12" className="hr1"></hr>
 
 <Link href="">
 <a className="category1">
-<span className="keyboardFocus" tabIndex="-1">HighSchool</span>
+<span className="keyboardFocus" tabIndex="-1">{props.cat1}</span>
 </a>
 </Link>
 <hr width="1" size="12" className="hr1"></hr>
 
 <Link href="">
 <a className="category0">
-<span className="keyboardFocus" tabIndex="-1">College</span>
+<span className="keyboardFocus" tabIndex="-1">{props.cat2}</span>
 </a>
 </Link>
  
