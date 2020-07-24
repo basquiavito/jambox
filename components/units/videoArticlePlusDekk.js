@@ -6,7 +6,7 @@ export default function VideoArticlePlusDekk(){
  
  <h1 className="videoTitle" 
  data-title="PELICANS at NETS | SCRIMMAGE HIGHLIGHTS | July 22, 2020">
-     <small>Title :</small> Allen Iverson Crossed Jordan. <br/> <small>Hoopcode </small> : 013 013 180 <br/> <small> Name : Double Picasso + base</small> <br/><small>Rank :</small> Masterpiece<br/> </h1>
+     <small>Title :</small>  Iverson Crossed Jordan. <br/> <small>Hoopcode </small> : 013 013 180 <br/> <small> Name : Double Picasso + base</small> <br/><small>Rank :</small> Masterpiece<br/> </h1>
 
 <p class="videoDescription">
     The triad <Link href=""><a>Picasso</a></Link>  is a masterpiece crafted by <Link href=""><a>Allen Iverson</a></Link><br/> in a 1997 game against <Link href=""><a>Michael Jordan.</a></Link><br/>

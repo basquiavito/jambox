@@ -7,7 +7,7 @@ export default function VideoMetaTitlePlusRelease(){
 <ul><li>
     
     <span className="keyboardFocus" tabIndex="-1">
-<Link href=""><a>Extract from Hoopscript</a></Link>
+<Link href=""><a> Hoopscript</a></Link>
     </span>
     
     </li></ul>

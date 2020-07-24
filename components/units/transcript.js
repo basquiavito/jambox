@@ -12,7 +12,7 @@ export default function transcript(){
 <div className="transcriptRow">
 <div className="transcriptTime">00:00</div>
 <div className="transcriptText">
-I think at one point in my career, </div>
+light 013 , then turbo 013.</div>
 </div>
 
 <div className="transcriptRow">
