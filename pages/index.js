@@ -1,11 +1,8 @@
 import Head from 'next/head'
-import Headlines from '../components/units/headlines'
 import Charts from '../components/units/charts'
-import Homevideo from '../components/units/homevideo'
 import Videosub from '../components/units/videoSub'
 import Sectiontitle from '../components/units/sectiontitle'
 import Sectionsubtitle from '../components/units/sectionsubtitle'
-import CodeCharts from '../components/units/codesChart'
 import BlackSectiontitle from '../components/units/blackSectionTitle'
 import React,{useState} from 'react'
 import Label from '../components/units/label'
@@ -16,8 +13,8 @@ import Link from 'next/link'
 import Dekk from '../components/units/dekk'
 import Maintitle from '../components/units/maintitle'
 import Coderow from '../components/units/coderow'
-import charts from '../components/units/charts';
-
+import Blacklabel from '../components/units/blackLabel'
+import MediaUrlFull from '../components/units/mediaUrlFull'
 
 
 export default function Home() {
@@ -42,13 +39,33 @@ export default function Home() {
     dekk:'Francis put the streetball in the NBA.',
     author:'Richard Clemons'
   }],
-charts: [
+    charts: [
   {codeTitle:'Iverson Crossed Jordan', hoopcodes:'180 108 103 FG$'},
   {codeTitle:'Trae Young Nutmeg', hoopcodes:'809 N FG$'},
   {codeTitle:'Luka Doncic Steb Back', hoopcodes:'806 FG$'},
   {codeTitle:'Damian Lillard explosive Spin Move', hoopcodes:'870 180 FG$'},
   {codeTitle:'Lonzo Ball Crossover', hoopcodes:'018 FG$'}
+],
+videos:[
+  {label:'On Fire',title:'Bol Bol shine in the Victory of Denver Nugetts vs menphis.', dekk:'Bol Bol went Opal mode.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Scoring',title:'Lamelo Ball is the future of League', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Passing',title:'Inside the NBA Bubble: The day the NBA returned', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Defense',title:'Kevin Garnett wants to own the Wolves, but it won’t be that simple', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Business',title:'NBA bubble gambling: A new frontier featuring low scores and long shots', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'}
+],
+versus:[
+  {codeTitle:' Kobe vs Jordan', hoopcodes:'Fadeaway'},
+  {codeTitle:'Luka vs Harden', hoopcodes:'Step Back'},
+  {codeTitle:'Duncan vs Olajuwon', hoopcodes:'Post up'},
+  {codeTitle:'Kidd vs Stockton', hoopcodes:'Passing'},
+  {codeTitle:'Mutombo vs Mourning', hoopcodes:'Defense'}
+],
+headings:[
+  {title:'Hoopcodes', subtitle:'Code of the Week'},
+  {title:'Videos', subtitle:'Latest Videos'},
+  {title:'Versuz', subtitle:'Who you Got?'}
 ]
+
 })
     const switchSpanishHandler = () => {
       setHeadline({
@@ -63,6 +80,25 @@ charts: [
   {codeTitle:'Luka Doncic y su psicopata Paso Atras', hoopcodes:'806 FG$'},
   {codeTitle:'Damian Lillard giro explosivo', hoopcodes:'870 180 FG$'},
   {codeTitle:'Lonzo Ball y su cruze', hoopcodes:'018 FG$'}
+],
+videos:[
+  {label:'Caliente',title:'Bol Bol brillo en la victoria de Denver vs Menphis', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Puntos',title:'Lamelo Ball es el futuro de la liga', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Pase',title:'Dentro de la Burbuja: El dia en que volvio la NBA', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Defensa',title:'Kevin Garnett quiere ser propietario de los Wolves, pero no sera tan facil', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Fuego',title:'Apuestas en la burbuja: una nuevo frente, con menos anotaciones y mas tiros de larga distancia.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'}
+],
+versus:[
+  {codeTitle:' Kobe vs Jordan', hoopcodes:'Fadeaway'},
+  {codeTitle:'Luka vs Harden', hoopcodes:'Paso Atras'},
+  {codeTitle:'Duncan vs Olajuwon', hoopcodes:'Posteo'},
+  {codeTitle:'Kidd vs Stockton', hoopcodes:'Pase'},
+  {codeTitle:'Mutombo vs Mourning', hoopcodes:'Defensa'}],
+
+headings:[
+  {title:'Hoopcodes', subtitle:'Codigos de la semana'},
+  {title:'Videos', subtitle:'Videos Recientes'},
+  {title:'Versus', subtitle:'A Quien apuestas?'}
 ]
       })
     }
@@ -98,7 +134,28 @@ charts: [
   {codeTitle:'Luka Doncic Steb Back', hoopcodes:'806 FG$'},
   {codeTitle:'Damian Lillard explosive Spin Move', hoopcodes:'870 180 FG$'},
   {codeTitle:'Lonzo Ball Crossover', hoopcodes:'018 FG$'}
+],
+videos:[
+  {label:'On Fire',title:'Bol Bol shine in the Victory of Denver Nugetts vs menphis.', dekk:'Bol Bol went Opal mode.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Scoring',title:'Lamelo Ball is the future of League', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Passing',title:'Inside the NBA Bubble: The day the NBA returned', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Defense',title:'Kevin Garnett wants to own the Wolves, but it won’t be that simple', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Business',title:'NBA bubble gambling: A new frontier featuring low scores and long shots', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'}
+],
+versus:[
+  {codeTitle:' Kobe vs Jordan', hoopcodes:'Fadeaway'},
+  {codeTitle:'Luka vs Harden', hoopcodes:'Step Back'},
+  {codeTitle:'Duncan vs Olajuwon', hoopcodes:'Post up'},
+  {codeTitle:'Kidd vs Stockton', hoopcodes:'Passing'},
+  {codeTitle:'Mutombo vs Mourning', hoopcodes:'Defense'}
+],
+
+headings:[
+  {title:'Hoopcodes', subtitle:'Code of the Week'},
+  {title:'Videos', subtitle:'Latest Videos'},
+  {title:'Versuz', subtitle:'Who you Got?'}
 ]
+
 
       })
     } 
@@ -161,8 +218,8 @@ charts: [
 <div id="charts">
 <div className="pageGrid">
 <div className="gridCenter">
-<Sectiontitle title="Hoopcodes" />
-<Sectionsubtitle subtitle = "Codes of the week" />
+<Sectiontitle title={headline.headings[0].title} />
+<Sectionsubtitle subtitle = {headline.headings[0].subtitle} />
 <Link href="/codes/codes"><a><Coderow rank="1" codeTitle={headline.charts[0].codeTitle} hoopcodes={headline.charts[0].hoopcodes} image="https://s3.amazonaws.com/pedales.net/aimovemj.jpg"/></a></Link>
 <Link href="/codes/codes1"><a><Coderow rank="2" codeTitle={headline.charts[1].codeTitle} hoopcodes={headline.charts[1].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
 <Link href="/codes/codes2"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes}image="https://s3.amazonaws.com/pedales.net/kobeShaq.jpg"/></a></Link>
@@ -174,18 +231,62 @@ charts: [
 <div id="video">
 <div className="pageGrid">
 <div className="gridCenter">
-<BlackSectiontitle title= "Versuz" />
-<Sectionsubtitle subtitle= "Comparison" />
-<Homevideo/>
-<Videosub/>
+<BlackSectiontitle title= {headline.headings[1].title} />
+<Sectionsubtitle subtitle={headline.headings[1].subtitle} />
+<Link href="/videos/video"><a className="linkContainer">
+
+<Blacklabel label={headline.videos[0].label}/>
+ 
+<Title title={headline.videos[0].title}/>
+<Dekk dekk={headline.videos[0].dekk}/>
+<Authordate author={headline.videos[0].author} date={headline.videos[0].date} />
+<MediaUrlFull mediaUrl=" https://s3.amazonaws.com/pedales.net/srimmage.png"/>
+
+</a></Link>
+ 
+    <Link href="/videos/video1"><a className="linkContainer">
+    <Blacklabel label={headline.videos[1].label}/>
+<MediaUrlFull mediaUrl=" https://s3.amazonaws.com/pedales.net/luka.jpeg" />
+<Title title={headline.videos[1].title}/>
+<Authordate author={headline.videos[1].author} date={headline.videos[1].date} />
+        </a></Link>
+
+<Link href="/videos/video2"><a>
+<Blacklabel label={headline.videos[2].label}/>
+<MediaUrlFull mediaUrl=" https://s3.amazonaws.com/pedales.net/luka.jpeg" />
+<Title title={headline.videos[2].title}/>
+<Authordate author={headline.videos[2].author} date={headline.videos[2].date} />
+    </a></Link>
+
+<Link href="/videos/video3"><a>
+<Blacklabel label={headline.videos[3].label}/>
+<MediaUrlFull mediaUrl=" https://s3.amazonaws.com/pedales.net/luka.jpeg" />
+<Title title={headline.videos[3].title}/>
+<Authordate author={headline.videos[3].author} date={headline.videos[3].date} />
+    </a></Link>
+
+<Link href="/videos/video4"><a>
+<Blacklabel label={headline.videos[4].label}/>
+<MediaUrlFull mediaUrl=" https://s3.amazonaws.com/pedales.net/luka.jpeg" />
+<Title title={headline.videos[4].title}/>
+<Authordate author={headline.videos[4].author} date={headline.videos[4].date} /></a>
+
+</Link>
+
+ 
 </div></div></div>
 
-<div id="Top Ten">
+<div id="topTen">
 <div className="pageGrid">
 <div className="gridCenter">
-<Sectiontitle title="Now" />
-  <Sectionsubtitle subtitle = "Latest Plays" />
-<Charts />
+<Sectiontitle title={headline.headings[2].title} />
+<Sectionsubtitle subtitle={headline.headings[2].subtitle} />
+  <Link href="/charts/top"><a><Coderow rank="1" codeTitle={headline.versus[0].codeTitle} hoopcodes={headline.versus[0].hoopcodes} image="https://s3.amazonaws.com/pedales.net/aimovemj.jpg"/></a></Link>
+<Link href="/charts/top1"><a><Coderow rank="2" codeTitle={headline.versus[1].codeTitle} hoopcodes={headline.versus[1].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
+<Link href="/charts/top2"><a><Coderow rank="3" codeTitle={headline.versus[2].codeTitle} hoopcodes={headline.versus[2].hoopcodes} image="https://s3.amazonaws.com/pedales.net/kobeShaq.jpg"/></a></Link>
+<Link href="/charts/top3"><a><Coderow rank="4" codeTitle={headline.versus[3].codeTitle} hoopcodes={headline.versus[3].hoopcodes} image="https://s3.amazonaws.com/pedales.net/luka.jpeg"/></a></Link>
+<Link href="/charts/top4"><a><Coderow rank="5" codeTitle={headline.versus[4].codeTitle} hoopcodes={headline.versus[4].hoopcodes} image="https://s3.amazonaws.com/pedales.net/aimovemj.jpg"/></a></Link>
+
  
 </div></div></div>
 
@@ -280,7 +381,9 @@ charts: [
         .editorialPlacementHeader{
             margin-bottom: 1rem; 
         }
-        
+        #video  a {
+          color:#fff;
+        }
        `}
      </style>
   </>
