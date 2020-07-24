@@ -29,7 +29,7 @@ export default function CodeVideos(){
 
 <div className="videoInfoPanel">
 
-<Video videoId="lOgxQ8xK-QU"/>
+<Video videoId="C977RCbuqFk"/>
 <VideoCategories />
 <VideoArticlePlusDekk/>
 <VideoMetaTitlePlusRelease />

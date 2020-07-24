@@ -40,7 +40,7 @@ export default function Home() {
     author:'Richard Clemons'
   }],
     charts: [
-  {codeTitle:'Iverson Crossed Jordan', hoopcodes:'180 108 103 FG$'},
+  {codeTitle:'Iverson Crossed Jordan', hoopcodes:'013 013 180 FG$ | DOUBLE PiCASSO + base   '},
   {codeTitle:'Trae Young Nutmeg', hoopcodes:'809 N FG$'},
   {codeTitle:'Luka Doncic Steb Back', hoopcodes:'806 FG$'},
   {codeTitle:'Damian Lillard explosive Spin Move', hoopcodes:'870 180 FG$'},
