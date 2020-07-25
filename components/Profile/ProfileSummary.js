@@ -25,7 +25,7 @@ export default function ProfileSummary({wikiLink, query,twitterToken, offHigh1Ti
 rel="stylesheet" media="print" onLoad="this.media='all'"
 href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 />
-<script defer src="https://cdn.commento.io/js/commento.js"></script>
+
 </Head>
 <Sectiontitle title={`${name} ${lastname}`}/> 
 <Sectionsubtitle subtitle={`Get to know ${lastname}`}/>
@@ -132,7 +132,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 </div>
 
    </section>
-   <div id="commento"></div>
+
      </div></div></div>
 
 
