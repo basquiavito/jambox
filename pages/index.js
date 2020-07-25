@@ -184,7 +184,7 @@ headings:[
 <Maintitle title={headline.headline[0].maintitle}/>
 <Dekk dekk={headline.headline[0].dekk}/>
 <Authordate author={headline.headline[0].author} date="07/22/20"/>
-<ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/srimmage.png"/>
+<ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/>
  
 
 
