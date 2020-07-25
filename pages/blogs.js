@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Date from '../components/date'
 import Label from '../components/label'
 import Buttonup from '../components/featured/buttonup'
-
+import HyvorTalk from 'hyvor-talk-react'
 
 
 export async function getStaticProps() {
@@ -22,10 +22,7 @@ export default function blog({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-      <script type="text/javascript"
-   src="https://schnack.youdomain.com/embed.js"
-   data-schnack-target=".comments-go-here"
-   data-schnack-slug="my-blogpost-slug"></script>
+ 
 
         <title>{siteTitle}</title>
       </Head>
@@ -36,7 +33,7 @@ export default function blog({ allPostsData }) {
         <h2 className={utilStyles.headingLg}><Label label="Articles"/></h2>
 
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title, comment }) => (
            <li className={utilStyles.listItem} key={id}>
            <Link href="/posts/[id]" as={`/posts/${id}`}>
              <a>{title}</a>
@@ -45,15 +42,18 @@ export default function blog({ allPostsData }) {
            <small className={utilStyles.lightText}>
              <Date dateString={date} />
            </small>
+
+
+           
          </li>
+     
           ))}
         </ul>
 
       
       </section>
-      <div className="comments-go-here"></div>
-
-
+      
+      
     </Layout>
   )
 }

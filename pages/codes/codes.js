@@ -8,6 +8,11 @@ import VideoMetaTitlePlusRelease from '../../components/units/VideoMetaTitlePlus
 import Trancript from '../../components/units/transcript'
 import Dvideo from '../../components/units/dvideo'
 import YoutubeHooks from '../../components/units/youtubehooks'
+import HyvorTalk from 'hyvor-talk-react'
+
+
+
+
 import React, {useState} from 'react'
 const style= {
     backgroundColor:'#000'
@@ -19,7 +24,7 @@ export default function CodeVideos(){
     const [ code, setCodes] = useState({
 cat:[{cat0: 'Rookie'},{ cat1: 'College'},{ cat2: 'Offense'}] ,
 descript:[{title: 'Iverson Crossed Jordan.', name:'Double Picasso + base', code:'013 013 180 ', rank:'Masterpiece'}],
-parr:[{triadName:'Picasso + Base', player:'Allen Iverson', vs:'Michael Jordan', triadNum:'013', rawCode:''}]
+parr:[{triadName:'Picasso + Base', player:'Allen Iverson', vs:'Michael Jordan', triadNum:'013', rawCode:'0F13 0F13 F180 FG$'}]
 })
 
 
@@ -61,7 +66,7 @@ parr:[{triadName:'Picasso + Base', player:'Allen Iverson', vs:'Michael Jordan', 
 <YoutubeHooks videoIdA="C977RCbuqFk"/>
 <VideoCategories cat0={code.cat[0].cat0} cat1={code.cat[1].cat1} cat2={code.cat[2].cat2}/>
 <VideoArticlePlusDekk title={code.descript[0].title} name={code.descript[0].name}  code={code.descript[0].code} rank={code.descript[0].rank}/>
-<VideoMetaTitlePlusRelease />
+<VideoMetaTitlePlusRelease  />
 <Trancript />
 
 
@@ -76,8 +81,28 @@ parr:[{triadName:'Picasso + Base', player:'Allen Iverson', vs:'Michael Jordan', 
 <div>
 <div className="pageGrid">
 <div className="gridCenter">
-    
-    <h1>Hoopscript</h1></div>
+    <div>
+<div className="comment-count-view">
+ 
+ { /* Comment Counts */ }
+ <HyvorTalk.CommentCount 
+  websiteId='1313'
+  id='codesMain'
+ />
+
+</div>
+
+<content>Your Article Here</content>
+
+{ /* Load Comments now */ }
+<HyvorTalk.Embed 
+ websiteId='1313'
+ id='codesMain'
+/>
+</div>
+
+
+  </div>
 </div></div>
 <style jsx>
 {`

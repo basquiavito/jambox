@@ -3,7 +3,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
-
+import HyvorTalk from 'hyvor-talk-react'
 
 export default function Post({ postData }) {
   return (
@@ -21,7 +21,27 @@ export default function Post({ postData }) {
 
  <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 </article>
-   
+<div>
+       
+
+        <div className="comment-count-view">
+
+          { /* Comment Counts */ }
+          <HyvorTalk.CommentCount 
+            websiteId='1313'
+            id='999'
+          />
+
+        </div>
+       
+
+        { /* Load Comments now */ }
+        <HyvorTalk.Embed 
+          websiteId='1313'
+          id='999'
+        />
+      </div>
+
     </Layout>
   )
 }
