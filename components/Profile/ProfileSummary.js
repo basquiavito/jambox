@@ -122,14 +122,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
    
    />
 
-<div>
-<div id="gram">
-<div className="pageGrid">
-<div className="gridCenter">
-<Sectionsubtitle subtitle="Gram"/>
-<FromDaGram gram={gram}/>
- </div></div></div>
-</div>
+
 
    </section>
 
