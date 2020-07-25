@@ -132,11 +132,11 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 </div>
 
    </section>
-  
+   <div id="commento"></div>
      </div></div></div>
 
 
-     <div id="commento"></div>
+
  
    
 
@@ -146,6 +146,8 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
  <style jsx>
 {`
+
+ 
 .pageGrid{
 
   display: grid;
