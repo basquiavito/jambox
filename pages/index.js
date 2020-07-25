@@ -162,7 +162,7 @@ headings:[
   return <>
 <Head>
 <title>Basketball Notation, news, profiles and more | Hoopscript</title>
-
+     
 </Head>
 <div id="container">
 
@@ -291,7 +291,7 @@ headings:[
 
 
       </div>
-        
+ 
      <style jsx>
 
 

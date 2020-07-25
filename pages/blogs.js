@@ -22,6 +22,11 @@ export default function blog({ allPostsData }) {
   return (
     <Layout home>
       <Head>
+      <script type="text/javascript"
+   src="https://schnack.youdomain.com/embed.js"
+   data-schnack-target=".comments-go-here"
+   data-schnack-slug="my-blogpost-slug"></script>
+
         <title>{siteTitle}</title>
       </Head>
  
@@ -46,7 +51,7 @@ export default function blog({ allPostsData }) {
 
       
       </section>
-
+      <div className="comments-go-here"></div>
 
 
     </Layout>
