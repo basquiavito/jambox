@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Charts from '../components/units/charts'
-import Videosub from '../components/units/videoSub'
+
 import Sectiontitle from '../components/units/sectiontitle'
 import Sectionsubtitle from '../components/units/sectionsubtitle'
 import BlackSectiontitle from '../components/units/blackSectionTitle'

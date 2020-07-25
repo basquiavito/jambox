@@ -10,7 +10,7 @@ function Actives({ profiles, totalPages }) {
 
  
  <ProfileList profiles={profiles} />
- <ProfilePagination totalPages={totalPages}/><br/><br/>
+ 
  </>
 }
 Actives.getInitialProps = async ctx => {
