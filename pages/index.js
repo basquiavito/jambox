@@ -240,7 +240,7 @@ headings:[
 <Title title={headline.videos[0].title}/>
 <Dekk dekk={headline.videos[0].dekk}/>
 <Authordate author={headline.videos[0].author} date={headline.videos[0].date} />
-<MediaUrlFull mediaUrl=" https://s3.amazonaws.com/pedales.net/srimmage.png"/>
+<MediaUrlFull mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/>
 
 </a></Link>
  
