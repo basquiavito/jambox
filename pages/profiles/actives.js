@@ -3,12 +3,12 @@ import axios from 'axios'
 import ProfileList from '../../components/Index/ProfileList'
 import baseUrl from '../../utils/baseUrl'
 import ProfilePagination from '../../components/Index/ProfilePagination'
-
-
+import Head from 'next/head'
+import Search from '../../components/search'
 function Actives({ profiles, totalPages }) {
  return <>
-
  
+ <Search />
  <ProfileList profiles={profiles} />
  <ProfilePagination totalPages={totalPages}/><br/><br/>
  </>
