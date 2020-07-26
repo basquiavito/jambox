@@ -5,17 +5,20 @@ import baseUrl from '../../utils/baseUrl'
 import ProfilePagination from '../../components/Index/ProfilePagination'
 import Head from 'next/head'
 import Search from '../../components/search'
+
+
+
 function Actives({ profiles, totalPages }) {
  return <>
  
- <Search />
- <ProfileList profiles={profiles} />
- <ProfilePagination totalPages={totalPages}/><br/><br/>
+
+ <ProfileList profiles={profiles} ></ProfileList>
+ 
  </>
 }
 Actives.getInitialProps = async ctx => {
   const page = ctx.query.page ? ctx.query.page : "1";
-  const size = 9;
+  const size = 240;
   const url = `https://hoopscript.vercel.app/api/profiles`;
   const payload = { params: { page, size }}
   const response = await axios.get(url, payload);

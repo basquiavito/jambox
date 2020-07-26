@@ -3,11 +3,15 @@ import axios from 'axios'
 import StreetballList from '../../components/Index/StreetballList'
 import baseUrl from '../../utils/baseUrl'
 import Buttonup from '../../components/featured/buttonup'
- 
+import Search from '../../components/search'
+
+
 function Streetballs ({ streetballs }) {
  return <>
+
+<Search />
  <StreetballList streetballs={streetballs}/>  
- <Buttonup/>
+
  </>
 }
 Streetballs.getInitialProps = async () => {

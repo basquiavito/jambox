@@ -9,7 +9,7 @@ import Head from 'next/head'
  </Head>
  
     <div id="profilePagesHub">
-    <div className="linkContent"><Link href="/profiles/actives"><a className="linkTitle">actives</a></Link></div>
+    <div className="linkContent"><Link href="/index2"><a className="linkTitle">actives</a></Link></div>
     <div className="linkContent"><Link href="/profiles/primes"><a className="linkTitle">primes</a></Link> </div>
     <div className="linkContent"><Link href="/profiles/streetballs"><a className="linkTitle">Streetball</a></Link></div>
 
