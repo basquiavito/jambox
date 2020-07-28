@@ -5,7 +5,7 @@ import VideoCategories from '../../components/units/videoCategory'
 import VideoArticlePlusDekk from '../../components/units/videoArticlePlusDekk'
 import VideoMetaTitlePlusRelease from '../../components/units/VideoMetaTitlePlusRelease'
 import Trancript from '../../components/units/transcript'
- 
+ import Video from '../../components/units/video'
 import YoutubeHooks from '../../components/units/youtubehooks'
 import HyvorTalk from 'hyvor-talk-react'
 import Obb from '../../components/units/obb'
@@ -70,7 +70,7 @@ const switchSpanishHandler = ()=> {
 
 <div className="videoInfoPanel">
 
-<YoutubeHooks videoIdA="C977RCbuqFk"/>
+<Video videoId="C977RCbuqFk"/>
 
 <Obb f1='X' b1='0' s1='X' f2='F' b2='1' s2='X' f3='X' b3='3' s3='X' f4='X' b4='0' s4='X' f5='F' b5='1' s5='X' f6='X' b6='3' s6='X' f7='F' b7='1' s7='X' f8='8' b8='XG' s8='X' f9='F' b9='X' s9='$'/><br/>
 <VideoCategories cat0={code.cat[0].cat0} cat1={code.cat[1].cat1} cat2={code.cat[2].cat2}/>
