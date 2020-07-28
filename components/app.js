@@ -52,7 +52,7 @@ export default class extends React.Component {
   };
 
   render() {
-    return (
+    return <>
       <InstantSearch
         searchClient={this.props.searchClient}
         resultsState={this.props.resultsState}
@@ -69,18 +69,93 @@ export default class extends React.Component {
           <SearchBox />
         </header>
         <main>
-          <div className="menu">
+          <div className="pageGrid">
+            <div className="gridCenter">
+            <div className="menu">
             <RefinementList attribute="categories" />
           </div>
           <div className="results">
             <Hits hitComponent={HitComponent} />
           </div>
-        </main>
+   
         <footer>
           <Pagination />
         
         </footer>
+            </div>
+          </div>     </main>
+          
       </InstantSearch>
-    );
+<style jsx>{`
+html {
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  margin: 25px 0;
+}
+
+.menu {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+}
+
+.ais-Pagination {
+  margin-bottom: 25px;
+}
+
+.results {
+  flex: 1;
+}
+
+.hit {
+  display: flex;
+  align-items: center;
+}
+
+.hit-actions {
+  display: flex;
+}
+
+.hit-content {
+  padding: 0px 10px;
+}
+
+.hit-picture img {
+  width: 64px;
+  height: 64px;
+}
+
+.hit-type {
+  color: #888888;
+  font-size: 13px;
+}
+
+ 
+  .pageGrid{
+
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
+    grid-row-gap: 30px;
+}
+
+.gridCenter {
+  grid-column: center-start / center-end;
+}
+`}</style>
+      
+    </>;
   }
 }

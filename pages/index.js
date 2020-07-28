@@ -15,7 +15,7 @@ import Coderow from '../components/units/coderow'
 import Blacklabel from '../components/units/blackLabel'
 import MediaUrlFull from '../components/units/mediaUrlFull'
 
-
+ 
 export default function Home() {
   const [ headline, setHeadline] = useState({
     headline:[
