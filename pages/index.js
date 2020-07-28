@@ -221,9 +221,10 @@ headings:[
 <Sectionsubtitle subtitle = {headline.headings[0].subtitle} />
 <Link href="/codes/codes"><a><Coderow rank="1" codeTitle={headline.charts[0].codeTitle} hoopcodes={headline.charts[0].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
 <Link href="/codes/codes1"><a><Coderow rank="2" codeTitle={headline.charts[1].codeTitle} hoopcodes={headline.charts[1].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/codes/codes2"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes}image="https://s3.amazonaws.com/pedales.net/kobeShaq.jpg"/></a></Link>
+<Link href="/codes/codes2"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes} image="https://s3.amazonaws.com/pedales.net/aimovemj.jpg"/></a></Link>
 <Link href="/codes/codes3"><a><Coderow rank="4" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="https://s3.amazonaws.com/pedales.net/luka.jpeg"/></a></Link>
 <Link href="/codes/codes4"><a><Coderow rank="5" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="https://s3.amazonaws.com/pedales.net/aimovemj.jpg"/></a></Link>
+
 </div></div></div>
      
 
