@@ -10,7 +10,7 @@ import Title from '../../components/units/title'
 import HyvorTalk from 'hyvor-talk-react'
 import Obb from '../../components/units/obb'
 import Dekk from '../../components/units/dekk'
-import Authordate from '../../components/units/Authordate'
+import Authordate from '../../components/units/authordate'
 
 import React, {useState} from 'react'
 const style= {
