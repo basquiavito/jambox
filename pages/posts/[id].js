@@ -17,30 +17,32 @@ export default function Post({ postData }) {
         <div className={utilStyles.lightText}>
    <Date dateString={postData.date} />
  </div> 
- <div><img src={postData.resource_files}/></div>
-
+ 
+ 
  <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+
+ <div>
+       
+
+       <div className="comment-count-view">
+
+         { /* Comment Counts */ }
+         <HyvorTalk.CommentCount 
+           websiteId='1313'
+           id={postData.id}
+         />
+
+       </div>
+      
+
+       { /* Load Comments now */ }
+       <HyvorTalk.Embed 
+         websiteId='1313'
+         id={postData.id}
+       />
+     </div>
 </article>
-<div>
-       
 
-        <div className="comment-count-view">
-
-          { /* Comment Counts */ }
-          <HyvorTalk.CommentCount 
-            websiteId='1313'
-            id='999'
-          />
-
-        </div>
-       
-
-        { /* Load Comments now */ }
-        <HyvorTalk.Embed 
-          websiteId='1313'
-          id='999'
-        />
-      </div>
 
     </Layout>
   )

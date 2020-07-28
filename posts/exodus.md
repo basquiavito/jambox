@@ -1,8 +1,10 @@
 ---
-title: "Jamal CrawFord: King of Handles. (a mysterious swag) "
+title: "Kyle Lowry tells us why the Raptors aren’t afraid of the bubble or the Bucks "
 date: '2020-07-20'
----
+id: 999
 
+---
+![GitHub Logo](https://s3.amazonaws.com/pedales.net/jordanShaq.jpg )
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
 
 - **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
