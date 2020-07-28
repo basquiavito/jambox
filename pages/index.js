@@ -191,7 +191,7 @@ headings:[
 
     
 
-<Link href="/posts/genesis"><a>
+<Link href="/editorial"><a>
 <Label label={headline.headline[1].label}/>
 <ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/kobewallace.jpg"/>
 <Title title={headline.headline[1].maintitle}/>
@@ -199,7 +199,7 @@ headings:[
 
     </a></Link>
 
-    <Link href="/posts/matrix"><a>
+    <Link href="/subeditorial"><a>
 <Label label={headline.headline[2].label}/>
 <ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/>
 <Title title={headline.headline[2].maintitle}/>
