@@ -21,11 +21,7 @@ export async function getStaticProps() {
 export default function blog({ allPostsData }) {
   return (
     <Layout home>
-      <Head>
  
-
-        <title>{siteTitle}</title>
-      </Head>
  
 
 

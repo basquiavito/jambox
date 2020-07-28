@@ -1,6 +1,9 @@
+
+
 ---
 title: "The Fadeaway's Masters: Miyagi Kobe & Miyagi Michael "
 date: '2020-01-01'
+id: 997
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
