@@ -25,7 +25,7 @@ cat:[{cat0: 'Rookie'},{ cat1: 'College'},{ cat2: 'Offense'}] ,
 descript:[{title: 'Iverson Crossed Jordan.', name:'Double Picasso + base', code:'013 013 18 G$ ', rank:'Masterpiece'}],
 parr:[{triadName:'Picasso + Base', player:'Allen Iverson', vs:'Michael Jordan', triadNum:'013', rawCode:'0F13 0F13 F180 FG$'}],
 transcript:[
-{code:'013', description:'Picasso is a blueprint. A secuence of a bounce + crossover + between the legs.  This is a blueprint for multiple players, such a Kyrie Irving, Luka Doncic and James Harden.' },
+{code:'013', description:'Picasso is a prototype. A secuence of a bounce + crossover + between the legs.  This is a blueprint for multiple players, such a Kyrie Irving, Luka Doncic and James Harden.' },
 {code1:'18FG$', description1:'Base is the most common dribble used to prepare a jumshot. 18 is a combo available to every single player in the world, no matter the skills, all you gotta do is invoke it. Practicing jumpshots with 18-FG$ from different spots is an excellent exercise for improving your mid-range.  '}]
 })
 const switchSpanishHandler = ()=> {
@@ -34,8 +34,8 @@ const switchSpanishHandler = ()=> {
                 {cat0: 'Novato'},{ cat1: 'Colegial'},{ cat2: 'Offensiva'}
             ],
             descript:[{title: 'Iverson Cruzo a Jordan.', name:'Doble Picasso + base', code:'013 013 180 ', rank:'Obra Maestra'}],
-            transcript:[{code:808, description: 'Allen Iverson empieza con una stride. Recuerda que la stride se forma por un 8F0 + F + 8.'},
-            {code1:'18FG$', description1:'Base es el dribleo mas utilizado para preparar un tiro de campo. 18 es un combo disponible para todo jugador sin importar el nivel. Todo lo que debe hacer es invocar la jugada. Practicar tiros de campo con BASE es un excelente ejercicio para mejorar tu tiro de media distancia.  '}]
+            transcript:[{code:'013', description: 'Picasso es un prototipo. Una secuencia de un bote + crossover + entre las piernas. Este prototipo es usado por varios jugadores como Kyrie Irving, Luka Doncic y James Harden. '},
+            {code1:'18FG$', description1:'Base es el dribleo mas utilizado para preparar un tiro de campo. 18 es un combo disponible para todo jugador no importa su capacidad. Todo lo que debe hacer es invocar la jugada. Practicar tiros de campo con BASE es un excelente ejercicio para mejorar tu tiro de media distancia.  '}]
         })
     }
 
@@ -45,7 +45,10 @@ const switchSpanishHandler = ()=> {
                 {cat0: 'Rookie'},{ cat1: 'College'},{ cat2: 'Offense'}
             ],
             descript:[{title: 'Iverson Crossed Jordan.', name:'Double Picasso + base', code:'013 013 180 ', rank:'Masterpiece'}],
-            transcript:[{code:808, description: 'Allen Iverson start the play with an stride.'}]
+            transcript:[
+                {code:'013', description:'Picasso is a blueprint. A secuence of a bounce + crossover + between the legs.  This is a blueprint for multiple players, such a Kyrie Irving, Luka Doncic and James Harden.' },
+                {code1:'18FG$', description1:'Base is the most common dribble used to prepare a jumshot. 18 is a combo available to every single player in the world, no matter the skills, all you gotta do is invoke it. Practicing jumpshots with 18-FG$ from different spots is an excellent exercise for improving your mid-range.  '},
+        ]
 
 
 
