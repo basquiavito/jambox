@@ -6,7 +6,7 @@ import VideoArticlePlusDekk from '../../components/units/videoArticlePlusDekk'
 import VideoMetaTitlePlusRelease from '../../components/units/VideoMetaTitlePlusRelease'
 import Trancript from '../../components/units/transcript'
  import Video from '../../components/units/video'
-import Maintitle from '../../components/units/maintitle'
+import Title from '../../components/units/title'
 import HyvorTalk from 'hyvor-talk-react'
 import Obb from '../../components/units/obb'
 import Dekk from '../../components/units/dekk'
@@ -87,13 +87,13 @@ code1={code.transcript[1].code1} description1={code.transcript[1].description1}/
 <div className="pageGrid">
 <div className="gridCenter">
 <Label label="Hoopcodes"/>
-<Maintitle title="Allen Iverson crossing Jordan must be `the most talk about move ever`"/>
+<Title title="Allen Iverson crossing Jordan must be `the most talk about move ever`"/>
 <Authordate author='Jose Mckenzie' date='July 29, 2020'/>
 <Dekk dekk='Allen Iverson did what few has ever done: crossed Jordan.
  '/>
 
  <img src='/Allen_Iverson.jpg'></img>
-<p>He’s a heck of a good player. He’s a young talent, and I think he’s going to continue to get better once he learns how to play the game on a much higher scale. Right now he is doing it a lot on physical ability, and he’s good, he’s quick. That’s a challenge for me to try to go out to him and his stature. He’s so quick and small. But it’s a challenge I won’t back away from. He may crossover on me again. At least I’m gonna get out there and try</p>
+<p><strong>He’s a heck of a good player.</strong> He’s a young talent, and I think he’s going to continue to get better once he learns how to play the game on a much higher scale. Right now he is doing it a lot on physical ability, and he’s good, he’s quick. That’s a challenge for me to try to go out to him and his stature. He’s so quick and small. But it’s a challenge I won’t back away from. He may crossover on me again. At least I’m gonna get out there and try</p>
 <blockquote><p>“He’s a heck of a good player. He’s a young talent, and I think he’s going to continue to get better once he learns how to play the game on a much higher scale. Right now he is doing it a lot on physical ability, and he’s good, he’s quick. That’s a challenge for me to try to go out to him and his stature. He’s so quick and small. But it’s a challenge I won’t back away from. He may crossover on me again. At least I’m gonna get out there and try.”</p></blockquote>
 
 <p>He’s a heck of a good player. He’s a young talent, and I think he’s going to continue to get better once he learns how to play the game on a much higher scale. Right now he is doing it a lot on physical ability, and he’s good, he’s quick. That’s a challenge for me to try to go out to him and his stature. He’s so quick and small. But it’s a challenge I won’t back away from. He may crossover on me again. At least I’m gonna get out there and try</p>
@@ -202,7 +202,15 @@ button {
    }
     
  
-
+p {
+    line-height: 1.69em;
+    letter-spacing: normal;
+    font-family: Georgia,helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+}
  
 `}    
 

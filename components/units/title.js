@@ -6,7 +6,7 @@
 export default function title(props){
  return<>
 <div className="editorialTitle">
-<h2 >{props.title}</h2>
+<h1 className='headerRow'>{props.title}</h1>
 </div>
 
 <style jsx>{`
@@ -14,14 +14,34 @@ export default function title(props){
     font-size: 1rem;
     margin-top: 1 rem;
     margin-bottom: 0.5rem;
+    letter-spacing: normal;
+    font-family: GTAmerica,helvetica,sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
  
  
                }
  
  
-.editorialTitle h2{
+.editorialTitle h1{
     display: inline;
                   }
+
+
+.headerRow {
+    line-height: 1.36em;
+    letter-spacing: -.017em;
+    font-family: GTAmerica,helvetica,sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: none;
+    text-align: center;
+    color: #333; 
+}                  
             `}</style>
        
     </>
