@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function VideoMetaTitlePlusRelease(){
+export default function VideoMetaTitlePlusRelease(props){
     return <>
 
 <div className="videoMeta">
@@ -14,7 +14,7 @@ export default function VideoMetaTitlePlusRelease(){
 
     
     <div className="releaseDate">
-        Released on Jul/22/2020
+        Released on {props.date}
     </div>
     
     <div id="videoMetaStatus" className="liveRegion" role="status"></div>

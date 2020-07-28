@@ -1,4 +1,5 @@
-export default function transcript(){
+ 
+export default function transcript(props){
     return<>
 
 <div className="transcriptContainer">
@@ -10,56 +11,17 @@ export default function transcript(){
 <div className="videoTranscript">
 
 <div className="transcriptRow">
-<div className="transcriptTime">00:00</div>
+<div className="transcriptTime">{props.code}</div>
 <div className="transcriptText">
-light 013 , then turbo 013.</div>
-</div>
-
-<div className="transcriptRow">
-<div className="transcriptTime">00:07</div>
-<div className="transcriptText">
-it was like a drug, because literally, </div>
-</div>
-
-<div className="transcriptRow">
-<div className="transcriptTime">00:11</div>
-<div className="transcriptText">
-I doubt he got it</div>
-</div>
-
-<div className="transcriptRow">
-<div className="transcriptTime">00:15</div>
-<div className="transcriptText">
-Ma man, he knows that if i get there...haaa</div>
-</div>
-
-<div className="transcriptRow">
-<div className="transcriptTime">00:15</div>
-<div className="transcriptText">
-Ma man, he knows that if i get there...haaa</div>
-</div>
+{props.description}</div>
+</div><br/>
 
 
 <div className="transcriptRow">
-<div className="transcriptTime">00:15</div>
+<div className="transcriptTime">{props.code1}</div>
 <div className="transcriptText">
-Ma man, he knows that if i get there...haaa</div>
+{props.description1}</div>
 </div>
-
-<div className="transcriptRow">
-<div className="transcriptTime">00:15</div>
-<div className="transcriptText">
-Ma man, he knows that if i get there...haaa</div>
-</div>
-
-
-<div className="transcriptRow">
-<div className="transcriptTime">00:15</div>
-<div className="transcriptText">
-Ma man, he knows that if i get there...haaa</div>
-</div>
-
-
 
 </div>
 
