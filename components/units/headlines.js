@@ -50,7 +50,7 @@ author:'Richard Clemon'
     <div id="buttons">
     <button  className="buttonStyle" onClick={switchSpanishHandler}>Es </button>
     <button className="buttonStyle" onClick={switchEnglishHandler}>En </button></div><br/><br/>
-<Link href="/posts/exodus"><a className="editorialPlacementLink">
+<Link href="/headline"><a className="editorialPlacementLink">
 <div className="editorialPlacementHeader">
 <Label label={headline.headline[0].label}/>
 <Maintitle title={headline.headline[0].maintitle}/>
@@ -64,7 +64,7 @@ author:'Richard Clemon'
 
     
 
-<Link href="/posts/genesis"><a>
+<Link href=" "><a>
 <Label label="Prime"/>
 <ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/kobewallace.jpg"/>
 <Title title="What’s Up Next: Here’s Every Album Dropping In June"/>
@@ -72,7 +72,7 @@ author:'Richard Clemon'
 
     </a></Link>
 
-    <Link href="/posts/matrix"><a>
+    <Link href=" "><a>
 <Label label="Prime"/>
 <ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/>
 <Title title="What’s Up Next: Here’s Every Album Dropping In June"/>

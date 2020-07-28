@@ -177,7 +177,7 @@ headings:[
     </div><br/><br/>
 
 
-<Link href="/posts/exodus"><a className="editorialPlacementLink">
+<Link href="/headline"><a className="editorialPlacementLink">
 <div className="editorialPlacementHeader">
 <Label label={headline.headline[0].label}/>
 <Maintitle title={headline.headline[0].maintitle}/>
