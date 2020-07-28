@@ -10,7 +10,7 @@ export default function headlines(){
     const [ headline, setHeadline ] = useState({
         headline: [
 {
-label: `${<a href="nba.com">Latest</a>}`,
+label:'Hoopcodes',
 maintitle:'PELICANS at NETS | SCRIMMAGE HIGHLIGHTS | July 22, 2020”',
 dekk:'In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. ',
 author:'Richard Clemons',

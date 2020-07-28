@@ -1,5 +1,3 @@
-
-
 ---
 title: "The Fadeaway's Masters: Miyagi Kobe & Miyagi Michael "
 date: '2020-01-01'
