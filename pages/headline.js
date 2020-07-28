@@ -5,6 +5,9 @@ import Label from '../components/units/label'
 import ImageHolder from '../components/units/imageHolder'
 import Dekk from '../components/units/dekk'
 import Parrafo from '../components/units/parrafo'
+import HyvorTalk from 'hyvor-talk-react'
+
+
 
 export default function headlines(){
     const [ headline, setHeadline ] = useState({
@@ -90,7 +93,26 @@ p6:'glasses'
     p7={headline.headline[0].p7}
     
     />
-    
+    <div>
+       
+
+       <div className="comment-count-view">
+
+         { /* Comment Counts */ }
+         <HyvorTalk.CommentCount 
+           websiteId='1313'
+           id='a999'
+         />
+
+       </div>
+      
+
+       { /* Load Comments now */ }
+       <HyvorTalk.Embed 
+         websiteId='1313'
+         id='a999'
+       />
+     </div>
     </div> </div>
 
     <style jsx>
