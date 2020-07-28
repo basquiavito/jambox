@@ -1,16 +1,16 @@
  import Homevideo from '../../components/units/homevideo'
 import Head from 'next/head'
- 
+ import Label from '../../components/units/label'
 import VideoCategories from '../../components/units/videoCategory'
 import VideoArticlePlusDekk from '../../components/units/videoArticlePlusDekk'
 import VideoMetaTitlePlusRelease from '../../components/units/VideoMetaTitlePlusRelease'
 import Trancript from '../../components/units/transcript'
  import Video from '../../components/units/video'
-import YoutubeHooks from '../../components/units/youtubehooks'
+import Maintitle from '../../components/units/maintitle'
 import HyvorTalk from 'hyvor-talk-react'
 import Obb from '../../components/units/obb'
-
-
+import Dekk from '../../components/units/dekk'
+import Authordate from '../../components/units/Authordate'
 
 import React, {useState} from 'react'
 const style= {
@@ -78,19 +78,34 @@ const switchSpanishHandler = ()=> {
 <VideoMetaTitlePlusRelease date='Jul 28, 2020'  />
 <Trancript code={code.transcript[0].code} description={code.transcript[0].description} 
 code1={code.transcript[1].code1} description1={code.transcript[1].description1}/>
-
 </div>
-
-
-
-
 </div></div>
 </section></div>
 
-<div>
+
+<div id="featured">
 <div className="pageGrid">
 <div className="gridCenter">
-    <div>
+<Label label="Hoopcodes"/>
+<Maintitle title="Allen Iverson crossing Jordan must be `the most talk about move ever`"/>
+<Authordate author='Jose Mckenzie' date='July 29, 2020'/>
+<Dekk dekk='Allen Iverson did what few has ever done: crossed Jordan.
+ '/>
+
+ <img src='/Allen_Iverson.jpg'></img>
+<p>He’s a heck of a good player. He’s a young talent, and I think he’s going to continue to get better once he learns how to play the game on a much higher scale. Right now he is doing it a lot on physical ability, and he’s good, he’s quick. That’s a challenge for me to try to go out to him and his stature. He’s so quick and small. But it’s a challenge I won’t back away from. He may crossover on me again. At least I’m gonna get out there and try</p>
+<blockquote><p>“He’s a heck of a good player. He’s a young talent, and I think he’s going to continue to get better once he learns how to play the game on a much higher scale. Right now he is doing it a lot on physical ability, and he’s good, he’s quick. That’s a challenge for me to try to go out to him and his stature. He’s so quick and small. But it’s a challenge I won’t back away from. He may crossover on me again. At least I’m gonna get out there and try.”</p></blockquote>
+
+<p>He’s a heck of a good player. He’s a young talent, and I think he’s going to continue to get better once he learns how to play the game on a much higher scale. Right now he is doing it a lot on physical ability, and he’s good, he’s quick. That’s a challenge for me to try to go out to him and his stature. He’s so quick and small. But it’s a challenge I won’t back away from. He may crossover on me again. At least I’m gonna get out there and try</p>
+</div></div></div>
+
+
+
+
+<div id="commentContainer">
+<div className="pageGrid">
+<div className="gridCenter">
+   
 <div className="comment-count-view">
  
  { /* Comment Counts */ }
@@ -102,7 +117,7 @@ code1={code.transcript[1].code1} description1={code.transcript[1].description1}/
 </div>
 
 
-
+<div>
 { /* Load Comments now */ }
 <HyvorTalk.Embed 
  websiteId='1313'
@@ -110,9 +125,9 @@ code1={code.transcript[1].code1} description1={code.transcript[1].description1}/
 />
 </div>
 
-
+</div> 
   </div>
-</div></div>
+</div> 
 <style jsx>
 {`
  
@@ -174,9 +189,17 @@ button {
 .mixtapeCard{
     padding: 0 1px;
    
-    box-sizing: border-box;
+    box-sizing: border-box;}
   
-   
+   blockquote {
+    overflow: hidden;
+    quotes: none;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+    position: relative;
+    padding-left: 2.5rem;
+   }
     
  
 
