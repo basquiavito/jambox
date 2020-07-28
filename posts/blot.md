@@ -1,5 +1,5 @@
 ---
-title: 'Signs of madness'
+title: 'Vamo a liga: Como elegir tu equipo cuando no conoces a nadie'
 date: '2020-07-20'
 
 ---
