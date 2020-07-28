@@ -1,4 +1,4 @@
- import Homevideo from '../../components/units/homevideo'
+ import Parr from '../../components/units/parr'
 import Head from 'next/head'
  import Label from '../../components/units/label'
 import VideoCategories from '../../components/units/videoCategory'
@@ -11,22 +11,21 @@ import HyvorTalk from 'hyvor-talk-react'
 import Obb from '../../components/units/obb'
 import Dekk from '../../components/units/dekk'
 import Authordate from '../../components/units/authordate'
-
 import React, {useState} from 'react'
-const style= {
-    backgroundColor:'#000'
-}
+const style= {backgroundColor:'#000'}
 
- 
- 
+
 export default function CodeVideos(){
-    const [ code, setCodes] = useState({
+const [ code, setCodes] = useState({
 cat:[{cat0: 'Rookie'},{ cat1: 'College'},{ cat2: 'Offense'}] ,
 descript:[{title: 'Iverson Crossed Jordan.', name:'Double Picasso + base', code:'013 013 18 G$ ', rank:'Masterpiece'}],
 parr:[{triadName:'Picasso + Base', player:'Allen Iverson', vs:'Michael Jordan', triadNum:'013', rawCode:'0F13 0F13 F180 FG$'}],
 transcript:[
 {code:'013', description:'Picasso is a prototype. A secuence of a bounce + crossover + between the legs.  This is a blueprint for multiple players, such a Kyrie Irving, Luka Doncic and James Harden.' },
-{code1:'18FG$', description1:'Base is the most common dribble used to prepare a jumshot. 18 is a combo available to every single player in the world, no matter the skills, all you gotta do is invoke it. Practicing jumpshots with 18-FG$ from different spots is an excellent exercise for improving your mid-range.  '}]
+{code1:'18FG$', description1:'Base is the most common dribble used to prepare a jumshot. 18 is a combo available to every single player in the world, no matter the skills, all you gotta do is invoke it. Practicing jumpshots with 18-FG$ from different spots is an excellent exercise for improving your mid-range.  '}
+],
+
+pseudoArt: [{label:'Hoopcodes', title:'Allen Iverson crossing Jordan has been inmortalized.', dekk:'Allen Iverson did what few has ever done: crossed Jordan.', parr:'He dominate all the other guards of the league from east to west, tall or short, left-handed or right-hander. Didnt matter if you were Payton, Stockton, Kidd. AI destroy each and every single ankle from 96 until his game.' }]
 })
 const switchSpanishHandler = ()=> {
         setCodes({
@@ -35,7 +34,10 @@ const switchSpanishHandler = ()=> {
             ],
             descript:[{title: 'Iverson Cruzo a Jordan.', name:'Doble Picasso + base', code:'013 013 180 ', rank:'Obra Maestra'}],
             transcript:[{code:'013', description: 'Picasso es un prototipo. Una secuencia de un bote + crossover + entre las piernas. Este prototipo es usado por varios jugadores como Kyrie Irving, Luka Doncic y James Harden. '},
-            {code1:'18FG$', description1:'Base es el dribleo mas utilizado para preparar un tiro de campo. 18 es un combo disponible para todo jugador no importa su capacidad. Todo lo que debe hacer es invocar la jugada. Practicar tiros de campo con BASE es un excelente ejercicio para mejorar tu tiro de media distancia.  '}]
+            {code1:'18FG$', description1:'Base es el dribleo mas utilizado para preparar un tiro de campo. 18 es un combo disponible para todo jugador no importa su capacidad. Todo lo que debe hacer es invocar la jugada. Practicar tiros de campo con BASE es un excelente ejercicio para mejorar tu tiro de media distancia.  '}
+        ],
+        pseudoArt: [{label:'Codigos de Baloncesto', title:'El crossover de Allen Iverson sobre Michael Jordan ha sido inmortalizado.', dekk:'Allen Iverson hizo lo que pocos lograron: mover a MJ.', parr:'El domino a todos los otros aleros de la liga, de este a oeste, altos o bajos, derechos o izquierdos. No importaba si tu eras un Gary Payton, un John Stockton, o un Kidd. A.I destruyo cada uno de los tobillos que enfrento desde 1996 hasta su ultimo juego.'}],
+ 
         })
     }
 
@@ -48,8 +50,9 @@ const switchSpanishHandler = ()=> {
             transcript:[
                 {code:'013', description:'Picasso is a blueprint. A secuence of a bounce + crossover + between the legs.  This is a blueprint for multiple players, such a Kyrie Irving, Luka Doncic and James Harden.' },
                 {code1:'18FG$', description1:'Base is the most common dribble used to prepare a jumshot. 18 is a combo available to every single player in the world, no matter the skills, all you gotta do is invoke it. Practicing jumpshots with 18-FG$ from different spots is an excellent exercise for improving your mid-range.  '},
-        ]
-
+                
+        ],
+        pseudoArt: [{label:'Hoopcodes', title:'Allen Iverson crossing Jordan has been inmortalized.', dekk:'Allen Iverson did what few has ever done: crossed Jordan.', parr:'Allen Iverson crossing Jordan has been inmortalized.', dekk:'Allen Iverson did what few has ever done: crossed Jordan.', parr:'He dominate all the other guards of the league from east to west, tall or short, left-handed or right-hander. Didnt matter if you were Payton, Stockton, Kidd. AI destroy each and every single ankle from 96 until his game.' }]
 
 
         })
@@ -86,18 +89,18 @@ code1={code.transcript[1].code1} description1={code.transcript[1].description1}/
 <div id="featured">
 <div className="pageGrid">
 <div className="gridCenter">
-<Label label="Hoopcodes"/>
-<Title title="Allen Iverson crossing Jordan must be `the most talk about move ever`"/>
+<Label label={code.pseudoArt[0].label}/>
+<Title title={code.pseudoArt[0].title}/>
 <Authordate author='Jose Mckenzie' date='July 29, 2020'/>
-<Dekk dekk='Allen Iverson did what few has ever done: crossed Jordan.
- '/>
+<Dekk dekk={code.pseudoArt[0].dekk}/>
+ 
 
- <img src='/Allen_Iverson.jpg'></img>
-<p><strong>He’s a heck of a good player.</strong> He’s a young talent, and I think he’s going to continue to get better once he learns how to play the game on a much higher scale. Right now he is doing it a lot on physical ability, and he’s good, he’s quick. That’s a challenge for me to try to go out to him and his stature. He’s so quick and small. But it’s a challenge I won’t back away from. He may crossover on me again. At least I’m gonna get out there and try</p>
-<blockquote><p>“He’s a heck of a good player. He’s a young talent, and I think he’s going to continue to get better once he learns how to play the game on a much higher scale. Right now he is doing it a lot on physical ability, and he’s good, he’s quick. That’s a challenge for me to try to go out to him and his stature. He’s so quick and small. But it’s a challenge I won’t back away from. He may crossover on me again. At least I’m gonna get out there and try.”</p></blockquote>
+ <img src='/Allen_Iverson.jpg'></img><br/>
+<Parr parr={code.pseudoArt[0].parr}/>
 
-<p>He’s a heck of a good player. He’s a young talent, and I think he’s going to continue to get better once he learns how to play the game on a much higher scale. Right now he is doing it a lot on physical ability, and he’s good, he’s quick. That’s a challenge for me to try to go out to him and his stature. He’s so quick and small. But it’s a challenge I won’t back away from. He may crossover on me again. At least I’m gonna get out there and try</p>
-</div></div></div>
+ 
+ 
+</div></div></div><br/><br/>
 
 
 
