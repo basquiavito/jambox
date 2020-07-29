@@ -161,8 +161,28 @@ headings:[
     
   return <>
 <Head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
 <title>Basketball Notation, news, profiles and more | Hoopscript</title>
-     
+<meta name="msapplication-tap-highlight" content="no"></meta>   
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"></meta>
+<link rel="canonical" href="https://www.hoopscript.com/"></link>
+<link rel="canonical" href="https://www.hoopscript.vercel.app/"></link>
+<meta name="author" contnet></meta>
+<meta name="copyright" content="Copyright © 64 projects 2020"/>
+<meta name="description" content="homepage | The latest tips and advice for fans on basketball news, ball-handling, scoring."></meta>
+<meta name="parsely-link" content="https://www.hoopscript.com/"></meta>
+<meta name="parsely-section" content="homepage"></meta>
+
+
+
+
+
+
+
+
+
+
 </Head>
 <div id="container">
 
@@ -384,6 +404,8 @@ headings:[
         #video  a {
           color:#fff;
         }
+
+        
        `}
      </style>
   </>
