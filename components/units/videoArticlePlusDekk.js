@@ -12,17 +12,10 @@ export default function VideoArticlePlusDekk(props){
       <small>Rank :</small> {props.rank}<br/> </h2>
 
 <p class="videoDescription">
-      <Link href=""><a>{props.triadName}</a></Link>
     
-     <Link href=""><a>{props.player}</a></Link><br/> 
-  
-  
-       <Link href=""><a>{props.vs}</a></Link><br/>
-  {props.triadName} has a   <Link href=""><a>{props.triadNum} </a></Link>.
+  {props.rawDescript}
  
-    
-    
-The raw code should be <Link href=""><a>{props.rawCode}</a></Link>.<br/>
+
 
     </p>
  
