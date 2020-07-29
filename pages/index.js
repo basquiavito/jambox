@@ -21,9 +21,9 @@ export default function Home() {
     headline:[
     {
     label: 'Latest',
-    maintitle:'PELICANS at NETS | SCRIMMAGE HIGHLIGHTS | July 22, 2020”',
-    dekk:'In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. Brandon Ingram led the Pelicans with 12 PTS in the victory, while Caris LeVert and Jarrett Allen each tallied 10 PTS for the Nets.',
-    author:'Richard Clemons'
+    maintitle:'James Harden Drains 7 3-Pointers In The First Half vs. Celtics',
+    dekk:'As NBA scrimmages wrap up, James Harden looks like he is in midseason form. Finishing up with 35 points, 8 rebounds, 6 assists and going 8/13 from 3-point land, Harden put on a show against the Celtics. ',
+    author:'Bleacher Report'
   },
   {
     label: 'HighSchool',
@@ -182,8 +182,8 @@ headings:[
 <Label label={headline.headline[0].label}/>
 <Maintitle title={headline.headline[0].maintitle}/>
 <Dekk dekk={headline.headline[0].dekk}/>
-<Authordate author={headline.headline[0].author} date="07/22/20"/>
-<ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/>
+<Authordate author={headline.headline[0].author} date="07/29/20"/>
+<ImageHolder mediaUrl="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/>
  
 
 
@@ -194,7 +194,7 @@ headings:[
 <Link href="/editorial"><a>
 <Label label={headline.headline[1].label}/>
 <ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/kobewallace.jpg"/>
-<Title title={headline.headline[1].maintitle}/>
+<Maintitle title={headline.headline[1].maintitle}/>
 <Authordate author="Jay Flemmings" date="06/14/20"/>
 
     </a></Link>
@@ -202,7 +202,7 @@ headings:[
     <Link href="/subeditorial"><a>
 <Label label={headline.headline[2].label}/>
 <ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/>
-<Title title={headline.headline[2].maintitle}/>
+<Maintitle title={headline.headline[2].maintitle}/>
 <Authordate author="Jay Flemmings" date="06/14/20"/>
 
     </a></Link>

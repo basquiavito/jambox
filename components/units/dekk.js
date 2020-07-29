@@ -15,7 +15,7 @@ return(
     font-weight: 400;
     font-style: normal;
     text-transform: none;
-    color: ;
+    color:#000 ;
   
     }
 

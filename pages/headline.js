@@ -6,18 +6,18 @@ import ImageHolder from '../components/units/imageHolder'
 import Dekk from '../components/units/dekk'
 import Parrafo from '../components/units/parrafo'
 import HyvorTalk from 'hyvor-talk-react'
-
-
+import { PieChart } from 'react-minimal-pie-chart';
+import Youtubehooks from '../components/units/youtubehooks'
 
 export default function headlines(){
     const [ headline, setHeadline ] = useState({
         headline: [
 {
-label:'Hoopcodes',
-maintitle:'PELICANS at NETS | SCRIMMAGE HIGHLIGHTS | July 22, 2020”',
-dekk:'In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. ',
+label:'Latest',
+maintitle:'James Harden Drains 7 3-Pointers In The First Half vs. Celtics',
+dekk:'As NBA scrimmages wrap up, James Harden looks like he is in midseason form. Finishing up with 35 points, 8 rebounds, 6 assists and going 8/13 from 3-point land, Harden put on a show against the Celtics.',
 author:'Richard Clemons',
-p1:'Only because you fell doesnt mean it is a foul',
+p1:'Hey! We got it! Harden is a great offensive player and obviously he has reached a level of expertise that few have ever had. Now, we still belive that he has the chance to growth even bigger.',
 p2:'Three is better than two, sometimes.',
 p3:'book',
 p4:'table',
@@ -81,12 +81,14 @@ p6:'glasses'
 <Label label="Hay Bobo"/> 
     <Title  title={headline.headline[0].maintitle}/>
     <Authordate author={headline.headline[0].author} date="Jul 23, 2020"/>
-    <ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/kobeShaq.jpg"/>
+<Youtubehooks videoIdA='W97OWWNgzLk'/>
     <Dekk dekk={headline.headline[0].dekk}/>
     <Parrafo
     p1={headline.headline[0].p1} 
     p2={headline.headline[0].p2}
     p3={headline.headline[0].p3}
+
+
     p4={headline.headline[0].p4}
     p5={headline.headline[0].p5}
     p6={headline.headline[0].p6}

@@ -40,7 +40,7 @@ export default function title(props){
     font-style: normal;
     text-transform: none;
     text-align: center;
-    color: #fff; 
+    color: #000; 
 }                  
             `}</style>
        
