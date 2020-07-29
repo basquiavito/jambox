@@ -13,8 +13,8 @@ import Dekk from '../../components/units/dekk'
 import Authordate from '../../components/units/authordate'
 import React, {useState} from 'react'
 import Youtubehooks from '../../components/units/youtubehooks'
-
-
+import Mixtapeunit from '../../components/units/mixtapeunit'
+import Mixtape from '../../components/units/mixtape'
 
 const style= {backgroundColor:'#000'}
 
@@ -67,17 +67,22 @@ const switchSpanishHandler = ()=> {
 </Head>
    
 <div style={style}>
+<div className="pageGrid">
+<div className="gridCenter">
+    <section className="videoSection">
+<Youtubehooks videoIdA="C977RCbuqFk"/></section></div></div>
 <section className='videoInfoLandmark' role='region' arial-label='video info' tabIndex='-1'>
 <div className="pageGrid">
 <div className="gridCenter">
+
 <div id="buttons">
     <button  className="buttonStyle" onClick={switchSpanishHandler}>ESPAÑOL </button>
     <button  className="buttonStyle" onClick={switchEnglishHandler}>ENGLISH </button>
     </div><br/><br/>
-
+   
 <div className="videoInfoPanel">
 
-<Youtubehooks videoIdA="C977RCbuqFk"/>
+
 
 <Obb f1='X' b1='0' s1='X' f2='F' b2='1' s2='X' f3='X' b3='3' s3='X' f4='X' b4='0' s4='X' f5='F' b5='1' s5='X' f6='X' b6='3' s6='X' f7='F' b7='1' s7='X' f8='8' b8='XG' s8='X' f9='F' b9='X' s9='$'/><br/>
 <VideoCategories cat0={code.cat[0].cat0} cat1={code.cat[1].cat1} cat2={code.cat[2].cat2}/>
@@ -98,8 +103,8 @@ code1={code.transcript[1].code1} description1={code.transcript[1].description1}/
 <Authordate author='Jose Mckenzie' date='July 29, 2020'/>
 <Dekk dekk={code.pseudoArt[0].dekk}/>
  
-
- <img src='/Allen_Iverson.jpg'></img><br/>
+<picture>
+ <img src='/Allen_Iverson.jpg'></img></picture><br/>
 <Parr parr={code.pseudoArt[0].parr}/>
 
  
@@ -137,6 +142,8 @@ code1={code.transcript[1].code1} description1={code.transcript[1].description1}/
 </div> 
 <style jsx>
 {`
+
+  
  
 #buttons{
     display: flex;
