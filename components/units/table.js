@@ -29,8 +29,7 @@ function Obb(props){
 <td className="headers">8</td>
 <td className="headers">9</td>
 <td className="headers">10</td>
-<td className="headers">11</td>
-<td className="headers">12</td>
+ 
  </tr> 
 
 <tr >
@@ -46,8 +45,7 @@ function Obb(props){
 <td>{props.f8}</td>
 <td>{props.f9}</td>
 <td>{props.f10}</td>
-<td>{props.f11}</td>
-<td>{props.f12}</td>
+ 
  
  
 
@@ -66,8 +64,7 @@ function Obb(props){
 <td>{props.b8}</td>
 <td>{props.b9}</td>
 <td>{props.b10}</td>
-<td>{props.b11}</td>
-<td>{props.b12}</td>
+ 
  
  
  
@@ -88,8 +85,7 @@ function Obb(props){
 <td>{props.s8}</td>
 <td>{props.s9}</td>
 <td>{props.s10}</td>
-<td>{props.s11}</td>
-<td>{props.s12}</td>
+ 
 
 
 

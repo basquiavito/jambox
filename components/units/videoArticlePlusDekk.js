@@ -17,7 +17,7 @@ export default function VideoArticlePlusDekk(props){
  
 
 
-    </p>
+    </p><br/>
  
 
     
@@ -59,7 +59,9 @@ p > a {
 p > a:visited {
     color : #489ec8;
 }
-
+small {
+  color: #999;
+}
 `}
 
 

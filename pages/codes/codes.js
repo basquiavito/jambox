@@ -12,6 +12,10 @@ import Obb from '../../components/units/obb'
 import Dekk from '../../components/units/dekk'
 import Authordate from '../../components/units/authordate'
 import React, {useState} from 'react'
+import Youtubehooks from '../../components/units/youtubehooks'
+
+
+
 const style= {backgroundColor:'#000'}
 
 
@@ -73,7 +77,7 @@ const switchSpanishHandler = ()=> {
 
 <div className="videoInfoPanel">
 
-<Video videoId="C977RCbuqFk"/>
+<Youtubehooks videoIdA="C977RCbuqFk"/>
 
 <Obb f1='X' b1='0' s1='X' f2='F' b2='1' s2='X' f3='X' b3='3' s3='X' f4='X' b4='0' s4='X' f5='F' b5='1' s5='X' f6='X' b6='3' s6='X' f7='F' b7='1' s7='X' f8='8' b8='XG' s8='X' f9='F' b9='X' s9='$'/><br/>
 <VideoCategories cat0={code.cat[0].cat0} cat1={code.cat[1].cat1} cat2={code.cat[2].cat2}/>
