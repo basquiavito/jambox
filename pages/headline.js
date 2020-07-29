@@ -81,7 +81,7 @@ p6:'glasses'
 <Label label="Hay Bobo"/> 
     <Title  title={headline.headline[0].maintitle}/>
     <Authordate author={headline.headline[0].author} date="Jul 23, 2020"/>
-<Youtubehooks videoIdA='W97OWWNgzLk'/>
+
     <Dekk dekk={headline.headline[0].dekk}/>
     <Parrafo
     p1={headline.headline[0].p1} 
