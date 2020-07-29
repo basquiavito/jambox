@@ -193,7 +193,7 @@ headings:[
 
 <Link href="/editorial"><a>
 <Label label={headline.headline[1].label}/>
-<ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/kobewallace.jpg"/>
+<ImageHolder mediaUrl="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/>
 <Maintitle title={headline.headline[1].maintitle}/>
 <Authordate author="Jay Flemmings" date="06/14/20"/>
 
@@ -201,7 +201,7 @@ headings:[
 
     <Link href="/subeditorial"><a>
 <Label label={headline.headline[2].label}/>
-<ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/>
+<ImageHolder mediaUrl="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/>
 <Maintitle title={headline.headline[2].maintitle}/>
 <Authordate author="Jay Flemmings" date="06/14/20"/>
 
@@ -219,11 +219,11 @@ headings:[
 <div className="gridCenter">
 <Sectiontitle title={headline.headings[0].title} />
 <Sectionsubtitle subtitle = {headline.headings[0].subtitle} />
-<Link href="/codes/codes"><a><Coderow rank="1" codeTitle={headline.charts[0].codeTitle} hoopcodes={headline.charts[0].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/codes/codes1"><a><Coderow rank="2" codeTitle={headline.charts[1].codeTitle} hoopcodes={headline.charts[1].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/codes/codes2"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes} image="https://s3.amazonaws.com/pedales.net/aimovemj.jpg"/></a></Link>
-<Link href="/codes/codes3"><a><Coderow rank="4" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="https://s3.amazonaws.com/pedales.net/luka.jpeg"/></a></Link>
-<Link href="/codes/codes4"><a><Coderow rank="5" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="https://s3.amazonaws.com/pedales.net/aimovemj.jpg"/></a></Link>
+<Link href="/codes/codes"><a><Coderow rank="1" codeTitle={headline.charts[0].codeTitle} hoopcodes={headline.charts[0].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes1"><a><Coderow rank="2" codeTitle={headline.charts[1].codeTitle} hoopcodes={headline.charts[1].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes2"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes3"><a><Coderow rank="4" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes4"><a><Coderow rank="5" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
 
 </div></div></div>
      
@@ -240,34 +240,34 @@ headings:[
 <Title title={headline.videos[0].title}/>
 <Dekk dekk={headline.videos[0].dekk}/>
 <Authordate author={headline.videos[0].author} date={headline.videos[0].date} />
-<MediaUrlFull mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/>
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/>
 
 </a></Link>
  
     <Link href="/videos/video1"><a className="linkContainer">
     <Blacklabel label={headline.videos[1].label}/>
-<MediaUrlFull mediaUrl=" https://s3.amazonaws.com/pedales.net/luka.jpeg" />
+<MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg" />
 <Title title={headline.videos[1].title}/>
 <Authordate author={headline.videos[1].author} date={headline.videos[1].date} />
         </a></Link>
 
 <Link href="/videos/video2"><a>
 <Blacklabel label={headline.videos[2].label}/>
-<MediaUrlFull mediaUrl=" https://s3.amazonaws.com/pedales.net/jordanShaq.jpg" />
+<MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg" />
 <Title title={headline.videos[2].title}/>
 <Authordate author={headline.videos[2].author} date={headline.videos[2].date} />
     </a></Link>
 
 <Link href="/videos/video3"><a>
 <Blacklabel label={headline.videos[3].label}/>
-<MediaUrlFull mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg" />
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg" />
 <Title title={headline.videos[3].title}/>
 <Authordate author={headline.videos[3].author} date={headline.videos[3].date} />
     </a></Link>
 
 <Link href="/videos/video4"><a>
 <Blacklabel label={headline.videos[4].label}/>
-<MediaUrlFull mediaUrl=" https://s3.amazonaws.com/pedales.net/luka.jpeg" />
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg" />
 <Title title={headline.videos[4].title}/>
 <Authordate author={headline.videos[4].author} date={headline.videos[4].date} /></a>
 
@@ -281,11 +281,11 @@ headings:[
 <div className="gridCenter">
 <Sectiontitle title={headline.headings[2].title} />
 <Sectionsubtitle subtitle={headline.headings[2].subtitle} />
-  <Link href="/charts/top"><a><Coderow rank="1" codeTitle={headline.versus[0].codeTitle} hoopcodes={headline.versus[0].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/charts/top1"><a><Coderow rank="2" codeTitle={headline.versus[1].codeTitle} hoopcodes={headline.versus[1].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/charts/top2"><a><Coderow rank="3" codeTitle={headline.versus[2].codeTitle} hoopcodes={headline.versus[2].hoopcodes} image="https://s3.amazonaws.com/pedales.net/kobeShaq.jpg"/></a></Link>
-<Link href="/charts/top3"><a><Coderow rank="4" codeTitle={headline.versus[3].codeTitle} hoopcodes={headline.versus[3].hoopcodes} image="https://s3.amazonaws.com/pedales.net/luka.jpeg"/></a></Link>
-<Link href="/charts/top4"><a><Coderow rank="5" codeTitle={headline.versus[4].codeTitle} hoopcodes={headline.versus[4].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
+  <Link href="/charts/top"><a><Coderow rank="1" codeTitle={headline.versus[0].codeTitle} hoopcodes={headline.versus[0].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
+<Link href="/charts/top1"><a><Coderow rank="2" codeTitle={headline.versus[1].codeTitle} hoopcodes={headline.versus[1].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
+<Link href="/charts/top2"><a><Coderow rank="3" codeTitle={headline.versus[2].codeTitle} hoopcodes={headline.versus[2].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
+<Link href="/charts/top3"><a><Coderow rank="4" codeTitle={headline.versus[3].codeTitle} hoopcodes={headline.versus[3].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
+<Link href="/charts/top4"><a><Coderow rank="5" codeTitle={headline.versus[4].codeTitle} hoopcodes={headline.versus[4].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
 
  
 </div></div></div>
