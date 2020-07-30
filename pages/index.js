@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+ 
 import Sectiontitle from '../components/units/sectiontitle'
 import Sectionsubtitle from '../components/units/sectionsubtitle'
 import BlackSectiontitle from '../components/units/blackSectionTitle'
@@ -16,7 +16,9 @@ import Blacklabel from '../components/units/blackLabel'
 import MediaUrlFull from '../components/units/mediaUrlFull'
 
  
+ 
 export default function Home() {
+ 
   const [ headline, setHeadline] = useState({
     headline:[
     {
@@ -191,6 +193,7 @@ headings:[
 <div className="pageGrid">
 <div className="gridCenter">
   <div className="editorialPlacementContainer">
+ 
   <div id="buttons">
     <button  className="buttonStyle" onClick={switchSpanishHandler}>ESPAÑOL </button>
     <button  className="buttonStyle" onClick={switchEnglishHandler}>ENGLISH </button>
@@ -213,7 +216,7 @@ headings:[
 
 <Link href="/editorial"><a>
 <Label label={headline.headline[1].label}/>
-<ImageHolder mediaUrl="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/>
+<ImageHolder mediaUrl="http://i.ytimg.com/vi/6v7QjOiupCU/hqdefault.jpg"/>
 <Maintitle title={headline.headline[1].maintitle}/>
 <Authordate author="Jay Flemmings" date="06/14/20"/>
 
@@ -221,7 +224,7 @@ headings:[
 
     <Link href="/subeditorial"><a>
 <Label label={headline.headline[2].label}/>
-<ImageHolder mediaUrl="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/>
+<ImageHolder mediaUrl="http://i.ytimg.com/vi/FIqwRr2cU4c/hqdefault.jpg"/>
 <Maintitle title={headline.headline[2].maintitle}/>
 <Authordate author="Jay Flemmings" date="06/14/20"/>
 
@@ -240,10 +243,10 @@ headings:[
 <Sectiontitle title={headline.headings[0].title} />
 <Sectionsubtitle subtitle = {headline.headings[0].subtitle} />
 <Link href="/codes/codes"><a><Coderow rank="1" codeTitle={headline.charts[0].codeTitle} hoopcodes={headline.charts[0].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
-<Link href="/codes/codes1"><a><Coderow rank="2" codeTitle={headline.charts[1].codeTitle} hoopcodes={headline.charts[1].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
-<Link href="/codes/codes2"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
-<Link href="/codes/codes3"><a><Coderow rank="4" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
-<Link href="/codes/codes4"><a><Coderow rank="5" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes1"><a><Coderow rank="2" codeTitle={headline.charts[1].codeTitle} hoopcodes={headline.charts[1].hoopcodes} image="http://i.ytimg.com/vi/hZm4dPfu3pI/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes2"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes} image="http://i.ytimg.com/vi/BSQ8yZ4haHc/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes3"><a><Coderow rank="4" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="http://i.ytimg.com/vi/VtLLzOhuJx4/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes4"><a><Coderow rank="5" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/dZ-CYfybats/hqdefault.jpg"/></a></Link>
 
 </div></div></div>
      
@@ -266,28 +269,28 @@ headings:[
  
     <Link href="/videos/video1"><a className="linkContainer">
     <Blacklabel label={headline.videos[1].label}/>
-<MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg" />
+<MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/RPiHHeIdol4/hqdefault.jpg" />
 <Title title={headline.videos[1].title}/>
 <Authordate author={headline.videos[1].author} date={headline.videos[1].date} />
         </a></Link>
 
 <Link href="/videos/video2"><a>
 <Blacklabel label={headline.videos[2].label}/>
-<MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg" />
+<MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/_XhVLzmPwFk/hqdefault.jpg" />
 <Title title={headline.videos[2].title}/>
 <Authordate author={headline.videos[2].author} date={headline.videos[2].date} />
     </a></Link>
 
 <Link href="/videos/video3"><a>
 <Blacklabel label={headline.videos[3].label}/>
-<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg" />
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/svP4UfbBFE8/hqdefault.jpg" />
 <Title title={headline.videos[3].title}/>
 <Authordate author={headline.videos[3].author} date={headline.videos[3].date} />
     </a></Link>
 
 <Link href="/videos/video4"><a>
 <Blacklabel label={headline.videos[4].label}/>
-<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg" />
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/O0vaJI5Nb5c/hqdefault.jpg" />
 <Title title={headline.videos[4].title}/>
 <Authordate author={headline.videos[4].author} date={headline.videos[4].date} /></a>
 
@@ -301,11 +304,11 @@ headings:[
 <div className="gridCenter">
 <Sectiontitle title={headline.headings[2].title} />
 <Sectionsubtitle subtitle={headline.headings[2].subtitle} />
-  <Link href="/charts/top"><a><Coderow rank="1" codeTitle={headline.versus[0].codeTitle} hoopcodes={headline.versus[0].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
+  <Link href="/charts/top"><a><Coderow rank="1" codeTitle={headline.versus[0].codeTitle} hoopcodes={headline.versus[0].hoopcodes} image="http://i.ytimg.com/vi/15d61v8POvE/hqdefault.jpg"/></a></Link>
 <Link href="/charts/top1"><a><Coderow rank="2" codeTitle={headline.versus[1].codeTitle} hoopcodes={headline.versus[1].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
-<Link href="/charts/top2"><a><Coderow rank="3" codeTitle={headline.versus[2].codeTitle} hoopcodes={headline.versus[2].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
-<Link href="/charts/top3"><a><Coderow rank="4" codeTitle={headline.versus[3].codeTitle} hoopcodes={headline.versus[3].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
-<Link href="/charts/top4"><a><Coderow rank="5" codeTitle={headline.versus[4].codeTitle} hoopcodes={headline.versus[4].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
+<Link href="/charts/top2"><a><Coderow rank="3" codeTitle={headline.versus[2].codeTitle} hoopcodes={headline.versus[2].hoopcodes} image="http://i.ytimg.com/vi/UAjI2wyVPbM/hqdefault.jpg"/></a></Link>
+<Link href="/charts/top3"><a><Coderow rank="4" codeTitle={headline.versus[3].codeTitle} hoopcodes={headline.versus[3].hoopcodes} image="http://i.ytimg.com/vi/8pSooePp01c/hqdefault.jpg"/></a></Link>
+<Link href="/charts/top4"><a><Coderow rank="5" codeTitle={headline.versus[4].codeTitle} hoopcodes={headline.versus[4].hoopcodes} image="http://i.ytimg.com/vi/E0SGdaUXwYA/hqdefault.jpg"/></a></Link>
 
  
 </div></div></div>
