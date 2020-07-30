@@ -1,5 +1,5 @@
 import Head from 'next/head'
- 
+import { useAmp } from 'next/amp'
 import Sectiontitle from '../components/units/sectiontitle'
 import Sectionsubtitle from '../components/units/sectionsubtitle'
 import BlackSectiontitle from '../components/units/blackSectionTitle'
@@ -15,9 +15,10 @@ import Coderow from '../components/units/coderow'
 import Blacklabel from '../components/units/blackLabel'
 import MediaUrlFull from '../components/units/mediaUrlFull'
 
- 
+export const config = { amp: true }
  
 export default function Home() {
+  const isAmp = useAmp()
  
   const [ headline, setHeadline] = useState({
     headline:[
@@ -199,13 +200,27 @@ headings:[
     <button  className="buttonStyle" onClick={switchEnglishHandler}>ENGLISH </button>
     </div><br/><br/>
 
-
+    <div>
+     
+      {isAmp ? (
+        <amp-img
+          width="300"
+          height="300"
+          src="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"
+          alt="a cool image"
+          layout="responsive"
+        />
+      ) : (
+        <img width="300" height="300" src="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg" alt="a cool image" />
+      )}
+    </div>
 <Link href="/headline"><a className="editorialPlacementLink">
 <div className="editorialPlacementHeader">
 <Label label={headline.headline[0].label}/>
 <Maintitle title={headline.headline[0].maintitle}/>
 <Dekk dekk={headline.headline[0].dekk}/>
 <Authordate author={headline.headline[0].author} date="07/29/20"/>
+
 <ImageHolder mediaUrl="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/>
  
 
