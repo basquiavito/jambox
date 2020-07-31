@@ -24,14 +24,14 @@ export default function Home() {
     headline:[
     {
     label: 'Latest',
-    maintitle:'James Harden Drains 7 3-Pointers In The First Half vs. Celtics',
-    dekk:'As NBA scrimmages wrap up, James Harden looks like he is in midseason form. Finishing up with 35 points, 8 rebounds, 6 assists and going 8/13 from 3-point land, Harden put on a show against the Celtics. ',
-    author:'Bleacher Report'
+    maintitle:'LA Clippers vs. Los Angeles Lakers | 2019-20 NBA Highlights',
+    dekk:'The battle for Los Angeles takes place inside the NBA bubble in Orlando, Florida, as LeBron James, Anthony Davis and the Los Angeles Lakers take on Kawhi Leonard, Paul George and the LA Clippers on the night the seeding games begin. In a dramatic finish, LeBron takes over in the final moments as the Lakers hold on for a 103-101 victory.',
+    author:'Richard Clemons'
   },
   {
-    label: 'HighSchool',
-    maintitle:'Carmelo Anthony in Highschool was a Beast”',
-    dekk:'In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. Brandon Ingram led the Pelicans with 12 PTS in the victory, while Caris LeVert and Jarrett Allen each tallied 10 PTS for the Nets.',
+    label: 'Latest',
+    maintitle:'Gobert lifts Jazz past Pelicans 106-104 in NBA restart',
+    dekk:'In the first game of the NBA Restart, Rudy Gobert (14 PTS, 12 REB) knocked down 2 free throws with 6.9 seconds remaining in regulation to lift the Utah Jazz over the New Orleans Pelicans, 106-104. Donovan Mitchell recorded 20 PTS, 5 REB and 5 AST for the Jazz, while Brandon Ingram tallied 23 PTS and 8 REB for the Pelicans.',
     author:'Richard Clemons'
   },
 
@@ -206,11 +206,11 @@ headings:[
 <Label label={headline.headline[0].label}/>
 <Maintitle title={headline.headline[0].maintitle}/>
 <Dekk dekk={headline.headline[0].dekk}/>
-<Authordate author={headline.headline[0].author} date="07/29/20"/>
+<Authordate author={headline.headline[0].author} date="Jul 31, 2020"/>
 
-<ImageHolder mediaUrl="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/>
+<ImageHolder mediaUrl="http://i.ytimg.com/vi/EGct9TOeFFM/hqdefault.jpg"/>
  
-
+ 
 
 </div></a></Link>
 
@@ -218,19 +218,19 @@ headings:[
 
 <Link href="/editorial"><a>
 <Label label={headline.headline[1].label}/>
-<ImageHolder mediaUrl="http://i.ytimg.com/vi/6v7QjOiupCU/hqdefault.jpg"/>
+<ImageHolder mediaUrl="http://i.ytimg.com/vi/My0E8TJo94Q/hqdefault.jpg"/>
 <Maintitle title={headline.headline[1].maintitle}/>
-<Authordate author="Jay Flemmings" date="06/14/20"/>
+<Authordate author="Jay Flemmings" date="Jul 31, 2020"/>
 
     </a></Link>
 
-    <Link href="/subeditorial"><a>
+    {/* <Link href="/subeditorial"><a>
 <Label label={headline.headline[2].label}/>
 <ImageHolder mediaUrl="http://i.ytimg.com/vi/FIqwRr2cU4c/hqdefault.jpg"/>
 <Maintitle title={headline.headline[2].maintitle}/>
 <Authordate author="Jay Flemmings" date="06/14/20"/>
 
-    </a></Link>
+    </a></Link> */}
 
   </div>
 
@@ -244,12 +244,14 @@ headings:[
 <div className="gridCenter">
 <Sectiontitle title={headline.headings[0].title} />
 <Sectionsubtitle subtitle = {headline.headings[0].subtitle} />
-<Link href="/codes/codes"><a><Coderow rank="1" codeTitle={headline.charts[0].codeTitle} hoopcodes={headline.charts[0].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
-<Link href="/codes/codes1"><a><Coderow rank="2" codeTitle={headline.charts[1].codeTitle} hoopcodes={headline.charts[1].hoopcodes} image="http://i.ytimg.com/vi/hZm4dPfu3pI/hqdefault.jpg"/></a></Link>
-<Link href="/codes/codes2"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes} image="http://i.ytimg.com/vi/BSQ8yZ4haHc/hqdefault.jpg"/></a></Link>
-<Link href="/codes/codes3"><a><Coderow rank="4" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="http://i.ytimg.com/vi/VtLLzOhuJx4/hqdefault.jpg"/></a></Link>
-<Link href="/codes/codes4"><a><Coderow rank="5" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/dZ-CYfybats/hqdefault.jpg"/></a></Link>
-
+<Link href="/codes/codes"><a><Coderow rank="1" codeTitle={headline.charts[0].codeTitle} hoopcodes={headline.charts[0].hoopcodes} image="http://i.ytimg.com/vi/VJb_qgHwtVs/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes1"><a><Coderow rank="2" codeTitle={headline.charts[1].codeTitle} hoopcodes={headline.charts[1].hoopcodes} image="http://i.ytimg.com/vi/kz9KGy86qE4/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes2"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes} image="http://i.ytimg.com/vi/ORYWAoJL0mA/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes3"><a><Coderow rank="4" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="http://i.ytimg.com/vi/IwXAN0Qfkac/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes4"><a><Coderow rank="5" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/gwQs9Rhnmyg/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes3"><a><Coderow rank="6" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="http://i.ytimg.com/vi/T91FYX7VA2A/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes4"><a><Coderow rank="7" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/Dvl7vcnuEXc/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes4"><a><Coderow rank="8" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/WZZNx4bkRxU/hqdefault.jpg"/></a></Link>
 </div></div></div>
      
 
@@ -265,13 +267,13 @@ headings:[
 <Title title={headline.videos[0].title}/>
 <Dekk dekk={headline.videos[0].dekk}/>
 <Authordate author={headline.videos[0].author} date={headline.videos[0].date} />
-<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/>
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/X-emefKGzFc/hqdefault.jpg"/>
 
 </a></Link>
  
     <Link href="/videos/video1"><a className="linkContainer">
     <Blacklabel label={headline.videos[1].label}/>
-<MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/RPiHHeIdol4/hqdefault.jpg" />
+<MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/KTps6Ij4QrY/hqdefault.jpg" />
 <Title title={headline.videos[1].title}/>
 <Authordate author={headline.videos[1].author} date={headline.videos[1].date} />
         </a></Link>
