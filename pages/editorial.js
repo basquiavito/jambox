@@ -6,8 +6,8 @@ import ImageHolder from '../components/units/imageHolder'
 import Dekk from '../components/units/dekk'
 import Parrafo from '../components/units/parrafo'
 import HyvorTalk from 'hyvor-talk-react'
-
-
+import Youtubehooks from '../components/units/youtubehooks'
+import Maintitle from '../components/units/maintitle'
 
 export default function Editorial(){
     const [ headline, setHeadline ] = useState({
@@ -15,14 +15,15 @@ export default function Editorial(){
 {
 label:'Hoopcodes',
 maintitle:'PELICANS at NETS | SCRIMMAGE HIGHLIGHTS | July 22, 2020”',
-dekk:'In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. ',
+dekk:'In the first game of the NBA Restart, Rudy Gobert (14 PTS, 12 REB) knocked down 2 free throws with 6.9 seconds remaining in regulation to lift the Utah Jazz over the New Orleans Pelicans, 106-104. Donovan Mitchell recorded 20 PTS, 5 REB and 5 AST for the Jazz, while Brandon Ingram tallied 23 PTS and 8 REB for the Pelicans.',
 author:'Richard Clemons',
-p1:'Only because you fell doesnt mean it is a foul',
-p2:'Three is better than two, sometimes.',
-p3:'book',
-p4:'table',
-p5:'car',
-p6: 'glasses'
+p1:"Rudy Gobert sank two free throws with 6.9 seconds left to cap a 14-point, 12-rebound and three-block performance, giving the Utah Jazz a 106-104 victory over the New Orleans Pelicans in the first game of the NBA's restart on Thursday night.",
+p2:"Zion Williamson, who missed nearly two weeks of practice after leaving the team for a family medical matter on July 16, was deemed fit to start, although his playing time was limited.",
+p3:'He scored 13 points in just more than 15 minutes, highlighted by a couple alley-oop dunks, one on a nearly half-court lob from Lonzo Ball.',
+p4:"Mike Conley scored 20 points and Jordan Clarkson provided 23 points off the bench, hitting a couple of big shots in the second half to keep Utah within striking distance.",
+p5:"Pelicans: Face the Los Angeles Clippers on Saturday night. ",
+p6:'Jazz: Play the Oklahoma City Thunder on Saturday afternoon.',
+ 
  
 
 }],
@@ -79,9 +80,10 @@ p6:'glasses'
     <button  className="buttonStyle" onClick={switchEnglishHandler}>ENGLISH </button>
     </div><br/><br/>
 <Label label="Hay Bobo"/> 
-    <Title  title={headline.headline[0].maintitle}/>
+    <Maintitle  title={headline.headline[0].maintitle}/>
     <Authordate author={headline.headline[0].author} date="Jul 23, 2020"/>
-    <ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/kobeShaq.jpg"/>
+    <Youtubehooks videoIdA="My0E8TJo94Q"/>
+ 
     <Dekk dekk={headline.headline[0].dekk}/>
     <Parrafo
     p1={headline.headline[0].p1} 
