@@ -42,8 +42,8 @@ export default function Home() {
     author:'Richard Clemons'
   }],
     charts: [
-  {codeTitle:'Iverson Crossed Jordan', hoopcodes:'013 013 180 FG$ | DOUBLE PiCASSO + base   '},
-  {codeTitle:'Trae Young Nutmeg', hoopcodes:'809 N FG$'},
+  {codeTitle:'Lebron James', hoopcodes:' 16p/11r/7a  '},
+  {codeTitle:'Anthony Davis', hoopcodes:'34p/8r/4a'},
   {codeTitle:'Luka Doncic Steb Back', hoopcodes:'806 FG$'},
   {codeTitle:'Damian Lillard explosive Spin Move', hoopcodes:'870 180 FG$'},
   {codeTitle:'Lonzo Ball Crossover', hoopcodes:'018 FG$'}
@@ -244,14 +244,14 @@ headings:[
 <div className="gridCenter">
 <Sectiontitle title={headline.headings[0].title} />
 <Sectionsubtitle subtitle = {headline.headings[0].subtitle} />
-<Link href="/codes/codes"><a><Coderow rank="1" codeTitle={headline.charts[0].codeTitle} hoopcodes={headline.charts[0].hoopcodes} image="http://i.ytimg.com/vi/VJb_qgHwtVs/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes"><a><Coderow rank="1" codeTitle={headline.charts[0].codeTitle} hoopcodes={headline.charts[0].hoopcodes} image="http://i.ytimg.com/vi/NMWlj7dF6Zk/hqdefault.jpg"/></a></Link>
 <Link href="/codes/codes1"><a><Coderow rank="2" codeTitle={headline.charts[1].codeTitle} hoopcodes={headline.charts[1].hoopcodes} image="http://i.ytimg.com/vi/kz9KGy86qE4/hqdefault.jpg"/></a></Link>
 <Link href="/codes/codes2"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes} image="http://i.ytimg.com/vi/ORYWAoJL0mA/hqdefault.jpg"/></a></Link>
 <Link href="/codes/codes3"><a><Coderow rank="4" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="http://i.ytimg.com/vi/IwXAN0Qfkac/hqdefault.jpg"/></a></Link>
 <Link href="/codes/codes4"><a><Coderow rank="5" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/gwQs9Rhnmyg/hqdefault.jpg"/></a></Link>
-<Link href="/codes/codes3"><a><Coderow rank="6" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="http://i.ytimg.com/vi/T91FYX7VA2A/hqdefault.jpg"/></a></Link>
-<Link href="/codes/codes4"><a><Coderow rank="7" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/Dvl7vcnuEXc/hqdefault.jpg"/></a></Link>
-<Link href="/codes/codes4"><a><Coderow rank="8" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/WZZNx4bkRxU/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes5"><a><Coderow rank="6" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="http://i.ytimg.com/vi/T91FYX7VA2A/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes6"><a><Coderow rank="7" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/Dvl7vcnuEXc/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes7"><a><Coderow rank="8" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/WZZNx4bkRxU/hqdefault.jpg"/></a></Link>
 </div></div></div>
      
 

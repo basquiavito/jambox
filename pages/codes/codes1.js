@@ -70,7 +70,7 @@ const switchSpanishHandler = ()=> {
 <div className="pageGrid">
 <div className="gridCenter">
     <section className="videoSection">
-<Youtubehooks videoIdA="C977RCbuqFk"/></section></div></div>
+<Youtubehooks videoIdA="kz9KGy86qE4"/></section></div></div>
 <section className='videoInfoLandmark' role='region' arial-label='video info' tabIndex='-1'>
 <div className="pageGrid">
 <div className="gridCenter">
@@ -84,7 +84,7 @@ const switchSpanishHandler = ()=> {
 
 
 
-<Obb f1='X' b1='0' s1='X' f2='F' b2='1' s2='X' f3='X' b3='3' s3='X' f4='X' b4='0' s4='X' f5='F' b5='1' s5='X' f6='X' b6='3' s6='X' f7='F' b7='1' s7='X' f8='8' b8='XG' s8='X' f9='F' b9='X' s9='$'/><br/>
+ 
 <VideoCategories cat0={code.cat[0].cat0} cat1={code.cat[1].cat1} cat2={code.cat[2].cat2}/>
 <VideoArticlePlusDekk title={code.descript[0].title} name={code.descript[0].name}  code={code.descript[0].code} rank={code.descript[0].rank} rawDescript={code.descript[0].rawDescript}/>
 <VideoMetaTitlePlusRelease date='Jul 28, 2020'  />
