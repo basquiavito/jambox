@@ -1,29 +1,31 @@
 import Head from "next/head";
-import Header from "./Header";
+import Header2 from "./Header2";
 import Aux from './Aux'
 import Topheader from './Topheader'
-import Footer from '../../components/_App/Footer'
+import Footer2 from '../../components/_App/Footer2'
+import HeadContent from "./HeadContent";
 function Layout({ children }) {
   
 return (
 <>
   <Head>
-  <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale = 1.0, 
-maximum-scale=1.0, user-scalable=no"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    
+  <HeadContent />
+
+
    
   <link rel="stylesheet" href="/static/index.css"/>
- 
-<title>Basketball's News, Plays, Profiles & Articles | Hoopscript</title>
+  <link
+          rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
+        />
+<title>Hooper Os</title>
         </Head>
- <Topheader/>
+ <Header2/>
    
-        <Aux>
+        <div>
             {children}
-        </Aux>
-<Footer/>
+        </div>
+<Footer2/>
  
 </>)
 }
