@@ -44,16 +44,19 @@ export default function Home() {
     charts: [
   {codeTitle:'Lebron James', hoopcodes:' 16p/11r/7a  '},
   {codeTitle:'Anthony Davis', hoopcodes:'34p/8r/4a'},
-  {codeTitle:'Luka Doncic Steb Back', hoopcodes:'806 FG$'},
-  {codeTitle:'Damian Lillard explosive Spin Move', hoopcodes:'870 180 FG$'},
-  {codeTitle:'Lonzo Ball Crossover', hoopcodes:'018 FG$'}
+  {codeTitle:'Paul George', hoopcodes:'30p/5r/3a'},
+  {codeTitle:'Kyle Kuzma', hoopcodes:'16p/13r/2a'},
+  {codeTitle:'Kawhi Leonard', hoopcodes:'28p/3r/4a'},
+  {codeTitle:'Brandom Ingram', hoopcodes:'806 FG$'},
+  {codeTitle:'Zion Williamson', hoopcodes:'870 180 FG$'},
+  {codeTitle:'Jru Holiday', hoopcodes:'018 FG$'}
 ],
 videos:[
-  {label:'On Fire',title:'Bol Bol shine in the Victory of Denver Nugetts vs menphis.', dekk:'Bol Bol went Opal mode.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Scoring',title:'Lamelo Ball is the future of League', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Passing',title:'Inside the NBA Bubble: The day the NBA returned', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Defense',title:'Kevin Garnett wants to own the Wolves, but it won’t be that simple', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Business',title:'NBA bubble gambling: A new frontier featuring low scores and long shots', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'}
+  {label:'On Fire',title:"Brandon Ingram's 3-point attempt rimmed out in a bitter end to his 23-point night.", dekk:'Bol Bol went Opal mode.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Rookie Alert',title:'Zion finished with 13 points in 15 minutes. Gentry played him the first three or four minutes of every quarter.', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Inexpected',title:'Jordan Clarkson scored 23 points for Utah and helped lead a second-half comeback,', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Underdog',title:'Conley added 20.', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Clutch',title:'LeBron James Wins The Game Late To Beat Clippers In NBA Return | Wild Ending', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'}
 ],
 versus:[
   {codeTitle:' Kobe vs Jordan', hoopcodes:'Fadeaway'},
@@ -249,9 +252,7 @@ headings:[
 <Link href="/codes/codes2"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes} image="http://i.ytimg.com/vi/ORYWAoJL0mA/hqdefault.jpg"/></a></Link>
 <Link href="/codes/codes3"><a><Coderow rank="4" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="http://i.ytimg.com/vi/IwXAN0Qfkac/hqdefault.jpg"/></a></Link>
 <Link href="/codes/codes4"><a><Coderow rank="5" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/gwQs9Rhnmyg/hqdefault.jpg"/></a></Link>
-<Link href="/codes/codes5"><a><Coderow rank="6" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="http://i.ytimg.com/vi/T91FYX7VA2A/hqdefault.jpg"/></a></Link>
-<Link href="/codes/codes6"><a><Coderow rank="7" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/Dvl7vcnuEXc/hqdefault.jpg"/></a></Link>
-<Link href="/codes/codes7"><a><Coderow rank="8" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/WZZNx4bkRxU/hqdefault.jpg"/></a></Link>
+
 </div></div></div>
      
 
@@ -267,34 +268,34 @@ headings:[
 <Title title={headline.videos[0].title}/>
 <Dekk dekk={headline.videos[0].dekk}/>
 <Authordate author={headline.videos[0].author} date={headline.videos[0].date} />
-<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/X-emefKGzFc/hqdefault.jpg"/>
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/T91FYX7VA2A/hqdefault.jpg"/>
 
 </a></Link>
  
     <Link href="/videos/video1"><a className="linkContainer">
     <Blacklabel label={headline.videos[1].label}/>
-<MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/KTps6Ij4QrY/hqdefault.jpg" />
+<MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/3avOXtiQI8E/hqdefault.jpg" />
 <Title title={headline.videos[1].title}/>
 <Authordate author={headline.videos[1].author} date={headline.videos[1].date} />
         </a></Link>
 
 <Link href="/videos/video2"><a>
 <Blacklabel label={headline.videos[2].label}/>
-<MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/_XhVLzmPwFk/hqdefault.jpg" />
+<MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/XwQIATJPakg/hqdefault.jpg" />
 <Title title={headline.videos[2].title}/>
 <Authordate author={headline.videos[2].author} date={headline.videos[2].date} />
     </a></Link>
 
 <Link href="/videos/video3"><a>
 <Blacklabel label={headline.videos[3].label}/>
-<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/svP4UfbBFE8/hqdefault.jpg" />
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/X3xqcZ_CnlE/hqdefault.jpg" />
 <Title title={headline.videos[3].title}/>
 <Authordate author={headline.videos[3].author} date={headline.videos[3].date} />
     </a></Link>
 
 <Link href="/videos/video4"><a>
 <Blacklabel label={headline.videos[4].label}/>
-<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/O0vaJI5Nb5c/hqdefault.jpg" />
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/-yyGuE9Bdc4/hqdefault.jpg" />
 <Title title={headline.videos[4].title}/>
 <Authordate author={headline.videos[4].author} date={headline.videos[4].date} /></a>
 
