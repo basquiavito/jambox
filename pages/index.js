@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Headlinehub from '../components/articleLinks/headlinehub'
+import Headlinehub from '../components/articleLinks/headlineHub'
 export default function Home() {
   return (
     < >
