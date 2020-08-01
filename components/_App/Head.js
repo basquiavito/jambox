@@ -3,7 +3,7 @@ import { string } from 'prop-types';
 import React from 'react';
 
 const defaultDescription = '';
-const defaultOGURL = 'www.hooperos.com';
+const defaultOGURL = 'www.hoopscript.com';
 const defaultOGImage = '';
 
 export const Head = props => (

@@ -16,7 +16,7 @@ export default function Home() {
       <meta propetry="analytics-track" content="hooperos - Index/Tab"></meta>
       <meta property="analytivs-s-channel" content="homepage"></meta>
       <meta name="Description" content="Homepgae | Discover the best basketball plays codes of Hooperos and everything NBA stats, scores, and expert techniques education"></meta>
-      <meta property="og:title" content="hooperos"></meta>
+      <meta property="og:title" content="hoopscript"></meta>
       <meta name="keywords" content="Homepage"></meta>
       <meta property="og:description" content="Homepage | Discover the best basketball hoopcodes  of Hooperos and everything NBA stats, scores, and expert techniques education"></meta>
       <meta property="og:url" content="https://www.hoopscript.com"></meta>

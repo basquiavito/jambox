@@ -29,7 +29,7 @@ return route === router.pathname;
  
  
    />
-  <span className="logo"><h1>Hooper OS</h1></span> 
+  <span className="logo"><h1>Hoopscript</h1></span> 
  </Menu.Item>
 </Link>
  
@@ -37,7 +37,7 @@ return route === router.pathname;
  
 
 
-{ user && <Link href="/obb">
+{ user && <Link href="/obb/obb">
 <Menu.Item header active={isActive('/obb')}>
 <Icon
 name="code"
@@ -69,24 +69,24 @@ Hoopcodes
  
  
 <Link href="/profiles">
-<Menu.Item header active={isActive("/profiles")}>
+<Menu.Item header active={isActive("/profiles/profiles")}>
 <Icon
 name="flag outline"
 size="small"
  
 />
-Hoopers
+Profiles
 </Menu.Item>
 </Link>
 
-<Link href="/profiles">
-<Menu.Item header active={isActive("/profiles")}>
+<Link href="/blogs">
+<Menu.Item header active={isActive("/blogs")}>
 <Icon
 name="flag outline"
 size="small"
  
 />
-Blog
+Blogs
 </Menu.Item>
 </Link>
 
