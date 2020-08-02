@@ -13,29 +13,74 @@ import {
 } from 'react-instantsearch-dom';
 import Link from 'next/link'
  
+
+
 const HitComponent = ({ hit }) => (
   <div className="hit">
-    <div>
-      <div className="hit-picture">
-        <img src={`${hit.image}`} />
-      </div>
-    </div>
     <div className="hit-content">
       <div>
        <Link href={`https://www.hoopscript.com/profile?_id=${hit._id.$oid}`}><a  >
-       <span> {hit. name}</span>
-       <span>  {hit.lastname}  </span>
+       <span id> {hit. name}</span>
+       <span id="lastname">  {hit.lastname}  </span>
+       <span id="team">  {hit.team}  </span>
+     
    <Highlight attribute="name" hit={hit} />      </a></Link> 
      
  
       </div>
       <div className="hit-type">
-        <Highlight attribute="type" hit={hit} />
+        <Highlight attribute="team" hit={hit} />
       </div>
       <div className="hit-description">
         <Highlight attribute="description" hit={hit} />
       </div>
     </div>
+
+
+<style jsx>
+  {`
+  
+  #team{
+     color:#e41224;
+     border: 2px solid transparent;
+
+  }
+  span {
+    color: #000;
+  }
+
+
+  .results {
+    flex: 1;
+  }
+  
+  .hit {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hit-actions {
+    display: flex;
+  }
+  
+  .hit-content {
+    padding: 0px 10px;
+  }
+  
+  
+  
+  .hit-type {
+    color: #888888;
+    font-size: 13px;
+  }
+  
+
+
+  `
+
+  }
+</style>
+
   </div>
 );
 
@@ -58,7 +103,7 @@ export default class extends React.Component {
     <Head>
 
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css" integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous"/>
+    
     
     </Head>
       <InstantSearch
@@ -73,8 +118,8 @@ export default class extends React.Component {
       >
         <Configure hitsPerPage={12} />
         <header>
-          <h1>2020 NBA Active Players</h1>
-          <SearchBox />
+          <h1 className="title"> NBA ACTIVE PLAYERS</h1>
+          <SearchBox /><br/>
         </header>
         <main>
           <div className="pageGrid">
@@ -102,18 +147,25 @@ html {
 header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 16px;
+ 
 }
-
+header > h1 {
+  text-align: center;
+}
 main {
+  padding: 10px;
+  background-color :#f7f7f3;
   display: flex;
-  margin: 25px 0;
+   
 }
 
 .menu {
   flex: 1;
 }
-
+ span {
+   color:#f7f7f3;
+ }
 footer {
   text-align: center;
 }
@@ -139,10 +191,7 @@ footer {
   padding: 0px 10px;
 }
 
-.hit-picture img {
-  width: 64px;
-  height: 64px;
-}
+
 
 .hit-type {
   color: #888888;
@@ -161,6 +210,10 @@ footer {
 
 .gridCenter {
   grid-column: center-start / center-end;
+}
+
+h1 {
+  color:#e41224; 
 }
 `}</style>
       
