@@ -3,6 +3,7 @@ import axios from 'axios'
 import ProfileList from '../components/Index/ProfileList'
 import baseUrl from '../utils/baseUrl'
 import ArticleList from '../components/Index/ArticleList'
+
 function Homepage({ articles }) {
 
  return <ArticleList articles={articles} />

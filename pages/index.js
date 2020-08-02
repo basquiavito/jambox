@@ -3,17 +3,25 @@ import axios from 'axios'
 import ProfileList from '../components/Index/ProfileList'
 import baseUrl from '../utils/baseUrl'
 import ArticleList from '../components/Index/ArticleList'
-function index({ articles }) {
-    
- return <ArticleList articles={articles} />
+import Homepage from './homepage'
+
  
+export default function Home(){
+
 }
-index.getInitialProps = async () => {
-  const url = `${baseUrl}/api/articles`
-  const response = await axios.get(url);
-  return { articles: response.data }
-}
+
+
+Home.getInitialProps = ({ res }) => {
+
+  if (res) {
+    res.writeHead(301, {
+      Location: '/homepage'
+    });
+    res.end();
+
+
+  }}
  
 
  
-export default index;
+ 
