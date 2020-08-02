@@ -18,11 +18,11 @@ import Link from 'next/link'
 const HitComponent = ({ hit }) => (
   <div className="hit">
     <div className="hit-content">
-      <div>
+      <div className="hits">
        <Link href={`https://www.hoopscript.com/profile?_id=${hit._id.$oid}`}><a  >
-       <span id> {hit. name}</span>
-       <span id="lastname">  {hit.lastname}  </span>
-       <span id="team">  {hit.team}  </span>
+       <div><span id> {hit. name}</span></div>
+       <div><span id="lastname">  {hit.lastname}  </span></div>
+       <div><span id="team">  {hit.team}  </span></div>
      
    <Highlight attribute="name" hit={hit} />      </a></Link> 
      
@@ -39,41 +39,29 @@ const HitComponent = ({ hit }) => (
 
 <style jsx>
   {`
-  
+  .hits {
+    display: flex;
+  margin: 0;
+  }
   #team{
-     color:#e41224;
-     border: 2px solid transparent;
+     color:#e41224;}
 
+#lastname {
+  border-bottom: 1px solid #999;
+}
   }
   span {
     color: #000;
+    text-align: center;
   }
 
 
-  .results {
-    flex: 1;
-  }
+ 
   
-  .hit {
-    display: flex;
-    align-items: center;
-  }
-  
-  .hit-actions {
-    display: flex;
-  }
-  
-  .hit-content {
-    padding: 0px 10px;
-  }
+ 
   
   
-  
-  .hit-type {
-    color: #888888;
-    font-size: 13px;
-  }
-  
+ 
 
 
   `
@@ -140,14 +128,13 @@ export default class extends React.Component {
           
       </InstantSearch>
 <style jsx>{`
-html {
-  font-family: sans-serif;
-}
+ 
 
 header {
   display: flex;
   flex-direction: column;
-  margin: 16px;
+  align-items: center;
+ 
  
 }
 header > h1 {
@@ -156,13 +143,11 @@ header > h1 {
 main {
   padding: 10px;
   background-color :#f7f7f3;
-  display: flex;
+ 
    
 }
 
-.menu {
-  flex: 1;
-}
+ 
  span {
    color:#f7f7f3;
  }
@@ -175,9 +160,10 @@ footer {
 }
 
 .results {
-  flex: 1;
+flex: 1;
+padding-left: 0;
 }
-
+ 
 .hit {
   display: flex;
   align-items: center;
@@ -187,9 +173,7 @@ footer {
   display: flex;
 }
 
-.hit-content {
-  padding: 0px 10px;
-}
+ 
 
 
 
