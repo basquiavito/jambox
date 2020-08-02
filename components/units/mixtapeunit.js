@@ -8,7 +8,7 @@ export default function mixtapeunit(props){
 
 <Video videoId={props.videoId}/>
 <div className="mixtapeCardInfo">
-<h3>{props.title}</h3>
+<strong>{props.title}</strong>
  
 </div>
     

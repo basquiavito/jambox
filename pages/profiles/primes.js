@@ -7,7 +7,7 @@ import Buttonup from '../../components/featured/buttonup'
 function Primes({ primes }) {
  return <>
  <PrimeList primes={primes} />
- <Buttonup/></>
+ </>
  
 }
 Primes.getInitialProps = async () => {

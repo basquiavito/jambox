@@ -1,4 +1,6 @@
 import React from 'react';
+import Head from 'next/head'
+
 import PropTypes from 'prop-types';
 import {
   RefinementList,
@@ -53,6 +55,12 @@ export default class extends React.Component {
 
   render() {
     return <>
+    <Head>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css" integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous"/>
+    
+    </Head>
       <InstantSearch
         searchClient={this.props.searchClient}
         resultsState={this.props.resultsState}
@@ -65,7 +73,7 @@ export default class extends React.Component {
       >
         <Configure hitsPerPage={12} />
         <header>
-          <h1>NBA Active Players</h1>
+          <h1>2020 NBA Active Players</h1>
           <SearchBox />
         </header>
         <main>
@@ -76,7 +84,7 @@ export default class extends React.Component {
           </div>
           <div className="results">
             <Hits hitComponent={HitComponent} />
-          </div>
+          </div><br/>
    
         <footer>
           <Pagination />
