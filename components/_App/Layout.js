@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Header2 from "./Header2";
-import Aux from './Aux'
-import Topheader from './Topheader'
+import Header from "./Header";
 import Footer2 from '../../components/_App/Footer2'
 import HeadContent from "./HeadContent";
 function Layout({ children }) {
@@ -20,7 +18,7 @@ return (
         />
 <title>Hooper Os</title>
         </Head>
- <Header2/>
+ <Header/>
    
         <div>
             {children}

@@ -1,12 +1,11 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
+ 
+ 
+import utilStyles from '../static/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import Label from '../components/label'
-import Buttonup from '../components/featured/buttonup'
-import HyvorTalk from 'hyvor-talk-react'
+ 
 
 
 export async function getStaticProps() {
@@ -20,7 +19,7 @@ export async function getStaticProps() {
 
 export default function blog({ allPostsData }) {
   return (
-    <Layout home>
+   
  
  
 
@@ -49,7 +48,6 @@ export default function blog({ allPostsData }) {
       
       </section>
       
-      
-    </Layout>
+ 
   )
 }

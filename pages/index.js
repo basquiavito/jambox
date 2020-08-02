@@ -1,46 +1,420 @@
 import Head from 'next/head'
-import Headlinehub from '../components/articleLinks/headlineHub'
+
+import Sectiontitle from '../components/units/sectiontitle'
+import Sectionsubtitle from '../components/units/sectionsubtitle'
+import BlackSectiontitle from '../components/units/blackSectionTitle'
+import React,{useState} from 'react'
+import Label from '../components/units/label'
+import Title from '../components/units/title'
+import Authordate from '../components/units/authordate'
+import ImageHolder from '../components/units/imageHolder'
+import Link from 'next/link'
+import Dekk from '../components/units/dekk'
+import Maintitle from '../components/units/maintitle'
+import Coderow from '../components/units/coderow'
+import Blacklabel from '../components/units/blackLabel'
+import MediaUrlFull from '../components/units/mediaUrlFull'
+
+
+ 
 export default function Home() {
-  return (
-    < >
-      <Head>
-      <title>Hooperos</title>
-        <link rel="icon" href="/favicon.ico" />
-      <meta charset="utf-8"/>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
-      <meta name="msapplication-tap-highlight" content="no"></meta>
-      <link rel="canonical" href="https://www.hoopscript.com/"></link>
-      <link rel="alternate" href="https://www.hoopscript.vercel.app" hreflang="ar-AE"></link>
-      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></meta>
-      <meta name="author" content=""></meta>
-      <meta propetry="analytics-track" content="hooperos - Index/Tab"></meta>
-      <meta property="analytivs-s-channel" content="homepage"></meta>
-      <meta name="Description" content="Homepgae | Discover the best basketball plays codes of Hooperos and everything NBA stats, scores, and expert techniques education"></meta>
-      <meta property="og:title" content="hoopscript"></meta>
-      <meta name="keywords" content="Homepage"></meta>
-      <meta property="og:description" content="Homepage | Discover the best basketball hoopcodes  of Hooperos and everything NBA stats, scores, and expert techniques education"></meta>
-      <meta property="og:url" content="https://www.hoopscript.com"></meta>
-      <meta property="og:locale" content="en_Us"></meta>
-      <meta property="og:image" content=""></meta>
-    <meta property="og:type" content="website"></meta>
+
  
-      <meta propertty="og:site_name" content="hooperos"></meta>
-      </Head>
-<main>
-  <Headlinehub />
-</main>
+  const [ headline, setHeadline] = useState({
+    headline:[
+    {
+    label: 'Latest',
+    maintitle:'LA Clippers vs. Los Angeles Lakers | 2019-20 NBA Highlights',
+    dekk:'The battle for Los Angeles takes place inside the NBA bubble in Orlando, Florida, as LeBron James, Anthony Davis and the Los Angeles Lakers take on Kawhi Leonard, Paul George and the LA Clippers on the night the seeding games begin. In a dramatic finish, LeBron takes over in the final moments as the Lakers hold on for a 103-101 victory.',
+    author:'Richard Clemons'
+  },
+  {
+    label: 'Latest',
+    maintitle:'Gobert lifts Jazz past Pelicans 106-104 in NBA restart',
+    dekk:'In the first game of the NBA Restart, Rudy Gobert (14 PTS, 12 REB) knocked down 2 free throws with 6.9 seconds remaining in regulation to lift the Utah Jazz over the New Orleans Pelicans, 106-104. Donovan Mitchell recorded 20 PTS, 5 REB and 5 AST for the Jazz, while Brandon Ingram tallied 23 PTS and 8 REB for the Pelicans.',
+    author:'Richard Clemons'
+  },
+
+  {
+    label: '#TBT',
+    maintitle:'Remembering the days of Steve Francis.”',
+    dekk:'Francis put the streetball in the NBA.',
+    author:'Richard Clemons'
+  }],
+    charts: [
+  {codeTitle:'Lebron James', hoopcodes:' 16p/11r/7a  '},
+  {codeTitle:'Anthony Davis', hoopcodes:'34p/8r/4a'},
+  {codeTitle:'Paul George', hoopcodes:'30p/5r/3a'},
+  {codeTitle:'Kyle Kuzma', hoopcodes:'16p/13r/2a'},
+  {codeTitle:'Kawhi Leonard', hoopcodes:'28p/3r/4a'},
+  {codeTitle:'Brandom Ingram', hoopcodes:'806 FG$'},
+  {codeTitle:'Zion Williamson', hoopcodes:'870 180 FG$'},
+  {codeTitle:'Jru Holiday', hoopcodes:'018 FG$'}
+],
+videos:[
+  {label:'On Fire',title:"Brandon Ingram's 3-point attempt rimmed out in a bitter end to his 23-point night.", dekk:'Bol Bol went Opal mode.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Rookie Alert',title:'Zion finished with 13 points in 15 minutes. Gentry played him the first three or four minutes of every quarter.', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Inexpected',title:'Jordan Clarkson scored 23 points for Utah and helped lead a second-half comeback,', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Underdog',title:'Conley added 20.', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Clutch',title:'LeBron James Wins The Game Late To Beat Clippers In NBA Return | Wild Ending', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'}
+],
+versus:[
+  {codeTitle:' Kobe vs Jordan', hoopcodes:'Fadeaway'},
+  {codeTitle:'Luka vs Harden', hoopcodes:'Step Back'},
+  {codeTitle:'Duncan vs Olajuwon', hoopcodes:'Post up'},
+  {codeTitle:'Kidd vs Stockton', hoopcodes:'Passing'},
+  {codeTitle:'Mutombo vs Mourning', hoopcodes:'Defense'}
+],
+headings:[
+  {title:'Hoopcodes', subtitle:'Code of the Week'},
+  {title:'Videos', subtitle:'Latest Videos'},
+  {title:'Versuz', subtitle:'Who you Got?'}
+]
+
+})
+    const switchSpanishHandler = () => {
+      setHeadline({
+headline:[
+{label: 'Lo ultimo',maintitle:'Pelicans frente a los Nets | Highlight del Fogeo | Julio 22, 2020 ',dekk:'En el primer juego de fogeo en Orlando, los Pelican de Nueva Orleans derrotaron a los Nets de Brooklyn, 99-68. Brandon Ingram lidero a los Pelicans con 12 puntos en la victoria de anoche, mientras que Caris Levert y Jarreet Allen anotaron 10 puntos cada uno por los Nets',author:'Richard Clemon'},
+{label: 'Bachillerato',maintitle:'Carmelo Anthony en el bachillerato era una bestia.”',author:'Richard Clemons'},
+{label: 'TBT',maintitle:'Recordando aquellos dias de Steve Francis.”',author:'Richard Clemons',}
+],
+charts: [
+  {codeTitle:'Iverson cruzo a Jordan', hoopcodes:'180 108 103 FG$'},
+  {codeTitle:'Trae Young y su nuez moscada', hoopcodes:'809 N FG$'},
+  {codeTitle:'Luka Doncic y su psicopata Paso Atras', hoopcodes:'806 FG$'},
+  {codeTitle:'Damian Lillard giro explosivo', hoopcodes:'870 180 FG$'},
+  {codeTitle:'Lonzo Ball y su cruze', hoopcodes:'018 FG$'}
+],
+videos:[
+  {label:'Caliente',title:'Bol Bol brillo en la victoria de Denver vs Menphis', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Puntos',title:'Lamelo Ball es el futuro de la liga', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Pase',title:'Dentro de la Burbuja: El dia en que volvio la NBA', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Defensa',title:'Kevin Garnett quiere ser propietario de los Wolves, pero no sera tan facil', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Fuego',title:'Apuestas en la burbuja: una nuevo frente, con menos anotaciones y mas tiros de larga distancia.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'}
+],
+versus:[
+  {codeTitle:' Kobe vs Jordan', hoopcodes:'Fadeaway'},
+  {codeTitle:'Luka vs Harden', hoopcodes:'Paso Atras'},
+  {codeTitle:'Duncan vs Olajuwon', hoopcodes:'Posteo'},
+  {codeTitle:'Kidd vs Stockton', hoopcodes:'Pase'},
+  {codeTitle:'Mutombo vs Mourning', hoopcodes:'Defensa'}],
+
+headings:[
+  {title:'Hoopcodes', subtitle:'Codigos de la semana'},
+  {title:'Videos', subtitle:'Videos Recientes'},
+  {title:'Versus', subtitle:'A Quien apuestas?'}
+]
+      })
+    }
+    const switchEnglishHandler = () => {
+      setHeadline({
+headline:[
+  {
+    label: 'Latest',
+    maintitle:'PELICANS at NETS | SCRIMMAGE HIGHLIGHTS | July 22, 2020”',
+    dekk:'In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. Brandon Ingram led the Pelicans with 12 PTS in the victory, while Caris LeVert and Jarrett Allen each tallied 10 PTS for the Nets.',
+    author:'Richard Clemons'
+  },
+  {
+    label: 'HighSchool',
+    maintitle:'Carmelo Anthony in Highschool was a Beast”',
+    dekk:'In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. Brandon Ingram led the Pelicans with 12 PTS in the victory, while Caris LeVert and Jarrett Allen each tallied 10 PTS for the Nets.',
+    author:'Richard Clemons'
+  },
+
+  {
+    label: '#TBT',
+    maintitle:'Remembering the days of Steve Francis.”',
+    dekk:'Francis put the streetball in the NBA.',
+    author:'Richard Clemons'
+  }
 
 
+
+],
+charts: [
+  {codeTitle:'Iverson Crossed Jordan', hoopcodes:'180 108 103 FG$'},
+  {codeTitle:'Trae Young Nutmeg', hoopcodes:'809 N FG$'},
+  {codeTitle:'Luka Doncic Steb Back', hoopcodes:'806 FG$'},
+  {codeTitle:'Damian Lillard explosive Spin Move', hoopcodes:'870 180 FG$'},
+  {codeTitle:'Lonzo Ball Crossover', hoopcodes:'018 FG$'}
+],
+videos:[
+  {label:'On Fire',title:'Bol Bol shine in the Victory of Denver Nugetts vs menphis.', dekk:'Bol Bol went Opal mode.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Scoring',title:'Lamelo Ball is the future of League', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Passing',title:'Inside the NBA Bubble: The day the NBA returned', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Defense',title:'Kevin Garnett wants to own the Wolves, but it won’t be that simple', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Business',title:'NBA bubble gambling: A new frontier featuring low scores and long shots', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'}
+],
+versus:[
+  {codeTitle:' Kobe vs Jordan', hoopcodes:'Fadeaway'},
+  {codeTitle:'Luka vs Harden', hoopcodes:'Step Back'},
+  {codeTitle:'Duncan vs Olajuwon', hoopcodes:'Post up'},
+  {codeTitle:'Kidd vs Stockton', hoopcodes:'Passing'},
+  {codeTitle:'Mutombo vs Mourning', hoopcodes:'Defense'}
+],
+
+headings:[
+  {title:'Hoopcodes', subtitle:'Code of the Week'},
+  {title:'Videos', subtitle:'Latest Videos'},
+  {title:'Versuz', subtitle:'Who you Got?'}
+]
+
+
+      })
+    } 
+    
+  return <>
+<Head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+<title>Basketball Notation, news, profiles and more | Hoopscript</title>
+<meta name="msapplication-tap-highlight" content="no"></meta>   
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"></meta>
+<link rel="canonical" href="https://www.hoopscript.com/"></link>
+<link rel="canonical" href="https://www.hoopscript.vercel.app/"></link>
+<meta name="author" contnet></meta>
+<meta name="copyright" content="Copyright © 64 projects 2020"/>
+<meta name="description" content="homepage | The latest tips and advice for fans on basketball news, ball-handling, scoring."></meta>
+<meta name="parsely-link" content="https://www.hoopscript.com/"></meta>
+<meta name="parsely-section" content="homepage"></meta>
+
+
+
+
+
+
+
+
+
+
+</Head>
+<div id="container">
+
+
+<div id="featured">
+<div className="pageGrid">
+<div className="gridCenter">
+  <div className="editorialPlacementContainer">
+ 
+  <div id="buttons">
+    <button  className="buttonStyle" onClick={switchSpanishHandler}>ESPAÑOL </button>
+    <button  className="buttonStyle" onClick={switchEnglishHandler}>ENGLISH </button>
+    </div><br/><br/>
+
+   
+<Link href="/headline"><a className="editorialPlacementLink">
+<div className="editorialPlacementHeader">
+<Label label={headline.headline[0].label}/>
+<Maintitle title={headline.headline[0].maintitle}/>
+<Dekk dekk={headline.headline[0].dekk}/>
+<Authordate author={headline.headline[0].author} date="Jul 31, 2020"/>
+
+<ImageHolder mediaUrl="http://i.ytimg.com/vi/EGct9TOeFFM/hqdefault.jpg"/>
+ 
+ 
+
+</div></a></Link>
+
+    
+
+<Link href="/editorial"><a>
+<Label label={headline.headline[1].label}/>
+<ImageHolder mediaUrl="http://i.ytimg.com/vi/My0E8TJo94Q/hqdefault.jpg"/>
+<Maintitle title={headline.headline[1].maintitle}/>
+<Authordate author="Jay Flemmings" date="Jul 31, 2020"/>
+
+    </a></Link>
+
+    {/* <Link href="/subeditorial"><a>
+<Label label={headline.headline[2].label}/>
+<ImageHolder mediaUrl="http://i.ytimg.com/vi/FIqwRr2cU4c/hqdefault.jpg"/>
+<Maintitle title={headline.headline[2].maintitle}/>
+<Authordate author="Jay Flemmings" date="06/14/20"/>
+
+    </a></Link> */}
+
+  </div>
+
+</div>  </div></div><br/>
+
+
+
+
+<div id="charts">
+<div className="pageGrid">
+<div className="gridCenter">
+<Sectiontitle title={headline.headings[0].title} />
+<Sectionsubtitle subtitle = {headline.headings[0].subtitle} />
+<Link href="/codes/codes"><a><Coderow rank="1" codeTitle={headline.charts[0].codeTitle} hoopcodes={headline.charts[0].hoopcodes} image="http://i.ytimg.com/vi/NMWlj7dF6Zk/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes1"><a><Coderow rank="2" codeTitle={headline.charts[1].codeTitle} hoopcodes={headline.charts[1].hoopcodes} image="http://i.ytimg.com/vi/kz9KGy86qE4/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes2"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes} image="http://i.ytimg.com/vi/ORYWAoJL0mA/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes3"><a><Coderow rank="4" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="http://i.ytimg.com/vi/IwXAN0Qfkac/hqdefault.jpg"/></a></Link>
+<Link href="/codes/codes4"><a><Coderow rank="5" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/gwQs9Rhnmyg/hqdefault.jpg"/></a></Link>
+
+</div></div></div>
+     
+
+<div id="video">
+<div className="pageGrid">
+<div className="gridCenter">
+<BlackSectiontitle title= {headline.headings[1].title} />
+<Sectionsubtitle subtitle={headline.headings[1].subtitle} />
+<Link href="/videos/video"><a className="linkContainer">
+
+<Blacklabel label={headline.videos[0].label}/>
+ 
+<Title title={headline.videos[0].title}/>
+<Dekk dekk={headline.videos[0].dekk}/>
+<Authordate author={headline.videos[0].author} date={headline.videos[0].date} />
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/T91FYX7VA2A/hqdefault.jpg"/>
+
+</a></Link>
+ 
+    <Link href="/videos/video1"><a className="linkContainer">
+    <Blacklabel label={headline.videos[1].label}/>
+<MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/3avOXtiQI8E/hqdefault.jpg" />
+<Title title={headline.videos[1].title}/>
+<Authordate author={headline.videos[1].author} date={headline.videos[1].date} />
+        </a></Link>
+
+<Link href="/videos/video2"><a>
+<Blacklabel label={headline.videos[2].label}/>
+<MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/XwQIATJPakg/hqdefault.jpg" />
+<Title title={headline.videos[2].title}/>
+<Authordate author={headline.videos[2].author} date={headline.videos[2].date} />
+    </a></Link>
+
+<Link href="/videos/video3"><a>
+<Blacklabel label={headline.videos[3].label}/>
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/X3xqcZ_CnlE/hqdefault.jpg" />
+<Title title={headline.videos[3].title}/>
+<Authordate author={headline.videos[3].author} date={headline.videos[3].date} />
+    </a></Link>
+
+<Link href="/videos/video4"><a>
+<Blacklabel label={headline.videos[4].label}/>
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/-yyGuE9Bdc4/hqdefault.jpg" />
+<Title title={headline.videos[4].title}/>
+<Authordate author={headline.videos[4].author} date={headline.videos[4].date} /></a>
+
+</Link>
+
+ 
+</div></div></div>
+
+<div id="topTen">
+<div className="pageGrid">
+<div className="gridCenter">
+<Sectiontitle title={headline.headings[2].title} />
+<Sectionsubtitle subtitle={headline.headings[2].subtitle} />
+  <Link href="/charts/top"><a><Coderow rank="1" codeTitle={headline.versus[0].codeTitle} hoopcodes={headline.versus[0].hoopcodes} image="http://i.ytimg.com/vi/15d61v8POvE/hqdefault.jpg"/></a></Link>
+<Link href="/charts/top1"><a><Coderow rank="2" codeTitle={headline.versus[1].codeTitle} hoopcodes={headline.versus[1].hoopcodes} image="http://i.ytimg.com/vi/W97OWWNgzLk/hqdefault.jpg"/></a></Link>
+<Link href="/charts/top2"><a><Coderow rank="3" codeTitle={headline.versus[2].codeTitle} hoopcodes={headline.versus[2].hoopcodes} image="http://i.ytimg.com/vi/UAjI2wyVPbM/hqdefault.jpg"/></a></Link>
+<Link href="/charts/top3"><a><Coderow rank="4" codeTitle={headline.versus[3].codeTitle} hoopcodes={headline.versus[3].hoopcodes} image="http://i.ytimg.com/vi/8pSooePp01c/hqdefault.jpg"/></a></Link>
+<Link href="/charts/top4"><a><Coderow rank="5" codeTitle={headline.versus[4].codeTitle} hoopcodes={headline.versus[4].hoopcodes} image="http://i.ytimg.com/vi/E0SGdaUXwYA/hqdefault.jpg"/></a></Link>
+
+ 
+</div></div></div>
+
+
+      </div>
+ 
      <style jsx>
+
+
+
        {`
-        
-   figure{
-     margin: 0;
-   }
- 
+#featured {
+  background-color: rgb(255, 255, 255);
+  padding: 2.25rem 0px 0px;
+
+}
+       #video {
+
+        background-color: rgb(18, 18, 18);
+    padding: 2.25rem 0px;
+    color: #fff;
+       }
        
+       .pageGrid{
+        display: grid;
+        -webkit-box-pack: center;
+        justify-content: center;
+        grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
+        grid-row-gap: 30px;
+        
+    
+    }
+       .gridCenter{
+          grid-column: center-start / center-end;
+       }
+       
+       .editorialPlacementContainer{
+        color: rgb(0, 0, 0);
+        font-weight: 100;
+        line-height: 1.125;
+        height: 100%;
+        min-height: inherit;
+       }
+       #buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    margin-right: 0.5rem;
+    }
+    button {
+        width:60px; 
+         color: rgb(0, 0, 0);
+         overflow-wrap: break-word;
+         word-break: break-word;
+         background-color: transparent;
+         cursor: pointer;
+         display: inline-block;
+         font-family: Programme, sans-serif;
+         font-size: 0.575rem;
+         line-height: 1;
+         text-align: center;
+         vertical-align: top;
+         user-select: none;
+         -webkit-appearance: none;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         border-color: rgb(0, 0, 0);
+         transition: background-color 0.1s ease 0s, color 0.1s ease 0s;
+         border-width: 1px;
+       
+         border-radius: 5px;
+         margin-right: 5px;
+         padding: 3px; 
+    }
+       a {
+           text-decoration: none;
+           color: #000;
+       } 
+        
+       .pageGridFull{
+        grid-column: grid-start / grid-end;
+       }
+        
+        .editorialPlacementLink{
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: inherit; 
+        }
+    
+        .editorialPlacementHeader{
+            margin-bottom: 1rem; 
+        }
+        #video  a {
+          color:#fff;
+        }
+
+        
        `}
      </style>
-    </ >
-  )
+  </>
 }
