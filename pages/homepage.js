@@ -9,7 +9,7 @@ function Homepage({ articles }) {
  
 }
 Homepage.getInitialProps = async () => {
-  const url = `${baseUrl}/api/articles`
+  const url = `https://hoopscript.vercel.app/api/articles`
   const response = await axios.get(url);
   return { articles: response.data }
 }
