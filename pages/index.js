@@ -3,12 +3,12 @@ import axios from 'axios'
 import ProfileList from '../components/Index/ProfileList'
 import baseUrl from '../utils/baseUrl'
 import ArticleList from '../components/Index/ArticleList'
-function Homepage({ articles }) {
+function index({ articles }) {
     
  return <ArticleList articles={articles} />
  
 }
-Homepage.getInitialProps = async () => {
+index.getInitialProps = async () => {
   const url = `${baseUrl}/api/articles`
   const response = await axios.get(url);
   return { articles: response.data }
@@ -16,4 +16,4 @@ Homepage.getInitialProps = async () => {
  
 
  
-export default Homepage;
+export default index;
