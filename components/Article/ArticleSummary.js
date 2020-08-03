@@ -5,8 +5,9 @@ import Label from '../../components/units/label'
 import Dekk from '../../components/units/dekk'
 import Authordate from '../../components/units/authordate'
 import Imageholder from '../../components/units/imageHolder'
- 
-function ArticleSummary({  label, title, dekk, author, date, mediaUrl }) {
+ import Content from '../../components/units/content'
+
+function ArticleSummary({  label, title, dekk, author, date, mediaUrl, contentA, contentB, contentC, contentD }) {
 return (
  <>
  
@@ -24,6 +25,22 @@ return (
  <Authordate author={author} date={date}/>
  
  <Imageholder mediaUrl={mediaUrl} />
+
+ <Content 
+ contentA={contentA}
+ contentB={contentB}
+ contentC={contentC}
+ contentD={contentD}
+ 
+ 
+ 
+ 
+ 
+ 
+ />
+
+
+
     </div>
   </div>
 

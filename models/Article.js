@@ -29,6 +29,23 @@ date:{
 mediaUrl:{
     type: String,
     required: true
+},
+
+contentA:{
+    type: String,
+    required: false,
+},
+contentB:{
+    type: String,
+    required: false,
+},
+contentC:{
+    type: String,
+    required: false,
+},
+contentD:{
+    type: String,
+    required: false,
 }
 
 })

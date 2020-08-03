@@ -216,7 +216,7 @@ headings:[
 
     
 
-<Link href="/articles/article002"><a>
+<Link href="/article?_id=5f2745f8b2d26bc5a980406b"><a>
 <Label label={headline.headline[1].label}/>
 <ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/>
 <Maintitle title={headline.headline[1].maintitle}/>
