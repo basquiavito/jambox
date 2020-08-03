@@ -1,24 +1,47 @@
-import React from 'react'
-import axios from 'axios'
-import ProfileList from '../components/Index/ProfileList'
-import baseUrl from '../utils/baseUrl'
-import ArticleList from '../components/Index/ArticleList'
+import Link from 'next/link'
 
-function Homepage({ articles }) {
+export default function index(){
+  return <>
+<div id="homeContent">
+<div className="pageGrid">
+<div className="gridCenter">
 
- return <ArticleList articles={articles} />
+
  
+<div><Link href="/homepage"><a> NBA TODAY</a></Link><br/></div>
+
+<div><Link href="/index2"><a>ACTIVE PLAYERS</a></Link><br/></div>
+
+<div><Link href="/profiles/primes"><a>RETIRED PLAYERS</a></Link><br/></div>
+
+<div><Link href="/archives"><a>ARCHIVES</a></Link><br/></div>
+
+<div><Link href="/blogs"><a>BLOGS</a></Link><br/></div>
+
+
+</div>
+</div></div>
+<style jsx>
+{`
+
+.pageGrid{
+ 
+
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
+    grid-row-gap: 30px;}
+
+.gridCenter{
+  grid-column: center-start / center-end;
 }
-Homepage.getInitialProps = async () => {
-  const url = `${baseUrl}/api/articles`
-  const response = await axios.get(url);
-  return { articles: response.data }
+
+`}
+ 
+ 
+</style>
+
+
+  </>
 }
- 
-
- 
-export default Homepage;
-
-
- 
- 
