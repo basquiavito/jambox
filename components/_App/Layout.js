@@ -11,11 +11,7 @@ return (
 
 
    
-  <link rel="stylesheet" href="/static/index.css"/>
-  <link
-          rel="stylesheet"
-          href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
-        />
+ 
 <title>Hooper Os</title>
         </Head>
  <Header/>
