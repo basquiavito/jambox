@@ -307,11 +307,12 @@ headings:[
 <Sectiontitle title={headline.headings[2].title} />
 <Sectionsubtitle subtitle={headline.headings[2].subtitle} />
 
-<Link href="/charts/chart1"><a><Coderow rank="2" codeTitle={headline.versus[1].codeTitle} hoopcodes={headline.versus[1].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/charts/chart2"><a><Coderow rank="3" codeTitle={headline.versus[2].codeTitle} hoopcodes={headline.versus[2].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/charts/chart3"><a><Coderow rank="4" codeTitle={headline.versus[3].codeTitle} hoopcodes={headline.versus[3].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/charts/chart4"><a><Coderow rank="5" codeTitle={headline.versus[4].codeTitle} hoopcodes={headline.versus[4].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/charts/chart5"><a><Coderow rank="1" codeTitle={headline.versus[0].codeTitle} hoopcodes={headline.versus[0].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
+<Link href="/coin?_id=5f2899c611bc31dbcb85d0cb"><a><Coderow rank="1" codeTitle={headline.versus[0].codeTitle} hoopcodes={headline.versus[0].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
+<Link href="/coin?_id=5f2899d911bc31dbcb85d0cc"><a><Coderow rank="2" codeTitle={headline.versus[1].codeTitle} hoopcodes={headline.versus[1].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
+<Link href="/coin?_id=5f289cc011bc31dbcb85d0cd"><a><Coderow rank="3" codeTitle={headline.versus[2].codeTitle} hoopcodes={headline.versus[2].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
+<Link href="/coin?_id=5f289e7c11bc31dbcb85d0ce"><a><Coderow rank="4" codeTitle={headline.versus[3].codeTitle} hoopcodes={headline.versus[3].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
+<Link href="/coin?_id=5f289e9b11bc31dbcb85d0cf"><a><Coderow rank="5" codeTitle={headline.versus[4].codeTitle} hoopcodes={headline.versus[4].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
+
  
 </div></div></div>
 

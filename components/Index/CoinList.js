@@ -2,13 +2,13 @@ import { Card } from 'semantic-ui-react'
  import Head from 'next/head'
  
  
-function VideoList({ videos }) {
-function mapVideoToItems(videos){
-return videos.map(p => ({
+function CoinList({ coins }) {
+function mapCoinToItems(coins){
+return coins.map(p => ({
  header: p.title ,
 
 childkey: p._id,
- href:`/video?_id=${p._id}`,
+ href:`/coin?_id=${p._id}`,
  
   
 }));
@@ -24,7 +24,7 @@ childkey: p._id,
    </Head><br/><br/><br/>  
  <div className="cardCollection">
 
-<Card.Group textAlign="center" stackable  itemsPerRow="1" centered items={ mapVideoToItems(videos)} />
+<Card.Group textAlign="center" stackable  itemsPerRow="1" centered items={ mapCoinToItems(coins)} />
 
 </div>
 
@@ -52,5 +52,5 @@ childkey: p._id,
   </>
 }
  
-export default VideoList;
+export default CoinList;
  
