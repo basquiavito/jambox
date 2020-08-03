@@ -20,7 +20,7 @@ export default function Footer(){
 <div className="LinkSection">
 <Link href="/articles"   ><a className="footerPageLinks">Articles</a></Link>
 <Link href="/hoopcodes"  ><a rel="noopener" className="footerPageLinks">Hoopcodes</a></Link>
-<Link href="/about"  ><a rel="noopener" className="footerPageLinks">Contribuidores</a></Link>
+<Link href="/videos"  ><a rel="noopener" className="footerPageLinks">Videos</a></Link>
        
         </div>
     <div className="lowestLevel">

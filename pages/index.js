@@ -258,7 +258,7 @@ headings:[
 <div className="gridCenter">
 <BlackSectiontitle title= {headline.headings[1].title} />
 <Sectionsubtitle subtitle={headline.headings[1].subtitle} />
-<Link href="/videos/video"><a className="linkContainer">
+<Link href="/video?_id=5f284a2311bc31dbcb85d0bd"><a className="linkContainer">
 
 <Blacklabel label={headline.videos[0].label}/>
  
