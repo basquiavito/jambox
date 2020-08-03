@@ -16,7 +16,7 @@ function Coin({ coins }) {
 }
 
 Coin.getInitialProps = async ({ query: { _id } }) => {
-const url = `${baseUrl}/api/coin`;
+const url = `https://hoopscript.vercel.app/api/coin`;
 const payload = { params: { _id }}
 const response = await axios.get(url, payload)
 return {coins: response.data}
