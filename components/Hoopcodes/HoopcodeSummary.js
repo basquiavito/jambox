@@ -6,8 +6,12 @@ import Dekk from '../../components/units/dekk'
 import Authordate from '../../components/units/authordate'
 import Imageholder from '../../components/units/imageHolder'
  import Content from '../../components/units/content'
+import Video from '../../components/units/video'
+import Youtubehooks from '../../components/units/youtubehooks'
 
-function HoopcodeSummary({  label, name, dekk, author, date, mediaUrl, code }) {
+
+
+function HoopcodeSummary({  videoId, label, name, dekk, author, date, mediaUrl, code }) {
 return (
  <>
  
@@ -23,8 +27,8 @@ return (
  <Dekk dekk={dekk}/>
  
  <Authordate author={author} date={date}/>
+ <Youtubehooks videoIdA={videoId}/>
  
- <Imageholder mediaUrl={mediaUrl} />
 <b>{code}</b>
  
 
