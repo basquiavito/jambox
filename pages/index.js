@@ -16,6 +16,8 @@ export default function index(){
 
 <div><Link href="/archives"><a>ARCHIVES</a></Link><br/></div>
 
+<div><Link href="/blogs"><a>NOTATION</a></Link><br/></div>
+
 <div><Link href="/blogs"><a>BLOGS</a></Link><br/></div>
 
 
