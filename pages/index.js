@@ -223,14 +223,14 @@ headings:[
 <Authordate author="Jay Flemmings" date="06/14/20"/>
 
     </a></Link>
- {/* 
-//    {  <Link href="/subeditorial"><a>
-// <Label label={headline.headline[2].label}/>
-// <ImageHolder mediaUrl="http://i.ytimg.com/vi/FIqwRr2cU4c/hqdefault.jpg"/>
-// <Maintitle title={headline.headline[2].maintitle}/>
-// <Authordate author="Jay Flemmings" date="06/14/20"/>
 
-//     </a></Link> } */}
+     <Link href="/article?_id=5f2821c70a0640e2c6f449a7"><a>
+ <Label label={headline.headline[2].label}/>
+ <ImageHolder mediaUrl="http://i.ytimg.com/vi/FIqwRr2cU4c/hqdefault.jpg"/>
+ <Maintitle title={headline.headline[2].maintitle}/>
+ <Authordate author="Jay Flemmings" date="06/14/20"/>
+
+     </a></Link> 
 
   </div>
 
