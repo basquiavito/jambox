@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import ProfileList from '../components/Index/ProfileList'
+
 import baseUrl from '../utils/baseUrl'
 import ArticleList from '../components/Index/ArticleList'
 
@@ -10,7 +10,7 @@ function Homepage({ articles }) {
  
 }
 Homepage.getInitialProps = async () => {
-  const url = `${baseUrl}/api/articles`
+  const url = `https://www.hoopscript.com/api/articles`
   const response = await axios.get(url);
   return { articles: response.data }
 }
