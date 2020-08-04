@@ -24,7 +24,7 @@ export default function Home() {
     headline:[
     {
     label: 'Utah vs NO',
-    maintitle:'Gobert lifts Jazz past Pelicans 106-104 in NBA restart',
+    maintitle:'Anthony Davis had 42 pts and 12 reb. Lakers clinched No. 1 seed in Western  ',
     dekk:"Rudy Gobert sank two free throws with 6.9 seconds left to cap a 14-point, 12-rebound and three-block performance, giving the Utah Jazz a 106-104 victory over the New Orleans Pelicans in the first game of the NBA's restart on Thursday night. ",
     author:'Richard Clemons'
   },
@@ -208,7 +208,7 @@ headings:[
 <Dekk dekk={headline.headline[0].dekk}/>
 <Authordate author={headline.headline[0].author} date="07/29/20"/>
 
-<ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/>
+<ImageHolder mediaUrl="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/>
  
 
 
@@ -218,7 +218,7 @@ headings:[
 
 <Link href="/article?_id=5f2745f8b2d26bc5a980406b"><a>
 <Label label={headline.headline[1].label}/>
-<ImageHolder mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/>
+<ImageHolder mediaUrl="http://i.ytimg.com/vi/P-jzeKWhgIg/hqdefault.jpg"/>
 <Maintitle title={headline.headline[1].maintitle}/>
 <Authordate author="Jay Flemmings" date="06/14/20"/>
 
@@ -226,7 +226,7 @@ headings:[
 
      <Link href="/article?_id=5f2821c70a0640e2c6f449a7"><a>
  <Label label={headline.headline[2].label}/>
- <ImageHolder mediaUrl="http://i.ytimg.com/vi/FIqwRr2cU4c/hqdefault.jpg"/>
+ <ImageHolder mediaUrl="http://i.ytimg.com/vi/_ylvWAs2zbk/hqdefault.jpg"/>
  <Maintitle title={headline.headline[2].maintitle}/>
  <Authordate author="Jay Flemmings" date="06/14/20"/>
 
@@ -244,11 +244,11 @@ headings:[
 <div className="gridCenter">
 <Sectiontitle title={headline.headings[0].title} />
 <Sectionsubtitle subtitle = {headline.headings[0].subtitle} />
-<Link href="/hoopcode?_id=5eb5ea710f258495bf4845ca"><a><Coderow rank="1" codeTitle={headline.charts[0].codeTitle} hoopcodes={headline.charts[0].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/hoopcode?_id=5eb5ea710f258495bf4845cb"><a><Coderow rank="2" codeTitle={headline.charts[1].codeTitle} hoopcodes={headline.charts[1].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/hoopcode?_id=5eb5ea710f258495bf4845ce"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/hoopcode?_id=5ec7aebcc832db8bea3706a5"><a><Coderow rank="4" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/hoopcode?_id=5ec7aebcc832db8bea3706a5"><a><Coderow rank="5" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
+<Link href="/hoopcode?_id=5eb5ea710f258495bf4845ca"><a><Coderow rank="1" codeTitle={headline.charts[0].codeTitle} hoopcodes={headline.charts[0].hoopcodes} image="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/></a></Link>
+<Link href="/hoopcode?_id=5eb5ea710f258495bf4845cb"><a><Coderow rank="2" codeTitle={headline.charts[1].codeTitle} hoopcodes={headline.charts[1].hoopcodes} image="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/></a></Link>
+<Link href="/hoopcode?_id=5eb5ea710f258495bf4845ce"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes} image="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/></a></Link>
+<Link href="/hoopcode?_id=5ec7aebcc832db8bea3706a5"><a><Coderow rank="4" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/></a></Link>
+<Link href="/hoopcode?_id=5ec7aebcc832db8bea3706a5"><a><Coderow rank="5" codeTitle={headline.charts[4].codeTitle} hoopcodes={headline.charts[4].hoopcodes} image="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/></a></Link>
 
 </div></div></div>
      

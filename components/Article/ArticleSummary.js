@@ -6,8 +6,11 @@ import Dekk from '../../components/units/dekk'
 import Authordate from '../../components/units/authordate'
 import Imageholder from '../../components/units/imageHolder'
  import Content from '../../components/units/content'
+import Youtubehooks from '../../components/units/youtubehooks'
+import LazyLoad from 'react-lazy-load';
 
-function ArticleSummary({  label, title, dekk, author, date, mediaUrl, contentA, contentB, contentC, contentD }) {
+
+function ArticleSummary({ videoId, label, title, dekk, author, date, mediaUrl, contentA, contentB, contentC, contentD }) {
 return (
  <>
  
@@ -22,10 +25,9 @@ return (
  
  <Dekk dekk={dekk}/>
  
- <Authordate author={author} date={date}/>
- 
- <Imageholder mediaUrl={mediaUrl} />
-
+ <Authordate author={author} date={date}/><br/>
+ <LazyLoad>
+<Youtubehooks videoIdA={videoId} /></LazyLoad>
  <Content 
  contentA={contentA}
  contentB={contentB}
