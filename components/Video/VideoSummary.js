@@ -8,46 +8,7 @@ import Youtubehooks from '../../components/units/youtubehooks'
  import Content from '../../components/units/content'
 
 function VideoSummary({   title, author, label, videoId, dekk, contentA, date, label1, title1, dekk1, content1  }) {
-  const [video, setVideo ] = useState({
-    video :[
-      {
-label:{label},
-title:{title},
-dekk:{dekk},
-author:{author},
-date:{date},
-videoId:{videoId},
-contentA:{contentA} }]
 
-})
-
-const switchSpanishHandler = () => {
-  setHeadline({video :[
-    {
-label:{label1},
-title:{title1},
-dekk:{dekk1},
-author:{author},
-date:{date},
-videoId:{videoId},
-contenA:{contentA} }]
-})
-
-}
-
-const switchEnglishHandler = () => {
-  setHeadline({video :[
-    {
-label:{label},
-title:{title},
-dekk:{dekk},
-author:{author},
-date:{date},
-videoId:{videoId},
-contenA:{content1} }]
-})
-
-}
 
 
 return (
@@ -58,12 +19,6 @@ return (
 <div className="editorialContainer">
   <div className="pageGrid">
     <div className="gridCenter">
-
-       
-  <div id="buttons">
-    <button  className="buttonStyle" onClick={switchSpanishHandler}>ESPAÑOL </button>
-    <button  className="buttonStyle" onClick={switchEnglishHandler}>ENGLISH </button>
-    </div> 
     <Label label={label} />
  
  <Title title={title} /> 
