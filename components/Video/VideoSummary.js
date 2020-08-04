@@ -21,7 +21,7 @@ return (
  
  <Dekk dekk={dekk}/>
  
- <Authordate author={author} date={date}/>
+ <Authordate author={author} date={date}/> <br/>
  
  <Youtubehooks videoIdA={videoId} />
 
