@@ -8,7 +8,7 @@ function Coins({ coins }) {
  
 }
 Coins.getInitialProps = async () => {
-  const url = `${baseUrl}/api/coins`
+  const url = `https://hoopscript.vercel.app/api/coins`
   const response = await axios.get(url);
   return { coins: response.data }
 }
