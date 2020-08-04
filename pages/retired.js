@@ -80,7 +80,7 @@ class Page extends Component {
   render() {
     return (
       <div>
-        <Head title="Retired NBA PlAYERS" />
+        <Head title="Active NBA PlAYERS" />
         <App
           {...DEFAULT_PROPS}
           searchState={this.state.searchState}

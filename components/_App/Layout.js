@@ -9,7 +9,8 @@ return (
   <Head>
   <HeadContent />
 
-
+  <link rel="stylesheet" type="text/css" href="/static/styles.css" />
+        
    
  
 <title>Hooper Os</title>

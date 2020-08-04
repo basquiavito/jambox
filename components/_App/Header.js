@@ -25,12 +25,13 @@ export default function Topheader(){
 <td style={td2ndStyle}>
 <span className="pagetop">
 <b className="hsname">
-<Link href="/" ><a >Hooperos</a></Link></b> 
+<Link href="/" ><a >Hoopscript</a></Link></b> 
 <Link href="/obb/obb"><a>notation</a></Link> | 
-<Link href="/index2"><a>actives</a></Link>| 
-<Link href="/retired"><a>retired</a></Link>|  
+<Link href="/index2"><a>players</a></Link>| 
+<Link href="/updates"><a>updates</a></Link> | 
+ 
 <Link href="/blogs"><a>blogs</a></Link> | 
-<Link href="/collections"><a>archives</a></Link> 
+ 
 </span></td>
  
 <td style={td3rdStyle}><span className="pagetop">
