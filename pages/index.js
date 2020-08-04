@@ -23,45 +23,46 @@ export default function Home() {
   const [ headline, setHeadline] = useState({
     headline:[
     {
-    label: 'Utah vs NO',
-    maintitle:'Anthony Davis had 42 pts and 12 reb. Lakers clinched No. 1 seed in Western  ',
-    dekk:"Davis had 24 points by halftime, marking the 20th time this season he's scored at least 20 points in a half. ",
-    author:'Richard Clemons'
+    label: 'Pampara',
+    maintitle:'Anthony Davis tuvo 42 puntos en la victoria de los Lakers. ',
+    dekk:"Anthony Davis tenia ya 24 puntos en la mitad. Marcando la vez numero 20 que logra dicha hazana. ",
+    author:'Richard Clemons',
+    date:"Jul 04, 2020"
   },
   {
-    label: 'LAL vs LAC',
-    maintitle:"Warren scores 34 more, leads Pacers past Wizards, 111-100",
-    dekk:'In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. Brandon Ingram led the Pelicans with 12 PTS in the victory, while Caris LeVert and Jarrett Allen each tallied 10 PTS for the Nets.',
-    author:'Richard Clemons'
+    label: 'Picante',
+    maintitle:"Warren anoto 34 mas, liderando a los pacers a pasarle a los Wizards, 111-100.",
+   date:"Jul 04, 2020",
+    author:'Jiffy Hogan'
   },
 
   {
-    label: '#TBT',
-    maintitle:'Williamson added 23 points and matched his career high with five assists in his most extensive playing time since the NBA restart.”',
-    dekk:'Francis put the streetball in the NBA.',
-    author:'Richard Clemons'
+    label: 'Rookie Alert',
+    maintitle:'Zion Williamson con 23 puntos y 5 asistencias. Lo dejaron jugar un poco mas esta vez.”',
+    date:"Jul 04, 2020",
+    author:'Julian Ortiz'
   }],
-    charts: [
-  {codeTitle:'Iverson Crossed Jordan', hoopcodes:'013 013 180 FG$ | DOUBLE PiCASSO + base   '},
-  {codeTitle:'Trae Young Nutmeg', hoopcodes:'809 N FG$'},
-  {codeTitle:'Luka Doncic Steb Back', hoopcodes:'806 FG$'},
-  {codeTitle:'Damian Lillard explosive Spin Move', hoopcodes:'870 180 FG$'},
-  {codeTitle:'Lonzo Ball Crossover', hoopcodes:'018 FG$'}
-],
+//     charts: [
+//   {codeTitle:'Iverson Crossed Jordan', hoopcodes:'013 013 180 FG$ | DOUBLE PiCASSO + base   '},
+//   {codeTitle:'Trae Young Nutmeg', hoopcodes:'809 N FG$'},
+//   {codeTitle:'Luka Doncic Steb Back', hoopcodes:'806 FG$'},
+//   {codeTitle:'Damian Lillard explosive Spin Move', hoopcodes:'870 180 FG$'},
+//   {codeTitle:'Lonzo Ball Crossover', hoopcodes:'018 FG$'}
+// ],
 videos:[
-  {label:'On Fire',title:'Jayson Tatum 34 Points 8 Ast Full Highlights', dekk:'Bol Bol went Opal mode.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Scoring',title:'Michael Porter Jr. 37 Points 12 Reb ', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Passing',title:'Fred VanVleet 36 Points in the W', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Defense',title:'Shake Milton With the GAME-WINNER! 16 PTS ', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Business',title:'Ja Morant 25 Points 9 Ast 9 Reb ', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'}
+  {label:'On Fire',title:'Jayson Tatum 34 pts, 8 Ast -- Despues de encestar solo 5 en el juego pasado, Tatum vino rabioso. Hay bobo', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Rookie Alert',title:'Michael Porter Jr. 37 Pts, 12 Reb | Un novato que esta dando agua de beber en Denver', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Passing',title:'Fred VanVleet 36 Pts. Mas alta anotacion de su carrera. Toronto sigue sorprendiendo al mundo. ',    author:'Jiffy Hogan', date:'Jul 23, 2020'},
+  {label:'Defense',title:'Shake Milton para ganar! 16 PTS | Que Simmons de que?',   author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'rookie alert',title:'Ja Morant 25 Points 9 Ast 9 Reb " ROY, a terror!!" ', dekk:'Bol Bol jugo modo Opal.',  author:'Richard Clemons', date:'Jul 23, 2020'}
 ],
-versus:[
-  {codeTitle:' Kobe vs Jordan', hoopcodes:'Fadeaway'},
-  {codeTitle:'Luka vs Harden', hoopcodes:'Step Back'},
-  {codeTitle:'Duncan vs Olajuwon', hoopcodes:'Post up'},
-  {codeTitle:'Kidd vs Stockton', hoopcodes:'Passing'},
-  {codeTitle:'Mutombo vs Mourning', hoopcodes:'Defense'}
-],
+// versus:[
+//   {codeTitle:' Kobe vs Jordan', hoopcodes:'Fadeaway'},
+//   {codeTitle:'Luka vs Harden', hoopcodes:'Step Back'},
+//   {codeTitle:'Duncan vs Olajuwon', hoopcodes:'Post up'},
+//   {codeTitle:'Kidd vs Stockton', hoopcodes:'Passing'},
+//   {codeTitle:'Mutombo vs Mourning', hoopcodes:'Defense'}
+// ],
 headings:[
   {title:'Hoopcodes', subtitle:'Code of the Week'},
   {title:'Videos', subtitle:'Latest Videos'},
@@ -69,93 +70,7 @@ headings:[
 ]
 
 })
-    const switchSpanishHandler = () => {
-      setHeadline({
-headline:[
-{label: 'Lo ultimo',maintitle:'Anthony Davis anoto 42 pts y 2 reb. Los Lakers tomaron en el primer lugar del oeste.',dekk:'En la mitad del juego AD tenia ya 24 puntos. Es la 20ava ves que llega al menos veinte puntos en un mitad.',author:'Richard Clemon'},
-{label: 'Bachillerato',maintitle:'Warren anoto 34 mas, lidero a los Pacers a la victoria frente los Wizards, 111 - 100.”',author:'Richard Clemons'},
-{label: 'TBT',maintitle:'Williamson sumo 23 puntos y empato su mas alto numero de asistencias con 5 ast. Ha sido el juego que en que mas minutos ha jugado desde el reinicio.”',author:'Richard Clemons',}
-],
-charts: [
-  {codeTitle:'Iverson cruzo a Jordan', hoopcodes:'180 108 103 FG$'},
-  {codeTitle:'Trae Young y su nuez moscada', hoopcodes:'809 N FG$'},
-  {codeTitle:'Luka Doncic y su psicopata Paso Atras', hoopcodes:'806 FG$'},
-  {codeTitle:'Damian Lillard giro explosivo', hoopcodes:'870 180 FG$'},
-  {codeTitle:'Lonzo Ball y su cruze', hoopcodes:'018 FG$'}
-],
-videos:[
-  {label:'Caliente',title:'Jasom Tatum  34 pts 8 ast ', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Puntos',title:'Michael Porter Jr. 37 pts 12 reb', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Pase',title:'Fred Vanvleet 36 pts. ~A career high!', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Defensa',title:'Shake Milton para ganar!', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Fuego',title:'Ja Morant 25 puntos 9 ast 9 ast', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'}
-],
-versus:[
-  {codeTitle:' Kobe vs Jordan', hoopcodes:'Fadeaway'},
-  {codeTitle:'Luka vs Harden', hoopcodes:'Paso Atras'},
-  {codeTitle:'Duncan vs Olajuwon', hoopcodes:'Posteo'},
-  {codeTitle:'Kidd vs Stockton', hoopcodes:'Pase'},
-  {codeTitle:'Mutombo vs Mourning', hoopcodes:'Defensa'}],
-
-headings:[
-  {title:'Hoopcodes', subtitle:'Codigos de la semana'},
-  {title:'Videos', subtitle:'Videos Recientes'},
-  {title:'Versus', subtitle:'A Quien apuestas?'}
-]
-      })
-    }
-    const switchEnglishHandler = () => {
-      setHeadline({
-        headline:[
-          {
-          label: 'Utah vs NO',
-          maintitle:'Anthony Davis had 42 pts and 12 reb. Lakers clinched No. 1 seed in Western  ',
-          dekk:"Davis had 24 points by halftime, marking the 20th time this season he's scored at least 20 points in a half. ",
-          author:'Richard Clemons'
-        },
-        {
-          label: 'LAL vs LAC',
-          maintitle:"Warren scores 34 more, leads Pacers past Wizards, 111-100",
-          dekk:'In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. Brandon Ingram led the Pelicans with 12 PTS in the victory, while Caris LeVert and Jarrett Allen each tallied 10 PTS for the Nets.',
-          author:'Richard Clemons'
-        },
-      
-        {
-          label: '#TBT',
-          maintitle:'Williamson added 23 points and matched his career high with five assists in his most extensive playing time since the NBA restart.”',
-          dekk:'Francis put the streetball in the NBA.',
-          author:'Richard Clemons'
-        }],
-          charts: [
-        {codeTitle:'Iverson Crossed Jordan', hoopcodes:'013 013 180 FG$ | DOUBLE PiCASSO + base   '},
-        {codeTitle:'Trae Young Nutmeg', hoopcodes:'809 N FG$'},
-        {codeTitle:'Luka Doncic Steb Back', hoopcodes:'806 FG$'},
-        {codeTitle:'Damian Lillard explosive Spin Move', hoopcodes:'870 180 FG$'},
-        {codeTitle:'Lonzo Ball Crossover', hoopcodes:'018 FG$'}
-      ],
-      videos:[
-        {label:'On Fire',title:'Jayson Tatum 34 Points 8 Ast Full Highlights', dekk:'Bol Bol went Opal mode.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-        {label:'Scoring',title:'Michael Porter Jr. 37 Points 12 Reb ', author:'Jay Ortiz', date:'Jul 23, 2020'},
-        {label:'Passing',title:'Fred VanVleet 36 Points in the W', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-        {label:'Defense',title:'Shake Milton With the GAME-WINNER! 16 PTS ', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-        {label:'Business',title:'Ja Morant 25 Points 9 Ast 9 Reb ', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'}
-      ],
-      versus:[
-        {codeTitle:' Kobe vs Jordan', hoopcodes:'Fadeaway'},
-        {codeTitle:'Luka vs Harden', hoopcodes:'Step Back'},
-        {codeTitle:'Duncan vs Olajuwon', hoopcodes:'Post up'},
-        {codeTitle:'Kidd vs Stockton', hoopcodes:'Passing'},
-        {codeTitle:'Mutombo vs Mourning', hoopcodes:'Defense'}
-      ],
-      headings:[
-        {title:'Hoopcodes', subtitle:'Code of the Week'},
-        {title:'Videos', subtitle:'Latest Videos'},
-        {title:'Versuz', subtitle:'Who you Got?'}
-      ]
-      
-      })
-    } 
-    
+ 
   return <>
 <Head>
 <meta charset="utf-8"/>
@@ -189,18 +104,13 @@ headings:[
 <div className="gridCenter">
   <div className="editorialPlacementContainer">
  
-  <div id="buttons">
-    <button  className="buttonStyle" onClick={switchSpanishHandler}>ESPAÑOL </button>
-    <button  className="buttonStyle" onClick={switchEnglishHandler}>ENGLISH </button>
-    </div><br/><br/>
- 
-   
+
 <Link href="/article?_id=5f2741a6b2d26bc5a9804068"><a className="editorialPlacementLink">
 <div className="editorialPlacementHeader">
 <Label label={headline.headline[0].label}/>
-<Maintitle title={headline.headline[0].maintitle}/>
+<Maintitle title={headline.headline[0].maintitle}/> 
 <Dekk dekk={headline.headline[0].dekk}/>
-<Authordate author={headline.headline[0].author} date="07/29/20"/>
+<Authordate author={headline.headline[0].author} date={headline.headline[0].date}/>
 
 <ImageHolder mediaUrl="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/>
  
@@ -213,16 +123,16 @@ headings:[
 <Link href="/article?_id=5f2745f8b2d26bc5a980406b"><a>
 <Label label={headline.headline[1].label}/>
 <ImageHolder mediaUrl="http://i.ytimg.com/vi/P-jzeKWhgIg/hqdefault.jpg"/>
-<Maintitle title={headline.headline[1].maintitle}/>
-<Authordate author="Jay Flemmings" date="06/14/20"/>
+<Maintitle title={headline.headline[1].maintitle}/><br/>
+<Authordate author={headline.headline[1].author} date={headline.headline[1].date}/>
 
     </a></Link>
 
      <Link href="/article?_id=5f2821c70a0640e2c6f449a7"><a>
  <Label label={headline.headline[2].label}/>
  <ImageHolder mediaUrl="http://i.ytimg.com/vi/_ylvWAs2zbk/hqdefault.jpg"/>
- <Maintitle title={headline.headline[2].maintitle}/>
- <Authordate author="Jay Flemmings" date="06/14/20"/>
+ <Maintitle title={headline.headline[2].maintitle}/><br/>
+ <Authordate author={headline.headline[2].author} date={headline.headline[2].date}/>
 
      </a></Link> 
 

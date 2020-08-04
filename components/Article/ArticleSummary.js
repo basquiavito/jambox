@@ -1,4 +1,4 @@
- 
+ import React, {useState} from 'react'
 import Link from 'next/link'
 import Label from '../../components/units/label'
  import Title from '../../components/units/maintitle'
@@ -11,6 +11,7 @@ import LazyLoad from 'react-lazy-load';
 
 
 function ArticleSummary({ videoId, label, title, dekk, author, date, mediaUrl, contentA, contentB, contentC, contentD }) {
+
 return (
  <>
  
@@ -19,6 +20,9 @@ return (
 <div className="editorialContainer">
   <div className="pageGrid">
     <div className="gridCenter">
+
+   
+
     <Label label={label} />
  
  <Title title={title} /> 
