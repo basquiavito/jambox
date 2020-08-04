@@ -49,11 +49,11 @@ export default function Home() {
   {codeTitle:'Lonzo Ball Crossover', hoopcodes:'018 FG$'}
 ],
 videos:[
-  {label:'On Fire',title:'Bol Bol shine in the Victory of Denver Nugetts vs menphis.', dekk:'Bol Bol went Opal mode.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Scoring',title:'Lamelo Ball is the future of League', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Passing',title:'Inside the NBA Bubble: The day the NBA returned', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Defense',title:'Kevin Garnett wants to own the Wolves, but it won’t be that simple', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Business',title:'NBA bubble gambling: A new frontier featuring low scores and long shots', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'}
+  {label:'On Fire',title:'Jayson Tatum 34 Points 8 Ast Full Highlights', dekk:'Bol Bol went Opal mode.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Scoring',title:'Michael Porter Jr. 37 Points 12 Reb ', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Passing',title:'Fred VanVleet 36 Points in the W', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Defense',title:'Shake Milton With the GAME-WINNER! 16 PTS ', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Business',title:'Ja Morant 25 Points 9 Ast 9 Reb ', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'}
 ],
 versus:[
   {codeTitle:' Kobe vs Jordan', hoopcodes:'Fadeaway'},
@@ -244,7 +244,7 @@ headings:[
 <div className="gridCenter">
 <Sectiontitle title={headline.headings[0].title} />
 <Sectionsubtitle subtitle = {headline.headings[0].subtitle} />
-<Link href="/hoopcode?_id=5eb5ea710f258495bf4845ca"><a><Coderow rank="1" codeTitle={headline.charts[0].codeTitle} hoopcodes={headline.charts[0].hoopcodes} image="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/></a></Link>
+<Link href="/hoopcode?_id=5eb5ea710f258495bf4845ca"><a><Coderow rank="1" codeTitle={headline.charts[0].codeTitle} hoopcodes={headline.charts[0].hoopcodes} image="http://i.ytimg.com/vi/c_2y8SBAAHI/hqdefault.jpg"/></a></Link>
 <Link href="/hoopcode?_id=5eb5ea710f258495bf4845cb"><a><Coderow rank="2" codeTitle={headline.charts[1].codeTitle} hoopcodes={headline.charts[1].hoopcodes} image="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/></a></Link>
 <Link href="/hoopcode?_id=5eb5ea710f258495bf4845ce"><a><Coderow rank="3" codeTitle={headline.charts[2].codeTitle} hoopcodes={headline.charts[2].hoopcodes} image="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/></a></Link>
 <Link href="/hoopcode?_id=5ec7aebcc832db8bea3706a5"><a><Coderow rank="4" codeTitle={headline.charts[3].codeTitle} hoopcodes={headline.charts[3].hoopcodes} image="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/></a></Link>
@@ -265,34 +265,34 @@ headings:[
 <Title title={headline.videos[0].title}/>
 <Dekk dekk={headline.videos[0].dekk}/>
 <Authordate author={headline.videos[0].author} date={headline.videos[0].date} />
-<MediaUrlFull mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/>
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/c_2y8SBAAHI/hqdefault.jpg"/>
 
 </a></Link>
  
     <Link href="/video?_id=5f285b4311bc31dbcb85d0be"><a className="linkContainer">
     <Blacklabel label={headline.videos[1].label}/>
-<MediaUrlFull mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg" />
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/_EtXWZ6dn8I/hqdefault.jpg" />
 <Title title={headline.videos[1].title}/>
 <Authordate author={headline.videos[1].author} date={headline.videos[1].date} />
         </a></Link>
 
 <Link href="/video?_id=5f285b5d11bc31dbcb85d0c0"><a>
 <Blacklabel label={headline.videos[2].label}/>
-<MediaUrlFull mediaUrl=" https://s3.amazonaws.com/pedales.net/jordanShaq.jpg" />
+<MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/Ho9PaI6ApMQ/hqdefault.jpg" />
 <Title title={headline.videos[2].title}/>
 <Authordate author={headline.videos[2].author} date={headline.videos[2].date} />
     </a></Link>
 
 <Link href="/video?_id=5f288d9211bc31dbcb85d0c1"><a>
 <Blacklabel label={headline.videos[3].label}/>
-<MediaUrlFull mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg" />
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/2-f2XEAfmy8/hqdefault.jpg" />
 <Title title={headline.videos[3].title}/>
 <Authordate author={headline.videos[3].author} date={headline.videos[3].date} />
     </a></Link>
 
 <Link href="/video?_id=5f288da611bc31dbcb85d0c2"><a>
 <Blacklabel label={headline.videos[4].label}/>
-<MediaUrlFull mediaUrl="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg" />
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/9Inz8a7mp1w/hqdefault.jpg" />
 <Title title={headline.videos[4].title}/>
 <Authordate author={headline.videos[4].author} date={headline.videos[4].date} /></a>
 
@@ -307,11 +307,11 @@ headings:[
 <Sectiontitle title={headline.headings[2].title} />
 <Sectionsubtitle subtitle={headline.headings[2].subtitle} />
 
-<Link href="/coin?_id=5f2899c611bc31dbcb85d0cb"><a><Coderow rank="1" codeTitle={headline.versus[0].codeTitle} hoopcodes={headline.versus[0].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/coin?_id=5f2899d911bc31dbcb85d0cc"><a><Coderow rank="2" codeTitle={headline.versus[1].codeTitle} hoopcodes={headline.versus[1].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/coin?_id=5f289cc011bc31dbcb85d0cd"><a><Coderow rank="3" codeTitle={headline.versus[2].codeTitle} hoopcodes={headline.versus[2].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/coin?_id=5f289e7c11bc31dbcb85d0ce"><a><Coderow rank="4" codeTitle={headline.versus[3].codeTitle} hoopcodes={headline.versus[3].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
-<Link href="/coin?_id=5f289e9b11bc31dbcb85d0cf"><a><Coderow rank="5" codeTitle={headline.versus[4].codeTitle} hoopcodes={headline.versus[4].hoopcodes} image="https://s3.amazonaws.com/pedales.net/jordanShaq.jpg"/></a></Link>
+<Link href="/coin?_id=5f2899c611bc31dbcb85d0cb"><a><Coderow rank="1" codeTitle={headline.versus[0].codeTitle} hoopcodes={headline.versus[0].hoopcodes} image="http://i.ytimg.com/vi/c_2y8SBAAHI/hqdefault.jpg"/></a></Link>
+<Link href="/coin?_id=5f2899d911bc31dbcb85d0cc"><a><Coderow rank="2" codeTitle={headline.versus[1].codeTitle} hoopcodes={headline.versus[1].hoopcodes} image="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/></a></Link>
+<Link href="/coin?_id=5f289cc011bc31dbcb85d0cd"><a><Coderow rank="3" codeTitle={headline.versus[2].codeTitle} hoopcodes={headline.versus[2].hoopcodes} image="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/></a></Link>
+<Link href="/coin?_id=5f289e7c11bc31dbcb85d0ce"><a><Coderow rank="4" codeTitle={headline.versus[3].codeTitle} hoopcodes={headline.versus[3].hoopcodes} image="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/></a></Link>
+<Link href="/coin?_id=5f289e9b11bc31dbcb85d0cf"><a><Coderow rank="5" codeTitle={headline.versus[4].codeTitle} hoopcodes={headline.versus[4].hoopcodes} image="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/></a></Link>
 
  
 </div></div></div>
