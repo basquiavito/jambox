@@ -77,30 +77,30 @@ headline:[
 {label: 'TBT',maintitle:'Williamson sumo 23 puntos y empato su mas alto numero de asistencias con 5 ast. Ha sido el juego que en que mas minutos ha jugado desde el reinicio.”',author:'Richard Clemons',}
 ],
 charts: [
-  {codeTitle:'Iverson Crossed Jordan', hoopcodes:'013 013 180 FG$ | DOUBLE PiCASSO + base   '},
-  {codeTitle:'Trae Young Nutmeg', hoopcodes:'809 N FG$'},
-  {codeTitle:'Luka Doncic Steb Back', hoopcodes:'806 FG$'},
-  {codeTitle:'Damian Lillard explosive Spin Move', hoopcodes:'870 180 FG$'},
-  {codeTitle:'Lonzo Ball Crossover', hoopcodes:'018 FG$'}
+  {codeTitle:'Iverson cruzo a Jordan', hoopcodes:'180 108 103 FG$'},
+  {codeTitle:'Trae Young y su nuez moscada', hoopcodes:'809 N FG$'},
+  {codeTitle:'Luka Doncic y su psicopata Paso Atras', hoopcodes:'806 FG$'},
+  {codeTitle:'Damian Lillard giro explosivo', hoopcodes:'870 180 FG$'},
+  {codeTitle:'Lonzo Ball y su cruze', hoopcodes:'018 FG$'}
 ],
 videos:[
-  {label:'On Fire',title:'Jayson Tatum 34 Points 8 Ast Full Highlights', dekk:'Bol Bol went Opal mode.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Scoring',title:'Michael Porter Jr. 37 Points 12 Reb ', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Passing',title:'Fred VanVleet 36 Points in the W', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Defense',title:'Shake Milton With the GAME-WINNER! 16 PTS ', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
-  {label:'Business',title:'Ja Morant 25 Points 9 Ast 9 Reb ', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'}
+  {label:'Caliente',title:'Jasom Tatum  34 pts 8 ast ', dekk:'Bol Bol jugo modo Opal.', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Puntos',title:'Michael Porter Jr. 37 pts 12 reb', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Pase',title:'Fred Vanvleet 36 pts. ~A career high!', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Defensa',title:'Shake Milton para ganar!', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'Fuego',title:'Ja Morant 25 puntos 9 ast 9 ast', mediaUrl:'https://s3.amazonaws.com/pedales.net/srimmage.png', author:'Jay Ortiz', date:'Jul 23, 2020'}
 ],
 versus:[
   {codeTitle:' Kobe vs Jordan', hoopcodes:'Fadeaway'},
-  {codeTitle:'Luka vs Harden', hoopcodes:'Step Back'},
-  {codeTitle:'Duncan vs Olajuwon', hoopcodes:'Post up'},
-  {codeTitle:'Kidd vs Stockton', hoopcodes:'Passing'},
-  {codeTitle:'Mutombo vs Mourning', hoopcodes:'Defense'}
-],
+  {codeTitle:'Luka vs Harden', hoopcodes:'Paso Atras'},
+  {codeTitle:'Duncan vs Olajuwon', hoopcodes:'Posteo'},
+  {codeTitle:'Kidd vs Stockton', hoopcodes:'Pase'},
+  {codeTitle:'Mutombo vs Mourning', hoopcodes:'Defensa'}],
+
 headings:[
-  {title:'Hoopcodes', subtitle:'Code of the Week'},
-  {title:'Videos', subtitle:'Latest Videos'},
-  {title:'Versuz', subtitle:'Who you Got?'}
+  {title:'Hoopcodes', subtitle:'Codigos de la semana'},
+  {title:'Videos', subtitle:'Videos Recientes'},
+  {title:'Versus', subtitle:'A Quien apuestas?'}
 ]
       })
     }
@@ -163,8 +163,8 @@ headings:[
 <title>Basketball Notation, news, profiles and more | Hoopscript</title>
 <meta name="msapplication-tap-highlight" content="no"></meta>   
 <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"></meta>
-<link rel="canonical" href="https://www.hooperos.com/"></link>
-<link rel="canonical" href="https://www.hooperos.vercel.app/"></link>
+<link rel="canonical" href="https://www.hoopscript.com/"></link>
+ 
 <meta name="author" contnet></meta>
 <meta name="copyright" content="Copyright © 64 projects 2020"/>
 <meta name="description" content="homepage | The latest tips and advice for fans on basketball news, ball-handling, scoring."></meta>

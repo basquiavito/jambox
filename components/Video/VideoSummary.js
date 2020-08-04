@@ -1,3 +1,4 @@
+import React, {useState} from 'react'
 import Link from 'next/link'
 import Label from '../../components/units/label'
  import Title from '../../components/units/maintitle'
@@ -6,7 +7,49 @@ import Authordate from '../../components/units/authordate'
 import Youtubehooks from '../../components/units/youtubehooks'
  import Content from '../../components/units/content'
 
-function VideoSummary({ title, author, label, videoId, dekk, contentA, date, referencePlayer, referenceGame, referenceCode  }) {
+function VideoSummary({   title, author, label, videoId, dekk, contentA, date, label1, title1, dekk1, content1  }) {
+  const [video, setVideo ] = useState({
+    video :[
+      {
+label:{label},
+title:{title},
+dekk:{dekk},
+author:{author},
+date:{date},
+videoId:{videoId},
+contentA:{contentA} }]
+
+})
+
+const switchSpanishHandler = () => {
+  setHeadline({video :[
+    {
+label:{label1},
+title:{title1},
+dekk:{dekk1},
+author:{author},
+date:{date},
+videoId:{videoId},
+contenA:{contentA} }]
+})
+
+}
+
+const switchEnglishHandler = () => {
+  setHeadline({video :[
+    {
+label:{label},
+title:{title},
+dekk:{dekk},
+author:{author},
+date:{date},
+videoId:{videoId},
+contenA:{content1} }]
+})
+
+}
+
+
 return (
  <>
  
@@ -15,6 +58,12 @@ return (
 <div className="editorialContainer">
   <div className="pageGrid">
     <div className="gridCenter">
+
+       
+  <div id="buttons">
+    <button  className="buttonStyle" onClick={switchSpanishHandler}>ESPAÑOL </button>
+    <button  className="buttonStyle" onClick={switchEnglishHandler}>ENGLISH </button>
+    </div> 
     <Label label={label} />
  
  <Title title={title} /> 
@@ -61,7 +110,31 @@ return (
     grid-column: center-start / center-end;
  }
   
-  
+ button {
+  width:60px; 
+   color: rgb(0, 0, 0);
+   overflow-wrap: break-word;
+   word-break: break-word;
+   background-color: transparent;
+   cursor: pointer;
+   display: inline-block;
+   font-family: Programme, sans-serif;
+   font-size: 0.575rem;
+   line-height: 1;
+   text-align: center;
+   vertical-align: top;
+   user-select: none;
+   -webkit-appearance: none;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   border-color: rgb(0, 0, 0);
+   transition: background-color 0.1s ease 0s, color 0.1s ease 0s;
+   border-width: 1px;
+ 
+   border-radius: 5px;
+   margin-right: 5px;
+   padding: 3px; 
+}
   `}
 </style>
 </>
