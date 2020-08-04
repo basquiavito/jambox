@@ -6,7 +6,7 @@ function UpdateList({ updates }) {
 function mapUpdateToItems(updates){
 return updates.map(p => ({
  header: p.name ,
- meta: p.pts,
+
 
 childkey: p._id,
  href:`/update?_id=${p._id}`,

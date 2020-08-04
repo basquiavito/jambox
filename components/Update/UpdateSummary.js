@@ -5,8 +5,10 @@ import Dekk from '../../components/units/dekk'
 import Authordate from '../../components/units/authordate'
 import Youtubehooks from '../../components/units/youtubehooks'
  import Content from '../../components/units/content'
+ import LazyLoad from 'react-lazy-load';
 
-function VideoSummary({ name, pts, reb, ast, outcome , videoId}) {
+
+function VideoSummary({ name, pts, reb, ast, outcome , videoId, cotorra}) {
 return (
  <>
  
@@ -17,9 +19,14 @@ return (
     <div className="gridCenter">
  
  
- <p><span>{name}</span> <span>{pts} pts</span> <span>{reb} reb</span> <span>{ast}   ast</span> | <span>{outcome}</span></p> 
-
+ <p> <span>{pts} pts</span> <span>{reb} reb</span> <span>{ast}   ast</span> | <span>{outcome}</span></p> 
+<div>
+<LazyLoad>
 <Youtubehooks videoIdA={videoId}/>
+
+</LazyLoad>
+<figcaption>{cotorra}</figcaption>
+</div>
  
  
  
