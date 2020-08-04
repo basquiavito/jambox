@@ -11,7 +11,7 @@ function Profiles({ profiles }) {
  
 }
 Profiles.getInitialProps = async () => {
-  const url = `${baseUrl}/api/profiles`
+  const url = `https://hoopscript.vercel.app/api/profiles`
   const response = await axios.get(url);
   return { profiles: response.data }
 }
