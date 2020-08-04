@@ -30,13 +30,14 @@ return (
  <Dekk dekk={dekk}/>
  
  <Authordate author={author} date={date}/><br/>
+
  <LazyLoad>
-<Youtubehooks videoIdA={videoId} /></LazyLoad>
+<Youtubehooks videoIdA={videoId} />
+</LazyLoad>
+
  <Content 
  contentA={contentA}
- contentB={contentB}
- contentC={contentC}
- contentD={contentD}
+ 
  
  
  

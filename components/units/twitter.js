@@ -1,6 +1,6 @@
 import   {TwitterTweetEmbed }  from 'react-twitter-embed'
 import Sectiontitle from './sectiontitle'
- 
+import LazyLoad from 'react-lazy-load';
  
 
 
@@ -11,11 +11,11 @@ const twitter = (props) => {
           
             <Sectiontitle title={props.title} />
 
-         
+       <LazyLoad>
 <TwitterTweetEmbed 
 tweetId={props.token}
 />
-
+</LazyLoad>  
 <style jsx>
     {`
 
