@@ -25,19 +25,19 @@ export default function Home() {
     {
     label: 'Utah vs NO',
     maintitle:'Anthony Davis had 42 pts and 12 reb. Lakers clinched No. 1 seed in Western  ',
-    dekk:"Rudy Gobert sank two free throws with 6.9 seconds left to cap a 14-point, 12-rebound and three-block performance, giving the Utah Jazz a 106-104 victory over the New Orleans Pelicans in the first game of the NBA's restart on Thursday night. ",
+    dekk:"Davis had 24 points by halftime, marking the 20th time this season he's scored at least 20 points in a half. ",
     author:'Richard Clemons'
   },
   {
     label: 'LAL vs LAC',
-    maintitle:"James' layup late lifts Lakers past Clippers, 103-101",
+    maintitle:"Warren scores 34 more, leads Pacers past Wizards, 111-100",
     dekk:'In their first NBA scrimmage in Orlando, the New Orleans Pelicans defeated the Brooklyn Nets, 99-68. Brandon Ingram led the Pelicans with 12 PTS in the victory, while Caris LeVert and Jarrett Allen each tallied 10 PTS for the Nets.',
     author:'Richard Clemons'
   },
 
   {
     label: '#TBT',
-    maintitle:'Remembering the days of Steve Francis.”',
+    maintitle:'Williamson added 23 points and matched his career high with five assists in his most extensive playing time since the NBA restart.”',
     dekk:'Francis put the streetball in the NBA.',
     author:'Richard Clemons'
   }],
