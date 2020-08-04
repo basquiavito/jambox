@@ -28,7 +28,7 @@ export default function Topheader(){
 <Link href="/" ><a >Hoopscript</a></Link></b> 
 <Link href="/obb/obb"><a>notation</a></Link> | 
 <Link href="/index2"><a>players</a></Link>| 
-<Link href="/updates"><a>updates</a></Link> | 
+  
  
 <Link href="/blogs"><a>blogs</a></Link> | 
  

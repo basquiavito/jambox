@@ -8,5 +8,19 @@ export default function content(props){
         <p>{props.contentD}</p>
     </article>
 </section>
+
+<style jsx>
+
+
+    {`
+    p {
+        line-height: 1.5;
+        font-size: 18px;
+        font-family: serif;
+        letter-spacing:
+    }
+    
+    `}
+</style>
     </>
 }
