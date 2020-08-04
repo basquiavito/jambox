@@ -8,7 +8,7 @@ function Updates({updates }) {
  
 }
 Updates.getInitialProps = async () => {
-  const url = `${baseUrl}/api/updates`
+  const url = `https://hoopscript.vercel.app/api/updates`
   const response = await axios.get(url);
   return { updates: response.data }
 }
