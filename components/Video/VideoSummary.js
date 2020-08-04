@@ -6,6 +6,7 @@ import Dekk from '../../components/units/dekk'
 import Authordate from '../../components/units/authordate'
 import Youtubehooks from '../../components/units/youtubehooks'
  import Content from '../../components/units/content'
+ import LazyLoad from 'react-lazy-load';
 
 function VideoSummary({   title, author, label, videoId, dekk, contentA, date, label1, title1, dekk1, content1  }) {
 
@@ -26,9 +27,9 @@ return (
  <Dekk dekk={dekk}/>
  
  <Authordate author={author} date={date}/> <br/>
- 
+ <LazyLoad>
  <Youtubehooks videoIdA={videoId} />
-
+ </LazyLoad>
  <Content 
  contentA={contentA}
 />
