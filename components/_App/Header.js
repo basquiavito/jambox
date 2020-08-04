@@ -28,7 +28,7 @@ export default function Topheader(){
 <Link href="/" ><a >Hooperos</a></Link></b> 
 <Link href="/obb/obb"><a>notation</a></Link> | 
 <Link href="/index2"><a>actives</a></Link>| 
-<Link href="/profiles/primes"><a>retired</a></Link>|  
+<Link href="/retired"><a>retired</a></Link>|  
 <Link href="/blogs"><a>blogs</a></Link> | 
 <Link href="/collections"><a>archives</a></Link> 
 </span></td>

@@ -21,7 +21,7 @@ export default function Footer(){
 <Link href="/articles"   ><a className="footerPageLinks">Articles</a></Link>
 <Link href="/hoopcodes"  ><a rel="noopener" className="footerPageLinks">Hoopcodes</a></Link>
 <Link href="/videos"  ><a rel="noopener" className="footerPageLinks">Videos</a></Link>
-       
+<Link href="/coins"  ><a rel="noopener" className="footerPageLinks">Versuz</a></Link>   
         </div>
     <div className="lowestLevel">
         <Link href="/static/terms" >

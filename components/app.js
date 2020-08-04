@@ -22,18 +22,13 @@ const HitComponent = ({ hit }) => (
        <Link href={`https://www.hoopscript.com/profile?_id=${hit._id.$oid}`}><a  >
        <div><span id> {hit. name}</span></div>
        <div><span id="lastname">  {hit.lastname}  </span></div>
-       <div><span id="team">  {hit.team}  </span></div>
+ 
      
-   <Highlight attribute="name" hit={hit} />      </a></Link> 
+   </a></Link> 
      
  
       </div>
-      <div className="hit-type">
-        <Highlight attribute="team" hit={hit} />
-      </div>
-      <div className="hit-description">
-        <Highlight attribute="description" hit={hit} />
-      </div>
+    
     </div>
 
 
