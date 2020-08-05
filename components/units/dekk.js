@@ -3,7 +3,7 @@
 function dekk(props){
 return(
 <div className="editorialDekk">
-<p><em>{props.dekk}</em> </p>
+<p>{props.dekk} </p>
 <style jsx>
 {`.editorialDekk{
     margin-top: 0.5rem;

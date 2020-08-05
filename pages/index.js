@@ -24,22 +24,22 @@ export default function Home() {
     headline:[
     {
     label: 'Pampara',
-    maintitle:'Anthony Davis tuvo 42 puntos en la victoria de los Lakers. ',
-    dekk:"Anthony Davis tenia ya 24 puntos en la mitad. Marcando la vez numero 20 que logra dicha hazana. ",
+    maintitle:"Doncic's triple-double. Matan a los Kings en overtime. | Record 30-20-10 line | 16th triple-double ",
+    dekk:"Luka Doncic Marco un historico triple doble al encestar un tiro de desempate faltando 1:57 en el tiempo extra. Lidero a Dallas en pasar a los Kings de Sacramento, 114-110.",
     author:'Richard Clemons',
-    date:"Jul 04, 2020"
+    date:"Jul 05, 2020 Aug. 5, 2020 7:39 AM ET"
   },
   {
     label: 'Picante',
-    maintitle:"Warren anoto 34 mas, liderando a los pacers a pasarle a los Wizards, 111-100.",
-   date:"Jul 04, 2020",
+    maintitle:"Booker anoto al expirar el tiempo liderando a los Suns sobre los Clippers 117-115",
+   date:"Aug. 5, 2020 6:39 AM ET",
     author:'Jiffy Hogan'
   },
 
   {
-    label: 'Rookie Alert',
-    maintitle:'Zion Williamson con 23 puntos y 5 asistencias. Lo dejaron jugar un poco mas esta vez.”',
-    date:"Jul 04, 2020",
+    label: 'HOT',
+    maintitle:'Warren y sus dedos calientes ayudaron a pasar a los Magic para su tercera victoria consecutiva de los Pacers.',
+    date:"Aug. 5, 2020 12:39 AM ET",
     author:'Julian Ortiz'
   }],
 //     charts: [
@@ -50,7 +50,7 @@ export default function Home() {
 //   {codeTitle:'Lonzo Ball Crossover', hoopcodes:'018 FG$'}
 // ],
 videos:[
-  {label:'On Fire',title:'Jayson Tatum 34 pts, 8 Ast -- Despues de encestar solo 5 en el juego pasado, Tatum vino rabioso. Hay bobo', author:'Jay Ortiz', date:'Jul 23, 2020'},
+  {label:'On Fire',title:"Carmelo Anthony 's CLutch tiro de tres para ayudar a Portland a vencer 110-102 a Houston.", author:'Pat Mcguire', date:'Aug. 5, 2020 7:36 AM ET'},
   {label:'Rookie Alert',title:'Michael Porter Jr. 37 Pts, 12 Reb | Un novato que esta dando agua de beber en Denver', author:'Jay Ortiz', date:'Jul 23, 2020'},
   {label:'Passing',title:'Fred VanVleet 36 Pts. Mas alta anotacion de su carrera. Toronto sigue sorprendiendo al mundo. ',    author:'Jiffy Hogan', date:'Jul 23, 2020'},
   {label:'Defense',title:'Shake Milton para ganar! 16 PTS | Que Simmons de que?',   author:'Jay Ortiz', date:'Jul 23, 2020'},
@@ -105,14 +105,14 @@ headings:[
   <div className="editorialPlacementContainer">
  
 
-<Link href="/article?_id=5f2741a6b2d26bc5a9804068"><a className="editorialPlacementLink">
+<Link href="/article?_id=5f2a217deb1efbad18e320ac"><a className="editorialPlacementLink">
 <div className="editorialPlacementHeader">
 <Label label={headline.headline[0].label}/>
 <Maintitle title={headline.headline[0].maintitle}/> 
 <Dekk dekk={headline.headline[0].dekk}/>
 <Authordate author={headline.headline[0].author} date={headline.headline[0].date}/>
 
-<ImageHolder mediaUrl="http://i.ytimg.com/vi/UGnskAi6114/hqdefault.jpg"/>
+<ImageHolder mediaUrl="http://i.ytimg.com/vi/7FiIGk4PQb4/hqdefault.jpg"/>
  
 
 
@@ -120,9 +120,9 @@ headings:[
 
     
 
-<Link href="/article?_id=5f2745f8b2d26bc5a980406b"><a>
+<Link href="/article?_id=5f2a2ff6eb1efbad18e320ad"><a>
 <Label label={headline.headline[1].label}/>
-<ImageHolder mediaUrl="http://i.ytimg.com/vi/P-jzeKWhgIg/hqdefault.jpg"/>
+<ImageHolder mediaUrl="http://i.ytimg.com/vi/uA3SPJdGo78/hqdefault.jpg"/>
 <Maintitle title={headline.headline[1].maintitle}/><br/>
 <Authordate author={headline.headline[1].author} date={headline.headline[1].date}/>
 
@@ -130,7 +130,7 @@ headings:[
 
      <Link href="/article?_id=5f2821c70a0640e2c6f449a7"><a>
  <Label label={headline.headline[2].label}/>
- <ImageHolder mediaUrl="http://i.ytimg.com/vi/_ylvWAs2zbk/hqdefault.jpg"/>
+ <ImageHolder mediaUrl="http://i.ytimg.com/vi/Fi1CMuofmC4/hqdefault.jpg"/>
  <Maintitle title={headline.headline[2].maintitle}/><br/>
  <Authordate author={headline.headline[2].author} date={headline.headline[2].date}/>
 
@@ -162,14 +162,14 @@ headings:[
 <div className="gridCenter">
 <BlackSectiontitle title= {headline.headings[1].title} />
 <Sectionsubtitle subtitle={headline.headings[1].subtitle} />
-<Link href="/video?_id=5f284a2311bc31dbcb85d0bd"><a className="linkContainer">
+<Link href="/video?_id=5f2a9911eb1efbad18e320af"><a className="linkContainer">
 
 <Blacklabel label={headline.videos[0].label}/>
  
 <Title title={headline.videos[0].title}/>
 <Dekk dekk={headline.videos[0].dekk}/>
 <Authordate author={headline.videos[0].author} date={headline.videos[0].date} />
-<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/c_2y8SBAAHI/hqdefault.jpg"/>
+<MediaUrlFull mediaUrl="http://i.ytimg.com/vi/9NCi6rckwQ4/hqdefault.jpg"/>
 
 </a></Link>
  

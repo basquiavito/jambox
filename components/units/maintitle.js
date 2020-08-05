@@ -24,7 +24,7 @@ export default function mainTitle(props){
                      }
 
                      h2{
-                        line-height: 1.4;
+                        line-height: 1.2;
                         margin-top: 0;
                         margin-bottom: .5rem; 
                         font-style: normal;
