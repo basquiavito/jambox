@@ -38,7 +38,7 @@ export default function Home() {
 
   {
     label: 'HOT',
-    maintitle:'Warren y sus dedos calientes ayudaron a pasar a los Magic para su tercera victoria consecutiva de los Pacers.',
+    maintitle:'Warren y sus dedos calientes ayudaron a pasar a los Magic para la tercera victoria consecutiva de los Pacers.',
     date:"Aug. 5, 2020 12:39 AM ET",
     author:'Julian Ortiz'
   }],

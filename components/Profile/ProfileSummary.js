@@ -133,7 +133,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 <div className="gridCenter">
   <Sectionsubtitle subtitle="tweets"/>
   <LazyLoad>
-<Twitter token={this.props.twitterToken}/>
+<Twitter token={twitterToken}/>
 </LazyLoad>
 
 </div></div></div>

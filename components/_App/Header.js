@@ -30,7 +30,7 @@ export default function Topheader(){
 <Link href="/index2"><a>jugadores</a></Link>| 
   
  
-<Link href="/blogs"><a>articulos</a></Link> | 
+<Link href="/blogs"><a>blog</a></Link> | 
  
 </span></td>
  

@@ -8,6 +8,8 @@ import Youtubehooks from '../../components/units/youtubehooks'
  import Content from '../../components/units/content'
  import LazyLoad from 'react-lazy-load';
 import Twitter from '../../components/units/twitter'
+
+
 function VideoSummary({  twitterToken, title, author, label, videoId, dekk, contentA, date, label1, title1, dekk1, content1  }) {
 
 
