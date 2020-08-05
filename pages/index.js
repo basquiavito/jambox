@@ -105,7 +105,8 @@ headings:[
   <div className="editorialPlacementContainer">
  
 
- <a href="/article?_id=5f2a217deb1efbad18e320ac" className="editorialPlacementLink">
+ <Link href="/article?_id=5f2a217deb1efbad18e320ac"> 
+ <a  className="editorialPlacementLink">
 <div className="editorialPlacementHeader">
 <Label label={headline.headline[0].label}/>
 <Maintitle title={headline.headline[0].maintitle}/> 
@@ -116,7 +117,7 @@ headings:[
 </LazyLoad>
 
 
-</div></a> 
+</div></a></Link> 
 
     
 
@@ -168,7 +169,7 @@ headings:[
 <Sectionsubtitle subtitle={headline.headings[1].subtitle} />
  
 
-<a  className="linkContainer">
+<a href="/video?_id=5f285b4311bc31dbcb85d0be" className="linkContainer">
 
 <Blacklabel label={headline.videos[0].label}/>
  
