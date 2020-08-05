@@ -14,7 +14,7 @@ import Maintitle from '../components/units/maintitle'
 import Coderow from '../components/units/coderow'
 import Blacklabel from '../components/units/blackLabel'
 import MediaUrlFull from '../components/units/mediaUrlFull'
- 
+import LazyLoad from 'react-lazy-load';
 
  
 export default function Home() {
@@ -50,7 +50,7 @@ export default function Home() {
 //   {codeTitle:'Lonzo Ball Crossover', hoopcodes:'018 FG$'}
 // ],
 videos:[
-  {label:'On Fire',title:"Carmelo Anthony 's CLutch tiro de tres para ayudar a Portland a vencer 110-102 a Houston.", author:'Pat Mcguire', date:'Aug. 5, 2020 7:36 AM ET'},
+  {label:'On Fire',title:"Carmelo Anthony 's clutch tiro de tres para ayudar a Portland a vencer 110-102 a Houston.", author:'Pat Mcguire', date:'Aug. 5, 2020 7:36 AM ET'},
   {label:'Rookie Alert',title:'Michael Porter Jr. 37 Pts, 12 Reb | Un novato que esta dando agua de beber en Denver', author:'Jay Ortiz', date:'Jul 23, 2020'},
   {label:'Passing',title:'Fred VanVleet 36 Pts. Mas alta anotacion de su carrera. Toronto sigue sorprendiendo al mundo. ',    author:'Jiffy Hogan', date:'Jul 23, 2020'},
   {label:'Defense',title:'Shake Milton para ganar! 16 PTS | Que Simmons de que?',   author:'Jay Ortiz', date:'Jul 23, 2020'},
@@ -111,9 +111,9 @@ headings:[
 <Maintitle title={headline.headline[0].maintitle}/> 
 <Dekk dekk={headline.headline[0].dekk}/>
 <Authordate author={headline.headline[0].author} date={headline.headline[0].date}/>
-
+<LazyLoad>
 <ImageHolder mediaUrl="http://i.ytimg.com/vi/7FiIGk4PQb4/hqdefault.jpg"/>
- 
+</LazyLoad>
 
 
 </div></a></Link>
@@ -122,7 +122,9 @@ headings:[
 
 <Link href="/article?_id=5f2a2ff6eb1efbad18e320ad"><a>
 <Label label={headline.headline[1].label}/>
+<LazyLoad>
 <ImageHolder mediaUrl="http://i.ytimg.com/vi/uA3SPJdGo78/hqdefault.jpg"/>
+</LazyLoad>
 <Maintitle title={headline.headline[1].maintitle}/><br/>
 <Authordate author={headline.headline[1].author} date={headline.headline[1].date}/>
 
@@ -130,7 +132,9 @@ headings:[
 
      <Link href="/article?_id=5f2821c70a0640e2c6f449a7"><a>
  <Label label={headline.headline[2].label}/>
+<LazyLoad>
  <ImageHolder mediaUrl="http://i.ytimg.com/vi/Fi1CMuofmC4/hqdefault.jpg"/>
+ </LazyLoad>
  <Maintitle title={headline.headline[2].maintitle}/><br/>
  <Authordate author={headline.headline[2].author} date={headline.headline[2].date}/>
 
