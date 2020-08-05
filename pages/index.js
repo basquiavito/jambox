@@ -166,7 +166,9 @@ headings:[
 <div className="gridCenter">
 <BlackSectiontitle title= {headline.headings[1].title} />
 <Sectionsubtitle subtitle={headline.headings[1].subtitle} />
- <a  href="/video?_id=5f2a9911eb1efbad18e320af" className="linkContainer">
+ 
+
+<a  className="linkContainer">
 
 <Blacklabel label={headline.videos[0].label}/>
  
@@ -175,7 +177,7 @@ headings:[
 <Authordate author={headline.videos[0].author} date={headline.videos[0].date} />
 <MediaUrlFull mediaUrl="http://i.ytimg.com/vi/9NCi6rckwQ4/hqdefault.jpg"/>
 
-</a></Link>
+</a>
  
     <Link href="/video?_id=5f285b4311bc31dbcb85d0be"><a className="linkContainer">
     <Blacklabel label={headline.videos[1].label}/>
@@ -184,25 +186,25 @@ headings:[
 </LazyLoad>
 <Title title={headline.videos[1].title}/>
 <Authordate author={headline.videos[1].author} date={headline.videos[1].date} />
-        </a> 
+        </a></Link>
 
-<a href="/video?_id=5f285b5d11bc31dbcb85d0c0">
+<Link href="/video?_id=5f285b5d11bc31dbcb85d0c0"><a>
 <Blacklabel label={headline.videos[2].label}/>
 <LazyLoad>
 <MediaUrlFull mediaUrl=" http://i.ytimg.com/vi/Ho9PaI6ApMQ/hqdefault.jpg" />
 </LazyLoad>
 <Title title={headline.videos[2].title}/>
 <Authordate author={headline.videos[2].author} date={headline.videos[2].date} />
-    </a>
+    </a></Link>
 
- <a href="/video?_id=5f288d9211bc31dbcb85d0c1">
+<Link href="/video?_id=5f288d9211bc31dbcb85d0c1"><a>
 <Blacklabel label={headline.videos[3].label}/>
 <LazyLoad>
 <MediaUrlFull mediaUrl="http://i.ytimg.com/vi/2-f2XEAfmy8/hqdefault.jpg" />
 </LazyLoad>
 <Title title={headline.videos[3].title}/>
 <Authordate author={headline.videos[3].author} date={headline.videos[3].date} />
-    </a>
+    </a></Link>
 
 <Link href="/video?_id=5f288da611bc31dbcb85d0c2"><a>
 <Blacklabel label={headline.videos[4].label}/>
