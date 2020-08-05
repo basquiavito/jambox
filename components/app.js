@@ -19,7 +19,7 @@ const HitComponent = ({ hit }) => (
   <div className="hit">
     <div className="hit-content">
       <div className="hits">
-       <Link href={`https://www.hoopscript.com/profile?_id=${hit._id.$oid}`}><a  >
+       <Link href={`https://www.hoopscript.vercel.app/profile?_id=${hit._id.$oid}`}><a  >
        <div><span id> {hit. name}</span></div>
        <div><span id="lastname">  {hit.lastname}  </span></div>
  

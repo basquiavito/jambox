@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React from 'react'
 const abbr = {
     border: 'none',
@@ -7,6 +8,8 @@ const abbr = {
   }
     const profileData = (props) => {
         return(
+       
+  
             <div className="ptrait">
               <div className="playerTabContent">
     <div className={`${"tabsPanel"} ${"isActive"}`} id="playerTabInfo" >
