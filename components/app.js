@@ -19,7 +19,7 @@ const HitComponent = ({ hit }) => (
   <div className="hit">
     <div className="hit-content">
       <div className="hits">
-       <Link href={`https://www.hoopscript.vercel.app/profile?_id=${hit._id.$oid}`}><a  >
+       <Link href={`https://hoopscript.vercel.app/profile?_id=${hit._id.$oid}`}><a  >
        <div><span id> {hit. name}</span></div>
        <div><span id="lastname">  {hit.lastname}  </span></div>
  
@@ -38,16 +38,19 @@ const HitComponent = ({ hit }) => (
     display: flex;
   margin: 0;
   }
-  #team{
-     color:#e41224;}
+ 
+.hits > a {
+  text-decoration: none;
 
-#lastname {
-  border-bottom: 1px solid #999;
+
 }
+ 
   }
   span {
-    color: #000;
+    color: #e41224;
     text-align: center;
+    font-size: 12px;
+    margin-right: 20px;
   }
 
 
