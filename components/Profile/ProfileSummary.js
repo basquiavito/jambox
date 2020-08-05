@@ -16,7 +16,7 @@ import Blacklabel from '../../components/units/blackLabel'
 import FromDaGram from '../../components/units/fromDaGram'
 import Twitter from '../units/twitter'
 import LazyLoad from 'react-lazy-load';
-
+ 
 
 export default function ProfileSummary({wikiLink, query,twitterToken, offHigh1Title, gram, careerHigh1, careerHigh1Title, college1Title, highSchool1, highSchool1Title, docTitle, defHighTitle, careerHighTitle, highSchool,highSchoolTitle, highSchoolAuthor, highSchoolDekk,highSchoolDate, doc1, defHigh1, assistOffTitle, signatureMove, signatureMove1, offHigh1,assistOff, name, lastname, accolades, accoladeAuthor, accoladeLink, accoladeSource, team, number, position, feet, inches, meters, kg, lbs, years, born, from, debut, latest1, latest1Title, latest2, latest2Title, latest3, latest3Title, latest4, latest4Title, latest5, latest5Title, latest6, latest6Title, statsId, highschool, college, college1,collegeTitle, rookie, offHigh, doc, defHigh, videoId, videoIdTitle, rookieOff, rookieOffTitle,careerHigh,offHighTitle}){
  return<>
@@ -46,6 +46,14 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 </blockquote>
 </figure></div></div>
  
+<div>
+<div className="pageGrid">
+<div className="gridCenter">
+<Label label = "Profile" />
+<Dekk dekk={` ${team} | #${number}  | ${position}`}/>
+</div> </div></div>
+
+
 
 <section className="ptraitsContainer">
 <div className="pageGrid">
@@ -54,7 +62,14 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
  </div></div>
 </section>
 
-
+<div id="gram">
+<div className="pageGrid">
+<div className="gridCenter">
+<Sectionsubtitle subtitle="Gram"/>
+<LazyLoad>
+<FromDaGram gram={gram}/>
+</LazyLoad>
+ </div></div></div>
  <div id="">
  <div className="pageGrid">
 <div className="gridCenter">
@@ -126,7 +141,7 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 
 
 
-   </section>
+   </section><br/><br/>
 
    <div>
 <div className="pageGrid">
