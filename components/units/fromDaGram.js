@@ -1,9 +1,10 @@
 import React from 'react'
 import InstagramEmbed from 'react-instagram-embed'
-
+import LazyLoad from 'react-lazy-load';
 const FromDaGram = (props) => {
     return(
 <div className="gramContainer">
+    <LazyLoad>
 <InstagramEmbed
 url={props.gram}
 maxWidth={320}
@@ -17,6 +18,7 @@ onAfterRender={() => {}}
 onFailure={() => {}}
 
 />
+</LazyLoad>
 <style jsx>{`
 .gramContainer {
     display: flex;

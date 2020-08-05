@@ -1,12 +1,16 @@
 import Link from 'next/link'
 import Video from '../units/video'
+import LazyLoad from 'react-lazy-load';
+
+
 export default function mixtapeunit(props){
     return<>
 
 <div className={`${'gridElement'} ${'elementThird'} `}>
  <div  className="mixtapeCard" >
-
+<LazyLoad>
 <Video videoId={props.videoId}/>
+</LazyLoad>
 <div className="mixtapeCardInfo">
 <strong>{props.title}</strong>
  

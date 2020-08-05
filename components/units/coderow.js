@@ -1,5 +1,5 @@
  import Link from 'next/link'
-
+ import LazyLoad from 'react-lazy-load';
  
  function coderow (props){
  return(
@@ -13,9 +13,10 @@
 
 <div className="coverAndTitleAndRole">
 <div className="cover">
+    <LazyLoad>
 <div className="sizeImageConainer" data-visible="true">
-    <noscript></noscript></div></div>
-
+    <noscript></noscript></div>   </LazyLoad></div>
+ 
 <h3 className="titleAndPlayer">
 <div className="title">{props.codeTitle}</div>
 <div className="player">{props.hoopcodes}</div>

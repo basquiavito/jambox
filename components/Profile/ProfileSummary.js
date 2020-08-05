@@ -66,9 +66,9 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 <div className="pageGrid">
 <div className="gridCenter">
 <Sectionsubtitle subtitle="Gram"/>
-<LazyLoad>
+
 <FromDaGram gram={gram}/>
-</LazyLoad>
+
  </div></div></div>
  <div id="">
  <div className="pageGrid">
@@ -147,9 +147,9 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 <div className="pageGrid">
 <div className="gridCenter">
   <Sectionsubtitle subtitle="tweets"/>
-  <LazyLoad>
+
 <Twitter token={twitterToken}/>
-</LazyLoad>
+
 
 </div></div></div>
 
