@@ -105,7 +105,7 @@ headings:[
   <div className="editorialPlacementContainer">
  
 
-<Link href="/article?_id=5f2a217deb1efbad18e320ac"><a className="editorialPlacementLink">
+ <a href="/article?_id=5f2a217deb1efbad18e320ac" className="editorialPlacementLink">
 <div className="editorialPlacementHeader">
 <Label label={headline.headline[0].label}/>
 <Maintitle title={headline.headline[0].maintitle}/> 
@@ -116,11 +116,11 @@ headings:[
 </LazyLoad>
 
 
-</div></a></Link>
+</div></a> 
 
     
 
-<Link href="/article?_id=5f2a2ff6eb1efbad18e320ad"><a>
+ <a href="/article?_id=5f2a2ff6eb1efbad18e320ad">
 <Label label={headline.headline[1].label}/>
 <LazyLoad>
 <ImageHolder mediaUrl="http://i.ytimg.com/vi/uA3SPJdGo78/hqdefault.jpg"/>
@@ -128,9 +128,9 @@ headings:[
 <Maintitle title={headline.headline[1].maintitle}/><br/>
 <Authordate author={headline.headline[1].author} date={headline.headline[1].date}/>
 
-    </a></Link>
+    </a> 
 
-     <Link href="/article?_id=5f2821c70a0640e2c6f449a7"><a>
+  <a href="/article?_id=5f2821c70a0640e2c6f449a7">
  <Label label={headline.headline[2].label}/>
 <LazyLoad>
  <ImageHolder mediaUrl="http://i.ytimg.com/vi/Fi1CMuofmC4/hqdefault.jpg"/>
@@ -138,7 +138,7 @@ headings:[
  <Maintitle title={headline.headline[2].maintitle}/><br/>
  <Authordate author={headline.headline[2].author} date={headline.headline[2].date}/>
 
-     </a></Link> 
+     </a> 
 
   </div>
 
