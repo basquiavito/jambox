@@ -38,19 +38,16 @@ const HitComponent = ({ hit }) => (
     display: flex;
   margin: 0;
   }
- 
-.hits > a {
-  text-decoration: none;
+  #team{
+     color:#e41224;}
 
-
+#lastname {
+  border-bottom: 1px solid #999;
 }
- 
   }
   span {
-    color: #e41224;
+    color: #000;
     text-align: center;
-    font-size: 9px;
-    margin-right: 20px;
   }
 
 
