@@ -8,9 +8,9 @@ import Imageholder from '../../components/units/imageHolder'
  import Content from '../../components/units/content'
 import Youtubehooks from '../../components/units/youtubehooks'
 import LazyLoad from 'react-lazy-load';
+import Twitter from '../../components/units/twitter'
 
-
-function ArticleSummary({ videoId, label, title, dekk, author, date, mediaUrl, contentA, contentB, contentC, contentD }) {
+function ArticleSummary({  twitterTokenB, twitterToken, videoId, label, title, dekk, author, date, mediaUrl, contentA, contentB, contentC, contentD }) {
 
 return (
  <>
@@ -29,23 +29,22 @@ return (
  
  <Dekk dekk={dekk}/>
  
- <Authordate author={author} date={date}/><br/>
+ <Authordate  date={date}/><br/>
 
  <LazyLoad>
 <Youtubehooks videoIdA={videoId} />
 </LazyLoad>
 
  <Content 
- contentA={contentA}
- 
- 
- 
- 
- 
- 
- 
- />
+ contentA={contentA}/>
+ <Twitter token={twitterToken}/>
 
+ <Content 
+ contentB={contentB}/>
+
+<Content 
+ contentC={contentC}/>
+ <Twitter token={twitterTokenB}/>
 
 
     </div>

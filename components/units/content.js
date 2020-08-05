@@ -13,13 +13,22 @@ export default function content(props){
 
 
     {`
-    p {
-        line-height: 1.5;
-        font-size: 18px;
-        font-family: serif;
-        letter-spacing:
+  article{
+    font-family: "Roboto",sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding: 15px 25px 0;
+         
     }
+    p {
+        line-height: 1.6;
+    text-rendering: optimizeLegibility;
+   
     
+ font-weight: 300;
+        margin: 0 0 .75em;
+   
+    }
     `}
 </style>
     </>

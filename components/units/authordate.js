@@ -6,14 +6,14 @@ function authordate(props){
     return(
         <>
     <div className="authordate">
-    <span className="editorialAuthor"><span className='editorialPublishedAt' >Published by </span>{props.author}   </span>
+    
     <span className="editorialPublishedAt"> {props.date}</span>
     <style jsx>{`
     .editorialAuthor{
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
     .editorialPublishedAt{
-        font-size: 0.75rem; 
+        font-size: 1rem; 
         color:rgb(154, 154, 154);
     }
  
