@@ -11,7 +11,7 @@ function Primes({ primes }) {
  
 }
 Primes.getInitialProps = async () => {
-const url = `https://hoopscript.com/api/primes`;
+const url = `https://hoopscript.vercel.app/api/primes`;
 const response = await axios.get(url);
 return { primes: response.data }
 }

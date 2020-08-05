@@ -9,7 +9,7 @@ function Hoopcodes({ hoopcodes }) {
  
 }
 Hoopcodes.getInitialProps = async () => {
-  const url = `https://hoopscript.com/api/hoopcodes`
+  const url = `https://hoopscript.vercel.app/api/hoopcodes`
   const response = await axios.get(url);
   return { hoopcodes: response.data }
 }

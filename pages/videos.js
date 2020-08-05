@@ -8,7 +8,7 @@ function Videos({ videos }) {
  
 }
 Videos.getInitialProps = async () => {
-  const url = `https://hoopscript.com/api/videos`
+  const url = `https://hoopscript.vercel.app/api/videos`
   const response = await axios.get(url);
   return { videos: response.data }
 }

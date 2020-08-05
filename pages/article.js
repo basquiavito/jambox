@@ -16,7 +16,7 @@ function Article({ articles }) {
 }
 
 Article.getInitialProps = async ({ query: { _id } }) => {
-const url = `https://hoopscript.com/api/article`;
+const url = `https://hoopscript.vercel.app/api/article`;
 const payload = { params: { _id }}
 const response = await axios.get(url, payload)
 return {articles: response.data}
