@@ -42,14 +42,19 @@ const HitComponent = ({ hit }) => (
   span {
     color: #e41224;
    
-    
-     
   }
 
-a {
-  text-decoration: none;
+
+  a {
  
-}
+ 
+ 
+ 
+    text-decoration: none;
+ 
+  }
+ 
+
  
   
   
@@ -67,6 +72,7 @@ a {
 .hit {
   display: flex;
   justify-content: center;
+  
    
 }
   `
@@ -139,6 +145,7 @@ b {
   color:#e41224;
 }
 main {
+  margin: 3%;
   background-color :#f7f7f3;
   
 }
@@ -153,6 +160,7 @@ footer {
 .results {
   flex: 1;
   flex-wrap: wrap;
+  
  
  
   }
