@@ -20,14 +20,14 @@ export default function Topheader(){
 <table border="0" cellpadding="0" cellspacing="0" width="100%" style={tableStyle} >
 <tbody><tr>
 <td style={tdStyle}>
-<a href="https://www.hooperos.com">
+<a href="https://www.hoopscript.com">
 <span  style = {tdAImg} className="letterH" width="18" height="18" alt="H">H</span> </a></td>
 <td style={td2ndStyle}>
 <span className="pagetop">
 <b className="hsname">
 <Link href="/" ><a >Hoopscript</a></Link></b> 
 <Link href="/obb/obb"><a>notacion</a></Link> | 
-<Link href="/index2"><a>jugadores</a></Link>| 
+<Link href="/search"><a>jugadores</a></Link>| 
   
  
 <Link href="/blogs"><a>blog</a></Link> | 

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import Nefbox from '../components/units/nefbox'
 import Sectiontitle from '../components/units/sectiontitle'
 import Sectionsubtitle from '../components/units/sectionsubtitle'
 import BlackSectiontitle from '../components/units/blackSectionTitle'
@@ -102,6 +102,8 @@ headings:[
 <div id="featured">
 <div className="pageGrid">
 <div className="gridCenter">
+
+ 
   <div className="editorialPlacementContainer">
  
 

@@ -10,7 +10,7 @@ export default function mainTitle(props){
    <style jsx>{`
    .editorialTitle{
     margin-top: 1rem;
-    font-size: 1.7em;
+    font-size: 1.2em;
     text-align: left;
 
  
