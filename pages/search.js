@@ -80,7 +80,11 @@ class Page extends Component {
   render() {
     return (
       <div>
-        <Head>Actives</Head>
+        <Head>
+          <title>
+            Search for your favorite NBA player
+          </title>
+        </Head>
         <App
           {...DEFAULT_PROPS}
           searchState={this.state.searchState}

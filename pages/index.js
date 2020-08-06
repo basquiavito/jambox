@@ -74,27 +74,41 @@ headings:[
   return <>
 <Head>
 <meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
-<title>Basketball Notation, news, profiles and more | Hoopscript</title>
-<meta name="msapplication-tap-highlight" content="no"></meta>   
-<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"></meta>
-<link rel="canonical" href="https://www.hoopscript.com/"></link>
- 
-<meta name="author" contnet></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Hoopscript: NBA plays notation, news &amp top plays, Hoop 24/7  </title>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+<meta name="robots" content="index, follow"/>
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"></meta>
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"></meta>
+
+<link rel="canonical" href="https://www.hoopscript.com/"/>
+<meta property="og:locale" content="en_US"></meta>
+<meta property="og:type" content="website"></meta>
+<meta property="og:title" content="Hoopscript: NBA plays notation, news &amp top plays, Hoop 24/7  "></meta>
+<meta property="og:url" content="https://www.hoopscript.com/"></meta>
+<meta property="og:site_name" content="HOOPSCRIPT"></meta>
+<meta property="article:publisher" content="https://www.facebook.com/hoopscript"></meta>
+<meta name="twitter:card" content="summary_large_image"></meta>
+<meta name="twitter:creator" content="@hoopscript_live"></meta>
+<meta name="twitter:site" content="@hoopscript_live"></meta>
+
+<link rel="dns-prefetch" href="//www.google.com"/>
+<link rel="dns-prefetch" href="//ajax.googleapis.com"/>
+<link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+
+
+<link rel="shortlink" href="https://www.hoopscript.com/">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,300,400%7CMontserrat:300,400&amp;subset=latin" media="all"></link>
+</link>
+<meta name="author" content=""></meta>
 <meta name="copyright" content="Copyright © 64 projects 2020"/>
 <meta name="description" content="homepage | The latest tips and advice for fans on basketball news, ball-handling, scoring."></meta>
 <meta name="parsely-link" content="https://www.hoopscript.com/"></meta>
 <meta name="parsely-section" content="homepage"></meta>
-
-
-
-
-
-
-
-
-
-
 </Head>
 <div id="container">
 
