@@ -16,7 +16,9 @@ import Link from 'next/link'
 
 
 const HitComponent = ({ hit }) => (
- 
+  <div className="pageGrid">
+    <div className="gridCenter">
+
 
     <div className="hit">
     <div className="hit-content">
@@ -26,19 +28,15 @@ const HitComponent = ({ hit }) => (
        <div><span  > {hit. name}</span></div>
        <div><span  >  {hit.lastname}  </span></div>
   </a></Link> </div> </div>
- 
+    </div>
+  </div>
 
 
 
 <style jsx>
   {`
  
- .hit {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-   
-}
+ 
   
   }
   span {
@@ -66,7 +64,11 @@ a {
   .gridCenter{
     grid-column: center-start / center-end;
  }
-
+.hit {
+  display: flex;
+  justify-content: center;
+   
+}
   `
  
   }
@@ -102,9 +104,9 @@ export default class extends React.Component {
         onSearchParameters={this.props.onSearchParameters}
         {...this.props}
       >
-        <Configure hitsPerPage={12} />
+        <Configure hitsPerPage={16} />
         <header>
-          <h1 className="title"> Actives</h1>
+          <h1 className="title"><b>Hoopscript</b>NBA</h1>
           <SearchBox /><br/>
         </header>
         <main>
@@ -126,77 +128,37 @@ export default class extends React.Component {
           
       </InstantSearch>
 <style jsx>{`
- 
-
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
  
- 
-}
-header > h1 {
-  text-align: center;
-}
-main {
-  padding: 10px;
-  background-color :#f7f7f3;
- 
-   
 }
 
- 
- span {
-   color:#f7f7f3;
- }
+b {
+  color:#e41224;
+}
+main {
+  background-color :#f7f7f3;
+  
+}
 footer {
   text-align: center;
 }
 
 .ais-Pagination {
   margin-bottom: 25px;
+ 
 }
-
 .results {
-flex: 1;
-padding-left: 0;
-}
+  flex: 1;
+  flex-wrap: wrap;
  
-.hit {
-  display: flex;
-  align-items: center;
-}
-
-.hit-actions {
-  display: flex;
-}
-
  
+  }
 
 
 
-.hit-type {
-  color: #888888;
-  font-size: 13px;
-}
-
- 
-  .pageGrid{
-
-    display: grid;
-    -webkit-box-pack: center;
-    justify-content: center;
-    grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
-    grid-row-gap: 30px;
-}
-
-.gridCenter {
-  grid-column: center-start / center-end;
-}
-
-h1 {
-  color:#e41224; 
-}
 `}</style>
       
     </>;
