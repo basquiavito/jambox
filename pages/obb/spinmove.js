@@ -6,7 +6,7 @@ import Dekk from '../../components/units/dekk'
 import Authordate from '../../components/units/authordate'
 import Video from '../../components/units/video'
 import Mixtape from '../../components/units/mixtape'
-import Headlines from '../../components/units/headlines'
+
 import Link from 'next/link'
 import Obb from '../../components/units/obb'
  import Head from 'next/head'
