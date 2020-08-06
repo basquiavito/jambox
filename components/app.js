@@ -16,9 +16,7 @@ import Link from 'next/link'
 
 
 const HitComponent = ({ hit }) => (
-  <div className="pageGrid">
-    <div className="gridCenter">
-
+ 
 
     <div className="hit">
     <div className="hit-content">
@@ -28,19 +26,24 @@ const HitComponent = ({ hit }) => (
        <div><span  > {hit. name}</span></div>
        <div><span  >  {hit.lastname}  </span></div>
   </a></Link> </div> </div>
-    </div>
-  </div>
+ 
 
 
 
 <style jsx>
   {`
  
- 
+ .hit {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+   
+}
   
   }
   span {
     color: #e41224;
+   
     
      
   }
@@ -65,7 +68,7 @@ a {
  }
 
   `
-
+ 
   }
 </style>
 

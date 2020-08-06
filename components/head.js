@@ -2,8 +2,8 @@ import NextHead from 'next/head';
 import { string } from 'prop-types';
 import React from 'react';
 
-const defaultDescription = '';
-const defaultOGURL = '';
+const defaultDescription = 'Encuentra tu jugador favorito';
+const defaultOGURL = 'www.hoopscript.com';
 const defaultOGImage = '';
 
 export const Head = props => (

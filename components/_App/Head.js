@@ -2,7 +2,7 @@ import NextHead from 'next/head';
 import { string } from 'prop-types';
 import React from 'react';
 
-const defaultDescription = '';
+const defaultDescription = 'Baloncesto para todos.';
 const defaultOGURL = 'www.hoopscript.com';
 const defaultOGImage = '';
 
