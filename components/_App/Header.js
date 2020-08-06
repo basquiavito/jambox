@@ -26,7 +26,7 @@ export default function Topheader(){
 <span className="pagetop">
 <b className="hsname">
 <Link href="/" ><a >Hoopscript</a></Link></b> 
-<Link href="/obb/obb"><a>notacion</a></Link> | 
+<Link href="/notation"><a>notacion</a></Link> | 
 <Link href="/search"><a>jugadores</a></Link>| 
   
  

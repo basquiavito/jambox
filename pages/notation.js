@@ -1,8 +1,8 @@
-import Sectiontitle from '../../components/units/sectiontitle'
-import Sectionsubtitle from '../../components/units/sectionsubtitle'
-import Obb from '../../components/units/obb'
+import Sectiontitle from '../components/units/sectiontitle'
+import Sectionsubtitle from '../components/units/sectionsubtitle'
+import Obb from '../components/units/obb'
 import Link from 'next/link'
-import Title from '../../components/units/title'
+import Title from '../components/units/title'
  
 export default  function obb(f1){
  

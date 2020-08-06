@@ -16,46 +16,53 @@ import Link from 'next/link'
 
 
 const HitComponent = ({ hit }) => (
-  <div className="hit">
+  <div className="pageGrid">
+    <div className="gridCenter">
+
+
+    <div className="hit">
     <div className="hit-content">
       <div className="hits">
+        
        <Link href={`https://www.hoopscript.com/profile?_id=${hit._id.$oid}`}><a  >
-       <div><span id> {hit. name}</span></div>
-       <div><span id="lastname">  {hit.lastname}  </span></div>
- 
-     
-   </a></Link> 
-     
- 
-      </div>
-    
+       <div><span  > {hit. name}</span></div>
+       <div><span  >  {hit.lastname}  </span></div>
+  </a></Link> </div> </div>
     </div>
+  </div>
+
 
 
 <style jsx>
   {`
-  .hits {
-    display: flex;
-  margin: 0;
-  }
-  #team{
-     color:#e41224;}
-
-#lastname {
-  border-bottom: 1px solid #999;
-}
+ 
+ 
+  
   }
   span {
-    color: #000;
-    text-align: center;
+    color: #e41224;
+    
+     
   }
 
-
+a {
+  text-decoration: none;
+ 
+}
  
   
   
- 
+.pageGrid{
 
+  display: grid;
+  -webkit-box-pack: center;
+  justify-content: center;
+  grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
+  grid-row-gap: 30px;}
+
+  .gridCenter{
+    grid-column: center-start / center-end;
+ }
 
   `
 
