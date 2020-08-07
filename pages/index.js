@@ -79,7 +79,7 @@ headings:[
     
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-
+<meta name="description" content="El sitio oficial de los Hooperos. Tu destino para ver  articulos, anotaciones, perfiles, versuz, videos y más de los jugadores y equipos de la NBA." />
 <meta name="robots" content="index, follow"/>
 <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"></meta>
 <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"></meta>
@@ -102,9 +102,7 @@ headings:[
 
 <link rel="shortlink" href="https://www.hoopscript.com/" />
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,300,400%7CMontserrat:300,400&amp;subset=latin" media="all"/>
  
-
 <meta name="parsely-link" content="https://www.hoopscript.com/"></meta>
 <meta name="parsely-section" content="homepage"></meta>
 </Head>
