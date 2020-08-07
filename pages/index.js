@@ -100,13 +100,11 @@ headings:[
 <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
 
 
-<link rel="shortlink" href="https://www.hoopscript.com/">
+<link rel="shortlink" href="https://www.hoopscript.com/" />
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,300,400%7CMontserrat:300,400&amp;subset=latin" media="all"></link>
-</link>
-<meta name="author" content=""></meta>
-<meta name="copyright" content="Copyright © 64 projects 2020"/>
-<meta name="description" content="homepage | The latest tips and advice for fans on basketball news, ball-handling, scoring."></meta>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,300,400%7CMontserrat:300,400&amp;subset=latin" media="all"/>
+ 
+
 <meta name="parsely-link" content="https://www.hoopscript.com/"></meta>
 <meta name="parsely-section" content="homepage"></meta>
 </Head>

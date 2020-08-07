@@ -17,6 +17,7 @@ rel="stylesheet" media="print" onload="this.media='all'"
 href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
 />
 </Head>
+<main>
  <Sectiontitle title="Step back" />
  <Sectionsubtitle subtitle="Symbol 6 || 86" />
 
@@ -305,11 +306,25 @@ href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
       /> </div></div>
 
      
-
+</main>
   <style jsx>
+    
       {
           `
-          
+          main {
+            background: #141414;
+  
+            font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+            -webkit-font-smoothing: antialiased;
+            line-height: 1;
+          }
+           b {
+            font-size: 1.8em;
+            margin: 2rem;
+    font-weight: 700;
+    margin: 0 0 .5em 0; 
+  color: #999;
+           }
           .pageGrid{
             display: grid;
             -webkit-box-pack: center;
