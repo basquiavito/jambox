@@ -2,7 +2,7 @@ import Link from 'next/link'
  
  
 
- const logo = {color: '#e41224'}
+ 
 const tableStyle = {padding: '2px'}
 const tdStyle = {width:'18px', paddingRight: '4px'}
 const tdAImg = { width:'18px', height: '18px', border: '1px solid black'}
@@ -25,7 +25,7 @@ export default function Topheader(){
 <td style={td2ndStyle}>
 <span className="pagetop">
 <b className="hsname">
-<Link href="/" ><a style={logo}>Hoopscript</a></Link></b> <hr/>
+<Link href="/" ><a>Hoopscript</a></Link></b> <hr/>
 <Link href="/notation"><a  className="aLink">notacion</a></Link> | 
 <Link href="/search"><a>jugadores</a></Link>| 
   
@@ -49,7 +49,7 @@ export default function Topheader(){
   {`
 
 #login {
- 
+    color: #e41224;;
 }
 .letterH{
     color: #e41224;;
