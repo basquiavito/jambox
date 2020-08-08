@@ -25,8 +25,8 @@ export default function Topheader(){
 <td style={td2ndStyle}>
 <span className="pagetop">
 <b className="hsname">
-<Link href="/" ><a >Hoopscript</a></Link></b> 
-<Link href="/notation"><a>notacion</a></Link> | 
+<Link href="/" ><a>Hoopscript</a></Link></b> <hr/>
+<Link href="/notation"><a  className="aLink">notacion</a></Link> | 
 <Link href="/search"><a>jugadores</a></Link>| 
   
  
@@ -35,7 +35,7 @@ export default function Topheader(){
 </span></td>
  
 <td style={td3rdStyle}><span className="pagetop">
-<Link href="/"><a href="login?goto=news"><span id="login">login</span></a></Link>
+<Link href="/"><a href="/"><span id="login">login</span></a></Link>
 </span></td>
 <td style={td3rdStyle}><span className="pagetop">
 
@@ -93,7 +93,7 @@ a:link {
 span.pagetop {
     display: block;
     margin: 3px 5px;
-    font-size: 12px;
+    font-size: 14px;
 }}
 .pagetop {
     font-family: Verdana, Geneva, sans-serif;
@@ -119,6 +119,7 @@ span.pagetop b {
 .pagetop > a {
     margin-right: 2.3px;
 }
+
   `}  
 </style>
     </>
