@@ -23,15 +23,15 @@ const HitComponent = ({ hit }) => (
     <div className="hit">
     <div className="hit-content">
       <div className="hits">
-        
-       <Link href={`https://www.hoopscript.com/profile?_id=${hit._id.$oid}`}><a  >
+        <Link href={`https://www.hoopscript.com/profile?_id=${hit._id.$oid}`}><a >
        <div><span  > {hit. name}</span></div>
        <div><span  >  {hit.lastname}  </span></div>
-  </a></Link> </div> </div>
+  </a> </Link>
+        </div>
     </div>
   </div>
 
-
+</div>
 
 <style jsx>
   {`
