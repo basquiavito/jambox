@@ -16,7 +16,7 @@ function Air({ airs }) {
 }
 
 Air.getInitialProps = async ({ query: { _id } }) => {
-const url = `${baseUrl}/api/air`;
+const url = `https://ww.hoopscript.vercel.app/api/air`;
 const payload = { params: { _id }}
 const response = await axios.get(url, payload)
 return {airs: response.data}
