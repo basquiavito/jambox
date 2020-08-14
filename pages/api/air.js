@@ -1,26 +1,10 @@
-import axios from 'axios'
-import AirSummary from '../../components/Air/AirSummary'
- 
- 
+import Air from '../../models/Air'
+import connectDb from '../../utils/connectDb'
 
+connectDb()
 
-function Air({ airs }) {
- 
-  return (
-  
-  <>
-  <AirSummary {...airs}/>
-
-  </>
-  )
+export default async (req, res) => {
+const { _id } = req.query
+const airs = await Air.findOne({ _id } )
+res.status(200).json(airs)
 }
-
-Air.getInitialProps = async ({ query: { _id } }) => {
-const url = `https://ww.hoopscript.vercel.app/api/air`;
-const payload = { params: { _id }}
-const response = await axios.get(url, payload)
-return {airs: response.data}
- 
-}
-
-export default Air;
