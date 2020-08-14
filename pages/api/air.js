@@ -1,6 +1,6 @@
 import axios from 'axios'
 import AirSummary from '../../components/Air/AirSummary'
-import baseUrl from '../utils/baseUrl'
+ 
  
 
 
