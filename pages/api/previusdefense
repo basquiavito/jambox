@@ -1,0 +1,584 @@
+import React,{useState, Component} from 'react'
+import Maintitle from '../components/units/maintitle'
+import Sectiontitle from '../components/units/sectiontitle'
+import Sectionsubtitle from '../components/units/sectionsubtitle'
+import title from '../components/units/title'
+import Label from '../components/units/label'
+import Coderow from '../components/units/coderow'
+import ReactTooltip from 'react-tooltip';
+
+
+
+export default  class Offense extends Component{
+    state={
+        showCode: false,
+        showPullups: false,
+        showFadeaway: false,
+        showTafa: false,
+        showDriFlo: false,
+        showdriLay: false,
+        showDriDu: false,
+        showAlleOop: false,
+        showDriFinRoll: false,
+
+
+    }
+toggleCodeHandler = () => {
+const doesShow = this.state.showCode;
+this.setState({showCode: !doesShow})
+    }
+
+togglePullupsHandler = () => {
+const doesShowa = this.state.showPullups;
+this.setState({showPullups: !doesShowa})
+}
+toggleFadeawayHandler = () => {
+const doesShowb = this.state.showFadeaway;
+this.setState({showFadeaway: !doesShowb})
+}
+toggleTafaHandler = () => {
+    const doesShowc = this.state.showTafa;
+    this.setState({showTafa: !doesShowc})
+}
+toggleDriFloHandler = () => {
+ const doesShowd = this.state.showDriFlo;
+this.setState({showDriFlo: !doesShowd})
+ }
+ toggleDriLuHandler = () => {
+const doesShowe = this.state.showDriLu;
+this.setState({showDriLu: !doesShowe})
+ }
+           
+ toggleDriDuHandler = () => {
+ const doesShowf = this.state.showDriDu;
+  this.setState({showDriDu: !doesShowf})
+             }
+ toggleAlleyOopHandler = () => {
+     const doesShowg = this.state.showAlleyOop;
+     this.setState({showAlleyOop: !doesShowg})
+         }
+
+         toggleAlleyOopHandler = () => {
+            const doesShowh = this.state.showDriFinRoll;
+            this.setState({showDriFinRoll: !doesShowh})
+                }
+ 
+
+
+render(){
+return <>
+<div id="homeOffense">
+
+<section>
+<a data-tip data-for='happyFace'>  <div>
+    <Sectiontitle title="Blocks"/>
+    <Sectionsubtitle subtitle="Tapones" />
+    </div> </a>
+ 
+
+ 
+
+{/* <ReactTooltip id='happyFace'  className='custom-color'  
+ backgroundColor='#4975f2' arrowColor='#f2c649'>
+     <div> 
+     <div className="pageGrid">
+    <div className="gridCenter">
+    <p>This is a global react component tooltip</p>
+ <p>You can put every thing here</p>
+ <ul>
+   <li>Word</li>
+   <li>Chart</li>
+   <li>Else</li>
+ </ul>
+ </div></div></div>
+</ReactTooltip> */}
+
+<div className="pageGrid">
+    <div className="gridCenter">
+
+    <div className="visuallyContent">
+ 
+<a href="https://www.hooperos.com/air?_id=5f594c783825270320118abf"> 
+      <Coderow rank="1" codeTitle="James Harden  | Rockets | 19-20" 
+hoopcodes="197 anotados, 525 intentos, 37.5%"
+image="http://i.ytimg.com/vi/E6TGBIT6pqQ/hqdefault.jpg" />
+</a>
+
+<a href="https://www.hooperos.com/air?_id=5f594b4e3825270320118aae">
+<Coderow rank="2" codeTitle="Luka Doncic  | Thunder | 19-20" 
+hoopcodes="94 anotados, 275 intentos, 34.2%"
+image="http://i.ytimg.com/vi/CBKXkhaI-s8/hqdefault.jpg"/>
+</a>
+
+<a href="https://www.hooperos.com/air?_id=5f59520b3825270320118af8">
+     <Coderow rank="3" codeTitle="Damian Lillard  | Trail Blazers | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/a-M3x-eZpV8/hqdefault.jpg"/></a>
+     
+<a href="https://www.hooperos.com/air?_id=5f59508d3825270320118ae2">
+      <Coderow rank="4" codeTitle="Tyler Herro  | Miami | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/pf_yi5-gcn4/hqdefault.jpg"/></a>
+
+      
+     <a href="https://www.hooperos.com/air?_id=5f594bb63825270320118ab4">
+      <Coderow rank="5" codeTitle="Jamal Murray  | Nuggets | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/HesEJtvpn_U/hqdefault.jpg"/></a>
+      </div>
+
+<div className="toggleButton">
+<div className="pageGrid">
+ <div className="gridCenter">
+<button onClick={this.toggleCodeHandler}>Load More</button>
+</div></div></div>
+
+<div>
+      { this.state.showCode ? 
+      <div className="hiddenContent">
+     <a href="https://www.hooperos.com/air?_id=5f594a0b3825270320118a99"> <Coderow rank="6" codeTitle="Kevin Love  | Cavs | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/qA2e7Pbjhcs/hqdefault.jpg"/></a>
+
+     <a href="https://www.hooperos.com/air?_id=5f59535b3825270320118b0e"><Coderow rank="7" codeTitle="Mike Conley  | Jazz | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/ZChthJmQzwM/hqdefault.jpg"/></a> 
+
+   <a href="https://www.hooperos.com/air?_id=5f5948b33825270320118a8e">   <Coderow rank="8" codeTitle="Kyrie Irving  | Nets | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/5N7K9GbkEd4/hqdefault.jpg"/></a>
+
+  <a href="https://www.hooperos.com/air?_id=5f594a573825270320118a9e">   <Coderow rank="9" codeTitle="Kemba Walker  | Celtics | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/o3zCGf4jXhQ/hqdefault.jpg"/></a> 
+
+    <a href="https://www.hooperos.com/air?_id=5f59506e3825270320118ae0"> <Coderow rank="10" codeTitle="Goran Dragic | Heat | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/R-UCAxuBGVQ/hqdefault.jpg" /></a> 
+
+  <a href="https://www.hooperos.com/air?_id=5f5950eb3825270320118ae5">   <Coderow rank="11" codeTitle="D'Angelo Russell  | Timberworlf | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/EmoZWgujvCk/hqdefault.jpg"/></a> 
+
+  <a href="https://www.hooperos.com/air?_id=5f5949b63825270320118a95">  <Coderow rank="12" codeTitle="Coby White  | Bulls | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/2T0KfOXeJ4c/hqdefault.jpg"/></a> 
+
+   <a href="https://www.hooperos.com/air?_id=5f594bb63825270320118ab4">   <Coderow rank="13" codeTitle="Jamal Murray  | Nuggets | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/HesEJtvpn_U/hqdefault.jpg"/></a>
+ 
+      </div> : null}</div><br/>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+      <Sectiontitle title="Steals"/>
+    <Sectionsubtitle subtitle="Robos" />
+
+    <div className="visuallyContent">
+        <a href="https://www.hooperos.com/air?_id=5f63cc21e2fc84a39748e87b">
+      <Coderow rank="1" codeTitle="Trae Young  | Hawks | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/e2Tw4phhe1Q/hqdefault.jpg" /></a>
+
+<a href="https://www.hooperos.com/air?_id=5f63bec8e2fc84a39748e878">
+      <Coderow rank="2" codeTitle="Stephen Curry | Warriors | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/09ZAYW4ZqCI/hqdefault.jpg"/></a>
+
+
+<a href="https://www.hooperos.com/air?_id=5f63cae8e2fc84a39748e879">
+      <Coderow rank="3" codeTitle="Russell Westbrook | Thunder | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/C7Fv-1ajT8k/hqdefault.jpg"/></a>
+
+
+<a href="https://www.hooperos.com/air?_id=5f638ffee2fc84a39748e877">
+      <Coderow rank="4" codeTitle="Kevin Durant  | Nets | 17-18" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/jf8dllB4qPg/hqdefault.jpg"/></a>
+
+<a href="https://www.hooperos.com/air?_id=5f594a733825270320118aa0">
+      <Coderow rank="5" codeTitle="Jason Tatum | Celtics | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/wiTCYAby290/hqdefault.jpg"/></a>
+      </div>
+
+      <div className="toggleButton">
+<div className="pageGrid">
+  <div className="gridCenter">
+<button onClick={this.togglePullupsHandler}>Load More</button>
+</div></div></div>
+      
+      { this.state.showPullups ?
+         <div className="hiddenContent">
+             <a href="https://www.hooperos.com/air?_id=5f5952eb3825270320118b06">
+      <Coderow rank="6" codeTitle="Devin Booker | Suns | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/sUjR3iG1OeM/hqdefault.jpg"/></a>
+
+      <a href="https://www.hooperos.com/air?_id=5f5951933825270320118af0">
+          <Coderow rank="7" codeTitle="TJ Warren | Pacers| 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/P6vOpTsw0qY/hqdefault.jpg" /></a>
+
+      <a href="https://www.hooperos.com/air?_id=5f5952673825270320118afd">
+          <Coderow rank="8" codeTitle="Fred Vanvleet | Raptors | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/V3CMJ-WEzag/hqdefault.jpg" /></a>
+
+   <a href="https://www.hooperos.com/air?_id=5f594aa53825270320118aa3">
+       <Coderow rank="9" codeTitle="Devonte Graham | Charlotte | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/BWWqDbGLIy8/hqdefault.jpg"/></a>
+
+     <a href="https://www.hooperos.com/air?_id=5f59510f3825270320118ae7">
+         <Coderow  rank="10" codeTitle="Chris Paul | Thunder | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/E70GhXMjgDU/hqdefault.jpg"/></a> 
+
+<a href="https://www.hooperos.com/air?_id=5f62bb096460a42c74964566">
+      <Coderow rank="11" codeTitle="Bradley Beal | Wizards | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/qA2e7Pbjhcs/hqdefault.jpg"/></a>
+
+     <a href="https://www.hooperos.com/air?_id=5f6fbfaed7432022bbbf16d7">
+          <Coderow rank="12" codeTitle="Paul Pierce | Wizards | 14-15" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/Nc-0c4QhtaE/hqdefault.jpg" /></a>
+
+  <a href="https://www.hooperos.com/air?_id=5f5949c53825270320118a96">   
+   <Coderow rank="13" codeTitle="Zach Lavine | Bulls | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/bx48bMoPhco/hqdefault.jpg" /></a>
+   
+      </div>:  null }
+     </div>
+     
+     </div><br/><hr/>
+     
+     
+     <Sectiontitle title="Defensive Rebound"/>
+    <Sectionsubtitle subtitle="Rebotes Defensivos" />
+
+
+    <div className="visuallyContent"><a href="https://www.hooperos.com/air?_id=5f594ade3825270320118aa7">  
+
+      <Coderow rank="1" codeTitle="Kawhi Leonard | Clippers | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/ChT3ewZXTfM/hqdefault.jpg"  /> </a>
+
+    <a href="https://www.hooperos.com/air?_id=5f5949893825270320118a93">
+         <Coderow rank="2" codeTitle="Khris Middleton | Bucks | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/Pl4dnXZiruw/hqdefault.jpg"  /></a> 
+
+  <a href="https://www.hooperos.com/air?_id=5f5947c63825270320118a87" >
+    <Coderow rank="3" codeTitle="Joel Embiid | 76ers | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/NVGI-SLzf4c/hqdefault.jpg" /></a> 
+
+  <a href="https://www.hooperos.com/air?_id=5f594a3d3825270320118a9c">  
+   <Coderow rank="4" codeTitle="Gordon Hayward | Celtics | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/zQD-UTd52WQ/hqdefault.jpg"  /></a> 
+
+  <a href="https://www.hooperos.com/air?_id=5f5952233825270320118afa" > 
+  <Coderow rank="5" codeTitle="Carmelo Anthony | Trail Blazers | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/T4VLHmb77Bw/hqdefault.jpg" /></a>  
+      </div>
+     
+      <div className="toggleButton">
+<div className="pageGrid">
+  <div className="gridCenter">
+<button onClick={this.toggleFadeawayHandler}>Load More</button>
+</div></div></div>
+     
+
+{ this.state.showFadeaway ? 
+<div className="hiddenContent">
+<a href="https://www.hooperos.com/air?_id=5f594ebf3825270320118ace" > 
+  <Coderow rank="6" codeTitle="Kyle Kuzma | Lakers | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/TQv8xQjpFKU/hqdefault.jpg" /></a>
+
+
+
+<a href="https://www.hooperos.com/air?_id=5f594ebf3825270320118ace" > 
+  <Coderow rank="7" codeTitle="Brandom Ingram | Pelicans | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/7osYWfJ2-k8/hqdefault.jpg" /></a> 
+
+<a href="https://www.hooperos.com/air?_id=5f5952893825270320118aff" > 
+  <Coderow rank="8" codeTitle="Lamarcus Aldridge | Spurs | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/muVH9r2jfL0/hqdefault.jpg" /></a> 
+
+
+
+<a href="https://www.hooperos.com/air?_id=5f6cff6e2c9320bc9d8b4014" > 
+  <Coderow rank="9" codeTitle="Dirk Nowitski | Dallas | 14-15" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/pGyDc9HglrA/hqdefault.jpg" /></a> 
+
+
+<a href="https://www.hooperos.com/air?_id=5f6fbfd9d7432022bbbf16d8" > 
+  <Coderow rank="10" codeTitle="Shawn Livingston | Warriors | 14-15" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/CWftq93FYJY/hqdefault.jpg" /></a> 
+
+     
+   
+      </div>:  null }<br/>
+
+      
+
+     
+
+      <Sectiontitle title="Offensive Rebounds"/>
+    <Sectionsubtitle subtitle="Rebotes Ofensivos" />
+
+    <div className="visuallyContent">
+    <a href="https://www.hooperos.com/air?_id=5f64121d6460a42c7496456a" > 
+  <Coderow rank="1" codeTitle="Tyreke Evans | Pelicans | 14-15" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/UIok05hAdeY/hqdefault.jpg" /></a> 
+
+<a href="https://www.hooperos.com/air?_id=5f594c1c3825270320118ab9" > 
+  <Coderow rank="2" codeTitle="Lebron James | Lakers | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/uKegTZuESr4/hqdefault.jpg" /></a> 
+
+
+<a href="https://www.hooperos.com/air?_id=5f594aef3825270320118aa8" > 
+  <Coderow rank="3" codeTitle="Lou Williams | Clippers | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/afFXt7mKFqQ/hqdefault.jpg" /></a> 
+
+
+<a href="https://www.hooperos.com/air?_id=5f59501d3825270320118add" > 
+  <Coderow rank="4" codeTitle="Ja Morant | Grizzlies | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/gRfFr4CJGLw/hqdefault.jpg" /></a> 
+
+<a href="https://www.hooperos.com/air?_id=5f5950593825270320118adf" > 
+  <Coderow rank="5" codeTitle="Jimmy Butler | Heat | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/y7LadZA7UPE/hqdefault.jpg" /></a> 
+
+   
+      </div>
+     
+      <div className="toggleButton">
+<div className="pageGrid">
+  <div className="gridCenter">
+<button onClick={this.toggleDriLuHandler}>Load More</button>
+</div></div></div>
+     
+
+{ this.state.showDriLu ? 
+<div className="hiddenContent">
+
+<a href="https://www.hooperos.com/air?_id=5f5950593825270320118adf" > 
+  <Coderow rank="6" codeTitle="Derrick Rose | Heat | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/iR8WUqq6dOI/hqdefault.jpg" /></a> 
+
+
+
+<a href="https://www.hooperos.com/air?_id=5f641b896460a42c7496456f" > 
+  <Coderow rank="7" codeTitle="Dwayne Wade | Heat | 14-15" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/vj9VFhJllOM/hqdefault.jpg" /></a> 
+
+
+<a href="https://www.hooperos.com/air?_id=5f5953383825270320118b0b" > 
+  <Coderow rank="8" codeTitle="Donovan Mitchell | Jazz | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/Tx1vqPFrh_Y/hqdefault.jpg" /></a> 
+
+
+<a href="https://www.hooperos.com/air?_id=5f5948603825270320118a8b" > 
+  <Coderow rank="9" codeTitle="Spencer Dinwidee | Nets | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/FkrG_bJwU5g/hqdefault.jpg" /></a> 
+
+
+
+<a href="https://www.hooperos.com/air?_id=5f59512c3825270320118aea" > 
+  <Coderow rank="10" codeTitle="Shai Gilgeous Alexander | Thunder | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/g8XlnzSXWM0/hqdefault.jpg" /></a> 
+
+
+<a href="https://www.hooperos.com/air?_id=5f5951603825270320118aeb" > 
+  <Coderow rank="11" codeTitle="Malcolm Brogdon | Bucks| 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/XJQlXlrf4EM/hqdefault.jpg" /></a> 
+
+
+<a href="https://www.hooperos.com/air?_id=5f5952913825270320118b00" > 
+  <Coderow rank="12" codeTitle="Dejounte Murray | Spurs| 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/As-qXGzytzo/hqdefault.jpg" /></a> 
+
+
+
+<a href="https://www.hooperos.com/air?_id=5f6413a46460a42c7496456b" > 
+  <Coderow rank="13" codeTitle="Tony Parker | Spurs | 14-15" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/-g8_Qh5DiFc/hqdefault.jpg" /></a> 
+
+       
+   
+      </div>:  null }<br/>
+
+
+      <Sectiontitle title="Diff"/>
+    <Sectionsubtitle subtitle="Diferencia" />
+
+    <div className="visuallyContent">
+    <a href="https://www.hooperos.com/air?_id=5f6413a46460a42c7496456b" > 
+  <Coderow rank="1" codeTitle="Kevin Durant | Thunder | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/-g8_Qh5DiFc/hqdefault.jpg" /></a> 
+
+       
+<a href="https://www.hooperos.com/air?_id=5f6413a46460a42c7496456b" > 
+  <Coderow rank="2" codeTitle="Ja Morant | Grizzlies | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/-g8_Qh5DiFc/hqdefault.jpg" /></a> 
+
+       
+<a href="https://www.hooperos.com/air?_id=5f6413a46460a42c7496456b" > 
+  <Coderow rank="3" codeTitle="Zion Williamson | Pelicans | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/-g8_Qh5DiFc/hqdefault.jpg" /></a> 
+
+       
+<a href="https://www.hooperos.com/air?_id=5f6413a46460a42c7496456b" > 
+  <Coderow rank="4" codeTitle="Donovan Mitchell | Jazz | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/-g8_Qh5DiFc/hqdefault.jpg" /></a> 
+
+       
+<a href="https://www.hooperos.com/air?_id=5f6413a46460a42c7496456b" > 
+  <Coderow rank="5" codeTitle="John Collins | Hawks | 19-20" 
+hoopcodes="195 anotados, 365 intentos, 53.4%"
+image="http://i.ytimg.com/vi/-g8_Qh5DiFc/hqdefault.jpg" /></a> 
+
+       
+      
+      </div>
+     
+      <div className="toggleButton">
+<div className="pageGrid">
+  <div className="gridCenter">
+<button onClick={this.toggleDriDuHandler}>Load More</button>
+</div></div></div>
+     
+
+{ this.state.showDriDu ? 
+<div className="hiddenContent">
+      <Coderow />
+      <Coderow />
+      <Coderow />
+      <Coderow />
+      <Coderow />
+      <Coderow />
+      <Coderow />
+      <Coderow />
+   
+      </div>:  null }
+
+      
+     
+
+      
+     </section>
+
+
+     
+</div>
+
+<style jsx>
+    {`
+    
+a {
+    color: #000;
+}
+
+
+    .pageGrid{
+
+        display: grid;
+        -webkit-box-pack: center;
+        justify-content: center;
+        grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
+        grid-row-gap: 30px;}
+        
+        .gridCenter{
+          grid-column: center-start / center-end;
+       }
+  button {
+      text-align: center;
+      margin-top: 1rem;
+      border-color: rgb(0, 0, 0);
+      color: rgb(0, 0, 0);
+      overflow-wrap: break-word;
+      word-break: break-word;
+      transition: background-color 0.1s ease 0s, color 0.1s ease 0s;
+      background-color: transparent;
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 0px;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Programme, Arial, sans-serif;
+      font-size: 0.875rem;
+      line-height: 1;
+      margin: 0px;
+      text-align: center;
+      padding: 0.75rem 1.313rem;
+      vertical-align: top;
+      user-select: none;
+      appearance: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+  }
+ 
+     .toggleButton {
+        grid-column: center-start / center-end;
+        text-align: center;
+        margin-top: 1rem;
+     }
+
+  
+    ul > li {
+    
+            line-height: 1.69em;
+    letter-spacing: normal;
+    font-family: Georgia,helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+        }
+    
+    `}
+</style>
+    </>
+}}
