@@ -1,15 +1,5 @@
     db.articles.insertOne({
-
-      "href": "/air?_id=5fe7f26694a9f3dede07845d",
-      "value": "qQhgjU8OOGM",
-      "title": "Ja Morant ERUPTS For CAREER-HIGH 44 PTS! Dec 23, 2020",
-      "views": "3,456",
-      "date": "Dec 24, 2020",
-      "graf": "Morant - the reigning rookie of the year -  had 34 of his career-high 44 points in the second half.",
-      "details": [],
-      "related": [],
-      "spanish": [],
-      "titulo": "",
-      "rafo": ""
+      
+   
 
     })
