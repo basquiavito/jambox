@@ -1,11 +1,11 @@
 const Label = (props) => {
-    return<><div className="label88">
+    return(
+        <div>
+<div className="label88">
 <span className="textLabel88">{props.label}</span>
-</div>
 <style jsx>{`
 .label88{
     display: flex;
-    margin: 1rem;
   
    
 }
@@ -36,8 +36,8 @@ const Label = (props) => {
 </style>
  
  
-
-        </>
-    
+</div>
+        </div>
+    )
 }
 export default Label
