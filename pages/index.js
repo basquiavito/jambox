@@ -13,22 +13,13 @@ function Articles({ articles, totalPages  }) {
  
  <ArticlePagination totalPages={totalPages}  />
  
-
- <style jsx>
-     {`
-
- 
-    
-     
-     `}
- </style>
  </>
  
 }
 Articles.getInitialProps = async ctx  => {
 const page = ctx.query.page ? ctx.query.page : "1"
 const size="2"
-const url = 'http://localhost:3000/api/articles';
+const url = 'https://hoopscript.com/api/articles';
 const payload = { params: { page, size } }
 const response = await axios.get(url, payload);
 return response.data
