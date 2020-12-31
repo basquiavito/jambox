@@ -1,27 +1,26 @@
 import Head from "next/head";
-import Header from "./Header";
-import Footer2 from '../../components/_App/Footer2'
-import HeadContent from "./HeadContent";
+  
  
+import { Container } from "semantic-ui-react";
+
 
 function Layout({ children }) {
   
 return (
 <>
-  <Head>
-  <HeadContent />
- 
-  <link rel="stylesheet" type="text/css" href="/static/styles.css" />
-  
-<title>Hooper Os</title>
-        </Head>
+ <Head>
+ <link
+          rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
+        />
+ </Head>
+        
+      
     
- <Header/>
+ <Container text style={{ paddingTop: "1em" }}>
+        {children}
+      </Container>
  
-        <div>
-            {children}
-        </div>
-<Footer2/>
  
 </>)
 }
