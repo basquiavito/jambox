@@ -2,9 +2,7 @@
 module.exports = {
     env: {
       MONGO_SRV: "mongodb+srv://RichardClemons08:Clemons8823@cluster0-mtqa0.mongodb.net/test?retryWrites=true&w=majority",
-      JWT_SECRET: "<insert-jwt-secret>",
-      CLOUDINARY_URL: "<insert-cloudinary-url>",
-      STRIPE_SECRET_KEY: "<insert-stripe-secret-key>"
+     
     }
   };
   

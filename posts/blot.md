@@ -1,7 +1,9 @@
+title: 'How to do a Crossover'
+date: '2020-12-28'
+author: 'Richard Clemons'
+image: 'http://i.ytimg.com/vi/2REkZG-dhHc/hqdefault.jpg'
+tags: '#nba, #Crossover, #michaeljordan, #LebronJames #76ers, #teenhoops, #ballislife, #hoops #hoopshype'
 ---
-title: 'Vamo a liga: Como elegir tu equipo cuando no conoces a nadie'
-date: '2020-07-20'
-
 ---
 # Dribbling Concepts
 Dribbling has changed drastically in last 20 years. Today players are more flashy and athletics. Nonetheless, **Fundamentals** are the same as the 80s, because they are timeless. The *Fadeaway* that [MJ pattented] is timeless. The [Allen Iverson] **Crossover** is timeless. The **U-tep two steps** from [Tim hardway] is timeless. Many more movements are going to be test again in the years to come but certain movements never change.
@@ -17,7 +19,7 @@ The basic of dribbling, at it lowest level of mastery, involves only a **bounce*
  - In and Out
  - Shammgod
 
- 
+
 ok
  [ballwork]:  https://hoopscript.vercel.app
 
