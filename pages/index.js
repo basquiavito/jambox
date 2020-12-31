@@ -7,15 +7,28 @@ import ArticlePagination from '../components/Index/ArticlePagination'
 
 function Articles({ articles, totalPages  }) {
  return <>
+
  <ArticleList articles={articles } />
+
+ 
  <ArticlePagination totalPages={totalPages}  />
+ 
+
+ <style jsx>
+     {`
+
+ 
+    
+     
+     `}
+ </style>
  </>
  
 }
 Articles.getInitialProps = async ctx  => {
 const page = ctx.query.page ? ctx.query.page : "1"
-const size="1"
-const url = 'https://hoopscript.com/api/articles';
+const size="2"
+const url = 'http://localhost:3000/api/articles';
 const payload = { params: { page, size } }
 const response = await axios.get(url, payload);
 return response.data

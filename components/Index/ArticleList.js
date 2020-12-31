@@ -16,7 +16,7 @@ export default function ArticlesList({ articles}) {
      
      }
      
-     return <><Card.Group  textAlign="center" stackable centered itemsPerRow="3"   items={ mapArticlesToItems(articles)} />
+     return <><Card.Group fluid  textAlign="center" stackable centered itemsPerRow="3"   items={ mapArticlesToItems(articles)} />
     
      
     
