@@ -1,8 +1,13 @@
-title: 'How to do a Crossover'
-date: '2020-12-28'
-author: 'Richard Clemons'
-image: 'http://i.ytimg.com/vi/2REkZG-dhHc/hqdefault.jpg'
-tags: '#nba, #Crossover, #michaeljordan, #LebronJames #76ers, #teenhoops, #ballislife, #hoops #hoopshype'
+---
+title: "Where should Harden Go? "
+date: 'Dec 30, 2020'
+author: 'Trade'
+image: 'https://hooperos.s3.us-east-2.amazonaws.com/tables/hardenspec.webp'
+comment: 'James Harden has the NBA in stand by while teams decided what assets to trade.'
+---
+
+
+
 ---
 ---
 # Dribbling Concepts

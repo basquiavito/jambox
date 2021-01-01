@@ -16,7 +16,7 @@ export default function tophead(){
 <div id="logo">
  
 <a  href="/" id="">   
- <span className="rightSide">hooper</span>OS  </a>
+ <span className="rightSide">HOOP</span>SCRIPT  </a>
  
 
 </div>

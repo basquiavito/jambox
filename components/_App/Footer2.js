@@ -10,7 +10,7 @@ export default function Footer(){
             <div className="pageGridCentro">
             <div className="pageFooterSlogan">
 
-            <div className="footerTitle"><span className="rightSide">hooper</span><span className="os">os </span>  </div>
+            <div className="footerTitle"><span className="rightSide">HOOP</span><span className="os">SCRIPT </span>  </div>
                 <div className="siteFooterAbout">
 
 

@@ -1,7 +1,11 @@
 ---
-title: "Steal: How to steals like Gary Payton "
-date: '2020-01-01'
+title: "Is Kevin Durant the best shooter ever? "
+date: 'Jan 01, 21'
+author: 'Primetime'
+image: 'https://hooperos.s3.us-east-2.amazonaws.com/tables/kd.jpg'
+comment: 'Kevin Durant has the best shot in history.'
 ---
+ 
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
 
