@@ -7,13 +7,12 @@ import Spotlight from '../components/units/spotlight'
 
 function Articles({ articles, totalPages  }) {
  return <>
-   <div className="pageGrid">
-    <div className="gridCenter"></div>
- <Spotlight title="Kevin Durant still dope" id="LD_qNB2NTco" />
- <br/>
+ 
+ <Spotlight title="Kevin Durant still dope" id="LD_qNB2NTco" /> 
+  <br/>
 
  
- </div>
+  <h2 className="headline">Today's videos</h2>
   <ArticleList articles={articles } />
 
  
@@ -23,7 +22,22 @@ function Articles({ articles, totalPages  }) {
  <style jsx>
 {`
 
- 
+.headline {
+   -webkit-text-stroke-color: #ff294c;
+   -webkit-text-stroke-width: 1px;
+   color: transparent;
+   margin-left: calc(((100vw - var(--window-width-offset)) - var(--container-width)) / -2);
+   margin-right: calc(((100vw - var(--window-width-offset)) - var(--container-width)) / -2);
+   padding-left: var(--outer-gutter);
+   padding-right: var(--outer-gutter);
+   font-family: Maria,sans-serif;
+   font-size: 8.86667vw;
+   line-height: .80597;
+   text-align: center;
+   text-transform: uppercase;
+   word-wrap: break-word;
+   margin-bottom: 45px;
+  }
  .lomoName {
     font-size: 1.2em;
     font-weight: 700;
