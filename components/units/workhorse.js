@@ -16,7 +16,7 @@ const workhorse = (props) => {
 </div>
 
 <div className="workHorseAsset">
-<img src={`http://i.ytimg.com/vi/${props.asset}/maxresdefault.jpg`} />
+<img src={props.asset}/>
  
         </div>
 
