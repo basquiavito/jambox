@@ -3,15 +3,26 @@ import axios from 'axios'
 import ArticleList from '../components/Index/ArticleList'
 import baseUrl from '../utils/baseUrl'
 import ArticlePagination from '../components/Index/ArticlePagination'
- 
+import Spotlight from '../components/units/spotlight'
 
 function Articles({ articles, totalPages  }) {
  return <>
  
+ <Spotlight />
+ <br/>
   <ArticleList articles={articles } />
 
  
  <ArticlePagination totalPages={totalPages}  />
+ 
+
+ <style jsx>
+{`
+ 
+
+
+`}
+ </style>
  
  </>
  
