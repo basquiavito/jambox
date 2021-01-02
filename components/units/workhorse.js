@@ -49,8 +49,8 @@ const workhorse = (props) => {
     color: inherit;
     margin-bottom: 10px;
     position: relative;
-    z-index: 1
-    font-weight: 600;
+    z-index: 1;
+    font-weight: 500;
  }
  
  

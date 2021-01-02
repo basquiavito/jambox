@@ -39,7 +39,7 @@ export default function tophead(){
 
 <div id="log">
  
-<a  href="/blogs" id="">   Op-Ed </a>
+<a  href="/blogs" id="">  Blog </a>
  
 
 </div>

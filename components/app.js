@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+ 
 import PropTypes from 'prop-types';
 import {
   RefinementList,
@@ -12,75 +11,63 @@ import {
   InstantSearch,
 } from 'react-instantsearch-dom';
 import Link from 'next/link'
- 
+
+
 
 
 const HitComponent = ({ hit }) => (
-  <div className="pageGrid">
-    <div className="gridCenter">
+
+  <div   className="container">
+<head>
+<link
+   async
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.0.0/themes/algolia-min.css"
+     ></link> 
 
 
-    <div className="hit">
-    <div className="hit-content">
-      <div className="hits">
-        <Link href={`https://www.hoopscript.com/profile?_id=${hit._id.$oid}`}><a >
-       <div><span  > {hit. name}</span></div>
-       <div><span  >  {hit.lastname}  </span></div>
-  </a> </Link>
-        </div>
-    </div>
-  </div>
+</head>
 
-</div>
+    <div  className="hit">
+ <section className="ais-Hits-items">
+      <a className="unit" href={`https://www.hooperos.com/air?_id=${hit._id.$oid}`}>
+  {hit.gem} {hit.playType} 
+  <img alt={hit.player} width="100%" height="100%" src={`http://i.ytimg.com/vi/${hit.mediaUrl}/hqdefault.jpg`}></img> 
 
-<style jsx>
+      </a>   </section>
+  <style jsx>
   {`
- 
- 
-  
-  }
-  span {
-    color: #e41224;
+ .hit {
    
-  }
-
-
-  a {
- 
- 
- 
- 
-    text-decoration: none;
- 
-  }
- 
-
- 
-  
-  
-.pageGrid{
-
-  display: grid;
-  -webkit-box-pack: center;
-  justify-content: center;
-  grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
-  grid-row-gap: 30px;}
-
-  .gridCenter{
-    grid-column: center-start / center-end;
+  color: #1d1d1f;
+  font-style: normal;
+  letter-spacing: -.022em;
+  font-weight: 400;
+   display: flex;
+   justify-content: center;
+   font-family: "Helvetica Neue", helvetica, arial,sans-serif;
+   line-height: 1.47059;
  }
-.hit {
+a {
   display: flex;
-  justify-content: center;
-  
-   
+  flex-flow: row wrap;
+  text-decoration: none;
+  width: 100%;
 }
-  `
+a:visited{
+    color: black;
+}
  
+  `
+
   }
 </style>
 
+
   </div>
+
+  </div>
+
 );
 
 HitComponent.propTypes = {
@@ -109,66 +96,63 @@ export default class extends React.Component {
         indexName={this.props.indexName}
         onSearchParameters={this.props.onSearchParameters}
         {...this.props}
-      >
-        <Configure hitsPerPage={16} />
-        <header>
-          <h1 className="title"><b>Hoopscript</b>NBA</h1>
-          <SearchBox /><br/>
-        </header>
-        <main>
-          <div className="pageGrid">
-            <div className="gridCenter">
+      ><br/>
+        <Configure hitsPerPage={10} />
+<main>
+           <div className="searchBox">
+
+
+           <SearchBox /><br/>
+           </div> 
+
+
+
+
+
             <div className="menu">
             <RefinementList attribute="categories" />
           </div>
           <div className="results">
             <Hits hitComponent={HitComponent} />
           </div><br/>
-   
+
         <footer>
           <Pagination />
-        
+
         </footer>
-            </div>
-          </div>     </main>
-          
+            </main> 
+
       </InstantSearch>
-<style jsx>{`
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- 
-}
 
-b {
-  color:#e41224;
-}
+      <style jsx>
+        {`
 main {
-  margin: 3%;
-  background-color :#f7f7f3;
-  
+  max-width: 38rem;
+  padding: 1.5rem;
+  margin: auto;
 }
-footer {
-  text-align: center;
-}
-
-.ais-Pagination {
-  margin-bottom: 25px;
- 
-}
-.results {
-  flex: 1;
-  flex-wrap: wrap;
-  
+        .results {
+          text-align: center;
+        }
+ .searchBox {
  
  
-  }
-
-
-
-`}</style>
-      
+ 
+ }
+        .pageGrid{
+          display: grid;
+          -webkit-box-pack: center;
+          justify-content: center;
+          grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
+          grid-row-gap: 30px;}
+          
+          .gridCenter{
+            grid-column: center-start / center-end;
+         }
+        
+        
+        `}
+      </style>
     </>;
   }
 }

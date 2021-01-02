@@ -7,7 +7,6 @@ import Date from '../components/date'
 import Label from '../components/units/label'
 import Workhorse from '../components/units/workhorse'
 
-
  const a = {
   color: '#000',
   textDecoration: 'none'
@@ -32,7 +31,7 @@ export default function blog({ allPostsData }) {
   return <>
  
 <section style={main} className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className="headline">Recent</h2>
+        <h2 className="headline">Blog</h2>
        
 
         <h2 className={utilStyles.headingLg}></h2>
@@ -90,6 +89,7 @@ export default function blog({ allPostsData }) {
     word-wrap: break-word;
     margin-bottom: 75px;
    }
+ 
    
    `}
  </style>

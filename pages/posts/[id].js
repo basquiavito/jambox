@@ -1,9 +1,14 @@
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
  import Image from 'next/image'
-
+ import SocialMedia from '../../components/units/socialMedia'
+import Byline from '../../components/units/byline'
 import utilStyles from '../../static/layout.module.css'
 import HyvorTalk from 'hyvor-talk-react'
+import ImageHolder from '../../components/units/imageHolder'
+import Wshhtitle from '../../components/units/wshhtitle'
+
+
 const a = {
     color: '#e41224',
     textDecoration: 'none'
@@ -25,19 +30,21 @@ export default function Post({ postData }) {
       </Head>
       <article>
 
-      <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-      <img
-        src={`http://i.ytimg.com/vi/${postData.image}/hqdefault.jpg`}
+      <Wshhtitle title={postData.title} />
+      <ImageHolder
+        mediaUrl=  {postData.image}
         alt="Picture of the author"
         width="100%"
         height="auto"
       />
-        <div className={utilStyles.lightText}>
- <div>{postData.date}</div> 
- </div> 
+  
+
+      <Byline author={postData.author} date={postData.date}/>
+         
+      <SocialMedia /><br/>
 
 
- <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+ <div className="content" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 
  <div>
 
@@ -65,11 +72,50 @@ export default function Post({ postData }) {
 
 <style jsx>
     {`
-    a {
-        color: '#e41224',
-        textDecoration: 'none'
+.preamble {
+  text-transform: uppercase;
+    font-family: BatonTurbo, helvetica, sans-serif;
+    font-style: normal;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(33, 33, 33);
+    word-break: break-word;
+    margin: 0px;
+}
+    .dating {
+      text-align: center;
     }
-    
+.author {
+  text-align: center;
+}
+    .author > span{
+      color: rgb(228, 18, 36);
+       
+    }
+  
+    .content {
+      margin: 0 auto;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    max-width: 1600px;
+    --type-token-name: consumptionEditorial.body-core;
+    line-height: 1.71em;
+    letter-spacing: normal;
+    font-family:sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    text-transform: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    }
+
+  
     `}
 </style>
     </ >

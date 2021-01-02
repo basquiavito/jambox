@@ -1,14 +1,18 @@
 ---
 title: "Who is Chris Chiozza? "
 date: 'Dec 31, 2020'
-author: 'Underdog'
+author: 'Basquiavito'
 image: 'https://hooperos.s3.us-east-2.amazonaws.com/tables/chiozza.jpg'
 comment: 'Chris Chiozza has the NBA in bulk  while teams decided what assets to trade.'
+ 
 ---
-# Dribbling Concepts
+ 
 Dribbling has changed drastically in last 20 years. Today players are more flashy and athletics. Nonetheless, **Fundamentals** are the same as the 80s, because they are timeless. The *Fadeaway* that [MJ pattented] is timeless. The [Allen Iverson] **Crossover** is timeless. The **U-tep two steps** from [Tim hardway] is timeless. Many more movements are going to be test again in the years to come but certain movements never change.
 
-The basic of dribbling, at it lowest level of mastery, involves only a **bounce** dribble. A bounce up and down of the ball. This is the first element of the array of foot movements.
+# The beginnings
+
+See the syntax guide for more info: [link](syntax_guide.md)
+[most](https://www.genius.com) The basic of dribbling, . at it lowest level of mastery, involves only a **bounce** dribble. A bounce up and down of the ball. This is the first element of the array of foot movements.
 
  ##  List of Movements
  -  0 [Bounce] [ballwork]

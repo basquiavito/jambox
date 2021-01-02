@@ -82,7 +82,7 @@ class Page extends Component {
       <div>
         <Head>
           <title>
-            Search for your favorite NBA player
+            Search
           </title>
         </Head>
         <App
