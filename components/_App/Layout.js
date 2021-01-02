@@ -22,7 +22,7 @@ return (
     <nav>
     <Toplayout />
     </nav>  
- <Container text style={{ paddingTop: "1em" }}>
+ <Container  text style={{ paddingTop: "1em" }}>
         {children}
       </Container>
  <footer>
@@ -30,8 +30,10 @@ return (
  </footer>
  <style jsx>
    {`
+
+ 
    nav {
-     margin-bottom: 3rem;
+     margin-bottom: 2rem;
    }
    
    

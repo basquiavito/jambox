@@ -7,9 +7,13 @@ import Spotlight from '../components/units/spotlight'
 
 function Articles({ articles, totalPages  }) {
  return <>
- 
- <Spotlight />
+   <div className="pageGrid">
+    <div className="gridCenter"></div>
+ <Spotlight title="Kevin Durant still dope" id="LD_qNB2NTco" />
  <br/>
+
+ 
+ </div>
   <ArticleList articles={articles } />
 
  
@@ -18,7 +22,13 @@ function Articles({ articles, totalPages  }) {
 
  <style jsx>
 {`
+
  
+ .lomoName {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 14px; 
+ }
 
 
 `}

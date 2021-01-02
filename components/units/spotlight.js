@@ -1,4 +1,4 @@
-const spotlight = () => {
+const spotlight = (props) => {
     return <>
     <div id="spotlight">
 <div className="spotlightWrapper">
@@ -7,13 +7,13 @@ const spotlight = () => {
 <tbody>
 <tr>
 <td className="spotlightTableContent">
-<a href="" className="spotlightName">Cobra Kai</a>
+<a href="" className="spotlightName">{props.title}</a>
 <p className="spotlightMetadata">
 <span className="spotlightYear">2021</span>
 <span className="spotlightMaturity">Reg Season</span>
 <span className="spotlightDuration">4 minutes</span>
 </p>
-<p className="spotlightDescription">Decades after the tournament that changed their lives, the rivalry between Johnny and Daniel reignites in this sequel to the "Karate Kid" films.</p>
+<p className="spotlightDescription">Decades after the tournament that changed their lives.</p>
 
 <div className="spotlightActions">
 <a href="" className="spotlightWatch">
@@ -28,7 +28,7 @@ const spotlight = () => {
 
 <div className="spotlightBackground">
 <div className={`${'spotlightGradient'} ${'backgroundFill'}`}></div>
-<img className={`${'spotlightStill'} ${'spotlightFill'}`} src="https://hooperos.s3.us-east-2.amazonaws.com/tables/AIcrossMJ.jpg" alt="">
+<img className={`${'spotlightStill'} ${'spotlightFill'}`} src={`https://img.youtube.com/vi/${props.id}/hqdefault.jpg`} alt={props.title} alt="">
 
 </img>
 </div>
@@ -59,7 +59,7 @@ const spotlight = () => {
     width: 100%;
 }
 .spotlightGradient {
-    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/spotlight_gradient.png);
+    background-image: url(https://hooperos.s3.us-east-2.amazonaws.com/tables/spotlight_gradient.png);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -125,6 +125,7 @@ span {
     background: #000;
     border-bottom: 1px solid #000;
     padding: 16px;
+   
 }
 @media screen and (max-width: 500px){
 .spotlightName {
