@@ -7,8 +7,9 @@ import utilStyles from '../../static/layout.module.css'
 import HyvorTalk from 'hyvor-talk-react'
 import ImageHolder from '../../components/units/imageHolder'
 import Wshhtitle from '../../components/units/wshhtitle'
-
-
+import Twitter from '../../components/units/twitter'
+import ReactMarkdown from "react-markdown";
+import FromDaGram from '../../components/units/fromDaGram'
  
   const main = {
   
@@ -19,6 +20,9 @@ import Wshhtitle from '../../components/units/wshhtitle'
 
 
 export default function Post({ postData }) {
+  const twitter = (<Twitter token={postData.tweet}/>)
+  const twitter1 = (<Twitter token={postData.tweet1}/>)
+  const gram = (<FromDaGram token={postData.gram}/>)
   return (
     < >
     <main style={main}>
@@ -42,9 +46,10 @@ export default function Post({ postData }) {
 
 
  <div className="content" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-
+{twitter}
+{gram}
  <div>
-
+ 
 
        <div className="comment-count-view">
 
