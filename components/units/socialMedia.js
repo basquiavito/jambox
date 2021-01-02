@@ -15,7 +15,7 @@ href="" rel="nofollow noopener" target="_blank"
 
 <li className="twitterShareItem">
 <a className="twitter-share-button"   
-href="https://twitter.com/intent/tweet/?url=https://www.hooperos.com/posts/how-to-do-a-crossover&amp;text=How to do a Crossover&amp;via=gqmagazine" rel="nofollow noopener" target="_blank" 
+href="" rel="nofollow noopener" target="_blank" 
   aria-label="Share on twitter">
 <svg viewBox="0 0 13 10" 
 className="twIcon" width="13" height="10">

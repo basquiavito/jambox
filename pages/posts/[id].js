@@ -1,15 +1,11 @@
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
- import Image from 'next/image'
- import SocialMedia from '../../components/units/socialMedia'
+  import SocialMedia from '../../components/units/socialMedia'
 import Byline from '../../components/units/byline'
 import utilStyles from '../../static/layout.module.css'
 import HyvorTalk from 'hyvor-talk-react'
 import ImageHolder from '../../components/units/imageHolder'
 import Wshhtitle from '../../components/units/wshhtitle'
-import Twitter from '../../components/units/twitter'
-import ReactMarkdown from "react-markdown";
-import FromDaGram from '../../components/units/fromDaGram'
  
   const main = {
   
@@ -20,9 +16,8 @@ import FromDaGram from '../../components/units/fromDaGram'
 
 
 export default function Post({ postData }) {
-  const twitter = (<Twitter token={postData.tweet}/>)
-  const twitter1 = (<Twitter token={postData.tweet1}/>)
-  const gram = (<FromDaGram token={postData.gram}/>)
+  // const twitter = (<Twitter tweet={postData.tweet}/>)
+ 
   return (
     < >
     <main style={main}>
