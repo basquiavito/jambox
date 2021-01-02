@@ -7,10 +7,7 @@ import Date from '../components/date'
 import Label from '../components/units/label'
 import Workhorse from '../components/units/workhorse'
 
- const a = {
-  color: '#000',
-  textDecoration: 'none'
- }
+ 
 const main = {
   maxWidth: '38rem',
   padding: '2rem',

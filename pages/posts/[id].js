@@ -9,10 +9,7 @@ import ImageHolder from '../../components/units/imageHolder'
 import Wshhtitle from '../../components/units/wshhtitle'
 
 
-const a = {
-    color: '#e41224',
-    textDecoration: 'none'
-   }
+ 
   const main = {
   
  
@@ -97,9 +94,9 @@ export default function Post({ postData }) {
   
     .content {
       margin: 0 auto;
-    padding-top: 2.5rem;
+    padding-top: 0.5rem;
     padding-bottom: 2.5rem;
-    max-width: 1600px;
+ 
     --type-token-name: consumptionEditorial.body-core;
     line-height: 1.71em;
     letter-spacing: normal;
@@ -109,12 +106,12 @@ export default function Post({ postData }) {
     -webkit-font-smoothing: antialiased;
     font-style: normal;
     text-transform: none;
-    padding: 0;
+  
     margin-bottom: 1rem;
     width: 100%;
 
     }
-
+ 
   
     `}
 </style>
