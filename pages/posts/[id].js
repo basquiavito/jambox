@@ -46,8 +46,8 @@ export default function Post({ postData }) {
 
 
  <div className="content" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-{twitter}
-{gram}
+ 
+ 
  <div>
  
 
