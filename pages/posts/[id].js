@@ -32,7 +32,7 @@ export default function Post({ postData }) {
   <meta name="twitter:creator" content="@h00pscript"/>
   <meta property="twitter:description" content={postData.comment}/>
   <meta property="twitter:domain" content="https://www.hoopscript.com"></meta>
-  <meta property="og:url" content={`https://hoopscript.com/post/${postData._id}`} />
+  <meta property="og:url" content={`https://hoopscript.com/post/${postData.id}`} />
   <meta property="twitter:title" content={postData.title}></meta>
     <meta name="twitter:image:src" content={postData.image} />
     <meta property="og:image" content={postData.image}/>
