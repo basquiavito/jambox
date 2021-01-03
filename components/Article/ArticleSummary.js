@@ -6,7 +6,7 @@ import Related from '../units/related'
 import Head from 'next/head'
 import { useState } from 'react';
 import Link from 'next/link'
-
+import FacebookShareCount from  'react-share'
 
 export default function airs({rafo, spanish , _id, related, details, graf, title, value, cotorra, publishedAt, flow, flowTalk,     ttTitle,  ttdetails, ttname, ttyear, team, href, videoID, images, moment, commentary,  fecha, titulo,  obb,  subtitle, dekk, author, date,player    }){
   const [ lan, setLan ] = useState({
@@ -75,41 +75,14 @@ trends:[{A:"Related", B:"Videos"}],
         
 return <>
 <Head>
-<meta charSet="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="google-site-verification" content="3vPt_83gjgDlwNpSwqVFOgiUWnIP-sBphFQVu_wS6q0"/>
-<title>{title}</title>
-    <meta name="description" content="The largest collecton of basketball plays and notation."/>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-  <meta name="msapplication-tap-highlight" content="no"/>
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>  
-  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-  {/* <link rel="canonical" href={`https://hooperos.com/air?_id=${_id.$oid}`}/>
-<link rel="shortlink" href={`https://hooperos.com/air?_id=${_id.$oid}`} /> */}
-  <link rel="dns-prefetch" href="//www.googletagservices.com"></link>
-  <link rel="dns-prefetch" href="//www.google.com"/>
-  <link rel="dns-prefetch" href="//connect.facebook.net"/>
-  <link rel="dns-prefetch" href="//platform.twitter.com"/>
-<link rel="dns-prefetch" href="//ajax.googleapis.com"/>
-<link rel="dns-prefetch" href="//fonts.googleapis.com"/>
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:type" content="website"/>
-    {/* <meta property="og:url" content={`https://hooperos.com/air?_id=${_id.$oid}`}/>
-    <meta property="og:title" content={`https://hooperos.com/air?_id=${_id.$oid}`} /> */}
-  <meta property="og:site_name" content="HOOPEROS"/>
-    <meta
-      property="og:description"
-      content="The largest collecton of basketball plays and notation."/>
-    <meta name="twitter:site" content="https://twitter.com/hooperos_NBA" />
-  <meta name="twitter:creator" content="@hooperos_NBA"/>
-  <meta name="twitter:site" content="@hooperos_NBA"/>
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="" />
-    <meta property="og:image" content=""/>
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-  
+ <title>{title}</title>
+<meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@h00pscript" />
+  <meta name="twitter:creator" content="@h00pscript"/>
+  <meta property="og:url" content={`"https://hoopscript.com/post/${_id}"`} />
+
+    <meta name="twitter:image" content={title} />
+    <meta property="og:image" content="https://hooperos.s3.us-east-2.amazonaws.com/tables/ai.jpg"/>
   
 </Head>
  
@@ -125,6 +98,8 @@ return <>
 
  
 <Iframe title={lan.standard[0].title} value={value}/>
+  
+
 <SocialMedia />
  <Graf graf={lan.graf[0].graf} date={lan.graf[0].date}/>
 <Trends A={lan.trends[0].A} B={lan.trends[0].B}/>

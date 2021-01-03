@@ -14,7 +14,7 @@ return (
           href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
           media="none"
           onload="if(media!='all')media='all'"
-
+    
         />
         
  </Head>
