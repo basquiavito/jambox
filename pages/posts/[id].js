@@ -43,7 +43,7 @@ export default function Post({ postData }) {
       <Wshhtitle title={postData.title} />
       <ImageHolder
         mediaUrl=  {postData.image}
-        alt="Picture of the author"
+        alt="Picture of the player"
         width="100%"
         height="auto"
       />
