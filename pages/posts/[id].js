@@ -30,9 +30,9 @@ export default function Post({ postData }) {
 <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@h00pscript" />
   <meta name="twitter:creator" content="@h00pscript"/>
-  <meta property="twitter:description" content="Long Live Hoops"/>
+  <meta property="twitter:description" content={postData.comment}/>
   <meta property="twitter:domain" content="https://www.hoopscript.com"></meta>
- 
+  <meta property="og:url" content={`https://hoopscript.com/article?_id=${postData._id}`} />
   <meta property="twitter:title" content={postData.title}></meta>
     <meta name="twitter:image:src" content="https://hooperos.s3.us-east-2.amazonaws.com/tables/ai.jpg" />
     <meta property="og:image" content={postData.image}/>
