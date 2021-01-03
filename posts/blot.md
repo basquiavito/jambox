@@ -4,7 +4,7 @@ date: 'Dec 30, 2020'
 author: 'Trade'
 image: 'https://hooperos.s3.us-east-2.amazonaws.com/tables/hardenspec.webp'
 comment: 'James Harden has the NBA in stand by while teams decided what assets to trade.'
-tweet: '1345025781446152192'
+ 
  
 ---
 

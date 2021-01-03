@@ -1,5 +1,4 @@
 ---
- 
 title: "Who has better handles: Kyrie or Curry? "
 date: 'Dec 30, 2020'
 author: 'Handles'
