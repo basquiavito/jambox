@@ -15,7 +15,7 @@ href="" rel="nofollow noopener" target="_blank"
 
 <li className="twitterShareItem">
 <a className="twitter-share-button"   
-href={props.tweet} rel="nofollow noopener" target="_blank" 
+href={`https://twitter.com/intent/tweet/?url=https://hoopscript.com/post/${props.id}`} rel="nofollow noopener" target="_blank" 
   aria-label="Share on twitter">
 <svg viewBox="0 0 13 10" 
 className="twIcon" width="13" height="10">

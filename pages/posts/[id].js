@@ -51,7 +51,7 @@ export default function Post({ postData }) {
 
       <Byline author={postData.author} date={postData.date}/>
          
-      <SocialMedia /><br/>
+      <SocialMedia id={postData.id}/><br/>
 
 
  <div className="content" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />

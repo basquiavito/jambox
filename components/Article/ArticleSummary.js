@@ -106,7 +106,7 @@ return <>
 <Iframe title={lan.standard[0].title} value={value}/>
   
 
-<SocialMedia />
+<SocialMedia id={`${id}`}/>
  <Graf graf={lan.graf[0].graf} date={lan.graf[0].date}/>
 <Trends A={lan.trends[0].A} B={lan.trends[0].B}/>
  <Related 
