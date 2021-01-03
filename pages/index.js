@@ -30,7 +30,7 @@ function Articles({ articles, totalPages  }) {
   <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://www.hoopscript.com" />
     <meta property="og:title" content="" />
-  <meta property="og:site_name" content="HOOPEROS"/>
+  <meta property="og:site_name" content="Hoopscript"/>
     <meta
       property="og:description"
       content="The young person’s guide to mastering the world of basketball. hooperOS covers the latest in basketball news, stats, highlights, notation, learning, rumors,  and entertainment."
