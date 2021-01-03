@@ -79,7 +79,7 @@ return <>
 <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@h00pscript" />
   <meta name="twitter:creator" content="@h00pscript"/>
-  <meta property="og:url" content={`"https://hoopscript.com/post/${_id}"`} />
+  <meta property="og:url" content={`"https://hoopscript.com/article?_id=${_id}"`} />
 
     <meta name="twitter:image" content={title} />
     <meta property="og:image" content="https://hooperos.s3.us-east-2.amazonaws.com/tables/ai.jpg"/>
