@@ -78,16 +78,16 @@ return <>
 <Head>
 <title>{title}</title>
  <meta property="og:image" content={`http://i.ytimg.com/vi/${value}/hqdefault.jpg`}></meta>
- <meta property="og:description" content={title}></meta>
- <meta property="og:title" content={title}></meta>
+ <meta property="og:description" content={lan.standard[0].title}></meta>
+ <meta property="og:title" content={lan.standard[0].title}></meta>
  <meta http-equiv="content-language" content="en-us"></meta>
 <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@h00pscript" />
   <meta name="twitter:creator" content="@h00pscript"/>
-  <meta property="twitter:description" content={rafo}/>
+  <meta property="twitter:description" content={lan.graf[0].graf}/>
   <meta property="twitter:domain" content="https://www.hoopscript.com"></meta>
   <meta property="og:url" content={`https://hoopscript.com//article?_id=${_id}`} />
-  <meta property="twitter:title" content={title}></meta>
+  <meta property="twitter:title" content={lan.standard[0].title}></meta>
     <meta name="twitter:image:src" content={`http://i.ytimg.com/vi/${value}/hqdefault.jpg`} />
     <meta property="og:image" content={`http://i.ytimg.com/vi/${value}/hqdefault.jpg`}/>
     
