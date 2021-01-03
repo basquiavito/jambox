@@ -22,7 +22,21 @@ export default function Post({ postData }) {
     < >
     <main style={main}>
          <Head>
-        <title>{postData.title}</title>
+         <title>{postData.title}</title>
+ <meta property="og:image" content="https://hooperos.s3.us-east-2.amazonaws.com/tables/ai.jpg"></meta>
+ <meta property="og:description" content={postData.title}></meta>
+ <meta property="og:title" content={postData.title}></meta>
+ <meta http-equiv="content-language" content="en-us"></meta>
+<meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@h00pscript" />
+  <meta name="twitter:creator" content="@h00pscript"/>
+  <meta property="twitter:description" content="Long Live Hoops"/>
+  <meta property="twitter:domain" content="https://www.hoopscript.com"></meta>
+  <meta property="og:url" content={`https://hoopscript.com/article?_id=${_id}`} />
+  <meta property="twitter:title" content={postData.title}></meta>
+    <meta name="twitter:image:src" content="https://hooperos.s3.us-east-2.amazonaws.com/tables/ai.jpg" />
+    <meta property="og:image" content={postData.image}/>
+    
       </Head>
       <article>
 
