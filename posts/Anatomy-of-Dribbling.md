@@ -8,7 +8,7 @@ comment: 'Introduction to basketball dribbling. '
 
 ## Anatomy of Dribbling
 
-Dribbling allows us to move from on place to another thorugh the use of movements, or gems. Each gem has a function, a form, a trayectory, and side effects.
+Dribbling allows us to move from on place to another thorugh the use of movements, or gems.  
 
 We divided dribbling into  two containers:
  1. **Ballwork** for the  movements of the ball
@@ -47,17 +47,26 @@ The elements of the **Footwork** comparment are:
 
 ## Basketball Drills
 
-Get familiar witht the matrix, and enter an active state.
+Get familiar with the matrix, and enter an active state.
 
  
->>8 + 0  known as the matrix (∞).
+### 8 + 0  known as the matrix (∆).
 
->>∞  + F   says that the matrix pop.
+>>∆  + F  : says that the matrix **pop**.
 
->>∞ + F + ∞ known as a stride.
+>>∆ + F + ∆ : known as a **stride** or ∞.
 
 
+ ### Practice 
  
+ >>**pop** + G$ or *matrix pullup*
 
->>0 + 9 known as Shammod
+ Round of consecutives matrix pull-ups from mid-range. Aim to hit 8 straight.
+
+>>**∞**  pop + G$ or stride pullup
+
+Round of stride pull-ups from mid-range. Aim to hit eight straight.
+
+## Videos
+
 
