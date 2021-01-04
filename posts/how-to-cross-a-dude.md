@@ -16,10 +16,8 @@ So, then I took him to the court and had my man Justin guard him in a one-to-one
 Manolo agreed to learn my way, and I was happy to share my knowledge. I showed him a video of Allen Iverson's infamous crossover vs Michael Jordan in slow motion.
 
 ## Look beyond the surface
-
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/0QqwNyUnN6U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
+ 
+ 
 Manolo said that Iverson didn't even cross him, because MJ almost blocked him. While that has an inch of truth, what he is missing is the fact that Iverson actually crossed him three times. The first small cross was a mere bait to see if Jordan would bite it ( and he did ). Now the second cross, was so quick, powerful, determined, that Jordan could not recover on time. Then, to finish him ( fatality ) Iverson used a super crossover in sync with a quick first step.
 
 But, How did AI did it?
