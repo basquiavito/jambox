@@ -6,10 +6,7 @@ import utilStyles from '../../static/layout.module.css'
 import HyvorTalk from 'hyvor-talk-react'
 import ImageHolder from '../../components/units/imageHolder'
 import Wshhtitle from '../../components/units/wshhtitle'
-import Video from '../../components/units/video'
-import Iframe from '../../components/units/iframe'
-import Twitter from '../../components/units/twitter'
-
+ 
 
   const main = {
   
@@ -21,8 +18,7 @@ import Twitter from '../../components/units/twitter'
 
 
 export default function Post({ postData }) {
-  // const twitter = (<Twitter tweet={postData.tweet}/>)
-  // const tooltip = (<Iframe value={postData.value}/>)
+  
   return (
     < >
     <main style={main}>
