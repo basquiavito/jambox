@@ -38,15 +38,16 @@ function Articles({ articles, totalPages  }) {
 
   
 </Head>
-<Link href="/article?_id=5ff317ed6e6c200fac637b2b" ><a>
-  </a></Link>
- <Spotlight 
+<Link href="https://hoopscript.com/article?_id=5ff317ed6e6c200fac637b2b" >
+  <a> <Spotlight 
  title="Stephen Curry 62 Points! Movie" 
  id="xSs4yUZhb-I" 
  date="Jan 4, 2021"
  length="8:24 minutes"
  graf="Sixty-two, damn. Curry put up 62 points on 31 shots in 36 minutes. It was a Hall of Fame-level performance."
  /> 
+  </a></Link>
+
   <br/>
 
  
@@ -97,7 +98,7 @@ const payload = { params: { page, size } }
 const response = await axios.get(url, payload);
 
 
-return  response.data 
+return  response.data
 }
  
 
