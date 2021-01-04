@@ -6,6 +6,7 @@ import ArticlePagination from '../components/Index/ArticlePagination'
 import Spotlight from '../components/units/spotlight'
 import Head from 'next/head'
 import Link from 'next/link'
+import HyvorTalk from 'hyvor-talk-react'
 
 
 function Articles({ articles, totalPages  }) {
@@ -50,9 +51,10 @@ function Articles({ articles, totalPages  }) {
 
   <br/>
 
- 
+ <div>
   <h2 className="headline">Today's videos</h2>
-  <ArticleList articles={articles } />
+  </div>
+  <ArticleList articles={articles  } />
 
  
  <ArticlePagination totalPages={totalPages}  />
@@ -96,9 +98,10 @@ const size="4"
 const url = 'https://hoopscript.com/api/articles';
 const payload = { params: { page, size } }
 const response = await axios.get(url, payload);
-
+ 
 
 return  response.data
+
 }
  
 

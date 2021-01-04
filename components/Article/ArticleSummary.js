@@ -8,8 +8,10 @@ import { useState } from 'react';
 import Link from 'next/link'
 import FacebookShareCount from  'react-share'
 import Sm4Videos from '../units/sm4Videos'
+import HyvorTalk from 'hyvor-talk-react'
 
-export default function airs({rafo, spanish , _id, related, details, graf, title, value, cotorra, publishedAt, flow, flowTalk,     ttTitle,  ttdetails, ttname, ttyear, team, href, videoID, images, moment, commentary,  fecha, titulo,  obb,  subtitle, dekk, author, date,player    }){
+
+export default function airs({hyvorId, rafo, spanish , _id, related, details, graf, title, value, cotorra, publishedAt, flow, flowTalk,     ttTitle,  ttdetails, ttname, ttyear, team, href, videoID, images, moment, commentary,  fecha, titulo,  obb,  subtitle, dekk, author, date,player    }){
   const [ lan, setLan ] = useState({
 standard:[{title:title}],
 graf:[{graf:graf, date:date}],
@@ -147,6 +149,24 @@ cotorra1={lan.details[5].cotorra}
 
  
 </div></div>
+ 
+<div className="comment-count-view">
+
+{ /* Comment Counts */ }
+<HyvorTalk.CommentCount 
+  websiteId='1313'
+  id={hyvorId}
+/>
+
+</div>
+
+
+{ /* Load Comments now */ }
+<HyvorTalk.Embed 
+websiteId='1313'
+id={hyvorId}
+/>
+ 
  
 <style jsx>
   {`
