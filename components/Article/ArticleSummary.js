@@ -90,6 +90,13 @@ return <>
   <meta property="twitter:title" content={lan.standard[0].title}></meta>
     <meta name="twitter:image:src" content={`http://i.ytimg.com/vi/${value}/hqdefault.jpg`} />
     <meta property="og:image" content={`http://i.ytimg.com/vi/${value}/hqdefault.jpg`}/>
+    <meta data-rh="true" property="article:tag" content="Basketball, hoops"></meta>
+    <meta data-rh="true" property="article:tag" content="NBA"></meta>
+    <meta data-rh="true" property="article:tag" content="Ballislife"></meta>
+    <meta data-rh="true" property="article:tag" content="slam"></meta>
+    
+   
+    
     
 </Head>
  

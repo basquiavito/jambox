@@ -62,6 +62,15 @@ export default function tophead(){
 
 
     {`
+
+
+
+#log, #logo{
+    margin-right: 10px;
+}
+
+
+
 .rightSide {
   color:  #e41224;
 }
