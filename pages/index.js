@@ -5,7 +5,7 @@ import baseUrl from '../utils/baseUrl'
 import ArticlePagination from '../components/Index/ArticlePagination'
 import Spotlight from '../components/units/spotlight'
 import Head from 'next/head'
-
+import Link from 'next/link'
 
 
 function Articles({ articles, totalPages  }) {
@@ -38,7 +38,15 @@ function Articles({ articles, totalPages  }) {
 
   
 </Head>
- <Spotlight title="Kevin Durant still dope" id="LD_qNB2NTco" /> 
+<Link href="/article?_id=5ff317ed6e6c200fac637b2b" ><a>
+  </a></Link>
+ <Spotlight 
+ title="Stephen Curry 62 Points! Movie" 
+ id="xSs4yUZhb-I" 
+ date="Jan 4, 2021"
+ length="8:24 minutes"
+ graf="Sixty-two, damn. Curry put up 62 points on 31 shots in 36 minutes. It was a Hall of Fame-level performance."
+ /> 
   <br/>
 
  
@@ -84,10 +92,12 @@ function Articles({ articles, totalPages  }) {
 Articles.getInitialProps = async ctx  => {
 const page = ctx.query.page ? ctx.query.page : "1"
 const size="4"
-const url = 'https://hoopscript.com/api/articles';
+const url = 'http://localhost:3000/api/articles';
 const payload = { params: { page, size } }
 const response = await axios.get(url, payload);
-return response.data
+
+
+return  response.data 
 }
  
 

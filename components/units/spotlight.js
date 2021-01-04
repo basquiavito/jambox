@@ -9,11 +9,11 @@ const spotlight = (props) => {
 <td className="spotlightTableContent">
 <a href="" className="spotlightName">{props.title}</a>
 <p className="spotlightMetadata">
-<span className="spotlightYear">2021</span>
-<span className="spotlightMaturity">Reg Season</span>
-<span className="spotlightDuration">4 minutes</span>
+<span className="spotlightYear">{props.date}</span>
+<span className="spotlightMaturity">{props.maturity}</span>
+<span className="spotlightDuration">{props.length}</span>
 </p>
-<p className="spotlightDescription">Decades after the tournament that changed their lives.</p>
+<p className="spotlightDescription">{props.graf}</p>
 
 <div className="spotlightActions">
 <a href="" className="spotlightWatch">
