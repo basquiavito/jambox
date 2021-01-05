@@ -6,13 +6,14 @@ import ArticlePagination from '../components/Index/ArticlePagination'
 import Spotlight from '../components/units/spotlight'
 import Head from 'next/head'
 import Link from 'next/link'
-import HyvorTalk from 'hyvor-talk-react'
+ 
 
 
-function Articles({ articles, totalPages  }) {
+function Articles({ articles, totalPages}) {
+ 
  return <>
 <Head>
-<meta charSet="UTF-8" />
+ <meta charset="UTF-8" />
     <title>Home - Hoopscript</title>
     <meta name="description" content="The young person’s guide to mastering the world of basketball. hooperOS covers the latest in basketball news, stats, highlights, notation, learning, rumors,  and entertainment."/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -37,8 +38,8 @@ function Articles({ articles, totalPages  }) {
       content="The young person’s guide to mastering the world of basketball. hooperOS covers the latest in basketball news, stats, highlights, notation, learning, rumors,  and entertainment."
     />
 
-  
 </Head>
+
 <Link href="https://hoopscript.com/article?_id=5ff317ed6e6c200fac637b2b" >
   <a> <Spotlight 
  title="Stephen Curry 62 Points! Movie" 
@@ -54,15 +55,28 @@ function Articles({ articles, totalPages  }) {
  <div>
   <h2 className="headline">Today's videos</h2>
   </div>
-  <ArticleList articles={articles  } />
 
- 
- <ArticlePagination totalPages={totalPages}  />
+
+  <div className="articles">
+  <ArticleList articles={articles } />
+  </div>
+  <ArticlePagination totalPages={totalPages}  />  
  
 
  <style jsx>
 {`
-
+ 
+  #react-paginate ul {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  #react-paginate li {
+    display: inline-block;
+  }
+  
+ 
 .headline {
    -webkit-text-stroke-color: #ff294c;
    -webkit-text-stroke-width: 1px;
@@ -92,15 +106,14 @@ function Articles({ articles, totalPages  }) {
  </>
  
 }
-Articles.getInitialProps = async ctx  => {
-const page = ctx.query.page ? ctx.query.page : "1"
-const size="4"
-const url = 'https://hoopscript.com/api/articles';
-const payload = { params: { page, size } }
-const response = await axios.get(url, payload);
- 
 
-return  response.data
+Articles.getInitialProps = async ctx  => {
+  const page = ctx.query.page ? ctx.query.page : "1"
+  const size="2"
+const url = 'http://localhost:3000/api/articles';
+  const payload = { params: { page, size } }
+const response = await axios.get(url, payload);
+return     response.data 
 
 }
  
