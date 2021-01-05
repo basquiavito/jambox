@@ -16,7 +16,7 @@ export default function ArticlesList({ articles}) {
      
      }
      
-     return <><Card.Group fluid  textAlign="center"   centered itemsPerRow="2"   items={ mapArticlesToItems(articles)} />
+     return <><Card.Group fluid  textAlign="center"   centered itemsPerRow="2"   items={ mapArticlesToItems(articles.reverse())} />
     
      
     
