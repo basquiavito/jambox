@@ -21,8 +21,8 @@ export default function title(props){
     font-style: normal;
     text-transform: none;
     line-height: 1;
- color: #fff;
- 
+ color: #000;
+ text-align: center;
                }
  
  
@@ -39,8 +39,8 @@ export default function title(props){
     font-weight: 700;
     font-style: normal;
     text-transform: none;
-    text-align: center;
-    color: #fff; 
+    
+    color: #000; 
 }                  
             `}</style>
        

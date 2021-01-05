@@ -1,7 +1,10 @@
-import Wshhtitle from '../../components/units/wshhtitle'
+import Sectiontitle from '../../components/units/sectiontitle'
+import Title from '../../components/units/Title'
 const iframe = (props) => {
     return <>
-<Wshhtitle title={props.title} />
+     <Sectiontitle  title={props.hoopcode}/>
+     <hr/>
+<Title title={props.title} />
 <iframe
  
             title="Youtube"
@@ -14,7 +17,7 @@ const iframe = (props) => {
             webkitallowfullscreen="true"
             mozallowfullscreen="true"
             width="100%"
-            height="350px"
+            height="auto"
          
  
  
@@ -30,14 +33,15 @@ const iframe = (props) => {
           <style jsx>
               {`
              
-           .youtubeContainer {
-      max-height: 250px;
-
-             
-           }
+            
               
+              hr {
+                clear: both;
+                margin: 1rem 0;
+   
               
-              
+                text-align: center;
+              }
               
               `}
           </style>

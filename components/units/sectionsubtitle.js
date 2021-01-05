@@ -18,7 +18,7 @@ export default function Sectionsubitle(props){
     letter-spacing: 1px;
     text-transform: uppercase;
    color: #00788C;
-   margin-bottom: 2rem;
+ 
  
 
  

@@ -1,24 +1,25 @@
-db.articles.insertOne({"href": "/air?_id=5fe7f26694a9f3dede07845d",
-    "value": "dKS83N6kY0A",
-    "title": "RJ Barrett's kill it. 26/11/6 vs Hawks ",
+db.articles.insertOne({
+        
+    "value": "FByo9OW3jYU",
+    "title": "Kyrie Irving works his magic  ",
     "date": "Jan 5, 2021",
-    "graf": "RJ Barrett.",
+    "graf": "PAckage of 7. Ingram has a lethal spin move.",
     "details": [],
     "related": [],
     "spanish": [],
-    "titulo": "",
-    "rafo": "",
-    "hyvorId": "a989"})
+    "titulo": "Una colleccion de elegantes giros por Brandon Ingram",
+    "rafo": "Paquete of 7. Ingran tiene un giro devastador  ",
+    "hyvorId": "0006"
+})
 
-"href": "/air?_id=5fe7f26694a9f3dede07845d",
-    "value": "qQhgjU8OOGM",
-    "title": "Ja Morant ERUPTS For CAREER-HIGH 44 PTS! ",
-    "views": "3,456",
-    "date": "Dec 24, 2020",
-    "graf": "Morant - the reigning rookie of the year -  had 34 of his career-high 44 points in the second half.",
-    "details": [],
-    "related": [],
-    "spanish": [],
-    "titulo": "",
-    "rafo": "",
-    "hyvorId": "a998"
+2
+"value": "YXqb_qZIVcg",
+"title": "Kyrie Irving works his magic  ",
+"date": "Jan 5, 2021",
+"graf": "A sequence of 335 187. A.k.a Pippeniao crosspin layup",
+"details": [],
+"related": [],
+"spanish": [],
+"titulo": "Kyrie Irving trabaj su magia. A.k.a Pippeniao crosspin layup",
+"rafo": "Una secuencia de 335 187.  ",
+"hyvorId": "0001"

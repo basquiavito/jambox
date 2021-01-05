@@ -7,6 +7,7 @@ export default function ArticlesList({ articles}) {
     header: p.title, 
     image:`http://i.ytimg.com/vi/${p.value}/maxresdefault.jpg`,
     childkey: p._id,
+   description: p.hoopcode,
     href:`/article?_id=${p._id}`,
     meta: p.date,
     color:'teal',

@@ -11,7 +11,7 @@ import Sm4Videos from '../units/sm4Videos'
 import HyvorTalk from 'hyvor-talk-react'
 
 
-export default function airs({hyvorId, rafo, spanish , _id, related, details, graf, title, value, cotorra, publishedAt, flow, flowTalk,     ttTitle,  ttdetails, ttname, ttyear, team, href, videoID, images, moment, commentary,  fecha, titulo,  obb,  subtitle, dekk, author, date,player    }){
+export default function airs({hoopcode, hyvorId, rafo, spanish , _id, related, details, graf, title, value, cotorra, publishedAt, flow, flowTalk,     ttTitle,  ttdetails, ttname, ttyear, team, href, videoID, images, moment, commentary,  fecha, titulo,  obb,  subtitle, dekk, author, date,player    }){
   const [ lan, setLan ] = useState({
 standard:[{title:title}],
 graf:[{graf:graf, date:date}],
@@ -117,7 +117,7 @@ return <>
  </div>  
 
  
-<Iframe title={lan.standard[0].title} value={value}/>
+<Iframe hoopcode={hoopcode} title={lan.standard[0].title} value={value}/>
   
 
 <Sm4Videos id={_id}/>
