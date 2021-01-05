@@ -109,7 +109,7 @@ function Articles({ articles, totalPages}) {
 
 Articles.getInitialProps = async ctx  => {
   const page = ctx.query.page ? ctx.query.page : "1"
-  const size="12"
+  const size="6"
 const url = 'https://hoopscript.com/api/articles';
   const payload = { params: { page, size } }
 const response = await axios.get(url, payload);
