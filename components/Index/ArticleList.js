@@ -5,7 +5,7 @@ export default function ArticlesList({ articles}) {
     function mapArticlesToItems(articles){
     return articles.map(p => ({
     header: p.title, 
-    image:`http://i.ytimg.com/vi/${p.value}/hqdefault.jpg`,
+    image:`http://i.ytimg.com/vi/${p.value}/maxresdefault.jpg`,
     childkey: p._id,
    description: p.hoopcode,
     href:`/article?_id=${p._id}`,
