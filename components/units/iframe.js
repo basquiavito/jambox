@@ -3,6 +3,10 @@ import Title from '../../components/units/title'
 const iframe = (props) => {
     return <>
      <Sectiontitle  title={props.hoopcode}/>
+
+     <div className="stringContainer">
+     <p id="strings">{props.string}</p>
+     </div>
      <hr/>
 <Title title={props.title} />
 <iframe
@@ -32,9 +36,27 @@ const iframe = (props) => {
 
           <style jsx>
               {`
-             
-            
-              
+             .stringContainer {
+              display: block;
+              text-align: center;
+              text-transform: Capitalize;
+    font-family: SangBleuRepublic, helvetica, sans-serif;
+    font-style: normal;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(228, 18, 36);
+}
+ 
+   
+              #strings {
+               
+    vertical-align: middle;
+    text-decoration: none;
+    color: rgb(228, 18, 36);
+    text-align: center;
+              }
               hr {
                 clear: both;
                 margin: 1rem 0;
