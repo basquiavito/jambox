@@ -67,7 +67,7 @@ setLoad({showMore: !doesShow})
 
 
 <div className="articles">
-  <ArticleList articles={articles.slice(0,4) } />
+  <ArticleList articles={articles.reserve().slice(0,4) } />
   </div>
  <br/>
 
@@ -78,7 +78,7 @@ setLoad({showMore: !doesShow})
 
 
 { load.showMore ? <div className="articles">
-  <ArticleList articles={articles.slice(4,6) } />
+  <ArticleList articles={articles.reverse().slice(4,6) } />
 </div>: null }
   
  <style jsx>
