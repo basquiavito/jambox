@@ -9,7 +9,7 @@ import Link from 'next/link'
  
 
 
-function Home({ articles, totalPages}) {
+function Home({ articles}) {
  const [ load, setLoad ] = useState({
      showMore: false
  })
@@ -160,7 +160,7 @@ setLoad({showMore: !doesShow})
 }
 Home.getInitialProps = async () => {
     //fetch data on server
-    const url = 'http://localhost:3000/api/articles'
+    const url = 'https://hoopscript.com/api/articles'
      const response = await axios.get(url);
      return { articles : response.data };
 
