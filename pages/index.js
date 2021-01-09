@@ -48,13 +48,13 @@ setLoad({showMore: !doesShow})
 
 </Head>
 
-<Link href="https://hoopscript.com/article?_id=5ff317ed6e6c200fac637b2b" >
+<Link href="https://hoopscript.com/article?_id=5ff94139c8b82212cf0f285c" >
   <a> <Spotlight 
- title="Luka Doncic 's first tripple-double of 2020-21" 
- id="-ThDqz_ecBY" 
- date="Jan 5, 2021"
- length="5:16 minutes"
- graf="Lukamania."
+ title="Stephen Curry Goes OFF" 
+ id="ymM1ic4S_Ys" 
+ date="Jan 9, 2021"
+ length="3:55 minutes"
+ graf="Curry Beat the Clippers."
  /> 
   </a></Link>
 
