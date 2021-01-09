@@ -78,7 +78,7 @@ setLoad({showMore: !doesShow})
 
 
 { load.showMore ? <div className="articles">
-  <ArticleList articles={articles.slice(4,5) } />
+  <ArticleList articles={articles.slice(4,6) } />
 </div>: null }
   
  <style jsx>
