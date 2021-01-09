@@ -6,8 +6,8 @@ import ArticlePagination from '../components/Index/ArticlePagination'
 import Spotlight from '../components/units/spotlight'
 import Head from 'next/head'
 import Link from 'next/link'
- 
-
+ import Sectiontitle from '../components/units/sectiontitle'
+import Socialcards from '../components/units/Socialcard'
 
 function Home({ articles}) {
  const [ load, setLoad ] = useState({
@@ -61,13 +61,15 @@ setLoad({showMore: !doesShow})
 
   <br/>
 
+
  <div>
-  <h2 className="headline">Today's videos</h2>
-  </div>
+ <Sectiontitle title="Latest Airs"/>
+
+  </div> <br/>
 
 
 <div className="articles">
-  <ArticleList articles={articles.reserve().slice(0,4) } />
+  <ArticleList articles={articles.slice(0,8).reverse() } />
   </div>
  <br/>
 
@@ -77,10 +79,24 @@ setLoad({showMore: !doesShow})
  
 
 
-{ load.showMore ? <div className="articles">
-  <ArticleList articles={articles.reverse().slice(4,6) } />
+{ load.showMore ?
+ <div className="articles">
+
+<br/>
+  <ArticleList articles={articles.slice(4,16).reverse() } />
 </div>: null }
-  
+  <hr/><br/>
+<div>
+ <Sectiontitle title="Ball Handling"/>
+
+  </div> <br/>
+<div className="articles">
+  <ArticleList articles={articles.slice(0,8).reverse() } />
+  </div>
+
+  <div className="buttonContainer">
+ <button className="loadMoreContainer" onClick={loadMoreHandler}>Load More</button>
+ </div>
  <style jsx>
 {`
 .buttonContainer {

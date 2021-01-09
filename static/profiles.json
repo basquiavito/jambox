@@ -1,15 +1,34 @@
-db.articles.insertOne({
-        
-    "value": "FByo9OW3jYU",
-    "title": "Kyrie Irving works his magic  ",
+db.articles.updateOne({"_id" : ObjectId("5ff94139c8b82212cf0f285c")},
+... {"$set" : {
+    "value": "ymM1ic4S_Ys",
+    "title": "Stephen Curry GOES OFF To Guide Warriors!",
     "date": "Jan 5, 2021",
-    "graf": "PAckage of 7. Ingram has a lethal spin move.",
+    "graf": "Stephen Curry GOES OFF for 38 PTS, 11 AST, 3 STL & 9 3PM to lead the Warriors over the Clippers. ",
     "details": [],
     "related": [],
     "spanish": [],
-    "titulo": "Una colleccion de elegantes giros por Brandon Ingram",
-    "rafo": "Paquete of 7. Ingran tiene un giro devastador  ",
-    "hyvorId": "0006"
+    "titulo": "Stephen Curry se paso, llevo  a los Warriors a la victoria! ",
+    "rafo": "Stephen Curry se paso con 38 PTS & 11 AST para guiar  a los Warriors a la victoria sobre los Clippers",
+    "hyvorId": "0012",
+    "hoopcode": "Stats",
+    "string": "Outlier"}})
+
+
+
+db.articles.updateOne({
+        
+    "value": "wEbO1IWBPwU",
+    "title": "Lamelo Ball First career Double Double",
+    "date": "Jan 5, 2021",
+    "graf": "Lamelo Ball had 12pts, 10reb, 9ast to help battle back to win on the road",
+    "details": [],
+    "related": [],
+    "spanish": [],
+    "titulo": "Lamelo Ball logra primer doble doble de su carrera ",
+    "rafo": "Lamelo Ball tuvo 12pts, 10reb, 9 ast para ayudar venir desde atras y ganar el partido en la ruta. ",
+    "hyvorId": "0011",
+    "hoopcode": "Stats",
+    "string": "Double Double"
 })
 
 2
