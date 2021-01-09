@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import axios from 'axios'
 import ArticleList from '../components/Index/ArticleList'
 import baseUrl from '../utils/baseUrl'
@@ -9,8 +9,17 @@ import Link from 'next/link'
  
 
 
-function Articles({ articles, totalPages}) {
- 
+function Home({ articles, totalPages}) {
+ const [ load, setLoad ] = useState({
+     showMore: false
+ })
+
+
+
+ const loadMoreHandler = () => {
+const doesShow = load.showMore;
+setLoad({showMore: !doesShow})
+ }
  return <>
 <Head>
  <meta charset="UTF-8" />
@@ -57,14 +66,59 @@ function Articles({ articles, totalPages}) {
   </div>
 
 
-  <div className="articles">
-  <ArticleList articles={articles } />
+<div className="articles">
+  <ArticleList articles={articles.slice(0,4) } />
   </div>
-  <ArticlePagination totalPages={totalPages}  />  
+ <br/>
+
+  <div className="buttonContainer">
+ <button className="loadMoreContainer" onClick={loadMoreHandler}>Load More</button>
+ </div>
  
 
+
+{ load.showMore ? <div className="articles">
+  <ArticleList articles={articles.slice(4,5) } />
+</div>: null }
+  
  <style jsx>
 {`
+.buttonContainer {
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    appearance: none;
+    margin-bottom: 2.25rem;
+    margin-top: 2.25rem;
+}
+.loadMoreContainer {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    padding: 0px 1rem;
+    min-height: 0px;
+    height: 50px;
+    min-width: 2.5rem;
+    transition-property: color, background, border;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+    color: rgb(255, 255, 255);
+    border-color: rgb(33, 33, 33);
+    border-width: 2px;
+    border-style: solid;
+    background-color: rgb(33, 33, 33);
+    text-transform: uppercase;
+    font-family: BatonTurbo, helvetica, sans-serif;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    font-size: 12px;
+    font-weight: 700;
+   
+}
  
   #react-paginate ul {
     display: inline-block;
@@ -98,25 +152,20 @@ function Articles({ articles, totalPages}) {
     font-weight: 700;
     margin-bottom: 14px; 
  }
-
-
 `}
  </style>
  
  </>
  
 }
-
-Articles.getInitialProps = async ctx  => {
-  const page = ctx.query.page ? ctx.query.page : "1"
-  const size="6"
-const url = 'https://hoopscript.com/api/articles';
-  const payload = { params: { page, size } }
-const response = await axios.get(url, payload);
-return    response.data
+Home.getInitialProps = async () => {
+    //fetch data on server
+    const url = 'http://localhost:3000/api/articles'
+     const response = await axios.get(url);
+     return { articles : response.data };
 
 }
  
 
  
-export default Articles;
+export default Home;
