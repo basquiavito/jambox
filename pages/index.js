@@ -7,7 +7,6 @@ import Spotlight from '../components/units/spotlight'
 import Head from 'next/head'
 import Link from 'next/link'
  import Sectiontitle from '../components/units/sectiontitle'
-import Socialcards from '../components/units/Socialcard'
 
 function Home({ articles}) {
  const [ load, setLoad ] = useState({
@@ -69,7 +68,7 @@ setLoad({showMore: !doesShow})
 
 
 <div className="articles">
-  <ArticleList articles={articles.slice(0,8).reverse() } />
+  <ArticleList articles={articles.slice(6,12).reverse() } />
   </div>
  <br/>
 
@@ -83,20 +82,12 @@ setLoad({showMore: !doesShow})
  <div className="articles">
 
 <br/>
-  <ArticleList articles={articles.slice(4,16).reverse() } />
+  <ArticleList articles={articles.slice(0, 6).reverse() } />
 </div>: null }
   <hr/><br/>
-<div>
- <Sectiontitle title="Ball Handling"/>
 
-  </div> <br/>
-<div className="articles">
-  <ArticleList articles={articles.slice(0,8).reverse() } />
-  </div>
 
-  <div className="buttonContainer">
- <button className="loadMoreContainer" onClick={loadMoreHandler}>Load More</button>
- </div>
+ 
  <style jsx>
 {`
 .buttonContainer {
