@@ -48,7 +48,7 @@ setLoad({showMore: !doesShow})
 
 </Head>
 
-<Link href="https://hoopscript.com/article?_id=5ff94139c8b82212cf0f285c" >
+<Link href="https://hoopscript.com/article?_id=5ffa7b9c16f708907e42ea69" >
   <a> <Spotlight 
  title="Stephen Curry Goes OFF" 
  id="ymM1ic4S_Ys" 
@@ -68,7 +68,7 @@ setLoad({showMore: !doesShow})
 
 
 <div className="articles">
-  <ArticleList articles={articles.reverse() } />
+  <ArticleList articles={articles.slice(0,64).reverse() } />
   </div>
  <br/>
 

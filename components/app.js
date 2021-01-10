@@ -30,10 +30,11 @@ const HitComponent = ({ hit }) => (
 
     <div  className="hit">
  <section className="ais-Hits-items">
-      <a className="unit" href={`https://www.hooperos.com/air?_id=${hit._id.$oid}`}>
-  {hit.gem} {hit.playType} 
+      <a className="unit" href={hit.link}>
+  {hit.player} {hit.hoopcode} {hit.team} 
+  <picture>
   <img alt={hit.player} width="100%" height="100%" src={`http://i.ytimg.com/vi/${hit.mediaUrl}/hqdefault.jpg`}></img> 
-
+  </picture>
       </a>   </section>
   <style jsx>
   {`

@@ -1,21 +1,24 @@
-db.articles.updateOne({"_id" : ObjectId("5ff94139c8b82212cf0f285c")},
-... {"$set" : {
+db.articles.insertOne({
+
     "value": "ymM1ic4S_Ys",
-    "title": "Stephen Curry GOES OFF To Guide Warriors!",
-    "date": "Jan 5, 2021",
+    "title": "Stephen Curry 38 Points, 11 Ast",
+    "date": "Jan 9, 2021",
+    "player":"Stephen Curry",
+    "team":"Golden State",
     "graf": "Stephen Curry GOES OFF for 38 PTS, 11 AST, 3 STL & 9 3PM to lead the Warriors over the Clippers. ",
     "details": [],
     "related": [],
     "spanish": [],
-    "titulo": "Stephen Curry se paso, llevo  a los Warriors a la victoria! ",
-    "rafo": "Stephen Curry se paso con 38 PTS & 11 AST para guiar  a los Warriors a la victoria sobre los Clippers",
-    "hyvorId": "0012",
-    "hoopcode": "Stats",
-    "string": "Outlier"}})
+    "titulo": "Stephen Curry 38 Puntos, 11 Ast ",
+    "rafo": "Stephen Curry Se fue en una:  38 PTS, 11 AST, 3 STL & 9 3PM para liderar a los Warriors sobre los Clippers. ",
+    "hyvorId": "002",
+    "hoopcode": "+35 Points",
+    "string":"Outliers"})
 
 
 
-db.articles.updateOne({
+db.articles.updateOne({"_id" : ObjectId("5ff9413bc8b82212cf0f285d")},
+... {"$set" : {
         
     "value": "wEbO1IWBPwU",
     "title": "Lamelo Ball First career Double Double",
@@ -29,16 +32,39 @@ db.articles.updateOne({
     "hyvorId": "0011",
     "hoopcode": "Stats",
     "string": "Double Double"
-})
+}})
 
 2
-"value": "YXqb_qZIVcg",
-"title": "Kyrie Irving works his magic  ",
-"date": "Jan 5, 2021",
-"graf": "A sequence of 335 187. A.k.a Pippeniao crosspin layup",
+db.articles.updateOne({
+
+})
+db.articles.insertOne({
+    "value": "ysdnWSZYtS8",
+    "title": "Lamelo Ball First Career Triple-Double",
+    "date": "Jan 9, 2021",
+    "graf": "22 Pts 12 Reb 11 Ast vs Hawks",
+    "details": [],
+    "related": [],
+    "spanish": [],
+    "titulo": "Lamelo Ball, su primer triple doble.",
+    "rafo": "22 Pts 12 Reb 11 Ast vs Hawks",
+    "hyvorId": "0001"})
+
+
+
+"value": "ysdnWSZYtS8",
+"title": "Lamelo Ball First Career Triple-Double",
+"date": "Jan 9, 2021",
+"graf": "22 Pts 12 Reb 11 Ast vs Hawks",
 "details": [],
 "related": [],
 "spanish": [],
-"titulo": "Kyrie Irving trabaj su magia. A.k.a Pippeniao crosspin layup",
-"rafo": "Una secuencia de 335 187.  ",
+"titulo": "Lamelo Ball, su primer triple doble.",
+"rafo": "22 Pts 12 Reb 11 Ast vs Hawks",
 "hyvorId": "0001"
+
+
+
+db.articles.insertOne({
+
+})
