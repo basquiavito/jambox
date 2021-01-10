@@ -23,7 +23,7 @@ export default function tophead(){
 
 
 <div>
-<Link href="/buscar">
+<Link href="/search">
 <a id="hoopers" href="">
  
   <span className="svgContainer">
