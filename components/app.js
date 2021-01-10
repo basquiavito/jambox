@@ -31,60 +31,33 @@ const HitComponent = ({ hit }) => (
     <div  className="hit">
  <section className="ais-Hits-items">
       <a className="unit" href={hit.link}>
-       
-  <span className="hits">{hit.player}</span>  <span className="hits">{hit.team}</span> <span  >{hit.hoopcode}</span>
-  <picture>
-  <img    alt={hit.player} width="100%" height="100%" src={`http://i.ytimg.com/vi/${hit.mediaUrl}/hqdefault.jpg`}></img> 
-  </picture>
+  {hit.gem} {hit.playType} 
+  <img alt={hit.player} width="100%" height="100%" src={`http://i.ytimg.com/vi/${hit.mediaUrl}/hqdefault.jpg`}></img> 
+
       </a>   </section>
   <style jsx>
   {`
-
-
-.ais-Hits-items {
-  text-align: center;
-  margin-right: 30px;
-}
-.container {
-  text-align: center;
- 
-}
-  .hits {
-    text-align: center;
-    text-transform: none;
-    font-family: SangBleuRepublic, helvetica, sans-serif;
-    font-style: normal;
-    letter-spacing: 0.05em;
-    line-height: 1.5em;
-    font-size: 12px;
-    font-weight: 500;
-    background-color: transparent;
-    color: rgb(228, 18, 36);
-    padding: unset;
-    text-align: center;
-   
-  }
  .hit {
-  text-align: center;
+   
   color: #1d1d1f;
   font-style: normal;
   letter-spacing: -.022em;
   font-weight: 400;
-  
+   display: flex;
    justify-content: center;
    font-family: "Helvetica Neue", helvetica, arial,sans-serif;
    line-height: 1.47059;
  }
- 
+a {
+  display: flex;
+  flex-flow: row wrap;
   text-decoration: none;
   width: 100%;
 }
 a:visited{
     color: black;
 }
- .unit {
-   text-align: center;
- }
+ 
   `
 
   }

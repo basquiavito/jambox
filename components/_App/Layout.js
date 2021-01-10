@@ -15,7 +15,7 @@ return (
         
     
         />  
-        
+        <link rel="stylesheet" href="buscar.css"/>
  </Head>
         
     <nav>

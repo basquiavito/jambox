@@ -7,7 +7,7 @@ import Spotlight from '../components/units/spotlight'
 import Head from 'next/head'
 import Link from 'next/link'
  import Sectiontitle from '../components/units/sectiontitle'
-
+import Buscar from '../components/units/buscar'
 function Home({ articles}) {
  const [ load, setLoad ] = useState({
      showMore: false
@@ -48,6 +48,7 @@ setLoad({showMore: !doesShow})
 
 </Head>
 
+<Buscar />
 <Link href="https://hoopscript.com/article?_id=5ffa7b9c16f708907e42ea69" >
   <a> <Spotlight 
  title="Stephen Curry Goes OFF" 
