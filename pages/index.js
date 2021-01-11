@@ -6,7 +6,8 @@ import qs from 'qs';
 import algoliasearch from 'algoliasearch/lite';
 import { findResultsState } from 'react-instantsearch-dom/server';
 import { Head, App } from '../components';
-
+import Link from 'next/link'
+import Spotlight from '../components/units/spotlight'
 const searchClient = algoliasearch(
   'JJQ6W5JZEV',
   '5fa378bc2862d01482c0b8537c171acc'
@@ -78,39 +79,27 @@ class Page extends Component {
   };
 
   render() {
-    return (
+    return <> 
       <div>
-        <Head>
-     
+        <Head></Head>
+        <div className="title">
+<h1>Trending Basketball</h1>
+</div>
 
-<meta charset="UTF-8" />
-   <title>Home - Hoopscript</title>
-   <meta name="description" content="The young person’s guide to mastering the world of basketball. hooperOS covers the latest in basketball news, stats, highlights, notation, learning, rumors,  and entertainment."/>
- <meta name="viewport" content="width=device-width, initial-scale=1" />
- <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
- <meta name="msapplication-tap-highlight" content="no"/>
- {/* <meta name="google-site-verification" content="3vPt_83gjgDlwNpSwqVFOgiUWnIP-sBphFQVu_wS6q0"/> */}
- <meta name="robots" content="index, follow"/>
- <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
- <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
- <link rel="canonical" href="https://www.hoopscript.com"/>
- <link rel="shortlink" href="https://www.hoopscript.com/" />
- <link rel="dns-prefetch" href="//www.google.com"/>
-<link rel="dns-prefetch" href="//ajax.googleapis.com"/>
-<link rel="dns-prefetch" href="//fonts.googleapis.com"/>
- <meta property="og:locale" content="en_US"/>
- <meta property="og:type" content="website"/>
-   <meta property="og:url" content="https://www.hoopscript.com" />
-   <meta property="og:title" content="" />
- <meta property="og:site_name" content="Hoopscript"/>
-   <meta
-     property="og:description"
-     content="The young person’s guide to mastering the world of basketball. hooperOS covers the latest in basketball news, stats, highlights, notation, learning, rumors,  and entertainment."
-   />
- 
+{/* <p className="image">
+<img src="https://hooperos.s3.us-east-2.amazonaws.com/tables/hoopbanner.jpg" alt="" />
+</p> */}
 
- 
-        </Head>
+<Link href="https://hoopscript.com/article?_id=5ffa7b9c16f708907e42ea69" >
+  <a> <Spotlight 
+ title="Stephen Curry Goes OFF" 
+ id="ymM1ic4S_Ys" 
+ date="Jan 9, 2021"
+ length="3:55 minutes"
+ graf="Curry Beat the Clippers."
+ /> 
+  </a></Link> 
+
         <App
           {...DEFAULT_PROPS}
           searchState={this.state.searchState}
@@ -118,8 +107,42 @@ class Page extends Component {
           onSearchStateChange={this.onSearchStateChange}
           createURL={createURL}
         />
+        
       </div>
-    );
+      <style jsx>
+        {`
+        img {
+          border: 0;
+          vertical-align: top;
+          max-width: 100%;
+        
+        }
+        .image {
+          text-align: center;
+          width: 100%;
+            overflow: hidden;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .title:after {
+          display: block;
+            content: ".";
+            clear: both;
+            font-size: 0;
+            line-height: 0;
+            height: 0;
+            overflow: hidden;
+        }
+        .title {
+          position: relative;
+        }
+        h1 {
+          min-height: 1.3125em;
+        }
+        
+        `}
+      </style>
+    </>;
   }
 }
 
