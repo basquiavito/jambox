@@ -28,10 +28,8 @@ export default function blog({ allPostsData }) {
   return <>
  
 <section style={main} className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className="headline">Blog</h2>
-       
-
-        <h2 className={utilStyles.headingLg}></h2>
+<h2 className="headline">Blog</h2>
+<h2 className={utilStyles.headingLg}></h2>
         <div className="workHorsePosts">
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title, author, image, comment }) => (

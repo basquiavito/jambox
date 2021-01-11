@@ -8,6 +8,12 @@ import Head from 'next/head'
 import Link from 'next/link'
  import Sectiontitle from '../components/units/sectiontitle'
 import Buscar from '../components/units/buscar'
+import searchStyles from '../static/search.module.css'
+
+
+
+
+
 function Home({ articles}) {
  const [ load, setLoad ] = useState({
      showMore: false
@@ -21,6 +27,7 @@ setLoad({showMore: !doesShow})
  }
  return <>
 <Head>
+
  <meta charset="UTF-8" />
     <title>Home - Hoopscript</title>
     <meta name="description" content="The young person’s guide to mastering the world of basketball. hooperOS covers the latest in basketball news, stats, highlights, notation, learning, rumors,  and entertainment."/>
@@ -45,11 +52,11 @@ setLoad({showMore: !doesShow})
       property="og:description"
       content="The young person’s guide to mastering the world of basketball. hooperOS covers the latest in basketball news, stats, highlights, notation, learning, rumors,  and entertainment."
     />
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/reset-min.css" integrity="sha256-t2ATOGCtAIZNnzER679jwcFcKYfLlw01gli6F6oszk8=" crossorigin="anonymous"/>
+ 
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css" integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous"></link>
 </Head>
-
-<Buscar />
-<Link href="https://hoopscript.com/article?_id=5ffa7b9c16f708907e42ea69" >
+{/* <Link href="https://hoopscript.com/article?_id=5ffa7b9c16f708907e42ea69" >
   <a> <Spotlight 
  title="Stephen Curry Goes OFF" 
  id="ymM1ic4S_Ys" 
@@ -57,32 +64,13 @@ setLoad({showMore: !doesShow})
  length="3:55 minutes"
  graf="Curry Beat the Clippers."
  /> 
-  </a></Link>
+  </a></Link> */}
 
   <br/>
 
-
- <div>
- <Sectiontitle title="Latest Airs"/>
-
-  </div> <br/>
+<Buscar />
 
 
-<div className="articles">
-  <ArticleList articles={articles.slice(0,64).reverse() } />
-  </div>
- <br/>
-
-  <div className="buttonContainer">
- <button className="loadMoreContainer" onClick={loadMoreHandler}>Load More</button>
- </div>
- 
-
-
-
-
-
- 
  <style jsx>
 {`
 .buttonContainer {

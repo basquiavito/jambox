@@ -10,13 +10,7 @@
     justify-content: center;
     width: 100%
 }
-input{
-    min-width: 500px;
-    border: none;
-    border-radius: .5em;
-    padding: 15px
 
-}
 .ais-SearchBox-submit{
     width: 100px;
     padding: 15px;
@@ -25,17 +19,9 @@ input{
 .ais-SearchBox-reset{
     display: none
 }
-main{
-    width: 100%;
-}
-ul{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap
-}
-li{
-    list-style-type: none;
-}
+ 
+ 
+ 
 .ais-Hits-item{
     width: 32%;
 }
@@ -54,7 +40,7 @@ li{
     flex-direction: column;
     justify-content: space-between
 }
-.card-title{
+.cardTitle{
     font-weight: bold
 }
 .card-genre > span{
@@ -69,12 +55,8 @@ li{
     justify-content: space-around;
     font-size: 11px
 }
-a{
-    text-decoration: none
-}
-a:visited{
-    color: black;
-}
+ 
+ 
 .ais-Pagination-list{
     display: flex;
     justify-content: center

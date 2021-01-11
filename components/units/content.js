@@ -1,35 +1,39 @@
-export default function content(props){
-    return<>
-<section>
-    <article>
-        <p>{props.contentA}</p>
-        <p>{props.contentB}</p>
-        <p>{props.contentC}</p>
-        <p>{props.contentD}</p>
-    </article>
-</section>
+import { InstantSearch, SearchBox, Hits, Highlight, Stats, SortBy, Pagination } from 'react-instantsearch-dom';
+ import Hit from './hit'
 
-<style jsx>
+const Content = () => {
+    return <>
 
 
-    {`
-  article{
-    font-family: "Roboto",sans-serif;
-    font-size: 18px;
-    text-align: left;
-    padding: 15px 25px 0;
-         
-    }
-    p {
-        line-height: 1.6;
-    text-rendering: optimizeLegibility;
-   
-    
- font-weight: 300;
-        margin: 0 0 .75em;
-   
-    }
-    `}
-</style>
+
+    <main>
+        <div className="information">
+            <div className="stats"> <Stats/> </div>
+           
+        </div>
+        <br/>
+        <div className="hitting">
+        <Hits hitComponent={Hit} />
+        </div>
+        <br/><br/>
+        <div className="ais-Pagination-list"> <Pagination/></div>
+
+       
+    </main>
+    <style jsx>
+        {`
+        .hitting {
+          display: flex;
+          flex-flow: column wrap;
+            min-width: 500px;
+        }
+        
+        
+        
+        `}
+    </style>
     </>
-}
+};
+
+
+export default Content
