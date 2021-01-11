@@ -117,13 +117,7 @@ class Page extends Component {
           max-width: 100%;
         
         }
-        .image {
-          text-align: center;
-          width: 100%;
-            overflow: hidden;
-            margin: 10px 0;
-            text-align: center;
-        }
+         
         .title:after {
           display: block;
             content: ".";

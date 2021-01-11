@@ -23,21 +23,70 @@ const HitComponent = ({ hit }) => (
     <div  className="hit">
  <section className="ais-Hits-items">
       <a className="unit" href={hit.link}>
-      <img alt={hit.player} width="100%" height="100%" src={`http://i.ytimg.com/vi/${hit.mediaUrl}/hqdefault.jpg`}></img> 
+      <img className="imagen" alt={hit.player} width="100%" height="100%" src={`http://i.ytimg.com/vi/${hit.mediaUrl}/hqdefault.jpg`}></img> 
 
-  <h3>{hit.player} {hit.team} {hit.hoopcode}</h3> 
+  <h3>
+  <span className="player">{hit.player}</span><br/> 
+  <span className="team">{hit.team}</span><br/>
+  <span className="gem">{hit.hoopcode}</span> </h3> 
   
 
       </a>   </section>
   <style jsx>
   {`
-
-
+  .player {
+    --type-token-name: discovery.hed-break-out;
+    line-height: 1.29em;
+    letter-spacing: -.013em;
+    font-family: BatonTurbo,helvetica,sans-serif;
+    text-decoration: none;
+    color: #212121;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: none;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    background-color: transparent;
+    cursor: pointer;
+    transition-property: color,background,text-shadow;
+  }
+  .team {
+    text-transform: none;
+    font-family: SangBleuRepublic, helvetica, sans-serif;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 1.33em;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(33, 33, 33);
+     
+    padding: 1rem 0px;
+    text-align: center;
+  }
+.gem {
+  text-transform: none;
+    font-family: SangBleuRepublic, helvetica, sans-serif;
+    font-style: normal;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: transparent;
+    color: rgb(228, 18, 36);
+    padding: unset;
+ 
+    max-width: max-content;
+}
+.imagen {
+  text-align: center;
+  width: 100%;
+}
 h3 {
   font-weight: 600;
   font-size: 1.1666em;
   line-height: 1.2307em;
   margin: 15px 0 10px;
+  padding: unset;
 }
  .hit {
    
@@ -148,16 +197,7 @@ export default class extends React.Component {
  
  
  }
-        .pageGrid{
-          display: grid;
-          -webkit-box-pack: center;
-          justify-content: center;
-          grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
-          grid-row-gap: 30px;}
-          
-          .gridCenter{
-            grid-column: center-start / center-end;
-         }
+       
         
         
         `}
