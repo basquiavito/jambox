@@ -2,31 +2,33 @@ import NextHead from 'next/head';
 import { string } from 'prop-types';
 import React from 'react';
 
-const defaultDescription = 'Encuentra tu jugador favorito';
-const defaultOGURL = 'www.hoopscript.com';
-const defaultOGImage = '';
+
 
 export const Head = props => (
   <NextHead>
-    <meta charSet="UTF-8" />
-    <title>{props.title || ''}</title>
-    <meta
-      name="description"
-      content={props.description || defaultDescription}
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:url" content={props.url || defaultOGURL} />
-    <meta property="og:title" content={props.title || ''} />
-    <meta
-      property="og:description"
-      content={props.description || defaultDescription}
-    />
-    <meta name="twitter:site" content={props.url || defaultOGURL} />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content={props.ogImage || defaultOGImage} />
-    <meta property="og:image" content={props.ogImage || defaultOGImage} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+<meta charset="UTF-8" />
+   <title>Home - Hoopscript</title>
+   <meta name="description" content="The young person’s guide to mastering the world of basketball. hooperOS covers the latest in basketball news, stats, highlights, notation, learning, rumors,  and entertainment."/>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+ <meta name="msapplication-tap-highlight" content="no"/> <meta name="robots" content="index, follow"/>
+ <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+ <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+ <link rel="canonical" href="https://www.hoopscript.com"/>
+ <link rel="shortlink" href="https://www.hoopscript.com/" />
+ <link rel="dns-prefetch" href="//www.google.com"/>
+<link rel="dns-prefetch" href="//ajax.googleapis.com"/>
+<link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+ <meta property="og:locale" content="en_US"/>
+ <meta property="og:type" content="website"/>
+   <meta property="og:url" content="https://www.hoopscript.com" />
+   <meta property="og:title" content="" />
+ <meta property="og:site_name" content="Hoopscript"/>
+   <meta
+     property="og:description"
+     content="The young person’s guide to mastering the world of basketball. hooperOS covers the latest in basketball news, stats, highlights, notation, learning, rumors,  and entertainment."
+   />
+ 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.0.0/themes/algolia-min.css"
