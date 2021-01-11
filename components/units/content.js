@@ -28,7 +28,7 @@ const Content = () => {
         .hitting {
     
           
-       overflow-x: scroll;
+    display: flex;
  
  
 min-width: 500px;

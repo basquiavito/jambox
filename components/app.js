@@ -18,35 +18,41 @@ import Link from 'next/link'
 const HitComponent = ({ hit }) => (
 
   <div   className="container">
-<head>
-<link
-   async
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.0.0/themes/algolia-min.css"
-     ></link> 
 
-
-</head>
 
     <div  className="hit">
  <section className="ais-Hits-items">
       <a className="unit" href={hit.link}>
-  {hit.gem} {hit.playType} 
-  <img alt={hit.player} width="100%" height="100%" src={`http://i.ytimg.com/vi/${hit.mediaUrl}/hqdefault.jpg`}></img> 
+      <img alt={hit.player} width="100%" height="100%" src={`http://i.ytimg.com/vi/${hit.mediaUrl}/hqdefault.jpg`}></img> 
+
+  <h3>{hit.player} {hit.team} {hit.hoopcode}</h3> 
+  
 
       </a>   </section>
   <style jsx>
   {`
+
+
+h3 {
+  font-weight: 600;
+  font-size: 1.1666em;
+  line-height: 1.2307em;
+  margin: 15px 0 10px;
+}
  .hit {
    
-  color: #1d1d1f;
+
   font-style: normal;
-  letter-spacing: -.022em;
+ 
   font-weight: 400;
    display: flex;
    justify-content: center;
    font-family: "Helvetica Neue", helvetica, arial,sans-serif;
    line-height: 1.47059;
+ 
+   margin: 0 auto;
+   position: relative;
+   text-align: center;
  }
 a {
   display: flex;
@@ -86,7 +92,7 @@ export default class extends React.Component {
 
   render() {
     return <>
-
+ 
       <InstantSearch
         searchClient={this.props.searchClient}
         resultsState={this.props.resultsState}
@@ -97,7 +103,7 @@ export default class extends React.Component {
         onSearchParameters={this.props.onSearchParameters}
         {...this.props}
       ><br/>
-        <Configure hitsPerPage={10} />
+        <Configure hitsPerPage={12} />
 <main>
            <div className="searchBox">
 
@@ -126,13 +132,16 @@ export default class extends React.Component {
 
       <style jsx>
         {`
-main {
-  max-width: 38rem;
-  padding: 1.5rem;
-  margin: auto;
-}
         .results {
           text-align: center;
+        
+          width: 100%;
+          
+          flex-flow: row wrap;
+          display: flex;
+ 
+ 
+      
         }
  .searchBox {
  

@@ -1,0 +1,27 @@
+ .card-image{
+          text-align: center;
+      }
+.cardContent {
+    max-width: 196px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+      
+          h3 {
+            font-weight: 600;
+            font-size: 1.1666em;
+            line-height: 1.2307em;
+            margin: 15px 0 10px;
+          }
+   
+      .card {
+         display: flex;
+         flex-flow: row wrap;
+      
+     
+      }
+      a:visited{
+        color: black;
+    }
+      

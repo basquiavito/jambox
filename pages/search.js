@@ -84,6 +84,9 @@ class Page extends Component {
           <title>
             Search
           </title>
+     
+
+ 
         </Head>
         <App
           {...DEFAULT_PROPS}
