@@ -31,6 +31,7 @@ main {
        
   tex-align: center;
 min-width: 700px;
+min-height: 700px;
         
         }
         

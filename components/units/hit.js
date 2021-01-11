@@ -24,6 +24,9 @@ const Hit = ({ hit }) => {
 </section>
     <style jsx>
       {`
+      .card-image{
+          text-align: center;
+      }
 .cardContent {
     max-width: 196px;
     margin: 0 auto;

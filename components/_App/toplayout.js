@@ -94,7 +94,7 @@ svg {
     transition: opacity .3s ease-in-out;
     justify-content: space-between;
     height: 41px;
- background-color: ;
+ background-color: rgb(255 255 100);
     width: 100%;
    color:  rgb(255 255 255); 
     justify-content: space-between;
