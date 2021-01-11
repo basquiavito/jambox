@@ -22,17 +22,18 @@ const Content = () => {
     </main>
     <style jsx>
         {`
-main {
-  
-}
+ 
          
  
         .hitting {
-       
-  tex-align: center;
-min-width: 700px;
-min-height: 700px;
-        
+    
+          
+       overflow-x: scroll;
+ 
+ 
+min-width: 500px;
+ 
+ 
         }
         
         

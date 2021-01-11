@@ -2,8 +2,7 @@
 
 const Hit = ({ hit }) => {
     return <>
-<section>
-
+ 
     <a href={hit.link} >
         <div  className="card">
 
@@ -21,7 +20,7 @@ const Hit = ({ hit }) => {
  
 </div>
 </a>
-</section>
+ 
     <style jsx>
       {`
       .card-image{
@@ -42,7 +41,8 @@ const Hit = ({ hit }) => {
           }
    
       .card {
-         
+         display: flex;
+         flex-flow: row wrap;
       
      
       }
@@ -51,7 +51,6 @@ const Hit = ({ hit }) => {
     }
       
  
-     
       
       
       `}  
