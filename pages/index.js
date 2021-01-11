@@ -90,7 +90,7 @@ class Page extends Component {
 <img src="https://hooperos.s3.us-east-2.amazonaws.com/tables/hoopbanner.jpg" alt="" />
 </p> */}
 
-<Link href="https://hoopscript.com/article?_id=5ffa7b9c16f708907e42ea69" >
+<Link href="https://hoopscript.com/article?_id=5ffa9cccfeaebf363eaf659d" >
   <a> <Spotlight 
  title="Lamelo Ball" 
  id="bMzpGpSUqWE" 
