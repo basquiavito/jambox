@@ -35,7 +35,7 @@ const Hit = ({ hit }) => {
 }
       
           h3 {
-            font-weight: 400;
+            font-weight: 600;
             font-size: 1.1666em;
             line-height: 1.2307em;
             margin: 15px 0 10px;
