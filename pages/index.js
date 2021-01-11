@@ -56,7 +56,18 @@ setLoad({showMore: !doesShow})
  
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css" integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous"></link>
 </Head>
-{/* <Link href="https://hoopscript.com/article?_id=5ffa7b9c16f708907e42ea69" >
+ 
+
+  <br/>
+  <div className="title">
+<h1>Trending Basketball</h1>
+</div>
+
+<p className="image">
+<img src="https://hooperos.s3.us-east-2.amazonaws.com/tables/hoopbanner.jpg" alt="" />
+</p>
+
+<Link href="https://hoopscript.com/article?_id=5ffa7b9c16f708907e42ea69" >
   <a> <Spotlight 
  title="Stephen Curry Goes OFF" 
  id="ymM1ic4S_Ys" 
@@ -64,15 +75,42 @@ setLoad({showMore: !doesShow})
  length="3:55 minutes"
  graf="Curry Beat the Clippers."
  /> 
-  </a></Link> */}
-
+  </a></Link>  
   <br/>
-
 <Buscar />
 
 
  <style jsx>
 {`
+img {
+  border: 0;
+  vertical-align: top;
+  max-width: 100%;
+
+}
+.image {
+  text-align: center;
+  width: 100%;
+    overflow: hidden;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.title:after {
+  display: block;
+    content: ".";
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+}
+.title {
+  position: relative;
+}
+h1 {
+  min-height: 1.3125em;
+}
 .buttonContainer {
     text-align: center;
     text-decoration: none;

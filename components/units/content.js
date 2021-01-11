@@ -22,10 +22,17 @@ const Content = () => {
     </main>
     <style jsx>
         {`
+main {
+  
+}
+         
+ 
         .hitting {
           display: flex;
-          flex-flow: column wrap;
-            min-width: 500px;
+          flex-flow: row wrap;
+          justify-content: center;
+            min-width: 700px;
+            scroll-
         }
         
         

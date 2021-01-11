@@ -17,7 +17,7 @@ const searchClient = algoliasearch(
 function Search() {
  
 
-    return (
+    return <>
  
         < InstantSearch searchClient={searchClient} indexName="profiles" >
             <HitHeader />
@@ -25,7 +25,17 @@ function Search() {
                 <Content/>
             </div>
         </InstantSearch >
-    );        
+        <style jsx>
+            {`
+         .body-content {
+       
+            
+         }
+            
+            
+            `}
+        </style>
+    </>;        
 };
  
  

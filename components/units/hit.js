@@ -2,7 +2,7 @@
 
 const Hit = ({ hit }) => {
     return <>
-
+<section>
 
     <a href={hit.link} >
         <div  className="card">
@@ -15,18 +15,31 @@ const Hit = ({ hit }) => {
             </div>
 
  <div   className="cardContent">
- <p  className="">{hit.player}<br/>{hit.team}<br/>{hit.hoopcode}</p>
+ <h3  className="">{hit.player}<br/>{hit.team}<br/>{hit.hoopcode}</h3>
 
  </div>
  
 </div>
 </a>
- 
+</section>
     <style jsx>
       {`
+.cardContent {
+    max-width: 196px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+      
+          h3 {
+            font-weight: 400;
+            font-size: 1.1666em;
+            line-height: 1.2307em;
+            margin: 15px 0 10px;
+          }
+   
       .card {
-          display: flex;
-          flex-flow: column wrap;
+         
       
      
       }
