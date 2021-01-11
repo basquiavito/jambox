@@ -92,11 +92,11 @@ class Page extends Component {
 
 <Link href="https://hoopscript.com/article?_id=5ffa7b9c16f708907e42ea69" >
   <a> <Spotlight 
- title="Stephen Curry Goes OFF" 
- id="ymM1ic4S_Ys" 
+ title="Lamelo Ball" 
+ id="bMzpGpSUqWE" 
  date="Jan 9, 2021"
- length="3:55 minutes"
- graf="Curry Beat the Clippers."
+ length="4:44 minutes"
+ graf="Lamelo Ball first tripple Double."
  /> 
   </a></Link> 
 

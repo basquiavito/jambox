@@ -28,7 +28,7 @@ const spotlight = (props) => {
 
 <div className="spotlightBackground">
 <div className={`${'spotlightGradient'} ${'backgroundFill'}`}></div>
-<img className={`${'spotlightStill'} ${'spotlightFill'}`} src={`https://img.youtube.com/vi/${props.id}/maxresdefault.jpg`} alt={props.title} alt="">
+<img className={`${'spotlightStill'} ${'spotlightFill'}`} src={`https://img.youtube.com/vi/${props.id}/maxresdefault.jpg`} alt={props.title} >
 
 </img>
 </div>
