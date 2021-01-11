@@ -1,5 +1,5 @@
 import React from 'react';
- 
+import LazyLoad from 'react-lazyload';
 import PropTypes from 'prop-types';
 import {
   RefinementList,
@@ -23,7 +23,9 @@ const HitComponent = ({ hit }) => (
     <div  className="hit">
  <section className="ais-Hits-items">
       <a className="unit" href={hit.link}>
-      <img className="imagen" alt={hit.player} width="100%" height="100%" src={`http://i.ytimg.com/vi/${hit.mediaUrl}/hqdefault.jpg`}></img> 
+      <LazyLoad>
+      <img className="imagen" alt={hit.player} width="100%" height="100%" src={`http://i.ytimg.com/vi/${hit.mediaUrl}/hqdefault.jpg`}></img>       
+      </LazyLoad>
 
   <h3>
   <span className="player">{hit.player}</span><br/> 
@@ -152,7 +154,7 @@ export default class extends React.Component {
         onSearchParameters={this.props.onSearchParameters}
         {...this.props}
       ><br/>
-        <Configure hitsPerPage={12} />
+        <Configure hitsPerPage={8} />
 <main>
            <div className="searchBox">
 
