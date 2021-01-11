@@ -28,11 +28,10 @@ main {
          
  
         .hitting {
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: center;
-            min-width: 700px;
-            scroll-
+       
+  tex-align: center;
+min-width: 700px;
+        
         }
         
         
