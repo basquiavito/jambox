@@ -8,11 +8,7 @@ import { findResultsState } from 'react-instantsearch-dom/server';
 import { Head, App } from '../components';
 import Link from 'next/link'
 import Spotlight from '../components/units/spotlight'
-import Video from '../components/units/mediaUrlFull'
-import mediaUrlFull from '../components/units/mediaUrlFull';
-import Mixtape from '../components/units/mixtape'
-import Sectiontitle from '../components/units/sectiontitle'
-const searchClient = algoliasearch(
+    const searchClient = algoliasearch(
   'JJQ6W5JZEV',
   '5fa378bc2862d01482c0b8537c171acc'
 );
