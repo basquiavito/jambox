@@ -175,8 +175,38 @@ class Page extends Component {
   />
 </section>
   <section>
-<h3>Step back</h3>
-  <Mixtape/>
+<h3>Connectors</h3>
+  <Mixtape
+  latest1Title="031 Utep Two Step      " 
+  latest1="YD3wOwJvmIw"
+  
+  latest2Title="013 Smoke    " 
+  latest2="s5rh63zbcyE"
+  
+  latest3Title="022 Ducking    " 
+  latest3="s5rh63zbcyE"
+
+  latest4Title="011 Double Cross    " 
+  latest4="s5rh63zbcyE"
+
+  latest5Title="518 Rep    " 
+  latest5="s5rh63zbcyE"
+
+  latest6Title="343 Jake     " 
+  latest6="s5rh63zbcyE"
+
+  latest7Title="434 Enroque    " 
+  latest7="s5rh63zbcyE"
+
+  latest8Title="131 Hardening    " 
+  latest8="s5rh63zbcyE"
+
+  latest8Title="313 Utop    " 
+  latest8="s5rh63zbcyE"
+  
+  
+  
+  />
   </section>
 <section>
   <h3>Pull Ups</h3>
