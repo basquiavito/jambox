@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Video from '../units/video'
 import LazyLoad from 'react-lazy-load';
-import MediaUrlFull from './mediaUrlFull'
+import ImageHolder from './imageHolder'
 
 export default function mixtapeunit(props){
     return<>
@@ -10,7 +10,7 @@ export default function mixtapeunit(props){
  <div  className="mixtapeCard" >
      
 <LazyLoad>
-<MediaUrlFull mediaUrl={`http://i.ytimg.com/vi/${props.mediaUrl}/hqdefault.jpg`}/>
+<ImageHolder mediaUrl={`http://i.ytimg.com/vi/${props.mediaUrl}/hqdefault.jpg`}/>
 </LazyLoad></div>
 
 <div className="mixtapeCardInfo">

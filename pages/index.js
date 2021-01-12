@@ -112,7 +112,7 @@ class Page extends Component {
           createURL={createURL}
         />
         
-      </div>
+      </div><br/>
       <style jsx>
         {`
         img {
@@ -140,8 +140,12 @@ class Page extends Component {
         
         `}
       </style>
- 
-  <Mixtape 
+ <div id="id">
+
+   <section>
+<h2>Crossovers</h2>
+
+  <Mixtape  
   latest1Title="LaMelo Ball 8 Pts 7 Ast 14 Reb      " 
   latest1="YD3wOwJvmIw"
   
@@ -160,7 +164,30 @@ class Page extends Component {
   latest6Title="CJ McCollum Hits GAME-WINNER!    " 
   latest6="s5rh63zbcyE"
   />
- 
+</section>
+  <section>
+<h2>Step back</h2>
+  <Mixtape/>
+  </section>
+<section>
+  <h2>Pull Ups</h2>
+  <Mixtape/>
+  </section>
+<section>
+  <h2>Turnaround, Fadeaway</h2>
+  <Mixtape/>
+
+  </section>
+  </div>
+ <style jsx>
+   {`
+   h2 {
+     margin-bottom: 0;
+   }
+   section{ margin-bottom: 2rem;
+   
+   `}
+ </style>
     </>;
   }
 }
