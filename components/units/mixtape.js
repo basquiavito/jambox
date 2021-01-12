@@ -37,8 +37,16 @@ title={props.latest6Title}
 mediaUrl={props.latest6}
  />
  
+ <Mixtapeunit 
+title={props.latest7Title}
+mediaUrl={props.latest7}
+ />
 
 
+<Mixtapeunit 
+title={props.latest8Title}
+mediaUrl={props.latest8}
+ />
 
 
 

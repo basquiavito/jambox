@@ -11,7 +11,7 @@ import Spotlight from '../components/units/spotlight'
 import Video from '../components/units/mediaUrlFull'
 import mediaUrlFull from '../components/units/mediaUrlFull';
 import Mixtape from '../components/units/mixtape'
-
+import Sectiontitle from '../components/units/sectiontitle'
 const searchClient = algoliasearch(
   'JJQ6W5JZEV',
   '5fa378bc2862d01482c0b8537c171acc'
@@ -141,28 +141,37 @@ class Page extends Component {
         `}
       </style>
  <div id="id">
-
+<Sectiontitle title="Pick Up League Ready"></Sectiontitle> <br/>
    <section>
-<h3>Crossovers</h3>
+<h3>Diamonds </h3>
 
   <Mixtape  
-  latest1Title="LaMelo Ball 8 Pts 7 Ast 14 Reb      " 
+  latest1Title="801 Pop Cross      " 
   latest1="YD3wOwJvmIw"
   
-  latest2Title="CJ McCollum Hits GAME-WINNER!    " 
+  latest2Title="802 Pop Back    " 
   latest2="s5rh63zbcyE"
   
-  latest3Title="CJ McCollum Hits GAME-WINNER!    " 
+  latest3Title="803 Pop 'Tween    " 
   latest3="s5rh63zbcyE"
 
-  latest4Title="CJ McCollum Hits GAME-WINNER!    " 
+  latest4Title="804 Pop Reverse    " 
   latest4="s5rh63zbcyE"
 
-  latest5Title="CJ McCollum Hits GAME-WINNER!    " 
+  latest5Title="805 POPIAO    " 
   latest5="s5rh63zbcyE"
 
-  latest6Title="CJ McCollum Hits GAME-WINNER!    " 
+  latest6Title="806 Step-Back Grit    " 
   latest6="s5rh63zbcyE"
+
+  latest7Title="807 Spin Grit    " 
+  latest7="s5rh63zbcyE"
+
+  latest8Title="808 Stride     " 
+  latest8="s5rh63zbcyE"
+
+  latest8Title="809 ShammGod    " 
+  latest8="s5rh63zbcyE"
   />
 </section>
   <section>
@@ -175,6 +184,18 @@ class Page extends Component {
   </section>
 <section>
   <h3>Turnaround, Fadeaway</h3>
+  <Mixtape/>
+
+  </section>
+
+  <section>
+  <h3>Nice Layups</h3>
+  <Mixtape/>
+
+  </section>
+
+  <section>
+  <h3>Dunks, Alley Oops</h3>
   <Mixtape/>
 
   </section>
