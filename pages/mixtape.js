@@ -1,5 +1,4 @@
 <div id="id">
-<Sectiontitle title="Pick Up League Ready"></Sectiontitle> <br/>
    <section>
 <h3>Diamonds </h3>
 
