@@ -60,10 +60,21 @@ export default function mixtapeunit(props){
     }
  
  .mixtapeCardInfo {
-    font-family: Tiempos,Serif!important;
-    font-weight: 400; 
-    font-size: 16px;
-    line-height: 20px;  
+    --type-token-name: discovery.hed-break-out;
+    line-height: 1.29em;
+    letter-spacing: -.013em;
+    font-family: BatonTurbo,helvetica,sans-serif;
+    text-decoration: none;
+    color: #212121;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: none;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    background-color: transparent;
+    cursor: pointer;
+    
+    transition-property: color,background,text-shadow;
  }
  
  

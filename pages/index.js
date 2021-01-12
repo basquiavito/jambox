@@ -143,7 +143,7 @@ class Page extends Component {
  <div id="id">
 
    <section>
-<h2>Crossovers</h2>
+<h3>Crossovers</h3>
 
   <Mixtape  
   latest1Title="LaMelo Ball 8 Pts 7 Ast 14 Reb      " 
@@ -166,26 +166,28 @@ class Page extends Component {
   />
 </section>
   <section>
-<h2>Step back</h2>
+<h3>Step back</h3>
   <Mixtape/>
   </section>
 <section>
-  <h2>Pull Ups</h2>
+  <h3>Pull Ups</h3>
   <Mixtape/>
   </section>
 <section>
-  <h2>Turnaround, Fadeaway</h2>
+  <h3>Turnaround, Fadeaway</h3>
   <Mixtape/>
 
   </section>
   </div>
  <style jsx>
    {`
-   h2 {
+   h3 {
      margin-bottom: 0;
+     color: rgb(228, 18, 36);
    }
    section{ margin-bottom: 2rem;
    
+    h
    `}
  </style>
     </>;
