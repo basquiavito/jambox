@@ -1,6 +1,5 @@
 import Mixtapeunit from './mixtapeunit'
-import Link from 'next/link'
-import Title from './title'
+
 export default function mixtape(props){
     return<>
  

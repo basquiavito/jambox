@@ -145,7 +145,7 @@ class Page extends Component {
    }
    section{ margin-bottom: 2rem;
    
-    h
+   }
    `}
  </style>
     </>;
