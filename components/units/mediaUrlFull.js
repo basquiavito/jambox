@@ -49,8 +49,8 @@ function mediaUrlFull(props) {
         background-Position:center center;
         background-Repeat: repeat-x;
         background-Image:url(${props.mediaUrl});
-        margin-Bottom:2rem;
-        margin-Top: 1rem;
+       
+        margin-Top: 2rem;
 }
 :not(svg) {
     transform-origin: 0px 0px;

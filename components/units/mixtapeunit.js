@@ -1,24 +1,22 @@
 import Link from 'next/link'
 import Video from '../units/video'
 import LazyLoad from 'react-lazy-load';
-
+import MediaUrlFull from './mediaUrlFull'
 
 export default function mixtapeunit(props){
     return<>
 
 <div className={`${'gridElement'} ${'elementThird'} `}>
  <div  className="mixtapeCard" >
+     
 <LazyLoad>
-<Video videoId={props.videoId}/>
-</LazyLoad>
+<MediaUrlFull mediaUrl={`http://i.ytimg.com/vi/${props.mediaUrl}/hqdefault.jpg`}/>
+</LazyLoad></div>
+
 <div className="mixtapeCardInfo">
-<strong>{props.title}</strong>
- 
+ <h3>{props.title}</h3> </div> 
+
 </div>
-    
- 
-    
-    </div> </div>
 
 
     <style jsx>
@@ -26,7 +24,10 @@ export default function mixtapeunit(props){
 
    {`
    
-   
+   .mixtapeCard  {
+       width: 161px;
+      
+   }
  
 
 .mixtapeCard{
@@ -53,13 +54,16 @@ export default function mixtapeunit(props){
 
     }
     .elementThird{
-        min-width: 230px;
+        min-width: 161px;
+      
+    
     }
  
- .mixtapeCardInfo h3 {
- 
-    font-size: 1.313rem;
-    display: inline;
+ .mixtapeCardInfo {
+    font-family: Tiempos,Serif!important;
+    font-weight: 400; 
+    font-size: 16px;
+    line-height: 20px;  
  }
  
  

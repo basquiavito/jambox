@@ -10,31 +10,31 @@ export default function mixtape(props){
   
 <Mixtapeunit 
 title={props.latest1Title} 
-videoId={props.latest1}
+mediaUrl={props.latest1}
  
  
 />
 <Mixtapeunit 
 title={props.latest2Title}
-videoId={props.latest2}
+mediaUrl={props.latest2}
  
  />
 <Mixtapeunit
  title={props.latest3Title} 
- videoId={props.latest3}
+ mediaUrl={props.latest3}
  
   />
 <Mixtapeunit
  title={props.latest4Title} 
-videoId={props.latest4} 
+ mediaUrl={props.latest4} 
  />
 <Mixtapeunit
  title={props.latest5Title}
-videoId={props.latest5} 
+ mediaUrl={props.latest5} 
  />
 <Mixtapeunit 
 title={props.latest6Title}
-videoId={props.latest6}
+mediaUrl={props.latest6}
  />
  
 
@@ -53,7 +53,7 @@ videoId={props.latest6}
 
     display: flex;
   
-    overflow-x: scroll;
+    overflow-x:auto;
 
 }
 

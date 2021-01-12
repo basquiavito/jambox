@@ -8,6 +8,10 @@ import { findResultsState } from 'react-instantsearch-dom/server';
 import { Head, App } from '../components';
 import Link from 'next/link'
 import Spotlight from '../components/units/spotlight'
+import Video from '../components/units/mediaUrlFull'
+import mediaUrlFull from '../components/units/mediaUrlFull';
+import Mixtape from '../components/units/mixtape'
+
 const searchClient = algoliasearch(
   'JJQ6W5JZEV',
   '5fa378bc2862d01482c0b8537c171acc'
@@ -136,6 +140,27 @@ class Page extends Component {
         
         `}
       </style>
+ 
+  <Mixtape 
+  latest1Title="LaMelo Ball 8 Pts 7 Ast 14 Reb      " 
+  latest1="YD3wOwJvmIw"
+  
+  latest2Title="CJ McCollum Hits GAME-WINNER!    " 
+  latest2="s5rh63zbcyE"
+  
+  latest3Title="CJ McCollum Hits GAME-WINNER!    " 
+  latest3="s5rh63zbcyE"
+
+  latest4Title="CJ McCollum Hits GAME-WINNER!    " 
+  latest4="s5rh63zbcyE"
+
+  latest5Title="CJ McCollum Hits GAME-WINNER!    " 
+  latest5="s5rh63zbcyE"
+
+  latest6Title="CJ McCollum Hits GAME-WINNER!    " 
+  latest6="s5rh63zbcyE"
+  />
+ 
     </>;
   }
 }
