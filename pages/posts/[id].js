@@ -62,26 +62,7 @@ export default function Post({ postData }) {
   </span>
 </div>
 <br/>
- <div>
  
-
-       <div className="comment-count-view">
-
-         { /* Comment Counts */ }
-         <HyvorTalk.CommentCount 
-           websiteId='1313'
-           id={postData.id}
-         />
-
-       </div>
-
-
-       { /* Load Comments now */ }
-       <HyvorTalk.Embed 
-         websiteId='1313'
-         id={postData.id}
-       />
-     </div>
 </article>
 
 </main>
