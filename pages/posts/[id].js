@@ -5,7 +5,7 @@ import Byline from '../../components/units/byline'
 import utilStyles from '../../static/layout.module.css'
 import HyvorTalk from 'hyvor-talk-react'
 import ImageHolder from '../../components/units/imageHolder'
-import Wshhtitle from '../../components/units/wshhtitle'
+import Title from '../../components/units/title'
  
 
   const main = {
@@ -41,7 +41,7 @@ export default function Post({ postData }) {
       </Head>
       <article>
 
-      <Wshhtitle title={postData.title} />
+      <Title title={postData.title} />
       <ImageHolder
         mediaUrl=  {postData.image}
         alt="Picture of the player"
