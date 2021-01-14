@@ -1,16 +1,23 @@
 
 import Link from 'next/link';
 import LazyLoad from 'react-lazy-load';
+import Image from 'next/image'
 
 function editorialMedia(props){
 return(
         <>
 
  <div  className="pageGridFull">
-      <LazyLoad>
+         <Image
+         src={props.mediaUrl}
+         alt=""
+         width='auto'
+         height="auto"
+         />
+      {/* <LazyLoad>
 <div className="imageContainer" data-visible="true">
 <noscript>{props.mediaUrl}</noscript>
-</div></LazyLoad> 
+</div></LazyLoad>  */}
  </div>
 
         <style jsx>

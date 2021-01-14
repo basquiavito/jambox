@@ -7,7 +7,7 @@ import algoliasearch from 'algoliasearch/lite';
 import { findResultsState } from 'react-instantsearch-dom/server';
 import { Head, App } from '../components';
 import Link from 'next/link'
-
+import Image from 'next/image'
 
 import Gembox from '../components/units/gembox'
 import Spotlight from '../components/units/spotlight'
@@ -92,6 +92,7 @@ class Page extends Component {
 {/* <p className="image">
 <img src="https://hooperos.s3.us-east-2.amazonaws.com/tables/hoopbanner.jpg" alt="" />
 </p> */}
+
 
 <Link href="https://hoopscript.com/article?_id=5ffa9cccfeaebf363eaf659d" >
   <a> <Spotlight 

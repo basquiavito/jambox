@@ -1,18 +1,18 @@
 db.articles.insertOne({
-    "value": "aWzKbDo2OJ4",
-    "title": "Allen Iverson Crossover Blueprint",
+    "value": "xjUoYkgB5Mc",
+    "title": "Grant Hill Makes a SICK CROSSOVER on Pippen and Slam on Him",
     "date": "Jan 13, 2021",
-    "player": "Allen Iverson",
-    "team": "76ers",
-    "graf": "Blueprint",
+    "player": "Tyreke Evans ",
+    "team": "Pelicans",
+    "graf": "King of the In and Out",
     "details": [],
     "related": [],
     "spanish": [],
-    "titulo": "Allen Iverson Crossover Blueprint",
-    "rafo": "Blueprint.",
+    "titulo": "Tyreke Evans In-and-Out OMG! ",
+    "rafo": "King of the In and Out",
     "hyvorId": "002",
-    "hoopcode": "130 / 180",
-    "string": "in-and-out + behind  + step back"})
+    "hoopcode": "058",
+    "string": "crossover + in and out + first step"})
 
 
 

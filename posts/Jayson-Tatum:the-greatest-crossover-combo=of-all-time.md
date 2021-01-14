@@ -2,7 +2,7 @@
 title: "Jayson Tatum: The Greatest crossover combo of all time"
 date: 'Jan 14, 2021'
 author: 'Basquiavito'
-image: 'http://i.ytimg.com/vi/QDx42F09jJ0/hqdefault.jpg'
+image: 'https://res.cloudinary.com/www-hoopscript-com/image/upload/c_mfit,q_auto:best,w_1200/v1610665347/tatums_y1mvaj.jpg'
 comment: 'Tatum did a crazy combo crossover sequence. '
 affiliation: '80F4 518 6G$'
 ---

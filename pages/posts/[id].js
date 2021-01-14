@@ -7,7 +7,7 @@ import HyvorTalk from 'hyvor-talk-react'
 import ImageHolder from '../../components/units/imageHolder'
 import Title from '../../components/units/title'
  import Sectiontitle from '../../components/units/sectiontitle'
-
+import Image from 'next/image'
   const main = {
   
  
@@ -42,8 +42,8 @@ export default function Post({ postData }) {
       <article>
 
       <Title title={postData.title} />
-      <ImageHolder
-        mediaUrl=  {postData.image}
+      <Image
+        src={postData.image}
         alt="Picture of the player"
         width="100%"
         height="auto"
