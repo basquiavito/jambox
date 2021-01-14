@@ -6,7 +6,7 @@ import utilStyles from '../../static/layout.module.css'
 import HyvorTalk from 'hyvor-talk-react'
 import ImageHolder from '../../components/units/imageHolder'
 import Title from '../../components/units/title'
- 
+ import Sectiontitle from '../../components/units/sectiontitle'
 
   const main = {
   
@@ -57,7 +57,8 @@ export default function Post({ postData }) {
 
  <div className="content" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
  
-
+<Sectiontitle title={postData.affiliation} />
+<br/>
  <div>
  
 
