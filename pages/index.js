@@ -7,6 +7,9 @@ import algoliasearch from 'algoliasearch/lite';
 import { findResultsState } from 'react-instantsearch-dom/server';
 import { Head, App } from '../components';
 import Link from 'next/link'
+
+
+import Gembox from '../components/units/gembox'
 import Spotlight from '../components/units/spotlight'
     const searchClient = algoliasearch(
   'JJQ6W5JZEV',
@@ -108,7 +111,11 @@ class Page extends Component {
           createURL={createURL}
         />
         
-      </div><br/>
+      </div>
+      <br/>
+     
+      
+      <br/>
       <style jsx>
         {`
         img {

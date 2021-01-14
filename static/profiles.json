@@ -1,70 +1,134 @@
 db.articles.insertOne({
-
-    "value": "ymM1ic4S_Ys",
-    "title": "Stephen Curry 38 Points, 11 Ast",
-    "date": "Jan 9, 2021",
-    "player":"Stephen Curry",
-    "team":"Golden State",
-    "graf": "Stephen Curry GOES OFF for 38 PTS, 11 AST, 3 STL & 9 3PM to lead the Warriors over the Clippers. ",
+    "value": "aWzKbDo2OJ4",
+    "title": "Allen Iverson Crossover Blueprint",
+    "date": "Jan 13, 2021",
+    "player": "Allen Iverson",
+    "team": "76ers",
+    "graf": "Blueprint",
     "details": [],
     "related": [],
     "spanish": [],
-    "titulo": "Stephen Curry 38 Puntos, 11 Ast ",
-    "rafo": "Stephen Curry Se fue en una:  38 PTS, 11 AST, 3 STL & 9 3PM para liderar a los Warriors sobre los Clippers. ",
+    "titulo": "Allen Iverson Crossover Blueprint",
+    "rafo": "Blueprint.",
     "hyvorId": "002",
-    "hoopcode": "+35 Points",
-    "string":"Outliers"})
+    "hoopcode": "130 / 180",
+    "string": "in-and-out + behind  + step back"})
 
 
 
-db.articles.updateOne({"_id" : ObjectId("5ff9413bc8b82212cf0f285d")},
-... {"$set" : {
-        
-    "value": "wEbO1IWBPwU",
-    "title": "Lamelo Ball First career Double Double",
-    "date": "Jan 5, 2021",
-    "graf": "Lamelo Ball had 12pts, 10reb, 9ast to help battle back to win on the road",
-    "details": [],
-    "related": [],
-    "spanish": [],
-    "titulo": "Lamelo Ball logra primer doble doble de su carrera ",
-    "rafo": "Lamelo Ball tuvo 12pts, 10reb, 9 ast para ayudar venir desde atras y ganar el partido en la ruta. ",
-    "hyvorId": "0011",
-    "hoopcode": "Stats",
-    "string": "Double Double"
-}})
-
-2
-db.articles.updateOne({
-
-})
-db.articles.insertOne({
-    "value": "ysdnWSZYtS8",
-    "title": "Lamelo Ball First Career Triple-Double",
-    "date": "Jan 9, 2021",
-    "graf": "22 Pts 12 Reb 11 Ast vs Hawks",
-    "details": [],
-    "related": [],
-    "spanish": [],
-    "titulo": "Lamelo Ball, su primer triple doble.",
-    "rafo": "22 Pts 12 Reb 11 Ast vs Hawks",
-    "hyvorId": "0001"})
 
 
 
-"value": "ysdnWSZYtS8",
-"title": "Lamelo Ball First Career Triple-Double",
-"date": "Jan 9, 2021",
-"graf": "22 Pts 12 Reb 11 Ast vs Hawks",
-"details": [],
-"related": [],
-"spanish": [],
-"titulo": "Lamelo Ball, su primer triple doble.",
-"rafo": "22 Pts 12 Reb 11 Ast vs Hawks",
-"hyvorId": "0001"
+[
+    {
+    "player": "Lebron James",
+    "team": "Lakers",
+    "hoopcode": "Shooting",
+    "date": "Jan 13, 2021",
+    "link": "https://hoopscript.com/article?_id=5fff9636707ad80ad30e42b1",
+    "mediaUrl": "0Pmu1Gph-ko"
+  },
+  {
+    "player": "James Harden",
+    "team": "Rockets",
+    "hoopcode": "131",
+    "date": "Jan 13, 2021",
+    "link": "https://hoopscript.com/article?_id=5fff6689707ad80ad30e42ad",
+    "mediaUrl": "y_LcvY8l5O0"
+  }
+]
+  {
+    "player": "Kevin Durant",
+    "team": "Nets",
+    "hoopcode": "181",
+    "date": "Jan 13, 2021",
+    "link": "https://hoopscript.com/article?_id=5fff5c4f266996a629af6c3a",
+    "mediaUrl": "cFej02W6r2Q"
+  },
+]
+  {
+    "player": "D' Angelo Russell",
+    "team": "Timberwolf",
+    "hoopcode": "803",
+    "date": "Jan 13, 2021",
+    "link": "https://hoopscript.com/article?_id=5fff3e2c911749ccd1882e63",
+    "mediaUrl": "38p1dfTe0oM"
+  },
+
+  {
+    "player": "Kevin Durant",
+    "team": "OKC",
+    "hoopcode": "80PTA",
+    "date": "Jan 13, 2021",
+    "link": "https://hoopscript.com/article?_id=5fff36fa911749ccd1882e62",
+    "mediaUrl": "eEMjS52JD2A"
+  },
+
+  {
+    "player": "Jayson Tatum",
+    "team": "Celtics",
+    "hoopcode": "451",
+    "date": "Jan 13, 2021",
+    "link": "https://hoopscript.com/article?_id=5fff3664911749ccd1882e61",
+    "mediaUrl": "leKjRJbKpcY"
+  },
+
+  {
+    "player": "Jayson Tatum",
+    "team": "Celtics",
+    "hoopcode": "286",
+    "date": "Jan 13, 2021",
+    "link": "https://hoopscript.com/article?_id=5fff35f6911749ccd1882e60",
+    "mediaUrl": "v3birZZ3OgI"
+  },
+
+  {
+    "player": "Kawhi Leonard",
+    "team": "Clippers",
+    "hoopcode": "343",
+    "date": "Jan 13, 2021",
+    "link": "https://hoopscript.com/article?_id=5fff3580911749ccd1882e5f",
+    "mediaUrl": "xJ3RCv0piqs"
+  },
+
+  {
+    "player": "Andrew Wiggings",
+    "team": "Timberwolf",
+    "hoopcode": "807",
+    "date": "Jan 13, 2021",
+    "link": "https://hoopscript.com/article?_id=5fff34d7911749ccd1882e5e",
+    "mediaUrl": "00HynwZo5Iw"
+  },
+
+  {
+    "player": "Trae Young",
+    "team": "Hawks",
+    "hoopcode": "807",
+    "date": "Jan 13, 2021",
+    "link": "https://hoopscript.com/article?_id=5fff3481911749ccd1882e5d",
+    "mediaUrl": "USAzNyNGAe8"
+  },
+
+  {
+    "player": "Shai Gilgeous Alexander",
+    "team": "OKC",
+    "hoopcode": "804",
+    "date": "Jan 13, 2021",
+    "link": "https://hoopscript.com/article?_id=5fff33a2911749ccd1882e5c",
+    "mediaUrl": "I6NpDrL8_Do"
+  },
+
+  {
+    "player": "Dennis Schroder",
+    "team": "OKC",
+    "hoopcode": "804",
+    "date": "Jan 13, 2021",
+    "link": "https://hoopscript.com/article?_id=5fff3341911749ccd1882e5b",
+    "mediaUrl": "LzJBlbT8U_c"
+  }
+
+]
 
 
 
-db.articles.insertOne({
 
-})
