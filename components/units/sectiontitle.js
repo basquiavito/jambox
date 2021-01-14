@@ -20,7 +20,7 @@ return(
  
 }
 .sectionTitle{
-    color: #000;
+    color: #fff;
     font-size: 2.75rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -28,7 +28,7 @@ return(
     text-align: center;
     letter-spacing: 2px;
     grid-column: grid-start / grid-end;
-    margin-bottom: 8px;;
+    margin-bottom: 8px;
 }
 
 
