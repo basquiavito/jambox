@@ -42,13 +42,17 @@ export default function Post({ postData }) {
       <article>
 
       <Title title={postData.title} />
+      <div className="imageContainer" >
+<picture>
+   
       <Image
         src={postData.image}
         alt="Picture of the player"
-        width="100%"
-        height="auto"
+        width="310px"
+        height="310px"
       />
-  
+      </picture>
+     </div>
 
       <Byline author={postData.author} date={postData.date}/>
          
@@ -69,6 +73,11 @@ export default function Post({ postData }) {
 
 <style jsx>
     {`
+
+
+.imageContainer {
+  text-align: center;
+}
 .section {
   align-self: center;
     justify-self: center;
@@ -146,7 +155,11 @@ export default function Post({ postData }) {
 
     }
  
-  
+  article {
+    max-width: 38rem;
+  padding: 1.5rem;
+  margin: auto; 
+  }
     `}
 </style>
     </ >
