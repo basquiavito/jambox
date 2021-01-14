@@ -10,7 +10,7 @@ affiliation: '80F4 518 6G$'
 How dare I say this is the best **crossover** combo ever? What about [Iverson crosses Michael Jordan ](https://hoopscript.com/article?_id=6000bd012a0623ace6a703dd), or [ Stephen Curry dropping Chris Paul ](https://hoopscript.com/article?_id=6000bd5e2a0623ace6a703de) twice. Perhaps the step back by [James Harden over Ricky Rubio](https://hoopscript.com/article?_id=6000bdbf2a0623ace6a703df). We have many great options but you have to know and recognize this blueprint by *Jason Tatum*.  
 
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/leKjRJbKpcY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 
