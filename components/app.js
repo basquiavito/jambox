@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import LazyLoad from 'react-lazyload';
 import PropTypes from 'prop-types';
 import {
@@ -14,45 +14,42 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Card } from "semantic-ui-react";
 
+class App extends Component {
+  render(){
+    return  <>
+ 
 
+    </>
+  }
+}
 
 
 const HitComponent = ({ hit }) => (
 
-  <div   className="container">
-
-
-    <div  className="hit">
- <section className="ais-Hits-items">
-      <a className="unit" href={hit.link}>
-      <div className="imageContainer" >
+<div className="container">
+<div className="hit">
+<section className="ais-Hits-items">
+<a className="unit" href={hit.link}>
+<div className="imageContainer" >
 <picture className="">
-   
-      <Image
-        src={hit.mediaUrl}
-        alt={`A photo of ${hit.player}`}
-        width="100px"
-        height="100px"
-        className="imagen"
-        
-      />
-      </picture>
-     </div>
-  
-  
-
+<Image
+src={hit.mediaUrl}
+alt={`A photo of ${hit.player}`}
+width="100%"
+height="auto"
+ 
+className="imagen"
+/></picture></div>
   <h3>
   <span className="player">{hit.player}</span><br/> 
   <span className="team">{hit.team}</span><br/>
-  <span className="gem">{hit.hoopcode}</span> </h3> 
-  
-
-      </a>   </section>
+  <span className="gem">{hit.hoopcode}</span> 
+  </h3> </a>   
+</section>
 
       
   <style jsx>
   {`
-
  
   .player {
     --type-token-name: discovery.hed-break-out;
@@ -95,19 +92,17 @@ const HitComponent = ({ hit }) => (
     color: rgb(228, 18, 36);
     padding: unset;
  
-    max-width: max-content;
+ 
 }
-.imagen {
-  text-align: center;
-  width: 100%;
-  border: 1px solid green;
-}
+ 
 h3 {
   font-weight: 600;
   font-size: 1.1666em;
   line-height: 1.2307em;
   margin: 15px 0 10px;
-  padding: unset;
+ 
+ 
+  
 }
  .hit {
  
@@ -120,15 +115,17 @@ h3 {
    font-family: "Helvetica Neue", helvetica, arial,sans-serif;
    line-height: 1.47059;
  
-   margin: 0 auto;
+   margin: 0px;
    position: relative;
+   
    text-align: center;
  }
 a {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   text-decoration: none;
-  width: 100%;
+ 
+ 
 }
 a:visited{
     color: black;
@@ -207,7 +204,20 @@ export default class extends React.Component {
 
       <style jsx>
         {`
+
+
+ 
+        .results,  .searchBox. {
+          
+            max-width: 38rem;
+            padding: 1.5rem;
+            margin: auto; 
+            
+            
     
+      
+        }
+ 
        
         
         

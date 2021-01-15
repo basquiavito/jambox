@@ -1,6 +1,6 @@
 import { Card } from 'semantic-ui-react'
 import TimeAgo from 'react-timeago'
- 
+import 'semantic-ui-css/semantic.min.css'
  
 export default function ArticlesList({ articles}) {
     function mapArticlesToItems(articles){
@@ -20,7 +20,9 @@ export default function ArticlesList({ articles}) {
      }
      
      return <>
-    
+    <head>
+
+    </head>
      <Card.Group fluid  textAlign="center"   centered itemsPerRow="2"   items={ mapArticlesToItems(articles)} />
     
      

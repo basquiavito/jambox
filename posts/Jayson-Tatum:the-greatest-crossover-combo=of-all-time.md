@@ -7,7 +7,7 @@ comment: 'Tatum did a crazy combo crossover sequence. '
 affiliation: '80F4 518 6G$'
 ---
 
-How dare I say this is the best **crossover** combo ever? What about [Iverson crosses Michael Jordan ](https://hoopscript.com/article?_id=6000bd012a0623ace6a703dd), or [ Stephen Curry dropping Chris Paul ](https://hoopscript.com/article?_id=6000bd5e2a0623ace6a703de) twice. Perhaps the step back by [James Harden over Ricky Rubio](https://hoopscript.com/article?_id=6000bdbf2a0623ace6a703df). We have many great options but you have to know and recognize this blueprint by *Jason Tatum*.  
+Believe me when I say that this is the best **crossover** combo ever. The may refute my thesis with lines like:  What about [Iverson crosses Michael Jordan ](https://hoopscript.com/article?_id=6000bd012a0623ace6a703dd), or [ Stephen Curry dropping Chris Paul ](https://hoopscript.com/article?_id=6000bd5e2a0623ace6a703de) twice. Perhaps the step back by [James Harden over Ricky Rubio](https://hoopscript.com/article?_id=6000bdbf2a0623ace6a703df). We have many great options but you have to know and recognize this blueprint by *Jason Tatum*.  
 
 
 

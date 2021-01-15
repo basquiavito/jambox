@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 
 const Hit = ({ hit }) => {
     return <>
@@ -6,12 +6,15 @@ const Hit = ({ hit }) => {
     <a href={hit.link} >
         <div  className="card">
 
-            <div className="card-image">
-               
-            
-            <img loading="lazy" alt={hit.player} width="100px" height="100px" src={`http://i.ytimg.com/vi/${hit.mediaUrl}/hqdefault.jpg`}></img>
- 
-            </div>
+        <div className="imageContainer" >
+<picture className="">
+<Image
+src={hit.mediaUrl}
+alt={`A photo of ${hit.player}`}
+width="250px"
+height="250px"
+className="imagen"
+/></picture></div>
 
  <div   className="cardContent">
  <h3  className="">{hit.player}<br/>{hit.team}<br/>{hit.hoopcode}</h3>
@@ -31,6 +34,7 @@ const Hit = ({ hit }) => {
     margin: 0 auto;
     position: relative;
     text-align: center;
+ 
 }
       
           h3 {
@@ -43,13 +47,15 @@ const Hit = ({ hit }) => {
       .card {
          display: flex;
          flex-flow: row wrap;
-      
+      justify-content: center;
      
       }
       a:visited{
         color: black;
     }
-      
+      a {
+        text-decoration: none;
+      }
  
       
       

@@ -13,9 +13,9 @@ return (
     </nav>  
 
     <body>
- <Container  text style={{ paddingTop: "1em" }}>
+ 
         {children}
-      </Container>
+ 
       </body>
  <footer>
 <Footer />
