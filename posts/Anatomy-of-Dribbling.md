@@ -2,7 +2,7 @@
 title: "Anatomy of Dribbling"
 date: 'Jan 03, 2021'
 author: 'Richard Clemons'
-image: 'https://hooperos.s3.us-east-2.amazonaws.com/tables/AIcrossMJ.jpg'
+image: 'https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610669340/AIcrossMJ_bmteuq.jpg'
 comment: 'Introduction to basketball dribbling. '
 ---
 
