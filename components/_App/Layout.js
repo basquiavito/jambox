@@ -13,9 +13,9 @@ return (
     </nav>  
 
     <body>
- 
+ <Container>
         {children}
- 
+        </Container>
       </body>
  <footer>
 <Footer />
