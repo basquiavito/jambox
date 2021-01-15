@@ -1,6 +1,7 @@
 import App from "next/app";
 import Layout from '../components/_App/Layout'
- 
+import "tailwindcss/tailwind.css";
+
  
  
 class MyApp extends App {

@@ -3,7 +3,6 @@ import Head from "next/head";
  import Footer from './Footer2'
 import { Container } from "semantic-ui-react";
 
-
 function Layout({ children }) {
   
 return (

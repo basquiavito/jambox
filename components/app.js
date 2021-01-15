@@ -11,6 +11,7 @@ import {
   InstantSearch,
 } from 'react-instantsearch-dom';
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 
@@ -23,9 +24,21 @@ const HitComponent = ({ hit }) => (
     <div  className="hit">
  <section className="ais-Hits-items">
       <a className="unit" href={hit.link}>
-      <LazyLoad>
-      <img className="imagen" alt={hit.player} width="100%" height="100%" src={`http://i.ytimg.com/vi/${hit.mediaUrl}/hqdefault.jpg`}></img>       
-      </LazyLoad>
+      <div className="imageContainer" >
+<picture>
+   
+      <Image
+        src={hit.mediaUrl}
+        alt={`A photo of ${hit.player}`}
+        width="100%"
+        height="100%"
+        className="imagen"
+        
+      />
+      </picture>
+     </div>
+  
+  
 
   <h3>
   <span className="player">{hit.player}</span><br/> 
