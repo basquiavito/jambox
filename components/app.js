@@ -12,6 +12,7 @@ import {
 } from 'react-instantsearch-dom';
 import Link from 'next/link'
 import Image from 'next/image'
+import { Card } from "semantic-ui-react";
 
 
 
@@ -25,7 +26,7 @@ const HitComponent = ({ hit }) => (
  <section className="ais-Hits-items">
       <a className="unit" href={hit.link}>
       <div className="imageContainer" >
-<picture className="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
+<picture className="">
    
       <Image
         src={hit.mediaUrl}
@@ -47,8 +48,12 @@ const HitComponent = ({ hit }) => (
   
 
       </a>   </section>
+
+      
   <style jsx>
   {`
+
+ 
   .player {
     --type-token-name: discovery.hed-break-out;
     line-height: 1.29em;
@@ -105,7 +110,7 @@ h3 {
   padding: unset;
 }
  .hit {
-   
+ 
 
   font-style: normal;
  
@@ -202,20 +207,7 @@ export default class extends React.Component {
 
       <style jsx>
         {`
-        .results {
-          
-            max-width: 38rem;
-            padding: 1.5rem;
-            margin: auto; 
-            
     
-      
-        }
- .searchBox {
- 
- 
- 
- }
        
         
         

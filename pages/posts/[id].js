@@ -8,6 +8,11 @@ import ImageHolder from '../../components/units/imageHolder'
 import Title from '../../components/units/title'
  import Sectiontitle from '../../components/units/sectiontitle'
 import Image from 'next/image'
+import { Card } from "semantic-ui-react";
+
+
+
+
   const main = {
   
  

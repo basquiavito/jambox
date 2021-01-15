@@ -136,25 +136,20 @@ class Page extends Component {
         }
         .title {
           position: relative;
+          text-align: center;
+          margin-bottom: 0;
         }
         h1 {
           min-height: 1.3125em;
         }
-        
+        h3 {
+          margin-bottom: 0;
+          color: rgb(228, 18, 36);
+        }
         `}
       </style>
  
- <style jsx>
-   {`
-   h3 {
-     margin-bottom: 0;
-     color: rgb(228, 18, 36);
-   }
-   section{ margin-bottom: 2rem;
-   
-   }
-   `}
- </style>
+ 
     </>;
   }
 }

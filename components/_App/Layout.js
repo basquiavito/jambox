@@ -7,28 +7,20 @@ function Layout({ children }) {
   
 return (
 <>
- <Head>
-
- </Head>
         
     <nav>
     <Toplayout />
     </nav>  
+
+    <body>
  <Container  text style={{ paddingTop: "1em" }}>
         {children}
       </Container>
+      </body>
  <footer>
 <Footer />
  </footer>
- <style jsx>
-   {`
 
- 
-  
-   
-   
-   `}
- </style>
 </>)
 }
 
