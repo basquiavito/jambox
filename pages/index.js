@@ -1,74 +1,157 @@
-import React, {useState} from 'react'
-import axios from 'axios'
-import ArticleList from '../components/Index/ArticleList'
-import baseUrl from '../utils/baseUrl'
-import ArticlePagination from '../components/Index/ArticlePagination'
-import Spotlight from '../components/units/spotlight'
-import Head from 'next/head'
+import { isEqual } from 'lodash';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import { withRouter } from 'next/router';
+import qs from 'qs';
+import algoliasearch from 'algoliasearch/lite';
+import { findResultsState } from 'react-instantsearch-dom/server';
+import { Head, App } from '../components';
 import Link from 'next/link'
- import Sectiontitle from '../components/units/sectiontitle'
-import Buscar from '../components/units/buscar'
-import searchStyles from '../static/search.module.css'
+ import Spotlight from '../components/units/spotlight'
+    const searchClient = algoliasearch(
+  'JJQ6W5JZEV',
+  '5fa378bc2862d01482c0b8537c171acc'
+);
 
+const updateAfter = 700;
 
+const createURL = state => `?${qs.stringify(state)}`;
 
+const pathToSearchState = path =>
+  path.includes('?') ? qs.parse(path.substring(path.indexOf('?') + 1)) : {};
 
+const searchStateToURL = searchState =>
+  searchState ? `${window.location.pathname}?${qs.stringify(searchState)}` : '';
 
-function Home({ articles}) {
- const [ load, setLoad ] = useState({
-     showMore: false
- })
+const DEFAULT_PROPS = {
+  searchClient,
+  indexName: 'profiles',
+};
 
+class Page extends Component {
+  static propTypes = {
+    router: PropTypes.object.isRequired,
+    resultsState: PropTypes.object,
+    searchState: PropTypes.object,
+  };
 
+  state = {
+    searchState: this.props.searchState,
+    lastRouter: this.props.router,
+  };
 
- const loadMoreHandler = () => {
-const doesShow = load.showMore;
-setLoad({showMore: !doesShow})
- }
- return <>
-<Head>
+  static async getInitialProps({ asPath }) {
+    const searchState = pathToSearchState(asPath);
+    const resultsState = await findResultsState(App, {
+      ...DEFAULT_PROPS,
+      searchState,
+    });
 
- <meta charset="UTF-8" />
-    <title>Home - Hoopscript</title>
-    <meta name="description" content="The young person’s guide to mastering the world of basketball. hooperOS covers the latest in basketball news, stats, highlights, notation, learning, rumors,  and entertainment."/>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-  <meta name="msapplication-tap-highlight" content="no"/>
-  {/* <meta name="google-site-verification" content="3vPt_83gjgDlwNpSwqVFOgiUWnIP-sBphFQVu_wS6q0"/> */}
-  <meta name="robots" content="index, follow"/>
-  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-  <link rel="canonical" href="https://www.hoopscript.com"/>
-  <link rel="shortlink" href="https://www.hoopscript.com/" />
-  <link rel="dns-prefetch" href="//www.google.com"/>
-<link rel="dns-prefetch" href="//ajax.googleapis.com"/>
-<link rel="dns-prefetch" href="//fonts.googleapis.com"/>
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://www.hoopscript.com" />
-    <meta property="og:title" content="" />
-  <meta property="og:site_name" content="Hoopscript"/>
-    <meta
-      property="og:description"
-      content="The young person’s guide to mastering the world of basketball. hooperOS covers the latest in basketball news, stats, highlights, notation, learning, rumors,  and entertainment."
-    />
+    return {
+      resultsState,
+      searchState,
+    };
+  }
 
-</Head>
+  static getDerivedStateFromProps(props, state) {
+    if (!isEqual(state.lastRouter, props.router)) {
+      return {
+        searchState: pathToSearchState(props.router.asPath),
+        lastRouter: props.router,
+      };
+    }
+
+    return null;
+  }
+
+  onSearchStateChange = searchState => {
+    clearTimeout(this.debouncedSetState);
+
+    this.debouncedSetState = setTimeout(() => {
+      const href = searchStateToURL(searchState);
+
+      this.props.router.push(href, href, {
+        shallow: true,
+      });
+    }, updateAfter);
+
+    this.setState({ searchState });
+  };
+
+  render() {
+    return <> 
+    <head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css" integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous"/>
+
+    </head>
+      <div>
+     
+        <div className="title">
+<h1>Trending Basketball</h1>
+</div>
+
  
 
- <ArticleList articles={articles} />
+{/* <Link href="https://hoopscript.com/article?_id=5ffa9cccfeaebf363eaf659d" >
+  <a> <Spotlight 
+ title="Lamelo Ball" 
+ id="bMzpGpSUqWE" 
+ date="Jan 9, 2021"
+ length="4:44 minutes"
+ graf="Lamelo Ball first tripple Double."
+ /> 
+  </a></Link>  */}
 
- </>
+        <App
+          {...DEFAULT_PROPS}
+          searchState={this.state.searchState}
+          resultsState={this.props.resultsState}
+          onSearchStateChange={this.onSearchStateChange}
+          createURL={createURL}
+        />
+        
+      </div>
+      <br/>
+     
+      
+      <br/>
+      <style jsx>
+        {`
+        img {
+          border: 0;
+          vertical-align: top;
+          max-width: 100%;
+        
+        }
+         
+        .title:after {
+          display: block;
+            content: ".";
+            clear: both;
+            font-size: 0;
+            line-height: 0;
+            height: 0;
+            overflow: hidden;
+        }
+        .title {
+          position: relative;
+          text-align: center;
+          margin-bottom: 0;
+        }
+        h1 {
+          min-height: 1.3125em;
+        }
+        h3 {
+          margin-bottom: 0;
+          color: rgb(228, 18, 36);
+        }
+        `}
+      </style>
  
+ 
+    </>;
+  }
 }
-Home.getInitialProps = async () => {
-    //fetch data on server
-    const url = 'https://hoopscript.com/api/articles'
-     const response = await axios.get(url);
-     return { articles : response.data.reverse() };
 
-}
- 
-
- 
-export default Home;
+export default withRouter(Page);
