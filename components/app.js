@@ -75,6 +75,14 @@ class App extends Component {
 
 function Hit(props) {
   return <>
+  <head>
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"
+    />
+    <link rel="stylesheet" href="./static/algolia.css" />
+    <link rel="stylesheet" href="./static/index.css" />
+  </head>
     <div>
       <Link href={props.hit.link}><a>
     <div className="imageContainer" >
