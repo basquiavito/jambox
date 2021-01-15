@@ -25,13 +25,13 @@ const HitComponent = ({ hit }) => (
  <section className="ais-Hits-items">
       <a className="unit" href={hit.link}>
       <div className="imageContainer" >
-<picture>
+<picture className="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
    
       <Image
         src={hit.mediaUrl}
         alt={`A photo of ${hit.player}`}
-        width="100%"
-        height="100%"
+        width="100px"
+        height="100px"
         className="imagen"
         
       />
@@ -95,6 +95,7 @@ const HitComponent = ({ hit }) => (
 .imagen {
   text-align: center;
   width: 100%;
+  border: 1px solid green;
 }
 h3 {
   font-weight: 600;
@@ -127,7 +128,12 @@ a {
 a:visited{
     color: black;
 }
- 
+ .container{
+  max-width: 38rem;
+  padding: 1.5rem;
+  margin: auto; 
+  
+ }
   `
 
   }
@@ -197,14 +203,12 @@ export default class extends React.Component {
       <style jsx>
         {`
         .results {
-          text-align: center;
-        
-          width: 100%;
           
-          flex-flow: row wrap;
-          display: flex;
- 
- 
+            max-width: 38rem;
+            padding: 1.5rem;
+            margin: auto; 
+            
+    
       
         }
  .searchBox {

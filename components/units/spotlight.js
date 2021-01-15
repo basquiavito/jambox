@@ -172,6 +172,10 @@ span {
         padding-left: 20px;
         padding-right: 20px;
     }}
+
+    #spotlight {
+        width: 90vw;
+    }
 `}    
 </style>
     </>

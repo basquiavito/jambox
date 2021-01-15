@@ -7,10 +7,7 @@ import algoliasearch from 'algoliasearch/lite';
 import { findResultsState } from 'react-instantsearch-dom/server';
 import { Head, App } from '../components';
 import Link from 'next/link'
-import Image from 'next/image'
-
-import Gembox from '../components/units/gembox'
-import Spotlight from '../components/units/spotlight'
+ import Spotlight from '../components/units/spotlight'
     const searchClient = algoliasearch(
   'JJQ6W5JZEV',
   '5fa378bc2862d01482c0b8537c171acc'
@@ -83,18 +80,21 @@ class Page extends Component {
 
   render() {
     return <> 
+    <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/reset-min.css" integrity="sha256-t2ATOGCtAIZNnzER679jwcFcKYfLlw01gli6F6oszk8=" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css" integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous"/>
+
+    </head>
       <div>
-        <Head></Head>
+     
         <div className="title">
 <h1>Trending Basketball</h1>
 </div>
 
-{/* <p className="image">
-<img src="https://hooperos.s3.us-east-2.amazonaws.com/tables/hoopbanner.jpg" alt="" />
-</p> */}
+ 
 
-
-<Link href="https://hoopscript.com/article?_id=5ffa9cccfeaebf363eaf659d" >
+{/* <Link href="https://hoopscript.com/article?_id=5ffa9cccfeaebf363eaf659d" >
   <a> <Spotlight 
  title="Lamelo Ball" 
  id="bMzpGpSUqWE" 
@@ -102,7 +102,7 @@ class Page extends Component {
  length="4:44 minutes"
  graf="Lamelo Ball first tripple Double."
  /> 
-  </a></Link> 
+  </a></Link>  */}
 
         <App
           {...DEFAULT_PROPS}

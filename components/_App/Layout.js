@@ -24,9 +24,7 @@ return (
    {`
 
  
-   nav {
-     margin-bottom: 2rem;
-   }
+  
    
    
    `}
