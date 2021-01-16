@@ -57,7 +57,7 @@ class App extends Component {
             <ClearRefinements />
             <h2>Players</h2>
             <RefinementList attribute="player"  />
-            <Configure hitsPerPage={8} />
+            <Configure hitsPerPage={16} />
           </div>
       
           <div style={rightPanel}>
