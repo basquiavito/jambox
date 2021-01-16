@@ -38,16 +38,19 @@ const rightPanel = {
 
 
 const hitName=  {
-  marginBottom: '0.5em'
+color: 'rgb(228, 18, 36) '
 }
 
+const hitNamex=  {
+  color: 'rgb(18, 18, 18)',
+  fontWeight: 600
+   
+  }
 
 const hitDescription = {
-  color: '#888',
-    fontSize: '14px',
-    marginBottom: '0.5em',
-    fontSize: '19px',
-    lineHeight:'28px'
+  fontSize: '19px',
+  lineHeight:'28px',
+
 
   
 }
@@ -102,14 +105,12 @@ height="100px"
 className="imagen"
 />
  </picture></div>
-      <div className="team" style={hitName} className="name"  >
-        <Highlight className="team" attribute="name" hit={props.hit} />
+      <div  style={hitNamex} className="team"  >
+        <Highlight  attribute="player" hit={props.hit} />
       </div>
-      <div className="team" style={ hitDescription } >
-        <Highlight attribute="player" hit={props.hit} />
-      </div>
+
       <div className="team">{props.hit.team}</div>
-      <div className="team">{props.hit.hoopcode}</div>
+      <div className="team" style={hitName}>{props.hit.hoopcode}</div>
       </a></Link>
     </div>
     
@@ -125,7 +126,7 @@ className="imagen"
     font-size: 19px;
     line-height: 28px;
     margin-top: 8px; // The vertical offset pushing the text down
-    // Extra line between the paragraphs
+ 
         display: flex;
         justify-content: center;
         color: #000;
