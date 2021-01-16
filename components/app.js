@@ -52,7 +52,7 @@ class App extends Component {
   render() {
     return (
       <div style={aisInstantSearch} >
-        <InstantSearch indexName="profiles" searchClient={searchClient}>
+        <InstantSearch indexName="vito" searchClient={searchClient}>
           <div style={leftPanel} >
             <ClearRefinements />
             <h2>Players</h2>
