@@ -43,7 +43,8 @@ color: 'rgb(228, 18, 36) '
 
 const hitNamex=  {
   color: 'rgb(18, 18, 18)',
-  fontWeight: 600
+  fontWeight: 600,
+  textAlign:'center'
    
   }
 
@@ -109,7 +110,7 @@ className="imagen"
         <Highlight  attribute="player" hit={props.hit} />
       </div>
 
-      <div className="team">{props.hit.team}</div>
+      <div className="team"><em>{props.hit.team}</em></div>
       <div className="team" style={hitName}>{props.hit.hoopcode}</div>
       </a></Link>
     </div>
