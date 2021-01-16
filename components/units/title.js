@@ -17,11 +17,11 @@ export default function title(props){
     letter-spacing: normal;
     font-family: GTAmerica,helvetica,sans-serif;
     font-size: 11px;
-    font-weight: 700;
+    font-weight: 800;
     font-style: normal;
     text-transform: none;
     line-height: 1;
- color: #000;
+   color: rgba(41, 41, 41, 1);
  text-align: center;
                }
  
