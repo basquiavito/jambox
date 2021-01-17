@@ -10,6 +10,7 @@ body {
   
   .ais-SearchBox {
     margin: 1em 0;
+    width: 300px;
   }
   
   .ais-Pagination {

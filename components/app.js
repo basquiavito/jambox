@@ -15,6 +15,10 @@ import {
 } from 'react-instantsearch-dom';
 import PropTypes from 'prop-types';
 import Link from 'next/link'
+import 'instantsearch.css/themes/reset.css';
+import 'instantsearch.css/themes/algolia.css'
+ 
+
 const searchClient = algoliasearch(
   'JJQ6W5JZEV',
   '5fa378bc2862d01482c0b8537c171acc'
@@ -37,17 +41,14 @@ const all = {
 class App extends Component {
   render() {
     return <>
-       <head>
-      <link rel="stylesheet"    href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/reset.css"/>
  
-    </head>
-      <div style={all} >
+      <div   >
         <InstantSearch indexName="vito" searchClient={searchClient}>
      
  
  
     <div className="refine">
-    <ClearRefinements />
+
             <RefinementList
              attribute="player"
              showMore={true} 
@@ -61,27 +62,35 @@ class App extends Component {
             </div>
     <hr/>
           <div  >
-            <ClearRefinements />
-            
+      
 
             <div className="refine">
             <RefinementList
              attribute="hoopcode"
              showMore={true} 
+             className="seeMore"
               translations={{
               showMore(extended) {
                 return extended ? '-Less' : '+More';
+             
               }
             }}
              
              />
+             <br/>
+                 <div className="filter">
+         <ClearRefinements /> 
+         </div>
+
             </div>
             <br/><br/>
-            <Configure hitsPerPage={5} />
+            <Configure hitsPerPage={1} />
           </div>
       
           <div  >
+          <div className="search"  >
             <SearchBox />
+            </div>
             <br/>
             <Hits hitComponent={Hit} />
             <br/>
@@ -91,9 +100,14 @@ class App extends Component {
       </div>
       <style jsx>
         {`
+   .filter {
+     color : #3665f3;
+   }
    
-        
-        
+        .search {
+ 
+ 
+        }
         `}
       </style>
     </>
@@ -120,6 +134,7 @@ className="imagen"
  
  <div   className="team"  >
         <Highlight  attribute="player" hit={props.hit} />
+        <Highlight attribute="hoopcode" hit={props.hit} />
 </div>
      
 
