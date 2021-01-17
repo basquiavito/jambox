@@ -34,14 +34,20 @@ return <>
 <div>
 <InstantSearch indexName="vito" searchClient={searchClient}>
 <div className="searchbox"  >
-<SearchBox/>
+<SearchBox
+ translations={{
+  submitTitle: 'Submit your search query.',
+  resetTitle: 'Clear your search query.',
+  placeholder: 'Search players or hoopcodes',
+}}
+/>
    <Stats />
  
 
 </div>
         
  <div className="refine">
-
+<b>By Players</b><br/><hr/>
             <RefinementList
              attribute="player"
              showMore={true} 
@@ -53,11 +59,12 @@ return <>
              
              />
             </div>
-    <hr/>
+ 
           <div  >
       
 
             <div className="refine">
+            <b>By Hoopcodes</b>  <hr/>
             <RefinementList
              attribute="hoopcode"
              showMore={true} 
