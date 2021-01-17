@@ -116,8 +116,8 @@ return <>
  .hits, .refine, .searchbox {
    min-width: 375px;
    max-width: 38rem;
-   padding: 1.5rem;
-   margin: auto
+   padding: 1rem;
+   margin: auto;
    
  }
 

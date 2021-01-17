@@ -8,6 +8,7 @@ return(
         <>
 
  <div  className="pageGridFull">
+         <picture className="photoContainer">
          <Image
          src={props.mediaUrl}
          alt=""
@@ -15,36 +16,70 @@ return(
          height="272px"
          className="imageContainer"
          />
-      {/* <LazyLoad>
-<div className="imageContainer" data-visible="true">
-<noscript>{props.mediaUrl}</noscript>
-</div></LazyLoad>  */}
+         </picture>
+         <figcaption className="figCaption">
+                 {props.figcaption} <span className="photographer">
+                      {props.photographer}   
+                 </span>
+         </figcaption>
+ 
+ 
  </div>
 
         <style jsx>
         {`
+        .figCaption {
+                color: #999;
+                font-family: nyt-cheltenham-small;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 0.6875rem;
+                letter-spacing: 0.2px;
+                margin-top: 4px;
+                text-align: left;
+                line-height: 0.875rem; 
+                display: block; 
+                text-size-adjust: 100%;
+                font: inherit;
+                letter-spacing: 0.2px;
+                margin-top: 4px;
+                text-align: left;
+                vertical-align: baseline;
+               
+        }
+
+        .photographer {
+                color: #ccc;
+                font-family: nyt-cheltenham-small;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 0.625rem;
+                line-height: 0.75rem;
+                margin: 0;
+    padding: 0;
+    border: 0;
+    text-size-adjust: 100%;
+    font: inherit;
+    vertical-align: baseline;
+                letter-spacing: 0.2px;
+
+        }
+
+        .photoContainer {
+                position: relative;
+                width: 100%;
+                vertical-align: bottom;
+                transition: color 0.6s ease;
+        }
         
         .imageContainer{
-                margin-bottom: 1rem;
-                margin-top: 1rem;
-                position: relative;
-                padding-bottom: 56.25%;
-                background: center center / auto calc(100% + 1px) repeat-x rgb(42, 42, 42);
-                background-position: center center;
-                background-repeat: repeat-x; 
+                width: 100%;
+                vertical-align: bottom;
+                border: none;
         }
-        .imageContainer[data-visible="true"] {
-                background-image: url(${props.mediaUrl});
-        }
+     
 
-        .overlayIcon{
-                position: absolute;
-                right: 1rem;
-                bottom: 1rem;
-                width: 3rem;
-                height: 3rem;
-
-        }
+      
         
         `}
 

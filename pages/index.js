@@ -19,7 +19,7 @@ function home(){
 
    <style jsx>
      {`
-     main {
+     main, .kickerHub {
       max-width: 38rem;
       padding: 1rem;
       margin: auto;

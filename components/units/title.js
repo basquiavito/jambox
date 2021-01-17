@@ -6,41 +6,44 @@
 export default function title(props){
  return<>
 <div className="editorialTitle">
-<h1 className='headerRow'>{props.title}</h1>
+<h2 className='headerRow'><span className="balanceHeadline">{props.title}</span></h2>
 </div>
 
 <style jsx>{`
-.editorialTitle{
-    font-size: 1rem;
-    margin-top: 1 rem;
-    margin-bottom: 0.5rem;
-    letter-spacing: normal;
-    font-family: GTAmerica,helvetica,sans-serif;
-    font-size: 11px;
-    font-weight: 800;
-    font-style: normal;
-    text-transform: none;
-    line-height: 1;
-   color: rgba(41, 41, 41, 1);
  
-               }
- 
- 
-.editorialTitle h1{
-    display: inline;
-                  }
+
+
+ .editorialTitle {
+     position: relative;
+    line-height: 0.8125rem;
+ }
+.balanceHeadline {
+    display: inline-block;
+    max-width: 330.961px;
+}
 
 
 .headerRow {
-    line-height: 1.36em;
-    letter-spacing: -.017em;
-    font-family: GTAmerica,helvetica,sans-serif;
-    font-size: 32px;
-    font-weight: 700;
+    text-size-adjust: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    transition: color 0.6s ease;
+    position: relative;
     font-style: normal;
-    text-transform: none;
-    
-    color: #000; 
+    margin: 0;
+    color: #121212;
+    text-align: left;
+    color: #121212;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    font-family: nyt-cheltenham;
+    font-size: 1.875rem;
+    line-height: 2.0625rem;
+    font-weight: 700;
+    -webkit-letter-spacing: 0.2px;
+    -moz-letter-spacing: 0.2px;
+    -ms-letter-spacing: 0.2px;
+    letter-spacing: 0.2px;
 }                  
             `}</style>
        
