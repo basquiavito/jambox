@@ -105,15 +105,17 @@ className="imagen"
  <div   className="team"  >
         <Highlight  attribute="player" hit={props.hit} />
 </div>
-      <div 
-      className="team" id="">
-      <em>{props.hit.team}</em>
-      </div>
+     
 
 
-      <div 
+      <div id=""
       className="team">
       {props.hit.hoopcode}
+      </div>
+
+      <div 
+      className="team" id="dekk">
+      <em>{props.hit.team}</em>
       </div>
 
       </a>
@@ -123,7 +125,16 @@ className="imagen"
     
     <style jsx>
       {`
- 
+ #dekk {
+  color: rgb(85, 85, 85);
+  font-family: nyt-imperial;
+  font-size: 1rem;
+  letter-spacing: normal;
+  line-height: 1.375rem;
+  margin: 0px;
+  padding: 0px;
+  transition: color 0.6s ease;
+ }
   .main {
     display: flex;
     flex-flow: row wrap;
