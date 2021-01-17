@@ -1,6 +1,7 @@
 import algoliasearch from 'algoliasearch/lite';
 import React, { Component } from 'react';
 import Image from 'next/image'
+import { orderBy } from 'lodash';
 import {
   InstantSearch,
   Hits,
@@ -10,6 +11,7 @@ import {
   ClearRefinements,
   RefinementList,
   Configure,
+  Menu
 } from 'react-instantsearch-dom';
 import PropTypes from 'prop-types';
 import Link from 'next/link'
@@ -36,23 +38,46 @@ class App extends Component {
   render() {
     return <>
        <head>
-      <link rel="stylesheet"    href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/reset.css"
-      
-      ></link>
-
+      <link rel="stylesheet"    href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/reset.css"/>
+ 
     </head>
       <div style={all} >
         <InstantSearch indexName="vito" searchClient={searchClient}>
+          <div>
+
+          <Menu
+      attribute="player"
+      showMore={true}
+      translations={{
+        showMore(extended) {
+          return extended ? '-' : '+';
+        }
+      }}
+    />
+          </div>
+          <br/>
+          <hr/>
+<br/> 
+
+<div>
+<Menu
+      attribute="hoopcode"
+      showMore={true}
+      translations={{
+        showMore(extended) {
+          return extended ? '-' : '+';
+        }
+      }}
+    />
+
+</div>
+
           <div  >
             <ClearRefinements />
-            <h2>Hoopcodes</h2>
-
-            <div className="refine">
-            <RefinementList attribute="hoopcode"  />
+        
             </div>
-            <Configure hitsPerPage={5} />
-          </div>
-      
+ <br/>
+          <Configure hitsPerPage={5} />
           <div  >
             <SearchBox />
             <br/>
