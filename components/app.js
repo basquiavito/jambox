@@ -16,7 +16,7 @@ import {
 import PropTypes from 'prop-types';
 import Link from 'next/link'
 import 'instantsearch.css/themes/reset.css';
-import 'instantsearch.css/themes/algolia.css'
+ 
  
 
 const searchClient = algoliasearch(
@@ -104,16 +104,15 @@ class App extends Component {
      color : #3665f3;
    }
    
-        .search {
  
- 
-        }
+
+        
         `}
       </style>
     </>
   }
 }
-
+ 
 function Hit(props) {
   return <>
  
@@ -156,7 +155,7 @@ className="imagen"
     
     <style jsx>
       {`
-
+ 
   ul >    li {
         list-style-type: none;
       }
