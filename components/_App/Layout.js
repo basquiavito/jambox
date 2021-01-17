@@ -22,7 +22,7 @@ return (
  </footer>
 <style jsx>
   {`
-  main {
+ 
     
   
   

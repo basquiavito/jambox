@@ -77,7 +77,7 @@ return <>
 
             </div>
             <br/><br/>
-            <Configure hitsPerPage={5} />
+            <Configure hitsPerPage={8} />
           </div>
       
           <div className="hits"  >
@@ -97,6 +97,7 @@ return <>
         {`
  .hits {
    min-width: 375px;
+   
  }
         
   
@@ -128,7 +129,7 @@ className="imagen"
  <div   className="team"  >
 <Highlight  attribute="player" hit={props.hit} /> 
 </div>
-<div>
+<div className="hoopcode">
         <Highlight attribute="hoopcode" hit={props.hit} />
 </div>
      
@@ -151,8 +152,8 @@ className="imagen"
     
     <style jsx>
       {`
- .hits {
- 
+ .hoopcode {
+  color: #e41224;
  }
   ul >    li {
         list-style-type: none;
