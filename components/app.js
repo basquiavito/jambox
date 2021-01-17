@@ -18,57 +18,40 @@ const searchClient = algoliasearch(
   '5fa378bc2862d01482c0b8537c171acc'
 );
 
-const aisInstantSearch = {
-  maxWidth: '960px',
-  overflow: 'hidden',
-  margin: '0 auto',
-  fontSize: '19px',
-  lineHeight:'28px'
 
+
+
+
+
+
+
+
+
+
+const all = {
+  listStyleType: 'none',
+  textDecoration:'none'
 }
 
-const leftPanel = {
- 
-  width: '250px'
-}
-
-const rightPanel = {
- maxWidth: '500px'
-}
-
-
-const hitName=  {
-color: 'rgb(228, 18, 36) '
-}
-
-const hitNamex=  {
-  color: 'rgb(18, 18, 18)',
-  fontWeight: 600,
-  textAlign:'center'
-   
-  }
-
-const hitDescription = {
-  fontSize: '19px',
-  lineHeight:'28px',
-
-
-  
-}
-
-const hitPrice  = {
-
-}
 class App extends Component {
   render() {
-    return (
-      <div >
-        <InstantSearch indexName="vito" searchClient={searchClient}>
-          <div >
+    return <>
+    <head>
+      <link rel="stylesheet"    href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/reset.css"
       
-           
- 
-            <Configure hitsPerPage={3} />
+      ></link>
+
+    </head>
+      <div style={all} >
+        <InstantSearch indexName="vito" searchClient={searchClient}>
+          <div  >
+            <ClearRefinements />
+            <h2>Hoopcodes</h2>
+
+            <div className="refine">
+  
+            </div>
+            <Configure hitsPerPage={5} />
           </div>
       
           <div  >
@@ -80,14 +63,21 @@ class App extends Component {
           </div>
         </InstantSearch>
       </div>
-    );
+      <style jsx>
+        {`
+
+        
+        
+        `}
+      </style>
+    </>
   }
 }
 
 function Hit(props) {
   return <>
  
-    <div className="main">
+    <div >
       
       <Link href={props.hit.link}>
         <a>
@@ -125,6 +115,10 @@ className="imagen"
     
     <style jsx>
       {`
+
+  ul >    li {
+        list-style-type: none;
+      }
  #dekk {
   color: rgb(85, 85, 85);
   font-family: nyt-imperial;
@@ -135,11 +129,7 @@ className="imagen"
   padding: 0px;
   transition: color 0.6s ease;
  }
-  .main {
-    display: flex;
-    flex-flow: row wrap;
-    justify content: center;
-  }
+ 
  
     
  .team{
