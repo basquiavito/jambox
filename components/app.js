@@ -96,8 +96,8 @@ function Hit(props) {
 <Image
 src={props.hit.mediaUrl}
 alt={`A photo of ${props.hit.player}`}
-width="100%"
-height="auto"
+width="327px"
+height="218px"
  
 className="imagen"
 />
@@ -106,7 +106,7 @@ className="imagen"
         <Highlight  attribute="player" hit={props.hit} />
 </div>
       <div 
-      className="team">
+      className="team" id="">
       <em>{props.hit.team}</em>
       </div>
 
@@ -138,11 +138,12 @@ className="imagen"
   color: rgb(18, 18, 18);
   text-align: left;
   -webkit-font-smoothing: antialiased;
-  font-family: nyt-cheltenham;
+  font-family: nyt-cheltenham, helvetica;
   font-size: 0.85rem;
   line-height: 1.0625rem;
   font-weight: 700;
   letter-spacing: 0.2px;
+  transition: color 0.6s ease;
  }
    
         
