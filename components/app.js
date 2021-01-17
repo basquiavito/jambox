@@ -62,16 +62,16 @@ const hitPrice  = {
 class App extends Component {
   render() {
     return (
-      <div style={aisInstantSearch} >
+      <div >
         <InstantSearch indexName="vito" searchClient={searchClient}>
-          <div style={leftPanel} >
+          <div  >
             <ClearRefinements />
-            <h2>Players</h2>
+            <h2>Hoopcodes</h2>
             <RefinementList attribute="hoopcode"  />
-            <Configure hitsPerPage={1} />
+            <Configure hitsPerPage={16} />
           </div>
       
-          <div style={rightPanel}>
+          <div  >
             <SearchBox />
             <br/>
             <Hits hitComponent={Hit} />
@@ -86,70 +86,78 @@ class App extends Component {
 
 function Hit(props) {
   return <>
-  <head>
-
-
-  </head>
-    <div>
+ 
+    <div className="main">
       
       <Link href={props.hit.link}>
         <a>
-    <div className="imageContainer" >
-<picture className="">
+    
+ 
 <Image
 src={props.hit.mediaUrl}
 alt={`A photo of ${props.hit.player}`}
-width="100px"
-height="100px"
+width="100%"
+height="auto"
  
 className="imagen"
 />
- </picture></div>
-      <div  style={hitNamex} className="team"  >
+ 
+ <div   className="team"  >
         <Highlight  attribute="player" hit={props.hit} />
+</div>
+      <div 
+      className="team">
+      <em>{props.hit.team}</em>
       </div>
 
-      <div className="team"><em>{props.hit.team}</em></div>
-      <div className="team" style={hitName}>{props.hit.hoopcode}</div>
-      </a></Link>
+
+      <div 
+      className="team">
+      {props.hit.hoopcode}
+      </div>
+
+      </a>
+      
+      </Link>
     </div>
     
     <style jsx>
       {`
-
-      figcaption {
-        min-height: 56px;
-      }
-      .team , .name{
-        font-family: "imperial-normal-500", georgia, "times new roman", times, serif;
-  
-    font-size: 19px;
-    line-height: 28px;
-    margin-top: 8px; // The vertical offset pushing the text down
  
-        display: flex;
-        justify-content: center;
-        color: #000;
-        font-size: 19px;
-        line-height:28px;
-        font-family: "nyt-franklin", arial, helvetica, sans-serif;
-    font-weight: 300;
+  .main {
+    display: flex;
+    flex-flow: row wrap;
+    justify content: center;
+  }
+ 
     
- 
+ .team{
+  position: relative;
+  font-style: normal;
+  margin: 0px;
+  color: rgb(18, 18, 18);
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  font-family: nyt-cheltenham;
+  font-size: 0.85rem;
+  line-height: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+ }
    
         
       }
       a {
         text-decoration: none;
-        font-size: 19px;
-        line-height:28px;
-        font-family: "imperial-normal-500", georgia, "times new roman", times, serif;
-    font-weight: 200;
-    font-size: 19px;
-    line-height: 28px;
-    margin-top: 8px; // The vertical offset pushing the text down
-    padding-bottom: 28px; // Extra line between the paragraphs
-      }
+        color: black;
+        text-size-adjust: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+         }
       
       `}
     </style>
