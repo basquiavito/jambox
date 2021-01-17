@@ -37,7 +37,7 @@ return <>
 <SearchBox/>
    <Stats />
  
-<br/>
+
 </div>
         
  <div className="refine">
@@ -76,7 +76,7 @@ return <>
          </div>
 
             </div>
-            <br/><br/>
+            
             <div className="configure">
             <Configure hitsPerPage={8} />
             </div>
@@ -84,7 +84,7 @@ return <>
       
           <div className="hits"  >
           
-            <br/>
+          
             <div >
             <Hits hitComponent={Hit} />
             </div>
@@ -105,10 +105,7 @@ return <>
    
  }
 
- .configure {
-   display: flex;
-   justify-content: center;
- }
+
         
   
  
