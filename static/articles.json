@@ -1,0 +1,19 @@
+  
+    db.articles.insertOne({
+        "value": "xjUoYkgB5Mc",
+        "title": "Grant Hill Makes a SICK CROSSOVER on Pippen and Slam on Him",
+        "date": "Jan 13, 2021",
+        "player": "Tyreke Evans ",
+        "team": "Pelicans",
+        "graf": "King of the In and Out",
+        "details": [],
+        "related": [],
+        "spanish": [],
+        "titulo": "Tyreke Evans In-and-Out OMG! ",
+        "rafo": "King of the In and Out",
+        "hyvorId": "002",
+        "hoopcode": "058",
+        "string": "crossover + in and out + first step"})
+
+
+ 

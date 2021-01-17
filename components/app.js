@@ -67,8 +67,8 @@ class App extends Component {
           <div style={leftPanel} >
             <ClearRefinements />
             <h2>Players</h2>
-            <RefinementList attribute="player"  />
-            <Configure hitsPerPage={16} />
+            <RefinementList attribute="hoopcode"  />
+            <Configure hitsPerPage={1} />
           </div>
       
           <div style={rightPanel}>
@@ -87,14 +87,13 @@ class App extends Component {
 function Hit(props) {
   return <>
   <head>
-  <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"
-    />
+
 
   </head>
     <div>
-      <Link href={props.hit.link}><a>
+      
+      <Link href={props.hit.link}>
+        <a>
     <div className="imageContainer" >
 <picture className="">
 <Image
