@@ -64,11 +64,11 @@ class App extends Component {
     return (
       <div >
         <InstantSearch indexName="vito" searchClient={searchClient}>
-          <div  >
-            <ClearRefinements />
-            <h2>Hoopcodes</h2>
-            <RefinementList attribute="hoopcode"  />
-            <Configure hitsPerPage={16} />
+          <div >
+      
+           
+ 
+            <Configure hitsPerPage={3} />
           </div>
       
           <div  >
@@ -116,7 +116,7 @@ className="imagen"
       <div 
       className="team" id="dekk">
       <em>{props.hit.team}</em>
-      </div>
+      </div><br/>
 
       </a>
       
