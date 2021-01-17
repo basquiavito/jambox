@@ -29,14 +29,13 @@ const searchClient = algoliasearch(
 
 
 const all = {
-  listStyleType: 'none',
-  textDecoration:'none'
+  listStyleType: 'none'
 }
 
 class App extends Component {
   render() {
     return <>
-    <head>
+       <head>
       <link rel="stylesheet"    href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/reset.css"
       
       ></link>
@@ -49,7 +48,7 @@ class App extends Component {
             <h2>Hoopcodes</h2>
 
             <div className="refine">
-  
+            <RefinementList attribute="hoopcode"  />
             </div>
             <Configure hitsPerPage={5} />
           </div>
@@ -65,7 +64,7 @@ class App extends Component {
       </div>
       <style jsx>
         {`
-
+   
         
         
         `}
