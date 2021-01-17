@@ -1,7 +1,7 @@
 import algoliasearch from 'algoliasearch/lite';
 import React, { Component } from 'react';
 import Image from 'next/image'
-import { orderBy } from 'lodash';
+ 
 import {
   InstantSearch,
   Hits,
@@ -33,7 +33,7 @@ render() {
 return <>
 <div>
 <InstantSearch indexName="vito" searchClient={searchClient}>
-<div  >
+<div className="searchbox"  >
 <SearchBox/>
    <Stats />
  
@@ -77,13 +77,15 @@ return <>
 
             </div>
             <br/><br/>
+            <div className="configure">
             <Configure hitsPerPage={8} />
+            </div>
           </div>
       
           <div className="hits"  >
           
             <br/>
-            <div className="hits">
+            <div >
             <Hits hitComponent={Hit} />
             </div>
        
@@ -95,9 +97,17 @@ return <>
       </div>
       <style jsx>
         {`
- .hits {
+ .hits, .refine, .searchbox {
    min-width: 375px;
+   max-width: 38rem;
+   padding: 1.5rem;
+   margin: auto
    
+ }
+
+ .configure {
+   display: flex;
+   justify-content: center;
  }
         
   
