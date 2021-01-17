@@ -43,41 +43,43 @@ class App extends Component {
     </head>
       <div style={all} >
         <InstantSearch indexName="vito" searchClient={searchClient}>
-          <div>
-
-          <Menu
-      attribute="player"
-      showMore={true}
-      translations={{
-        showMore(extended) {
-          return extended ? '-' : '+';
-        }
-      }}
-    />
-          </div>
-          <br/>
-          <hr/>
-<br/> 
-
-<div>
-<Menu
-      attribute="hoopcode"
-      showMore={true}
-      translations={{
-        showMore(extended) {
-          return extended ? '-' : '+';
-        }
-      }}
-    />
-
-</div>
-
+     
+ 
+ 
+    <div className="refine">
+    <ClearRefinements />
+            <RefinementList
+             attribute="player"
+             showMore={true} 
+              translations={{
+              showMore(extended) {
+                return extended ? '-Less' : '+More';
+              }
+            }}
+             
+             />
+            </div>
+    <hr/>
           <div  >
             <ClearRefinements />
-        
+            
+
+            <div className="refine">
+            <RefinementList
+             attribute="hoopcode"
+             showMore={true} 
+              translations={{
+              showMore(extended) {
+                return extended ? '-Less' : '+More';
+              }
+            }}
+             
+             />
             </div>
- <br/>
-          <Configure hitsPerPage={5} />
+            <br/><br/>
+            <Configure hitsPerPage={5} />
+          </div>
+      
           <div  >
             <SearchBox />
             <br/>
