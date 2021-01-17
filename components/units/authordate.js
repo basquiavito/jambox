@@ -6,7 +6,7 @@ function authordate(props){
     return(
         <>
     <div className="authordate">
-    
+    <span className="editorialAuthor"> By {props.author} / </span>
     <span className="editorialPublishedAt"> {props.date}</span>
     <style jsx>{`
     .editorialAuthor{

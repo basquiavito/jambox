@@ -11,8 +11,9 @@ return(
          <Image
          src={props.mediaUrl}
          alt=""
-         width='auto'
-         height="auto"
+         width='368.px'
+         height="272px"
+         className="imageContainer"
          />
       {/* <LazyLoad>
 <div className="imageContainer" data-visible="true">

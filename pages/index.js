@@ -1,12 +1,19 @@
 import App from '../components/app'
 import React from 'react';
-
-
+import KickerHub from '../components/units/kickerHub'
 function home(){
   return <>
  <main>
-   
-<App />
+   <div id="kickerHub">
+<KickerHub />
+</div>
+
+
+
+   <div id="app">
+   <App />
+   </div>
+
 
    </main>   
 

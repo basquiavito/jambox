@@ -1,7 +1,7 @@
 import algoliasearch from 'algoliasearch/lite';
 import React, { Component } from 'react';
 import Image from 'next/image'
- 
+import Kicker from '../components/units/kicker'
 import {
   InstantSearch,
   Hits,
@@ -19,6 +19,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link'
 
 import 'instantsearch.css/themes/algolia.css';
+import { Label } from 'semantic-ui-react';
  
  
 
@@ -32,6 +33,14 @@ class App extends Component {
 render() {
 return <>
 <div>
+ 
+   
+ 
+
+
+
+
+
 <InstantSearch indexName="vito" searchClient={searchClient}>
 <div className="searchbox"  >
 <SearchBox

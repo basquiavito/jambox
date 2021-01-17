@@ -22,7 +22,7 @@ export default function title(props){
     text-transform: none;
     line-height: 1;
    color: rgba(41, 41, 41, 1);
- text-align: center;
+ 
                }
  
  
