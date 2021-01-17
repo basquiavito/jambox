@@ -11,11 +11,14 @@ import {
   ClearRefinements,
   RefinementList,
   Configure,
-  Menu
+  Menu,
+ 
+  Stats
 } from 'react-instantsearch-dom';
 import PropTypes from 'prop-types';
 import Link from 'next/link'
-import 'instantsearch.css/themes/reset.css';
+
+import 'instantsearch.css/themes/algolia.css';
  
  
 
@@ -25,29 +28,19 @@ const searchClient = algoliasearch(
 );
 
 
-
-
-
-
-
-
-
-
-
-const all = {
-  listStyleType: 'none'
-}
-
 class App extends Component {
-  render() {
-    return <>
+render() {
+return <>
+<div>
+<InstantSearch indexName="vito" searchClient={searchClient}>
+<div  >
+<SearchBox/>
+   <Stats />
  
-      <div   >
-        <InstantSearch indexName="vito" searchClient={searchClient}>
-     
- 
- 
-    <div className="refine">
+<br/>
+</div>
+        
+ <div className="refine">
 
             <RefinementList
              attribute="player"
@@ -84,30 +77,31 @@ class App extends Component {
 
             </div>
             <br/><br/>
-            <Configure hitsPerPage={1} />
+            <Configure hitsPerPage={5} />
           </div>
       
-          <div  >
-          <div className="search"  >
-            <SearchBox />
-            </div>
+          <div className="hits"  >
+          
             <br/>
+            <div className="hits">
             <Hits hitComponent={Hit} />
+            </div>
+       
             <br/>
+           
             <Pagination />
           </div>
         </InstantSearch>
       </div>
       <style jsx>
         {`
-   .filter {
-     color : #3665f3;
-   }
-   
- 
-
+ .hits {
+   min-width: 375px;
+ }
         
-        `}
+  
+ 
+     `}
       </style>
     </>
   }
@@ -116,7 +110,7 @@ class App extends Component {
 function Hit(props) {
   return <>
  
-    <div >
+    <div className="hits">
       
       <Link href={props.hit.link}>
         <a>
@@ -125,23 +119,25 @@ function Hit(props) {
 <Image
 src={props.hit.mediaUrl}
 alt={`A photo of ${props.hit.player}`}
-width="327px"
-height="218px"
+width="100px"
+height="100px"
  
 className="imagen"
 />
  
  <div   className="team"  >
-        <Highlight  attribute="player" hit={props.hit} />
+<Highlight  attribute="player" hit={props.hit} /> 
+</div>
+<div>
         <Highlight attribute="hoopcode" hit={props.hit} />
 </div>
      
+<div id="dekk">
+        <Highlight attribute="team" hit={props.hit} />
+</div>
 
 
-      <div id=""
-      className="team">
-      {props.hit.hoopcode}
-      </div>
+      
 
       <div 
       className="team" id="dekk">
@@ -155,7 +151,9 @@ className="imagen"
     
     <style jsx>
       {`
+ .hits {
  
+ }
   ul >    li {
         list-style-type: none;
       }

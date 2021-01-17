@@ -12,15 +12,22 @@ return (
     <Toplayout />
     </nav>  
 
-    <body>
- <Container>
+   <main> 
+ 
         {children}
-        </Container>
-      </body>
+        </main>
+   
  <footer>
-<Footer />
+ 
  </footer>
-
+<style jsx>
+  {`
+  main {
+    
+  
+  
+  `}
+</style>
 </>)
 }
 
