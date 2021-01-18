@@ -12,11 +12,11 @@ return (
     <Toplayout />
     </nav>  
 
-  
- <Container    >
+  <main>
+ 
         {children}
   
-        </Container>
+        </main>
     
    
  <footer>
