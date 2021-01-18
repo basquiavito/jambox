@@ -113,13 +113,13 @@ return <>
       </div>
       <style jsx>
         {`
+            @media only screen and (max-width: 375px) {
  .hits, .refine, .searchbox {
-   min-width: 375px;
-   max-width: 38rem;
-   padding: 1rem;
-   margin: auto;
+   min-width: 355px;
+ padding: 1rem;
+  
    
- }
+ }}
 
 
         

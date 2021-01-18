@@ -131,6 +131,18 @@ className="sizeImageConainer"
    min-width: 0px;
    line-height: 1.125;  
 }
+
+@media only screen and (max-width: 320px) {
+   .title{
+      overflow-wrap: break-word;
+      word-break: break-word;
+   
+     overflow: hidden;
+      white-space: nowrap;
+      
+  }
+
+}
 .title{
     overflow-wrap: break-word;
     word-break: break-word;
@@ -143,7 +155,7 @@ className="sizeImageConainer"
    font-weight: 100;
    overflow-wrap: break-word;
    word-break: break-word;
-   
+ 
    white-space: nowrap;
   
 }

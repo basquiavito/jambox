@@ -49,6 +49,9 @@ setLoadMore({load : !doesShow})
  
 <Coderow rank ="21" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610755940/herro_bi4pxr.jpg" codeTitle="Tyler Herro" hoopcodes="PO6" details="Rep " />
 <Coderow rank ="22" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610755879/tatum_zof8gi.jpg" codeTitle="jayson Tatum" hoopcodes="80P" details="TAFA " />
+
+
+ 
 </div> : null }
 
 <div className="button">

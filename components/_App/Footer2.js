@@ -1,7 +1,5 @@
 import Link from 'next/link' 
-const color = {
-    color: '#052962'
-}
+ 
 export default function Footer(){
     return(
         <><br/>
@@ -129,7 +127,7 @@ display: flex;
   
     color:  rgb(255 255 255); 
  background-color: #212121;
-    padding: 2.25rem 0px;
+    
 
         }
 

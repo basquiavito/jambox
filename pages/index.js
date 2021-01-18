@@ -9,24 +9,26 @@ function home(){
   return <>
  <main>
  
-<div id="kickerHub">
+  <div id="kickerHub">
 <KickerHub />
-</div>
+</div> 
 
-<div id="">
+  <div id="">
   <CodeHub />
-</div>
+</div>  
 <Sectiontitle title="Search"/>
   <div id="app">
    <App />
-   </div>
+   </div>  
 
 
    </main>   
 
    <style jsx>
      {`
-     main, .kickerHub {
+
+
+     main, #kickerHub, #app {
       max-width: 38rem;
       padding: 1rem;
       margin: auto;
