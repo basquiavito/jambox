@@ -20,7 +20,7 @@ return(
  
 }
 .sectionTitle{
-    color: #fff;
+    color: #000;
     font-size: 2.75rem;
     text-transform: uppercase;
     font-weight: bold;
