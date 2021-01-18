@@ -1,14 +1,15 @@
 import Link from 'next/link'
 import Image from 'next/image'
-
- 
-function coderow (props){
+ import { useTracking } from 'react-tracking';
+import Test from './test'
+   
+ function coderow (props){
 return(
 <div className="pageGridFull">
 <div className="chartMobileRow">
 
 
-
+ 
 
 <div className="rank">{props.rank}</div>
 
@@ -37,7 +38,7 @@ className="sizeImageConainer"
 <div className="icon">
 <svg viewBox="0 0 17 26"><path fill="#e41224" d="M4 3c2.95 1 6.84 8.93 6.84 8.93a8.361 8.361 0 0 0 1-5.43A15.928 15.928 0 0 1 17 18c-.12 7-8.85 8.05-8.85 8.05a4.63 4.63 0 0 0 1.76-2.87c.29-1.8-2.58-3.8-2.58-3.8-2.48 4.15-1.07 6.67-1.07 6.67S0 23.1 0 19.24c0-3.86 4.22-7.75 4.62-10.79A12.25 12.25 0 0 0 4 3zm2.58 5.51h-.02v.17A13.89 13.89 0 0 1 4.23 14C3.13 15.77 2 17.65 2 19.25c0 1 .88 2.07 2 3a12.38 12.38 0 0 1 1.62-3.9l1.1-1.84 1.84 1.2c.59.45 3.29 2.48 3.44 5a5.47 5.47 0 0 0 3-4.78 12.81 12.81 0 0 0-1.73-6.37c-.19.5-.426.98-.7 1.44l-1.89 3.1-1.62-3.29a39.714 39.714 0 0 0-2.48-4.3z"></path></svg>
 </div>
-<span className="textLabelIcon">797</span>
+<span className="textLabelIcon">{797}</span>
 </div>
 </div>
 <div className="metadatumView">
@@ -70,8 +71,8 @@ className="sizeImageConainer"
 }
 .metadata{
  
-   grid-column: 8 / span 1;
-   margin-right: 30px;
+   grid-column: 9 / span 2;
+ 
  
 }
 .pageGridFull {
@@ -133,7 +134,7 @@ className="sizeImageConainer"
 .title{
     overflow-wrap: break-word;
     word-break: break-word;
-    overflow: hidden;
+ 
    
     white-space: nowrap;
     
@@ -142,9 +143,9 @@ className="sizeImageConainer"
    font-weight: 100;
    overflow-wrap: break-word;
    word-break: break-word;
-   text-overflow: ellipsis;
+   
    white-space: nowrap;
-   overflow: hidden; 
+  
 }
 .textLabel{
    font-size: 0.75rem;

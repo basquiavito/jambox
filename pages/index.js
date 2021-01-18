@@ -15,7 +15,7 @@ function home(){
 
 <Sectiontitle title="Chart"></Sectiontitle>
 
-<Coderow rank ="1" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610755593/Kenny-Anderson_fci4zv.jpg" codeTitle="Kenny Anderson" hoopcodes="232" details="Chibbs " />
+<a href=""><Coderow rank ="1" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610755593/Kenny-Anderson_fci4zv.jpg" codeTitle="Kenny Anders" hoopcodes="232" details="Chibbs " /></a>
 <Coderow rank ="2" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610669340/AIcrossMJ_bmteuq.jpg" codeTitle="Allen Iverson" hoopcodes="013" details="Smoke " />
 <Coderow rank ="3" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610756357/kd_a3nisa.jpg" codeTitle="Kevin Durant" hoopcodes="802" details="Pop back " />
 <Coderow rank ="4" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610926935/lamelonew_vzo7ge.jpg" codeTitle="Lamelo Ball" hoopcodes="804 " details="Pop Reverse" />
@@ -43,7 +43,10 @@ function home(){
   
      }
     
-     
+     a {
+       text-decoration: none;
+ 
+     }
      
      `}
    </style>
