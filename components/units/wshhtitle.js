@@ -11,6 +11,7 @@ export default function title(props){
     text-transform: capitalize;
     font-size: 14px;
     font-weight: 400;
+    text-align: center;
  
     margin-top: 10px;
     box-sizing: border-box;
