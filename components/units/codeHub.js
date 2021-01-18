@@ -19,7 +19,7 @@ setLoadMore({load : !doesShow})
 <Sectiontitle title="Chart 22"></Sectiontitle>
 <a href="https://hoopscript.com/article?_id=6005e8e9d10d9c718cd9f5f4"><Coderow rank ="1" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610999508/zion_kfgvea.jpg" hoopcodes="∞ Stride" details="  1/17/21     " codeTitle="Zion Williamson" /></a>
 <a href="https://hoopscript.com/article?_id=6005ebe1d10d9c718cd9f5f5"><Coderow rank ="2" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1611000702/Paul-George_wlqwaa.jpg" codeTitle="Paul George" hoopcodes="Slam Dunk" details=" 1/17/21   " /></a>
-<a href=""><Coderow rank ="3" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610756357/kd_a3nisa.jpg" codeTitle="Kevin Durant" hoopcodes="802" details="Pop back " /></a>
+<a href="https://hoopscript.com/article?_id=6005f094d10d9c718cd9f5f6"><Coderow rank ="3" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610755879/tatum_zof8gi.jpg" codeTitle="Jayson Tatum" hoopcodes="535" details="Tutuma " /></a>
 <a href=""><Coderow rank ="4" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610926935/lamelonew_vzo7ge.jpg" codeTitle="Lamelo Ball" hoopcodes="804 " details="Pop Reverse" /></a>
  
 <a href=""><Coderow rank ="5" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610757282/currymss_lhtmdk.jpg" codeTitle="Stephen Curry" hoopcodes="318" details="Lousiana " /></a>
