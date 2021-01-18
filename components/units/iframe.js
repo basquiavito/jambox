@@ -1,8 +1,7 @@
 import Sectiontitle from '../../components/units/sectiontitle'
-import Wshhtitle from '../../components/units/wshhtitle'
 const iframe = (props) => {
     return <>
-     <Wshhtitle  title={props.hoopcode}/>
+     <Sectiontitle  title={props.hoopcode}/>
 
      <div className="stringContainer">
      <p id="strings">{props.string}</p>
