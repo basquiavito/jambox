@@ -24,7 +24,7 @@ function home(){
 <Coderow rank ="6" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610755951/harden_atkfyy.jpg" codeTitle="James Harden" hoopcodes="518" details="Albania " />
  
 <Coderow rank ="7" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610755940/herro_bi4pxr.jpg" codeTitle="Tyler Herro" hoopcodes="PO6" details="Rep " />
-<Coderow rank ="8" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610755879/tatum_zof8gi.jpg" codeTitle="jayson Tatum" hoopcodes="TAFA" details="TAFA " />
+<Coderow rank ="8" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610755879/tatum_zof8gi.jpg" codeTitle="jayson Tatum" hoopcodes="80P" details="TAFA " />
  
 <Sectiontitle title="Search"/>
   <div id="app">
