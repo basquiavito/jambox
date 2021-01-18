@@ -26,9 +26,8 @@ function home(){
 <Coderow rank ="7" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610755940/herro_bi4pxr.jpg" codeTitle="Tyler Herro" hoopcodes="PO6" details="Rep " />
 <Coderow rank ="8" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610755879/tatum_zof8gi.jpg" codeTitle="jayson Tatum" hoopcodes="TAFA" details="TAFA " />
  
-
-
-   <div id="app">
+<Sectiontitle title="Search"/>
+  <div id="app">
    <App />
    </div>
 
