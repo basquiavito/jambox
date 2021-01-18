@@ -133,7 +133,11 @@ return <>
  
 function Hit(props) {
   return <>
- 
+ <head>
+ <link rel="preconnect" href="https://fonts.gstatic.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,600;0,700;0,900;1,100;1,300;1,700&display=swap" rel="stylesheet"/>
+
+ </head>
     <div className="hits">
       
       <Link href={props.hit.link}>
@@ -222,7 +226,9 @@ className="imagen"
         border: 0;
         font-size: 100%;
          }
-      
+      div {
+        font-family: Poppins,verdana,sans-serif;
+      }
       `}
     </style>
   </>;

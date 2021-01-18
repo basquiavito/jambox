@@ -13,16 +13,21 @@
 
 <div className="coverAndTitleAndRole">
 <div className="cover">
-    <LazyLoad>
+ 
 <div className="sizeImageConainer" data-visible="true">
-    <noscript></noscript></div>   </LazyLoad></div>
+    <noscript></noscript></div>   </div>
  
 <h3 className="titleAndPlayer">
 <div className="title">{props.codeTitle}</div>
 <div className="player">{props.hoopcodes}</div>
-
+<div className="player">{props.details}</div>
 </h3>
-</div></div>
+</div>
+
+ 
+
+
+</div>
 
 
 
@@ -55,6 +60,8 @@
 }
 
 .rank{
+    color: #344072;
+    vertical-align: baseline
     font-size: 1.313rem;
     font-weight: 100;
     text-align: center;
@@ -103,7 +110,10 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    color: #344072;
+    vertical-align: baseline;
 }
+
 
 .player{
     font-weight: 100;
@@ -112,6 +122,8 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden; 
+    color: #344072;
+    vertical-align: baseline
 }
 .textLabel{
     font-size: 0.75rem;
