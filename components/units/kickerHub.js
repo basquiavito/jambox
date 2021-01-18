@@ -1,13 +1,14 @@
 import Kicker from './kicker'
 import { Label } from 'semantic-ui-react';
-
+import Link from 'next/link'
 
 
 const kickerhub = () => {
     return <>
 <div id="kicker">
 
-<div id="MainKicker">
+ <a href="https://hoopscript.com/article?_id=5ffa9cccfeaebf363eaf659d">
+    <div id="MainKicker">
 <Kicker 
  label="What's Hot?"
  title="Lamelo Ball First Triple-Double At Age 19"
@@ -20,26 +21,34 @@ author="Richard Clemons"
 date="Jan 17, 2021"
 />
 
-</div><br/><br/>
+</div>
+    </a> 
 
+<br/><br/>
+ 
+   <a href="https://hoopscript.com/article?_id=6004d285930ead60f5db9ea0">
 <div className="secondKicker">
     
-<Kicker 
- label="Debut"
- title="James Harden is the first player in NBA history with a 30-point triple-double in their debut with a team."
- dekk="Harden had 32 points, 14 assists and 12 rebounds in the Nets' 122-115 win over the Orlando Magic."
- dekk1='I hope that you can tell by my smile and my play," Harden said. "Just excited, excited for the opportunity. This is an unbelievable organization from top to bottom. For me, all I have to do is go out there and be the best James Harden I can be and good things will happen.'
-mediaUrl="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610927063/harden_nets_mnur60.jpg" 
-figcaption="Harden debut with Nets"
-photographer="Ortelo Navas for Hoopscript"
-author="Justin Telfair"
-date="Jan 17, 2021"
+    <Kicker 
+     label="Debut"
+     title="James Harden is the first player in NBA history with a 30-point triple-double in their debut with a team."
+     dekk="Harden had 32 points, 14 assists and 12 rebounds in the Nets' 122-115 win over the Orlando Magic."
+     dekk1='I hope that you can tell by my smile and my play," Harden said. "Just excited, excited for the opportunity. This is an unbelievable organization from top to bottom. For me, all I have to do is go out there and be the best James Harden I can be and good things will happen.'
+    mediaUrl="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610927063/harden_nets_mnur60.jpg" 
+    figcaption="Harden debut with Nets"
+    photographer="Ortelo Navas for Hoopscript"
+    author="Justin Telfair"
+    date="Jan 17, 2021"
+    
+    />
+    
+    
+    </div></a>
+    
+   
+<br/>
 
-/>
-
-
-</div><br/>
-
+ <a href="https://hoopscript.com/article?_id=5ffa9e2bfeaebf363eaf659e">
 <div 
 className="thirdKicker">
 
@@ -55,9 +64,18 @@ author="Jason Marquez"
 date="Jan 17, 2021"
  />
 </div>
+</a>
 
 </div>
-
+<style jsx>
+    {`
+    text-decoration: none;
+    color: black;
+    
+    
+    
+    `}
+</style>
     </>
 }
 
