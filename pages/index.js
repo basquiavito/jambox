@@ -13,7 +13,7 @@ function home(){
 <KickerHub />
 </div> 
 
-  <div id="">
+  <div id="codeHub">
   <CodeHub />
 </div>  
 <Sectiontitle title="Search"/>
@@ -26,11 +26,13 @@ function home(){
 
    <style jsx>
      {`
+#codeHub {
+  padding-right: 0.5rem;
+}
 
-
-     main, #kickerHub, #app {
+     main, #codeHub, #kickerHub, #app {
       max-width: 38rem;
-      padding: 1rem;
+  
       margin: auto;
   
      }

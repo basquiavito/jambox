@@ -28,6 +28,8 @@ className="sizeImageConainer"
 <h3 className="titleAndPlayer">
 <div className="title">{props.codeTitle}</div>
 <div className="player">{props.hoopcodes}</div>
+<div className="player">{props.details}</div>
+
 
 </h3>
 </div>

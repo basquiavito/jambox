@@ -16,7 +16,7 @@ return(
     grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
     grid-column: grid-start / grid-end; 
     text-align: center;
-    margin-bottom: 2rem;
+    
  
  
 }
