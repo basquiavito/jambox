@@ -69,8 +69,9 @@ className="sizeImageConainer"
    align-items: center; 
 }
 .metadata{
-    margin-left: 20px;
+ 
    grid-column: 8 / span 1;
+   margin-right: 30px;
  
 }
 .pageGridFull {
@@ -130,10 +131,11 @@ className="sizeImageConainer"
    line-height: 1.125;  
 }
 .title{
-   overflow-wrap: break-word;
-   word-break: break-word;
- 
-   white-space: nowrap;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+   
+    white-space: nowrap;
     
 }
 .player{
