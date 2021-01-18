@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
  
 function coderow (props){
@@ -13,8 +14,15 @@ return(
 
 <div className="coverAndTitleAndRole">
 <div className="cover">
-<div className="sizeImageConainer" data-visible="true">
-   <noscript></noscript></div></div>
+<Image
+src={props.image}
+alt={`A photo of ${props.player}`}
+width="100px"
+height="100px"
+ 
+className="sizeImageConainer"
+/>
+ </div>
 
 <h3 className="titleAndPlayer">
 <div className="title">{props.codeTitle}</div>
