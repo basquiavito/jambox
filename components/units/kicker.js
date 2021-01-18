@@ -10,7 +10,7 @@ const kicker = (props) => {
 <Label label={props.label} /><br/>
 <Title title={props.title}/>
 <div color="orange" className="divider"></div>
-<Dekk dekk={props.dekk} dekk1={props.dekk1}/>
+<Dekk dekk={props.dekk} />
 <ImageHolder mediaUrl={props.mediaUrl} figcaption={props.figcaption} photographer={props.photographer}/><br/>
 
 <Authordate author={props.author} date={props.date}/>

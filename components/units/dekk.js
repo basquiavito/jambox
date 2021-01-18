@@ -5,7 +5,7 @@ return(
 <div className="editorialDekk">
     <ul className="dekkContainer">
         <li>{props.dekk} </li>
-        <li>{props.dekk1} </li>
+       
     </ul>  
  
 <style jsx>
