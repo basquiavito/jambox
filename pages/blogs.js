@@ -6,11 +6,11 @@ import Link from 'next/link'
 import Date from '../components/date'
 import Label from '../components/units/label'
 import Workhorse from '../components/units/workhorse'
-
- 
+import Sectiontitle from '../components/units/sectiontitle'
+import Sectionsubtitle from '../components/units/sectionsubtitle'
 const main = {
   maxWidth: '38rem',
-  padding: '2rem',
+  padding: '1.5rem',
   margin: 'auto',
  
 }
@@ -28,8 +28,9 @@ export default function blog({ allPostsData }) {
   return <>
  
 <section style={main} className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-<h2 className="headline">Blog</h2>
-<h2 className={utilStyles.headingLg}></h2>
+<Sectiontitle title="hoopnotes"></Sectiontitle>
+<Sectionsubtitle subtitle="Let's talk Basquetbol" /><br/><br/>
+<h3 className={utilStyles.headingLg}></h3>
         <div className="workHorsePosts">
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title, author, image, comment }) => (
@@ -57,7 +58,9 @@ export default function blog({ allPostsData }) {
       
  <style jsx>
    {`
-
+ a {
+  text-decoration: none;
+}
    .workHorsePosts {
     max-width: 560px;
     margin-left: auto;
@@ -82,10 +85,12 @@ export default function blog({ allPostsData }) {
     text-align: center;
     text-transform: uppercase;
     word-wrap: break-word;
-    margin-bottom: 75px;
+    
    }
  
-   
+   li {
+     text-decoration: none;
+   }
    `}
  </style>
   </>

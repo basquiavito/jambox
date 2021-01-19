@@ -40,6 +40,7 @@ const workhorse = (props) => {
     height: auto;
 }
  a {
+    text-decoration: none;
      color: #000;
  }
  .workHorseDetails {

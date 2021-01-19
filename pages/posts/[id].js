@@ -78,7 +78,9 @@ export default function Post({ postData }) {
 
 <style jsx>
     {`
-
+a {
+  text-decoration: none;
+}
 
 .imageContainer {
   text-align: center;
@@ -164,6 +166,10 @@ export default function Post({ postData }) {
     max-width: 38rem;
   padding: 1.5rem;
   margin: auto; 
+  }
+
+  a {
+    text-decoration: none;
   }
     `}
 </style>

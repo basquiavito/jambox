@@ -5,9 +5,9 @@ function Sectiontitle(props){
 return(
     <>
 <div className="sectionTitleContainer">
-<h2 className="sectionTitle">
+<h1 className="sectionTitle">
   {props.title}
-</h2></div>
+</h1></div>
 <style jsx>{`
 .sectionTitleContainer{
     display: grid;
