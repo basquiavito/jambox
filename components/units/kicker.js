@@ -6,7 +6,8 @@ import Dekk from '../units/dekk'
 import Authordate from '../units/authordate'
 const kicker = (props) => {
     return <>
-    <main> 
+ <div className="pageGrid">
+<div className="gridCenter"> 
 <Label label={props.label} /><br/>
 <Title title={props.title}/>
 <div color="orange" className="divider"></div>
@@ -14,7 +15,7 @@ const kicker = (props) => {
 <ImageHolder mediaUrl={props.mediaUrl} figcaption={props.figcaption} photographer={props.photographer}/><br/>
 
 <Authordate author={props.author} date={props.date}/>
- </main>
+ </div></div>
 <style jsx>
 
   {`
@@ -24,7 +25,7 @@ const kicker = (props) => {
     background-color: transparent;
     vertical-align: baseline;
   }
-  min-width: 370px;
+ 
   
   
   

@@ -16,6 +16,7 @@
     "cwebp": "^2.0.5",
     "date-fns": "^2.14.0",
     "gray-matter": "^4.0.2",
+    "hamburger-react": "^2.4.0",
     "hyvor-talk-react": "^1.0.2",
     "instantsearch.css": "^7.4.5",
     "jquery": "^3.5.1",

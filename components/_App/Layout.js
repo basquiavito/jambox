@@ -13,10 +13,10 @@ return (
     </nav>  
 <br/><br/><br/>
   <main>
- 
+ <Container>
         {children}
    
-     
+        </Container>
         </main>
     
  <footer>
@@ -24,7 +24,11 @@ return (
  </footer>
 <style jsx>
   {`
- 
+  main {
+    max-width: 38rem;
+    padding: 1rem;
+    margin: 0;
+  }
   
   
   `}

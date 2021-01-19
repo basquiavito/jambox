@@ -59,13 +59,13 @@ function home(){
 <KickerHub />
 </div> 
 
-  <div id="codeHub">
+  {/* <div id="codeHub">
   <CodeHub />
 </div>  
 <Sectiontitle title="Search"/>
   <div id="app">
    <App />
-   </div>  
+   </div>   */}
 
 </div></div>
   
@@ -84,10 +84,7 @@ function home(){
   .gridCenter{
     grid-column: center-start / center-end;
  }
-#codeHub {
-  padding-right: 0.5rem;
-}
-
+  
     
     
      a {
