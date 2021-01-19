@@ -13,7 +13,7 @@ export default function title(props){
     font-weight: 400;
     text-align: center;
  
-    margin-top: 10px;
+ 
     box-sizing: border-box;
     font-family: tiempos,Serif!important;  
    }   
@@ -29,10 +29,7 @@ export default function title(props){
    
 }
 
-h1{
-    margin-top: 20px;
  
-}
        
         
    

@@ -8,8 +8,7 @@ import ImageHolder from '../../components/units/imageHolder'
 import Wshhtitle from '../../components/units/wshhtitle'
  import Sectiontitle from '../../components/units/sectiontitle'
 import Image from 'next/image'
-import { Card } from "semantic-ui-react";
-
+ 
 
 
 
@@ -26,7 +25,7 @@ export default function Post({ postData }) {
   
   return (
     < >
-    <main style={main}>
+    
          <Head>
          <title>{postData.title}</title>
  <meta property="og:image" content={postData.image}></meta>
@@ -44,6 +43,7 @@ export default function Post({ postData }) {
     <meta property="og:image" content={postData.image}/>
     
       </Head>
+      <main style={main}>
       <article>
 
       <Wshhtitle title={postData.title} />
@@ -163,9 +163,8 @@ a {
     }
  
   article {
-    max-width: 38rem;
-  padding: 1.5rem;
-  margin: auto; 
+ 
+ 
   }
 
   a {

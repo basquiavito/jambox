@@ -10,7 +10,7 @@ import Head from 'next/head'
 
 function home(){
   return <>
- <main>
+
  <Head>
 <meta charSet="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -52,7 +52,7 @@ function home(){
   
   
 </Head>
- 
+<main>
   <div id="kickerHub">
 <KickerHub />
 </div> 
@@ -74,12 +74,7 @@ function home(){
   padding-right: 0.5rem;
 }
 
-     main, #codeHub, #kickerHub, #app {
-      max-width: 38rem;
-  
-      margin: auto;
-  
-     }
+    
     
      a {
        text-decoration: none;
