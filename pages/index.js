@@ -53,6 +53,7 @@ function home(){
   
 </Head>
 <main>
+  
   <div id="kickerHub">
 <KickerHub />
 </div> 
