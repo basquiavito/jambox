@@ -16,7 +16,7 @@ export default function tophead(){
 <div id="logo">
  
 <a  href="/" id="">   
- <span className="rightSide">HOOP</span>EROS </a>
+ <span className="rightSide">HOOPEROS</span> </a>
  
 
 </div>
@@ -29,7 +29,7 @@ export default function tophead(){
 
 <div id="log">
  
-<a  href="/blogs" id="">  Blog </a>
+<a  href="/blogs" id="blog">  Blog </a>
  
 
 </div>
@@ -52,17 +52,22 @@ export default function tophead(){
 
 
     {`
+#blog {
+    color: #fff;
+}
 
 
-
-#log, #logo{
+  #logo{
     margin-right: 10px;
+    color: #fff;
+    letter-spacing: -4;
 }
 
 
 
 .rightSide {
-  color:  #e41224;
+  color:  #fff;
+  letter-spacing: -4;
 }
 #hoopers {
      cursor: pointer;
@@ -94,7 +99,7 @@ svg {
     transition: opacity .3s ease-in-out;
     justify-content: space-between;
     height: 41px;
- background-color: ;
+ background-color:#051c2d;
     width: 100%;
     height: 41px;
    color:  rgb(255 255 255); 

@@ -22,7 +22,7 @@ setLoadMore({load : !doesShow})
 <a href="https://hoopscript.com/article?_id=6005f094d10d9c718cd9f5f6"><Coderow rank ="3" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610755879/tatum_zof8gi.jpg" codeTitle="Jayson Tatum" hoopcodes="535" details="Tutuma " /></a>
 <a href="https://hoopscript.com/article?_id=6005f441d10d9c718cd9f5f7"><Coderow rank ="4" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610926935/lamelonew_vzo7ge.jpg" codeTitle="Lamelo/Bridges" hoopcodes="pass/dunk" details="Both" /></a>
  
-<a href=""><Coderow rank ="5" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610757282/currymss_lhtmdk.jpg" codeTitle="Stephen Curry" hoopcodes="+60 points" details="Outlier" /></a>
+<a href="https://hoopscript.com/article?_id=5ffa9e2bfeaebf363eaf659e"><Coderow rank ="5" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610757282/currymss_lhtmdk.jpg" codeTitle="Stephen Curry" hoopcodes="+60 points" details="Outlier" /></a>
 
 
 { loadmore.load  ? <div>
