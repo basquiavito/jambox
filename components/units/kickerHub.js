@@ -31,7 +31,7 @@ date="Jan 18, 2021"
     <Kicker 
      label="Debut"
      title="Victor Oladipo Debuta con los Rockets"
-     dekk="Victor Oladipo debuto con los Rockets and termino con 32 PTS, 5 REB, 9 AST & 2 STL"
+     dekk="Victor Oladipo debuto con los Rockets and termino  32 PTS, 5 REB, 9 AST & 2 STL"
      mediaUrl="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1611057194/Oladipo_Debut_mmg1aw.png" 
     figcaption="Victor Oladipo "
     photographer="Ortelo Navas for Hoopscript"
@@ -52,10 +52,10 @@ className="thirdKicker">
 
 <Kicker
  label="Vintage"
- title="Stephen Curry responde las criticas con excepcional juego de 62 puntos"
+ title="Stephen Curry Answers His Critics With a 62-Point Game"
  mediaUrl="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610755507/curry_hxbmt3.jpg"
- dekk="La mayor cantidad d puntos de su carrera recordandole a la liga lo que el todavia puede hacer."
-  figcaption="Stephen Curry lidero los Warriors a la victoria "
+ dekk="A career-best performance against Portland reminded the league what the Golden State Warriors guard can do."
+  figcaption="Stephen Curry’s incredible night led to a win for the Golden State Warriors"
 photographer="NBA for youtube"
 author="Jason Marquez"
 date="Jan 17, 2021"

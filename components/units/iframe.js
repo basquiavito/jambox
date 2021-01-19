@@ -4,7 +4,7 @@ const iframe = (props) => {
      <Sectiontitle  title={props.hoopcode}/>
 
      <div className="stringContainer">
-     <p id="strings">{props.string}</p>
+     <span id="strings">{props.string}</span>
      </div>
  
 <iframe

@@ -39,7 +39,7 @@ setLoadMore({load : !doesShow})
 <a href="https://hoopscript.com/article?_id=5ffcc7d2481c848306249f15"><Coderow rank ="13" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1611060734/rozier_bnif1o.jpg" codeTitle="Terry Rozier" hoopcodes="802" details="Sick Dunk " /></a>
 <a href="https://hoopscript.com/article?_id=6006d6a62ba6762fdeae3b47"><Coderow rank ="14" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1611061022/irving_uqzoxg.jpg" codeTitle="Kyrie Irving" hoopcodes="518 SB" details="Step Back " /></a>
  
-<a href="https://hoopscript.com/article?_id=5fff9562707ad80ad30e42b0"><Coderow rank ="15" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610757042/dono1_tcmowd.jpg" codeTitle="Donovan Mitchell" hoopcodes="417" details="Missouri " /></a>
+<a href="https://hoopscript.com/article?_id=5fff9562707ad80ad30e42b0"><Coderow rank ="15" image="https://res.cloudinary.com/www-hoopscript-com/image/upload/v1610757042/dono1_tcmowd.jpg" codeTitle="Donovan " hoopcodes="417" details="Missouri " /></a>
  
 
  

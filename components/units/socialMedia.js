@@ -72,8 +72,8 @@ cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 100%;
     padding: 5px;
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 } 
 a {
     text-decoration: none;
