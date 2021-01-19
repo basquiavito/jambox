@@ -13,12 +13,12 @@ return (
     </nav>  
 <br/><br/><br/>
   <main>
- 
+ <Container>
         {children}
-  
+   
+        </Container>
         </main>
     
-   
  <footer>
 
  </footer>
