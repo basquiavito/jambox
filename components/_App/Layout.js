@@ -24,6 +24,11 @@ return (
  </footer>
 <style jsx>
   {`
+  main {
+    max-width: 38rem;
+    padding: 1rem;
+    margin: 0;
+  }
   
   
   `}

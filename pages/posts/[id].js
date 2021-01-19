@@ -5,7 +5,7 @@ import Byline from '../../components/units/byline'
 import utilStyles from '../../static/layout.module.css'
 import HyvorTalk from 'hyvor-talk-react'
 import ImageHolder from '../../components/units/imageHolder'
-import Title from '../../components/units/title'
+import Wshhtitle from '../../components/units/wshhtitle'
  import Sectiontitle from '../../components/units/sectiontitle'
 import Image from 'next/image'
 import { Card } from "semantic-ui-react";
@@ -46,7 +46,7 @@ export default function Post({ postData }) {
       </Head>
       <article>
 
-      <Title title={postData.title} />
+      <Wshhtitle title={postData.title} />
       <div className="imageContainer" >
 <picture>
    

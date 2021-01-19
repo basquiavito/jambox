@@ -54,6 +54,7 @@ export default function tophead(){
     {`
 #blog {
     color: #fff;
+    margin-left: 20px;
 }
 
 

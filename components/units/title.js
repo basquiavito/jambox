@@ -34,7 +34,7 @@ export default function title(props){
     color: #121212;
     text-align:center;
     color: #121212;
- ;
+    text-align: left;
     -webkit-font-smoothing: antialiased;
     font-family: nyt-cheltenham;
     font-size: 1.875rem;

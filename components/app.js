@@ -54,7 +54,7 @@ return <>
  
 
 </div>
-        
+   <br/>     
  <div className="refine">
 <b>By Players</b><br/><hr/>
             <RefinementList
@@ -71,7 +71,7 @@ return <>
  
           <div  >
       
-
+<br/>
             <div className="refine">
             <b>By Hoopcodes</b>  <hr/>
             <RefinementList
@@ -92,7 +92,7 @@ return <>
          </div>
 
             </div>
-            
+            <br/>
             <div className="configure">
             <Configure hitsPerPage={8} />
             </div>
