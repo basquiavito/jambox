@@ -6,10 +6,9 @@ function Layout({ children }) {
   
 return (
 <>
-         
-    <nav>
+    
     <Toplayout />
-    </nav>  
+ 
 <br/><br/><br/>
 <div className="pageGrid">
 <div className="gridCenter">

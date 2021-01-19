@@ -12,22 +12,22 @@ return(
          <Image
          src={props.mediaUrl}
          alt=""
-         width='368.px'
-         height="272px"
+         width='320.px'
+         height="180px"
          className="imageContainer"
          />
          </picture>
-         <figcaption className="figCaption">
-                 {props.figcaption} <span className="photographer">
-                      {props.photographer}   
-                 </span>
-         </figcaption>
+       
  
  
  </div>
 
         <style jsx>
         {`
+
+        .pageGridFull {
+                grid-column: grid-start / grid-end;
+        }
         .figCaption {
                 color: #999;
                 font-family: nyt-cheltenham-small;

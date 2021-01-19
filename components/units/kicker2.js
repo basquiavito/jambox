@@ -1,23 +1,23 @@
 import Label from '../units/label'
-import Title from '../units/title'
+import Title2 from '../units/title2'
 import ImageHolder from '../units/imageHolder'
 import Image from 'next/image'
 import Dekk from '../units/dekk'
 import Authordate from '../units/authordate'
-const kicker = (props) => {
+const kicker2 = (props) => {
     return <>
  <div className="pageGrid">
 <div className="gridCenter"> 
 
 
 <Label label={props.label} />
-<Title title={props.title}/>
- 
-<Dekk dekk={props.dekk} />
-<Authordate author={props.author} date={props.date}/>
-
 <ImageHolder mediaUrl={props.mediaUrl} figcaption={props.figcaption} photographer={props.photographer}/>
 
+<Title2 title={props.title}/>
+ 
+<Dekk dekk={props.dekk} />
+
+<Authordate author={props.author} date={props.date}/>
  </div></div>
 <style jsx>
 
@@ -37,4 +37,4 @@ const kicker = (props) => {
     </>
 }
 
-export default kicker
+export default kicker2

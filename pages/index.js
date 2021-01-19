@@ -52,12 +52,17 @@ function home(){
   
   
 </Head>
-<div className="pageGrid">
-<div className="gridCenter">
-  
-  <div id="kickerHub">
-<KickerHub />
-</div> 
+ 
+ <KickerHub />
+ 
+ 
+
+ 
+
+
+
+
+
 
   {/* <div id="codeHub">
   <CodeHub />
@@ -67,7 +72,7 @@ function home(){
    <App />
    </div>   */}
 
-</div></div>
+ 
   
 
    <style jsx>
