@@ -11,23 +11,30 @@ return (
     <Toplayout />
     </nav>  
 <br/><br/><br/>
-  <main>
+<div className="pageGrid">
+<div className="gridCenter">
  
         {children}
    
     
-        </main>
+      </div></div>
     
  <footer>
 
  </footer>
 <style jsx>
   {`
-  main {
-    max-width: 38rem;
-    padding: 1rem;
-    margin: 0;
-  }
+.pageGrid{
+
+  display: grid;
+  -webkit-box-pack: center;
+  justify-content: center;
+  grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
+  grid-row-gap: 30px;}
+  
+  .gridCenter{
+    grid-column: center-start / center-end;
+ }
   
   
   `}
