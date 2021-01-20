@@ -1,126 +1,132 @@
 import Link from 'next/link'
+
+export default function header(){
+    return <>
  
+<div className="topBar">
+<Link href="/"> 
+<div id="headerLogo">
+    <h1>
+      
+    <a id="Logo">
+        Hooperos.com
+     </a>   
+    </h1>
+</div>
+</Link>
+
+<Link href="/blogs" >
+<div id="blog">
+<a id="blog">
+    Blog
+     </a> 
+</div>
+</Link>
+
+<Link href="/search">
+<div id="search">
+<a  id="Logo">
+<svg viewBox="0 0 21.48 21.59"><path d="M21.48 20.18L14.8 13.5a8.38 8.38 0 1 0-1.43 1.4l6.69 6.69zM2 8.31a6.32 6.32 0 1 1 6.32 6.32A6.32 6.32 0 0 1 2 8.31z"></path></svg>
+     </a> 
+</div>
+</Link>
+
+
+</div>
+
+ 
+
+
  
 
  
-const tableStyle = {padding: '2px'}
-const tdStyle = {width:'18px', paddingRight: '4px'}
-const tdAImg = { width:'18px', height: '18px', border: '1px solid black'}
-const td2ndStyle = { lineHeight: '12pt', height: '10px'}
-const td3rdStyle = {textAlign: 'right', paddingRight: '4px'}
-
-
-export default function Topheader(){
- 
- 
- 
-    return<>
-<table id="hsmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#0ff">
-<tbody><tr><td bgcolor="#000">
-<table border="0" cellpadding="0" cellspacing="0" width="100%" style={tableStyle} >
-<tbody><tr>
-<td style={tdStyle}>
-<a href="https://www.hoopscript.com">
-<span  style = {tdAImg} className="letterH" width="18" height="18" alt="H">H</span> </a></td>
-<td style={td2ndStyle}>
-<span className="pagetop">
-<b className="hsname">
-<Link href="/" ><a>Hoopscript</a></Link></b> <hr/>
-<Link href="/notation"><a  className="aLink">notacion</a></Link> | 
-<Link href="/search"><a>jugadores</a></Link>| 
-  
- 
-<Link href="/blogs"><a>blog</a></Link> | 
- 
-</span></td>
- 
-<td style={td3rdStyle}><span className="pagetop">
-<Link href="/"><a href="/"><span id="login">login</span></a></Link>
-</span></td>
-<td style={td3rdStyle}><span className="pagetop">
-
-</span></td>
-
-</tr></tbody></table></td></tr></tbody></table>
-
-
-
 <style jsx>
-  {`
+    {  `
 
-#login {
-    color: #e41224;;
+
+#blog {
+    font-size: 0.875rem;
+    font-family: montserrat, sans-serif;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255); 
+    font-weight: 700;
+    display: block;
+    letter-spacing: 0.2px;
+    vertical-align: baseline; 
 }
-.letterH{
-    color: #e41224;;
-}
-  @media only screen and (max-width:3300px) and (min-width: 300px){
-  #hsmain {
-      width: 100%;
-      margin-bottom: 1.2rem;
-      height:41px;
-    
-  }}
-  tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
-}
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-}
-td {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 10pt;
-    color: #828282;
-}
+#headerLogo h1 {
+    position: relative !important;
+    top: 2px !important;
+    display: block;
+    font-family: montserrat, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
   
-@media only screen and (max-width: 750px) and (min-width: 300px){
-td {
-    height: inherit !important;
-}}
-.tableStyle {
-    pading: 2px;
 }
-a:link {
-    color: #fff;
-    text-decoration: none;
+
+#headerLogo {
+    text-align: center;
+    margin-left: 10px;
+    font-size: 12px;
+    letter-spacing: -3px;
+    display: block;
+    float: left;
+}
+
+ #search svg {
+     fill: #fff;
+    width: 18px;
+    margin-right: 8px;
+ }
+    #search {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        padding: 0px 0.375rem;
+    }
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+a {
+   
     cursor: pointer;
-}
-@media only screen and (max-width: 750px) and (min-width: 300px){
-span.pagetop {
-    display: block;
-    margin: 3px 5px;
-    font-size: 14px;
-}}
-.pagetop {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 10pt;
-    color: #222222;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
 }
 
-@media only screen and (max-width: 750px) and (min-width: 300px){
-span.pagetop b {
-    display: block;
-    font-size: 15px;
-}}
-.hsname {
-    margin-right: 10px;
-   margin-bottom: 0.3rem;
-}
+
  
- 
-.pagetop a:visited {
-    color: #fff;
-}
 
-.pagetop > a {
-    margin-right: 2.3px;
-}
-
-  `}  
+  
+    .topBar{
+    background-color : #d00;
+    margin: 0;
+    height: 41px;
+    position: relative;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+     
+        
+    }
+    `}
 </style>
     </>
 }
+
+ 

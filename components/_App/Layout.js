@@ -1,15 +1,13 @@
 import Head from "next/head";
- import PageHeader from './pageHeader'
- 
+ import Header from './Header'
+ import Nav from './nav'
 function Layout({ children }) {
   
 return <>
-<head>
-  <link rel="stylesheet" href="./app.css"></link>
-</head>
-<div id="application">
- <PageHeader/>
  
+<div id="application">
+ <Header/>
+ <Nav/>
 
 <div className="pageGrid">
 <div className="gridCenter">

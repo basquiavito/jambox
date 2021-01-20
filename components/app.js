@@ -18,8 +18,7 @@ import {
 import PropTypes from 'prop-types';
 import Link from 'next/link'
 
-import 'instantsearch.css/themes/algolia.css';
-import { Label } from 'semantic-ui-react';
+ import 'instantsearch.css/themes/algolia.css';
  
  
 
@@ -34,13 +33,6 @@ render() {
 return <>
 <div>
  
-   
- 
-
-
-
-
-
 <InstantSearch indexName="vito" searchClient={searchClient}>
 <div className="searchbox"  >
 <SearchBox
@@ -114,8 +106,7 @@ return <>
       <style jsx>
         {`
  
-
-
+ 
         
   
  
