@@ -113,13 +113,7 @@ return <>
       </div>
       <style jsx>
         {`
-@media only screen and (max-width: 375px) {
- .hits, .refine, .searchbox {
-   min-width: 375px;
- padding: 1.5rem;
-  
-   
- }}
+ 
 
 
         
@@ -179,56 +173,15 @@ className="imagen"
     
     <style jsx>
       {`
- .hoopcode {
-  color: #e41224;
- }
-  ul >    li {
-        list-style-type: none;
-      }
- #dekk {
-  color: rgb(85, 85, 85);
-  font-family: nyt-imperial;
-  font-size: 1rem;
-  letter-spacing: normal;
-  line-height: 1.375rem;
-  margin: 0px;
-  padding: 0px;
-  transition: color 0.6s ease;
- }
  
+ a {
+   text-decoration:  none;
+   color: #000;
+ }
  
     
- .team{
-  position: relative;
-  font-style: normal;
-  margin: 0px;
-  color: rgb(18, 18, 18);
-  text-align: left;
-  -webkit-font-smoothing: antialiased;
-  font-family: nyt-cheltenham, helvetica;
-  font-size: 0.85rem;
-  line-height: 1.0625rem;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-  transition: color 0.6s ease;
- }
-   
-        
-      }
-      a {
-        text-decoration: none;
-        color: black;
-        text-size-adjust: 100%;
-        font: inherit;
-        vertical-align: baseline;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-         }
-      div {
-        font-family: Poppins,verdana,sans-serif;
-      }
+ 
+  
       `}
     </style>
   </>;

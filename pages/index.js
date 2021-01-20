@@ -60,10 +60,6 @@ function home(){
 
 
 
-{/* <Sectiontitle title="Search"/>
-  <div id="app">
-   <App />
-   </div>   */} 
 
  
   
