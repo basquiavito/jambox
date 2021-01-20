@@ -64,13 +64,16 @@ function home(){
 
 
 
-  {/* <div id="codeHub">
+ <div id="codeHub">
   <CodeHub />
 </div>  
-<Sectiontitle title="Search"/>
+
+
+
+{/* <Sectiontitle title="Search"/>
   <div id="app">
    <App />
-   </div>   */}
+   </div>   */} 
 
  
   
