@@ -55,18 +55,8 @@ function home(){
  
  <KickerHub />
  
- 
+ <CodeHub />
 
- 
-
-
-
-
-
-
- <div id="codeHub">
-  <CodeHub />
-</div>  
 
 
 
