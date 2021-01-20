@@ -7,7 +7,7 @@ const kickerhub = () => {
 const [ lan, setLan] = useState({
  mainKicker:[
      {label:[ 'Caliente', 'Debut', 'Gloria']},
-     {title: ["Kevin Durant & James Harden se combinan para 64 puntos", "Victor Oladipo Debuta con los Rockets", "Steph Curry response a las criticas con un partido de 62 puntos"]},
+     {title: ["Kevin Durant & James Harden se combinan para 64 puntos", "Victor Oladipo Debuta con los Rockets", "Steph Curry responde a las criticas con un partido de 62 puntos"]},
      {dekk: ["Harden & Durant", "Victor Oladipo debuto con los Rockets and termino 32 PTS, 5 REB, 9 AST & 2 STL","Termino con la mayor cantidad de puntos en su carrera, recordandole a la liga quien es Curry."]},
      {author:['Richard Clemons', 'Justin Telfair',  'Jason Marquez']},
      {date:['Ene 19, 2021', 'Ene 19, 2021', 'Ene 17, 2021']},
@@ -35,7 +35,7 @@ const switchEnglishHandler = ()=> {
     
             mainKicker:[
                 {label:[ 'Caliente', 'Debut', 'Vintage']},
-                {title: ["Kevin Durant & James Harden se combinan para 64 puntos", "Victor Oladipo Debuta con los Rockets", "Steph Curry response a las criticas con un partido de 62 puntos"]},
+                {title: ["Kevin Durant & James Harden se combinan para 64 puntos", "Victor Oladipo Debuta con los Rockets", "Steph Curry responde a las criticas con un partido de 62 puntos"]},
                 {dekk: ["Harden & Durant", "Victor Oladipo debuto con los Rockets and termino 32 PTS, 5 REB, 9 AST & 2 STL", "Mayor cantidad de puntos en su carrera, recordandole a la liga quien es el."]},
                 {author:['Richard Clemons', 'Justin Telfair',  'Jason Marquez']},
                 {date:['Ene 19, 2021', 'Ene 19, 2021', 'Ene 17, 2021']},
