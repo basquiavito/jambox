@@ -162,7 +162,7 @@ className="thirdKicker">
     cursor: pointer;
     display: inline-block;
     font-family: Programme, Arial, sans-serif;
-    font-size: 0.175rem;
+    font-size: 0.375rem;
     line-height: 1;
 margin-right: 5px;
     text-align: center;
