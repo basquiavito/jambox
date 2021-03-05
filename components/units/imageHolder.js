@@ -1,13 +1,12 @@
 
 import Link from 'next/link';
-import LazyLoad from 'react-lazy-load';
 import Image from 'next/image'
 
 function editorialMedia(props){
 return(
         <>
-
- <div  className="pageGridFull">
+< a href="heroImage">
+<div  className="pageGridFull">
          <picture className="photoContainer">
          <Image
          src={props.mediaUrl}
@@ -21,10 +20,14 @@ return(
  
  
  </div>
+</a>
+
 
         <style jsx>
         {`
-
+.heroImage {
+        grid-column: span 7 / auto;
+}
         .pageGridFull {
                 grid-column: grid-start / grid-end;
         }

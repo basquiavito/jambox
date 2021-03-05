@@ -15,19 +15,22 @@ export default function title(props){
 
 
  .editorialTitle {
-    margin-top: 0.1rem;
+    margin-top: 1rem;
     font-size: 2.25rem;
+   
      
  }
-       .editorialTitle   {
-        margin-top: 0.5rem;
+       .editorialTitle  h2 {
+         display: inline;
+     
     
        }  
        
-       h2 {
-        font-size: 100%;
-        font-weight: inherit;
-       }
+       h1, h2, h3, h4, h5, h6 {
+         font-size: 100%;
+         font-weight: inherit;
+         
+     }
             `}</style>
        
     </>

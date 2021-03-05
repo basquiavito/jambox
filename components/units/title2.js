@@ -1,39 +1,42 @@
 
- 
 
 
-
-export default function title2(props){
+export default function title(props){
     return<>
    <div className="editorialTitle">
-   <h3 >
-    {props.title}</h3>
+   <h2 className='headerRow'>
+    {props.title}</h2>
    </div>
    
    <style jsx>{`
-    h3   {
-    font-size: 100%;
-    font-weight: inherit;
-}
-   .editorialTitle h3 {
-    display: inline;
-   }
+    
+   
    
     .editorialTitle {
-    
-        margin-top: 0.75rem;
-    font-size: 1.313rem;
-    margin-bottom: 1rem;
+       margin-top: 1rem;
+       font-size: 2.25rem;
+       color: #fff;
+       margin-top: 1rem;
+       font-weight: 700;
+       letter-spacing: 0.2px;
+       transition: color 0.6s ease;
+       font-family: nyt-cheltenham;
+       -webkit-font-smoothing: antialiased;
+     
+       vertical-align: baseline
+        
     }
-          .editorialTitle   {
-           margin-top: 0.5rem;
+          .editorialTitle  h2 {
+            display: inline;
+        
        
           }  
           
-          h2 {
-           font-size: 100%;
-           font-weight: inherit;
-          }
+          h1, h2, h3, h4, h5, h6 {
+            font-size: 100%;
+            font-weight: inherit;
+            
+        }
                `}</style>
           
        </>

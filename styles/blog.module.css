@@ -1,0 +1,269 @@
+.whiteContainer {
+    padding: 0;
+    background-color: #fff;
+
+}
+@media only screen and (max-width: 1200px){
+
+    .gridLayout {
+     
+      
+        display: flex;
+         
+        flex-wrap: wrap;
+        background: #fff;
+        margin: auto;
+        max-width: auto;
+        min-width: auto;
+        padding: 0 24px;
+        width: 100%;
+    }}
+    
+@media only screen and (min-width: 1201px){
+
+.gridLayout {
+ 
+    display: -moz-box;
+    display: -ms-flexbox;
+ 
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+     
+    flex-wrap: wrap;
+    background: #fff;
+    margin: auto;
+    max-width: 1188px;
+    min-width: 1020px;
+    padding: 0 24px;
+    width: 100%;
+}}
+
+.layoutFull {
+    width: 100%; 
+    margin-bottom: 4.5rem;
+}
+@media only screen and (min-width: 1201px){
+.articleTitleOutline {
+    -webkit-text-stroke: 2px #000;
+    color: #000;
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+    margin-top: 2.25rem;
+    font-family: 'Poppins'
+
+}}
+
+@media only screen and (max-width: 1200px){
+    .articleTitleOutline {
+        color: #000;
+    font-size: 1.75em;
+    font-weight: 100;
+    line-height: 1.1;
+    text-align: center;
+        font-family: 'Poppins'
+    
+    }}
+    @media only screen and (min-width: 1201px){
+.uTextCenter {
+    margin-bottom: 1.5rem;
+    margin-top: .75rem;
+  }}
+
+  @media only screen and (max-width: 1200px){
+    .uTextCenter {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+      
+    
+    }}
+
+    .uTextCenter  {
+        text-align: center;
+    }
+
+.articleinfoBar {
+    display: inline-flex;
+    align-items: center;
+  
+ 
+}
+.articleType {
+    border: 1px solid #000;
+    display: inline-block;
+    font-size: .75em;
+    line-height: 1;
+    padding: .15em .3em;
+    text-transform: capitalize;
+}
+
+.articleDate {
+    font-size: .75em;
+    line-height: 1;  
+    margin-left: .5rem;
+}
+
+.articleHeroBckGrndImage {
+    background-image: url('')
+
+}
+@media only screen and (min-width: 1201px){
+.articleHeroBckGrndImage {
+    height: 0;
+    padding-bottom: 56.25%;
+    box-shadow: 2px 2px 30px 8px rgba(100,100,100,.2);
+    display: block;
+    width: 100%;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+}}
+
+@media only screen and (max-width: 1200px){
+    .articleHeroBckGrndImage {
+        height: 0;
+        padding-bottom: 56.25%;
+        box-shadow: 2px 2px 30px 8px rgba(100,100,100,.2);
+        display: block;
+        width: 100%;
+        background-position: center;
+        background-repeat: repeat-x;
+        background-size: auto 100%;
+        
+    }}
+
+.dataArticleHero {
+    margin-top: 1rem;
+    text-align: center;
+    color: #9a9a9a;
+    font-size: .75rem;
+    font-weight: 100;
+    user-select: none;
+    
+    word-break: break-word;
+
+    text-transform: uppercase;
+    margin-right: .1em;
+    letter-spacing: .04em;
+    font-family: Programme,Arial,sans-serif;
+}
+@media only screen and (min-width: 1201px){
+.gridLayoutBody {
+    flex: 1;
+  padding: 5.25rem;
+    -webkit-box-flex: 1;
+    margin-bottom: 4.5rem;
+     
+}}
+
+@media only screen and (max-width: 1200px){
+    .gridLayoutBody {
+        flex: 1;
+  padding: 2.25rem;
+        -webkit-box-flex: 1;
+        margin-bottom: 2.5rem;
+         
+    }}
+@media only screen and (min-width: 1201px){
+
+.articleDekk {
+    font-size: 3em;
+    font-weight: 100;
+    line-height: 1.25;
+    margin-top: 2rem;
+    font-family: 'poppins', san-serif;
+   
+}}
+
+@media only screen and (max-width: 1200px){
+
+    .articleDekk {
+        font-size: 1.25em;
+        font-weight: 100;
+        font-family: 'poppins','san-serif';
+       
+    }}
+
+.dekkContainer {
+   text-align: left;
+}
+
+
+.imageContainer {
+    padding: 10px;
+}
+@media only screen and (min-width: 1201px){
+
+.richTextFormatting {
+    color: #333;
+    font: 100 1.25rem/1.65 'Poppins',Arial,sans-serif;   
+}}
+
+@media only screen and (max-width: 1200px){
+
+    .richTextFormatting {
+        color: #333;
+        font: 100 1em/1.65 'Poppins',Arial,sans-serif;   
+    }}
+.preview {
+    margin: 3rem auto!important;
+    max-width: 100%;
+    font-size: 1rem;
+}
+
+.previewVideo{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    font-size: 1rem;
+
+}
+
+.previewVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+.preview iframe {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+@media screen and (min-width: 540px){
+.iframeSongEmbed{
+    min-height: 150px;
+    height: 150px;
+}}
+ 
+.richTextFormatting p {
+    margin: 1rem 0;  
+}
+
+.iframeImage {
+    margin: 0px auto 1em;
+    display: block;
+    max-width: 100%;
+    background-image: url(https://assets.genius.com/images/ajax-loader-button-black-with-wordmark-vertical.gif);
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 100);
+    background-position: center center;
+    overflow: hidden;
+    height: 687px;
+}
+
+.lyricstag {
+    border: 2px solid #99a7ee;
+    display: block;
+    font-size: 1.313rem;
+    font-weight: 400;
+    padding: 1.5rem 4.5rem;
+    position: relative;
+}
+

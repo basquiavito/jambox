@@ -1,82 +1,84 @@
-const gems = () => {
+export default function gems(){
     return <>
-<div id="homeContent">
-<div className="ballWorkBox">
-<b>Footwork </b>
-<ul>
-<li><span className="name">Step-back</span> <span className="value">6</span></li>
-<li><span className="name">Step-spin</span> <span className="value">7</span></li>
-<li><span className="name">First-Step</span> <span className="value">8</span></li>
-<li><span className="name">S-Forward</span> <span className="value">F</span></li>
-<li><span className="name">Post Up</span> <span className="value">P</span></li>
-<li><span className="name">Hesitation</span> <span className="value">H</span></li>
-<li><span className="name">Chasse</span> <span className="value">CH</span></li>
-</ul>
-</div>
-<div className="footWorkBox">
-    <b>Ballwork</b>
-<ul>
-<li><span className="name">Bounce</span> <span className="value">0</span></li>
-<li><span className="name">Cross</span> <span className="value">1</span></li>
-<li><span className="name">Behind</span> <span className="value">2</span></li>
-<li><span className="name">Between</span> <span className="value">3</span></li>
-<li><span className="name">Reverse</span> <span className="value">4</span></li>
-<li><span className="name">In&out</span> <span className="value">5</span></li>
-<li><span className="name">Sham</span> <span className="value">9</span></li>
-</ul>
-
-
-
-</div>
+<div id="gemsContainer">
+ <strong>Ballwork</strong>
+ <ul>
+     <li><span>0</span> <span>bounce</span></li>
+     <li><span>1</span> <span>crosover</span></li>
+     <li><span>2</span> <span>behind</span></li>
+     <li><span>3</span> <span>between</span></li>
+     <li><span>4</span> <span>reverse</span></li>
+     <li><span>5</span> <span>iao</span></li>
+     <li><span>9</span> <span>shammgod</span></li>
  
-<div className="shootingBox">
-<b>Shooting</b>
-<ul>
-<li><span className="name">Grab</span> <span className="value">G</span></li>
-<li><span className="name">Shoot</span> <span className="value">$</span></li>
+ </ul>
+<strong>Footwork</strong>
+ <ul>
+
+     <li><span>6</span> <span>step back</span></li>
+     <li><span>7</span> <span>spin</span></li>
+     <li><span>8</span> <span>first step</span></li>
+     <li><span>F</span> <span>step forward</span></li>
+     <li><span>P</span> <span>post up</span></li>
+     <li><span>H</span> <span>hesi</span></li>
+     <li><span>CH</span> <span>chasse</span></li>
+ </ul>
+
+ <strong>Shooting</strong>
+ <ul>
+<li><span>G</span> <span>grab</span></li>
+<li><span>$</span> <span>Shooting</span></li>
 </ul>
 
 
-</div>
+<strong>Shot Type</strong>
+ <ul>
+ <li><span>JU</span> <span>Dunk</span></li>
+<li><span>SB</span> <span>Step Back</span></li>
+<li><span>TA</span> <span>Turnaround</span></li>
+<li><span>FA</span> <span>Fadeaway</span></li>
+<li><span>TAFA</span> <span>Turnaround Fadeaway</span></li>
+<li><span>PU</span> <span>Pullup</span></li>
+<li><span>LU</span> <span>Layup</span></li>
+<li><span>DU</span> <span>Dunk</span></li>
+</ul>
+
+<strong>Dribbles</strong>
+ <ul> 
+ <li><span>0</span> <span>dribbles</span></li>
+<li><span>1</span> <span>dribbles</span></li>
+<li><span>2</span> <span>dribbles</span></li>
+<li><span>3-6</span> <span>dribbles</span></li>
+<li><span>7+</span> <span>dribbles</span></li>
+</ul>
+
+
+
+
+
+
 
 </div>
 <style jsx>
-{`
-#homeContent {
+    {`
+
+#gemsContainer {
 display: flex;
-  background-color: #ffe500;
-padding: 10px;
+flex-direction: column;
 justify-content: center;
-color: #121212;
-font-family: helvetica;
-
-}
-.value {
-   color: #052962;;
-   
-}
-.footWorkBox, .ballWorkBox {
-    margin-right: 20px;
- 
-    padding: 0.7px;
-}
-
- li {
-   list-style-type: none;
-   font-family: helvetica;
-   padding: 1px;
-   
+margin: 2.25rem;
 }
 ul {
-    display: flex;
+        display: flex;
+        flex-flow:column;
+        justify-content: center;
+   
+    }
     
-    flex-flow: column wrap;
-}
-
-`}
-
+   
+    
+    
+    `}
 </style>
     </>
 }
-
-export default gems

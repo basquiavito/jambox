@@ -5,9 +5,9 @@ function Sectiontitle(props){
 return(
     <>
 <div className="sectionTitleContainer">
-<h2 className="sectionTitle">
-  {props.title}
-</h2></div>
+<h1 className="sectionTitle">
+ <span>{props.title}</span> 
+</h1></div>
 <style jsx>{`
 .sectionTitleContainer{
     display: grid;
@@ -21,18 +21,20 @@ return(
 }
 .sectionTitle{
     grid-column: grid-start / grid-end;
-    color: rgb(0, 0, 0);
-    font-size: 3.75rem;
+    color: rgb(18 18 18);
+    font-size: 2.75rem;
     text-transform: uppercase;
-    font-weight: bold;
-    line-height: 1;
+    font-weight: 500;
+    line-height: 1.47059;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: -.022em;
+    font-style: normal;
+    
 
 
 }
 
-
+ 
 
 
 

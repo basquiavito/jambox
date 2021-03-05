@@ -47,15 +47,8 @@ const switchEnglishHandler = ()=> {
     return <>
     
 <div id="kicker">
-  <div id="buttons">
-  <div  className="buttonStyle" onClick={switchEnglishHandler}>English </div>
-
-    <div  className="buttonStyle" onClick={switchSpanishHandler}>Español </div>
- </div>   
-    <div className="pageGridMobile">
-
-   
-<div className="pageGridCenter">
+ 
+  
 <div className="editorialContainer">
 
  <a className="editorialLink" href="https://hoopscript.com/article?_id=6006c4342ba6762fdeae3b45">
@@ -107,8 +100,7 @@ className="thirdKicker">
 </div>
 </a>
 </div>
-</div>
-</div>
+ 
 </div>
 <style jsx>
     {`
@@ -133,15 +125,10 @@ className="thirdKicker">
         min-height: inherit;   
     }
 
-.pageGridCenter {
-    grid-column: center-start / center-end;
-}
+ 
  
 
-#kicker {
-    background-color: rgb(255, 255, 255);
-    padding: 2.25rem 0px 0px; 
-}
+ 
 
 #buttons {
     grid-column: center-start / center-end;

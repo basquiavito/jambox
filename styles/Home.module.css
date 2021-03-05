@@ -1,0 +1,281 @@
+.homeContentContainer {
+  position: relative;
+
+}
+
+.centeredFlexColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+ 
+@media only screen and (max-width: 980px){
+
+.featuredStories {
+  background-color: rgb(255, 255, 255);
+  padding: 2.25rem 0px 0px;
+
+}}
+
+@media only screen and (min-width: 1024px){
+.featuredStories {
+  padding: 4.5rem 60px 0px;
+  background-color: rgb(255, 255, 255);
+}}
+
+@media only screen and (min-width: 1280px){
+ .pageGridDesktop{
+  display: grid;
+  -webkit-box-pack: center;
+  justify-content: center;
+  grid-template-columns: [grid-start] repeat(3, minmax(14px, 44px)) [center-start] repeat(6, minmax(14px, 44px)) [center-end] repeat(3, minmax(14px, 44px)) [grid-end];
+  gap: 40px 60px;
+ }}
+
+ @media only screen and (max-width: 1200px){
+  .pageGridDesktop{
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
+    row-gap: 30px;
+  }}
+
+
+  @media only screen and (min-width: 1280px){
+ .topContentDesktop{
+  grid-column: span 5 / auto;
+ }}
+
+ @media only screen and (max-width: 1279px){
+  .topContentDesktop{
+   grid-column: center-start / center-end;
+  }}
+ @media only screen and (max-width: 1200px){
+  .pageGridDesktop{
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
+    row-gap: 30px;
+  }}
+ .editorialPlacementContainer{
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  line-height: 1.125;
+  height: 100%;
+  min-height: inherit;
+ }
+
+ .editorialLink{
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: inherit;
+ }
+
+ .editorialHeader{
+  margin-bottom: 1rem; 
+ }
+
+ .editorialLabel{
+  display: flex;
+ }
+
+ .TextLabel{
+  font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0); 
+ }
+
+ .editorialLabel::after{
+  content: "";
+  border-bottom: 0.15rem solid rgb(0, 0, 0);
+  flex: 1 1 0%;
+  margin-left: 0.5rem;
+  position: relative;
+  top: calc(-0.375rem);
+ }
+
+ .editorialTitle{
+  margin-top: 1rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  transition: color 0.6s ease;
+  color: #121212;
+  font-family: nyt-cheltenham;
+  -webkit-font-smoothing: antialiased;
+text-transform: capitalize;
+  vertical-align: baseline;
+  
+  
+ }
+
+ .editorialTitle h2{
+  display: inline;
+  
+
+ 
+ }
+
+ .editorialDek{
+  margin-top: 0.5rem;  
+  line-height: 1.1875rem;
+  letter-spacing: 0.1px;
+     
+ }
+
+ .authorDate{
+  margin: 0;
+  font-family:  helvetica,arial,sans-serif;
+  font-weight: 500;
+  line-height: 1rem;
+  font-size: 0.875rem;
+  text-decoration: underline;
+  color: #333;
+  display: inline-block;
+  text-decoration-color: #ccc;
+ }
+
+ .publishedAt{
+  font-size: 0.75rem;
+  color: rgb(154, 154, 154);
+ }
+ @media only screen and (max-width: 1200px){
+ .heroImageLink {
+  grid-column: grid-start / grid-end; 
+ }}
+
+  @media only screen and (min-width: 1201px){
+ .heroImageLink {
+  grid-column: span 7 / auto; 
+ }}
+
+.pageGridCenter {
+  grid-column: center-start / center-end;
+}
+ .editorialImage {
+  margin-top: 0.5rem;
+ }
+
+ .editorialSubtitle {
+  margin-top: 0.75rem;
+  font-size: 1.313rem;
+}
+@media only screen and (min-width: 1201px){
+.editorialMini{
+  grid-column: span 3 / auto;
+    min-height: 400px;
+    position: relative;
+}}
+@media only screen and (min-width: 1201px){
+  .editorialMini2{
+    grid-column: span 3 / auto;
+      min-height: 400px;
+      position: relative;
+  }}
+
+
+@media only screen and (max-width: 1200px){
+  .editorialMini2{
+    grid-column: center-start / center-end;
+  }}
+@media only screen and (max-width: 1200px){
+  .editorialMini{
+    grid-column: center-start / center-end;
+  }}
+
+  @media only screen and (max-width: 1200px){
+    .editorialMini:before {
+      content: "";
+        position: inherit;
+        top: 0;
+        right: 0;
+        height: 100%;
+        min-height: inherit;
+        border-right: 0;
+    }}
+
+    @media only screen and (max-width: 1200px){
+      .editorialMini2:before {
+        content: "";
+          position: inherit;
+          top: 0;
+          right: 0;
+          height: 100%;
+          min-height: inherit;
+          border-right: 0;
+      }}
+    @media only screen and (min-width: 1201px){
+.editorialMini:before {
+  content: "";
+    position: absolute;
+    top: calc(0.075rem);
+    right: calc(-30px - 0.075rem);
+    height: 100%;
+    min-height: inherit;
+    border-right: 0.15rem solid rgb(0, 0, 0)
+}}
+
+@media only screen and (min-width: 1201px){
+  .editorialMini2:before {
+    content: "";
+      position: absolute;
+      top: calc(0.075rem);
+      right: calc(-30px - 0.075rem);
+      height: 100%;
+      min-height: inherit;
+       
+  }}
+
+.editorialContainer {
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  line-height: 1.125;
+  height: 100%;
+  min-height: inherit;
+}
+
+.editorialLink {
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: inherit;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.miniEditorialTitle {
+  
+  font-size: 1.5rem;
+  letter-spacing: 0.2px;
+  transition: color 0.6s ease;
+  color: #121212;
+  font-family: nyt-cheltenham;
+  -webkit-font-smoothing: antialiased;
+text-transform: capitalize;
+  vertical-align: baseline;
+}
+
+.miniEditorialTitle  h2 {
+  display: inline;
+}
+
+.miniEditorialImage {
+  margin-top: 0.5rem;
+}
+
+.footer {
+  height: 200px;
+  background-color: #000;
+  color: #fff;
+  margin-top: 5rem;
+}

@@ -1,4 +1,3 @@
-import { getStaticProps } from "../../pages/posts/[id]";
 
 const byline = (props) => {
     return <>

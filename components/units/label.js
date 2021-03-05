@@ -17,6 +17,7 @@ const Label = (props) => {
     top: calc(-0.375rem);
     border-bottom: 0.15rem solid rgb(0, 0, 0);
     flex: 1 1 0%;
+   
     
 
  }

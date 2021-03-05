@@ -1,0 +1,60 @@
+.topHoopcodes {
+    padding: 4.5rem 60px;
+    background-color: #fff;
+}
+@media only screen and (min-width: 1201px){
+    .topHoopcodes {
+        padding: 4.5rem 60px;
+        background-color: #fff;
+    }}
+
+    @media only screen and (max-width: 1200px){
+        .topHoopcodes {
+            background-color: rgb(255, 255, 255);
+            padding: 2.25rem 0px;
+        }}
+
+@media only screen and (min-width: 1201px){
+.pageGridDesktop {
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    grid-template-columns: [grid-start] repeat(3, minmax(14px, 44px)) [center-start] repeat(6, minmax(14px, 44px)) [center-end] repeat(3, minmax(14px, 44px)) [grid-end];
+    gap: 40px 60px;
+}}
+
+@media only screen and (max-width: 1200px){
+    .pageGridDesktop {
+        display: grid;
+        -webkit-box-pack: center;
+        justify-content: center;
+        grid-template-columns: [grid-start] minmax(36px, 1fr) [center-start] minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) 20px minmax(24px, 100px) [center-end] minmax(36px, 1fr) [grid-end];
+        row-gap: 30px;
+    }}
+.pageGridFull {
+    grid-column: grid-start / grid-end;
+    text-align: center;  
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+ .Latest {
+    padding: 4.5rem 60px 0px;
+    background-color: rgb(255, 255, 255);   
+ }
+
+ .pageGridCenter {
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    grid-template-columns: [grid-start] repeat(3, minmax(14px, 44px)) [center-start] repeat(6, minmax(14px, 44px)) [center-end] repeat(3, minmax(14px, 44px)) [grid-end];
+    gap: 40px 60px; 
+ }
+
+ .homeSection:after {
+    content: "";
+    display: table;
+    clear: both;
+    box-sizing: inherit;
+    
+ }

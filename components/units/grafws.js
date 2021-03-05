@@ -5,10 +5,10 @@ const graf = (props) => {
         <tbody><tr>
           <td>
             <center>
-              <span className="grayText">
+              <h2 className="grayText">
                 <strong><time className="date" datetime="2020-12-26">Uploaded {props.date}</time></strong><br/>
               {props.graf}
-              </span>
+              </h2>
             </center>
           </td>
         </tr>
@@ -16,14 +16,17 @@ const graf = (props) => {
 <style jsx>
 {`
 .date {
-    color: black;
+    color: rgb(255 255 255);
 }
 .grayText {
-    line-height: 1.5;
-    font-size: 14px;
-    color: #666;
-    font-weight: 300px; 
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: 300;
+    color: rgb(226, 226, 226);
+  
+    vertical-align: baseline;
+    letter-spacing: 0.0125rem;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
 }
 box-sizing: border-box;
 table {

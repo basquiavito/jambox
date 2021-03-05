@@ -1,11 +1,11 @@
 import Sectiontitle from '../../components/units/sectiontitle'
 const iframe = (props) => {
     return <>
-     <Sectiontitle  title={props.hoopcode}/>
+    <div id="iframe">
+    <Sectiontitle  title={props.hoopcode}/> 
+ 
+  <span id="strings">{props.string}</span>  
 
-     <div className="stringContainer">
-     <span id="strings">{props.string}</span>
-     </div>
  
 <iframe
  
@@ -19,22 +19,44 @@ const iframe = (props) => {
             webkitallowfullscreen="true"
             mozallowfullscreen="true"
             width="100%"
-            height="315px"
-          
-         
- 
- 
-            srcDoc={`<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+            height="auto"
+            srcDoc={`<style>
+            *{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:100%;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
             <a href=https://www.youtube.com/embed/${props.value}/?autoplay=1>
             <img src=https://img.youtube.com/vi/${props.value}/hqdefault.jpg alt=${props.title} ></a>`}
           ></iframe>
+           <div className="title">
+   <p>{props.title}</p>
+ </div>
 
 
  
 
-
+</div>
           <style jsx>
               {`
+
+              .youtubeContainer{
+                background: rgb(18 18 18);
+              }
+.titleDetail {
+  color: #fff;
+  font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.9375rem;
+  line-height: 2.25rem;
+  text-align: left;
+  margin-bottom: 1rem;
+ 
+  width: calc(100% - 40px);
+  max-width: 600px;
+  margin-top: 0;
+  vertical-align: baseline;
+}
+
+
+
              .stringContainer {
               display: block;
               text-align: center;
@@ -46,6 +68,7 @@ const iframe = (props) => {
     font-size: 12px;
     font-weight: 500;
     color: rgb(228, 18, 36);
+    margin: 0;
 }
  
    
@@ -53,7 +76,7 @@ const iframe = (props) => {
                
     vertical-align: middle;
     text-decoration: none;
-    color: rgb(228, 18, 36);
+    color: #fff;
     text-align: center;
               }
               hr {

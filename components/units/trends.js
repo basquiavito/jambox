@@ -38,7 +38,7 @@ b  {
     clear: both;
 }
 .black {
-    color: black;
+    color:  rgb(226, 226, 226);
     margin-right: 5px;
 }
 hr {

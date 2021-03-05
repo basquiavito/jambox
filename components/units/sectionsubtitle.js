@@ -8,6 +8,8 @@ export default function Sectionsubitle(props){
 .sectionsubTitleContainer{
   text-align: center;
     grid-column: center-start / center-end;
+    margin-top: -43px;
+    color: #0084C6;
 }
 .sectionsubTitle{
     font-size: 0.75rem;
@@ -15,7 +17,7 @@ export default function Sectionsubitle(props){
 
     letter-spacing: 1px;
     text-transform: uppercase;
-   color: #abca59;
+ 
  
  
  

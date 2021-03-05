@@ -1,5 +1,5 @@
-import { Tweet } from 'react-twitter-widgets'
 import LazyLoad from 'react-lazy-load';
+import {  TwitterTweetEmbed  } from 'react-twitter-embed';
 
 
 
@@ -11,7 +11,9 @@ const twitter = (props) => {
            
 
        <LazyLoad>
-       <Tweet tweetId={props.tweet} />
+       <TwitterTweetEmbed
+  tweetId={props.id}
+/>
 </LazyLoad>  
 <style jsx>
     {`

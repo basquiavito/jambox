@@ -21,7 +21,7 @@ const workhorse = (props) => {
         </div>
 
 
-</a>
+</a><br/><br/>
 
 
 <style jsx>
@@ -96,6 +96,9 @@ const workhorse = (props) => {
     min-height: 15px;
     background-image:url('https://hooperos.s3.us-east-2.amazonaws.com/tables/outline.svg')
  }
+
+
+  
  `}   
 </style>
 

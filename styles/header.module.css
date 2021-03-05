@@ -1,0 +1,175 @@
+.headerWrap {
+    position: relative;
+    display: block;
+    clear: both;
+     
+}
+
+
+.topHeader {
+    text-align: center;
+    background-position: center center;
+    background-size: cover;  
+    vertical-align: baseline; 
+}
+.topBar {
+    background-color: #000;
+    margin: 0;
+    height: 55px;
+    width: 100%;
+    margin-top: -15px; 
+}
+@media only screen and (max-width: 767px){
+.topBar {
+    background-color: #000;
+    margin: 0;
+    height: 55px;
+    width: 100%;
+    margin-top: -15px; 
+}}
+#masthead .topBar .wrap {
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px){
+
+#masthead {
+
+}}
+.wrap {
+    padding: 0;
+    position: relative;
+}
+
+#headerBLogo a {
+    display: block;
+    float: left;
+    font-size: 41px;
+    letter-spacing: -3px;
+    color: #fff;
+}
+.topBarLinks {
+    display: block;
+    float: right;
+    margin-right: 5px;
+}
+.topBarLinks ul li {
+    float: right;
+    margin-left: 15px;
+}
+
+.topBarLinks ul li:before {
+    content: '|';
+    color: #fff;
+    font-size: 33px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.topBarLinks ul li a {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+.topBarShop {
+    color: #fff;
+    padding-right: 5px;
+}
+.topBarShop:before {
+    content: '' ;
+    line-height: 57px;
+    position: relative;
+    top: 6px;   
+    box-sizing: border-box;
+}
+
+#topBarLinks ul li:first-child:after {
+    content: '|';
+    color: #fff;
+    font-size: 33px;
+    vertical-align: top;
+    
+}
+
+.detail {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.topBarLinks ul li {
+    float: right;
+    margin-left: 15px;
+}
+
+
+#search svg {
+    fill: #fff;
+   width: 18px;
+   margin-right: 8px;
+}
+   #search {
+       display: flex;
+       -webkit-box-align: center;
+       align-items: center;
+       position: relative;
+       cursor: pointer;
+       padding: 0px 0.375rem;
+   }
+
+   #searchToggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 36px;
+    float: right;
+    margin-top: 12px;
+    width: 36px;   
+   }
+   #searchToggle:after {
+    background-color: #888;
+    content: "";
+    display: block;
+    height: 20px;
+    margin-left: 10px;
+    
+    transform: rotate(-45deg);
+    width: 1px;
+    box-sizing: border-box;
+   }
+   #searchToggle:before {
+    background-color: #888;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+ 
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 1px;
+   
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+   }
+   #searchBox,.clearfix  {
+    opacity: 1;
+    top: 50px;
+
+   }
+
+   #searchBox {
+    transition: all 0.5s ease 0s;
+    width: 400px;
+    z-index: 9999;
+    position: absolute;
+    right: 0px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease 0s;
+
+   }

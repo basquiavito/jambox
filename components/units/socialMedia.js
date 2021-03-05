@@ -96,6 +96,7 @@ ol, ul {
     list-style: none;
 }
 .smContainer {
+    border-top: 1px solid #DCDCDC;
     color: #999;
     display: flex;
     flex-shrink: 0;
@@ -103,7 +104,10 @@ ol, ul {
     font-size: 17px;
     margin-bottom: 5px
     flex-flow: row nowrap;
-    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top:5px;
+ 
 }
 
 `}
