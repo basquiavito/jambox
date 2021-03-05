@@ -9,8 +9,11 @@ import Wshhtitle from '../../components/units/wshhtitle'
  import Sectiontitle from '../../components/units/sectiontitle'
 import Image from 'next/image'
  
-
-
+const main = {
+  maxWidth:'37rem',
+  padding:'1.5rem',
+  margin:'auto'
+}
 
  
 
