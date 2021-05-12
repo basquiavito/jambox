@@ -24,7 +24,7 @@
     "mongoose": "^5.9.24",
     "next": "10.0.2",
     "nprogress": "^0.2.0",
-    "postcss": "^8.2.4",
+    "postcss": "^8.2.10",
     "prop-types": "15.6.2",
     "qs": "6.8.0",
     "react": "16.13.1",
