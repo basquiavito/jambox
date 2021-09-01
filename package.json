@@ -22,7 +22,7 @@
     "jquery": "^3.5.1",
     "lazysizes": "^5.2.2",
     "mongoose": "^5.9.24",
-    "next": "10.0.2",
+    "next": "11.1.1",
     "nprogress": "^0.2.0",
     "postcss": "^8.2.4",
     "prop-types": "15.6.2",
